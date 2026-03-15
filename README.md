@@ -162,6 +162,15 @@ Generate trilingual report  →  git push  →  This repo auto-updates
 
 ---
 
+## Statistical Notes
+
+- **Multiple Testing**: With 31.5M combinations tested, we apply Bonferroni correction (α = 0.05 / 31,500,000 ≈ 1.59e-9) to identify truly significant patterns.
+- **Survival Rate Context**: The 0.16% survival rate should be compared against the permutation test baseline (random data produces a baseline for comparison).
+- **Minimum sample sizes**: Only models with ≥10 training trades and ≥5 test trades are considered.
+- **Permutation test**: A baseline comparison using shuffled date labels is computed to quantify how many "survivors" would appear by chance alone.
+
+---
+
 ## 📁 Open Data | 公開資料 | オープンデータ
 
 **Everything is open. Fork it. Improve it. Prove us wrong.**
@@ -197,6 +206,16 @@ report = json.loads(urllib.request.urlopen(url).read())
 print(report['summary']['zh'])  # Chinese
 print(report['summary']['ja'])  # Japanese
 print(report['summary']['en'])  # English
+```
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/sstklen/trump-code.git
+cd trump-code
+pip install -r requirements.txt
 ```
 
 ---
@@ -317,12 +336,57 @@ Every day we publish predictions in `data/daily_report.json`. You can:
 
 ## ⚠️ Disclaimer | 免責聲明 | 免責事項
 
-> **This project is for research and educational purposes only.**
-> Past patterns do not guarantee future results. This is NOT financial advice. Trump can change his patterns at any time — and we track that too.
+> **FOR RESEARCH AND EDUCATIONAL PURPOSES ONLY.**
 >
-> **本專案僅供研究與教育用途。** 歷史規律不代表未來表現。這不是投資建議。川普隨時可能換密碼——我們也在追蹤這件事。
+> This project is NOT financial advice. Do NOT make investment decisions based on these findings.
 >
-> **本プロジェクトは研究・教育目的のみ。** 過去のパターンは将来の結果を保証しない。投資助言ではない。トランプはいつでもパターンを変える可能性がある——それも追跡している。
+> **Statistical Limitations:**
+> - The brute-force search tests 31.5 million model combinations. Even with train/test validation, many "surviving" models may be false positives due to multiple comparisons (data snooping bias).
+> - Past patterns do NOT guarantee future results. Correlation ≠ causation.
+> - Trump can change his communication patterns at any time.
+>
+> **Legal Notice:**
+> - The authors assume NO liability for any financial losses incurred from using this tool.
+> - Data sourced from publicly available archives. Users are responsible for compliance with applicable terms of service and local regulations.
+> - This project is not affiliated with Truth Social, S&P Global, or any government entity.
+>
+> **Not Regulated:** This tool is not registered with any financial regulatory authority (SEC, FINRA, FSA, etc.) in any jurisdiction.
+
+---
+
+> **僅供研究與教育用途。**
+>
+> 本專案不構成投資建議。請勿根據本專案的分析結果做出任何投資決策。
+>
+> **統計限制：**
+> - 暴力搜索測試了 3,150 萬組模型組合。即使經過訓練/測試雙段驗證，由於多重比較問題（data snooping bias），部分「存活」模型仍可能是假陽性。
+> - 歷史規律不代表未來表現。相關性不等於因果關係。
+> - 川普隨時可能改變發文方式。
+>
+> **法律免責：**
+> - 作者對任何因使用本工具所產生的財務損失不承擔任何責任。
+> - 資料來源為公開存檔。使用者須自行確認符合相關服務條款及當地法規。
+> - 本專案與 Truth Social、S&P Global 或任何政府機構無任何隸屬關係。
+>
+> **未受監管：** 本工具未向任何司法管轄區的金融監管機構（SEC、FINRA、FSA 等）註冊。
+
+---
+
+> **研究・教育目的のみ。**
+>
+> 本プロジェクトは投資助言ではありません。本プロジェクトの分析結果に基づいて投資判断を行わないでください。
+>
+> **統計的制限：**
+> - 総当たり探索では3,150万通りのモデル組み合わせをテストします。訓練/テストの二段階検証を経ても、多重比較の問題（データスヌーピングバイアス）により、一部の「生存」モデルは偽陽性である可能性があります。
+> - 過去のパターンは将来の結果を保証しません。相関関係は因果関係を意味しません。
+> - トランプはいつでも発信パターンを変える可能性があります。
+>
+> **法的免責事項：**
+> - 著者は、本ツールの使用によって生じたいかなる財務的損失に対しても責任を負いません。
+> - データは公開アーカイブから取得しています。ユーザーは、関連する利用規約および現地の規制への準拠について自己責任で確認してください。
+> - 本プロジェクトは、Truth Social、S&P Global、または政府機関とは一切関係ありません。
+>
+> **未登録：** 本ツールは、いかなる司法管轄においても金融規制当局（SEC、FINRA、FSA等）への登録を行っていません。
 
 ---
 
