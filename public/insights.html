@@ -687,57 +687,81 @@
 
     // === 資料拉取 ===
 
-    /** 從 /api/status 讀取系統狀態並更新面板 */
+    /** 從多個 API 讀取全部數據 */
     async function fetchStatus() {
       try {
         const res = await fetch(`${API_BASE}/api/status`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
-        // 更新四張狀態卡
-        document.getElementById('sys-status').textContent =
-          data.status === 'online' ? '\u2705' : '\u{1F534}';
+        // 狀態卡：系統健康
+        const health = data.system_health || 'unknown';
+        const healthIcon = health.includes('attention') ? '🟡' : (health.includes('degrad') ? '🔴' : '✅');
+        document.getElementById('sys-status').textContent = healthIcon;
         document.getElementById('sys-uptime').textContent =
-          data.uptime || 'System running';
+          health === 'needs_attention' ? '需要關注 Needs Attention' : health;
 
-        document.getElementById('sys-signals').textContent =
-          data.signals_today ?? data.total_signals ?? '--';
+        // 狀態卡：今日推文
+        document.getElementById('sys-signals').textContent = data.posts_today || 0;
         document.getElementById('sys-signals-sub').textContent =
-          data.signals_description || 'detected today';
+          `posts | 信號: ${(data.signals || []).join(', ') || 'none'}`;
 
-        document.getElementById('sys-models').textContent =
-          data.active_models ?? data.models ?? '--';
+        // 狀態卡：模型數
+        document.getElementById('sys-models').textContent = data.models || 0;
         document.getElementById('sys-models-sub').textContent =
-          data.models_description || 'analysis engines';
+          `models | ${data.total_rules || 550} rules`;
 
-        document.getElementById('sys-updated').textContent =
-          formatTime(data.last_update || data.updated_at) || 'Now';
-        document.getElementById('sys-updated-sub').textContent =
-          data.pipeline || 'daily pipeline';
+        // 狀態卡：共識方向
+        const con = data.consensus || 'NEUTRAL';
+        const conIcon = con === 'BULLISH' ? '📈' : (con === 'BEARISH' ? '📉' : '➡️');
+        document.getElementById('sys-updated').textContent = conIcon + ' ' + con;
+        document.getElementById('sys-updated-sub').textContent = data.date || '';
 
       } catch (err) {
         console.warn('[status] fetch failed:', err.message);
-        // 狀態拉取失敗不阻塞，保持 placeholder
       }
     }
 
-    /** 從 /api/insights 讀取群眾智慧並更新三個區塊 */
+    /** 從 3 個 API 讀取信號+模型+洞見 */
     async function fetchInsights() {
+      // 信號
       try {
-        const res = await fetch(`${API_BASE}/api/insights`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
+        const sigRes = await fetch(`${API_BASE}/api/signals`);
+        if (sigRes.ok) {
+          const sigData = await sigRes.json();
+          const signals = (sigData.signals || []).map(s => ({
+            type: s, confidence: '—', source: 'keyword'
+          }));
+          renderSignals(signals);
+        }
+      } catch(e) { console.warn('[signals]', e); }
 
-        renderSignals(data.signals || data.today_signals || []);
-        renderRankings(data.rankings || data.model_rankings || []);
-        renderInsights(data.insights || data.crowd_insights || []);
+      // 模型排行
+      try {
+        const modRes = await fetch(`${API_BASE}/api/models`);
+        if (modRes.ok) {
+          const modData = await modRes.json();
+          const perf = modData.models || {};
+          const rankings = Object.entries(perf)
+            .map(([id, s]) => ({
+              name: s.name || id,
+              win_rate: s.win_rate,
+              avg_return: s.avg_return,
+              trades: s.total_trades,
+            }))
+            .sort((a, b) => b.win_rate - a.win_rate);
+          renderRankings(rankings);
+        }
+      } catch(e) { console.warn('[models]', e); }
 
-      } catch (err) {
-        console.warn('[insights] fetch failed:', err.message);
-        showError('signal-list', 'Unable to load signals. API may be offline.');
-        showError('ranking-table', 'Unable to load rankings.');
-        showError('insight-grid', 'Unable to load insights.');
-      }
+      // 群眾洞見
+      try {
+        const insRes = await fetch(`${API_BASE}/api/insights`);
+        if (insRes.ok) {
+          const insData = await insRes.json();
+          renderInsights(insData.insights || []);
+        }
+      } catch(e) { console.warn('[insights]', e); }
     }
 
     // === 渲染函式 ===
@@ -756,15 +780,28 @@
         return;
       }
 
+      const sigLabels = {
+        'TARIFF': '🔴 關稅 Tariff 関税',
+        'DEAL': '🟢 談判 Deal ディール',
+        'RELIEF': '🕊️ 寬減 Relief 緩和',
+        'ACTION': '⚡ 行動 Action 行動',
+        'THREAT': '⚠️ 威脅 Threat 脅威',
+        'CHINA': '🇨🇳 中國 China 中国',
+        'IRAN': '🇮🇷 伊朗 Iran イラン',
+        'BULLISH': '📈 看多 Bullish 強気',
+        'BEARISH': '📉 看空 Bearish 弱気',
+        'TARIFF_ONLY': '🔴 純關稅 Tariff Only',
+        'DEAL_ONLY': '🟢 純談判 Deal Only',
+      };
       container.innerHTML = `<ul class="signal-list">
         ${signals.map(s => `
           <li class="signal-item">
             <div class="signal-icon">${signalIcon(s.type)}</div>
             <div class="signal-content">
-              <div class="signal-title">${escapeHtml(s.title || s.name || s.type || 'Signal')}</div>
-              <div class="signal-desc">${escapeHtml(s.description || s.summary || '')}</div>
+              <div class="signal-title">${escapeHtml(sigLabels[s.type] || s.type || 'Signal')}</div>
+              <div class="signal-desc">${escapeHtml(s.confidence || '')}</div>
             </div>
-            <div class="signal-score ${scoreClass(s.score)}">${s.score != null ? (s.score > 0 ? '+' : '') + s.score : '--'}</div>
+            <div class="signal-score">—</div>
           </li>
         `).join('')}
       </ul>`;
@@ -795,19 +832,19 @@
           </thead>
           <tbody>
             ${rankings.map((r, i) => {
-              const acc = r.accuracy ?? r.score ?? 0;
-              const pct = typeof acc === 'number' ? (acc > 1 ? acc : acc * 100) : 0;
+              const pct = r.win_rate ?? r.accuracy ?? r.score ?? 0;
+              const ret = r.avg_return ?? 0;
               return `
                 <tr>
                   <td><span class="rank-badge ${rankClass(i)}">${i + 1}</span></td>
                   <td style="font-weight: 600;">${escapeHtml(r.name || r.model || 'Model')}</td>
                   <td>
-                    ${pct.toFixed(1)}%
+                    ${pct.toFixed(1)}% <small style="color:#888">(${ret >= 0 ? '+' : ''}${ret.toFixed(3)}%)</small>
                     <div class="accuracy-bar">
                       <div class="accuracy-fill" style="width: ${Math.min(pct, 100)}%"></div>
                     </div>
                   </td>
-                  <td style="color: var(--text-secondary);">${r.predictions ?? r.count ?? '--'}</td>
+                  <td style="color: var(--text-secondary);">${r.trades ?? r.predictions ?? r.count ?? '--'} trades</td>
                 </tr>`;
             }).join('')}
           </tbody>
