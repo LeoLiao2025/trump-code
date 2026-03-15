@@ -611,6 +611,14 @@ class ChatHandler(BaseHTTPRequestHandler):
             ]
             self._json_response(200, {'insights': public, 'total': len(public)})
 
+        elif self.path == '/api/polymarket':
+            # 公開端點：Polymarket 即時市場數據
+            pm = _load('polymarket_live.json')
+            if pm:
+                self._json_response(200, pm)
+            else:
+                self._json_response(200, {'markets': [], 'total': 0})
+
         elif self.path == '/api/playbook':
             # 公開端點：三套劇本（避險/佈局/拉盤）
             pb_file = DATA / "trump_playbook.json"

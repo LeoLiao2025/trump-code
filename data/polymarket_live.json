@@ -1,0 +1,174 @@
+{
+  "updated": "2026-03-15T08:00:00Z",
+  "total": 21,
+  "markets": [
+    {
+      "question": "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
+      "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-march-2026-meeting",
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "liquidity": 7642991,
+      "volume": 150935927
+    },
+    {
+      "question": "Will the Fed increase interest rates by 25+ bps after the March 2026 meeting?",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-march-2026-meeting",
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "liquidity": 6611593,
+      "volume": 149018930
+    },
+    {
+      "question": "Will there be no change in Fed interest rates after the March 2026 meeting?",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-march-2026-meeting",
+      "yes_price": 0.9965,
+      "no_price": 0.0035,
+      "liquidity": 4607486,
+      "volume": 59201012
+    },
+    {
+      "question": "Russia strike impacts Kyiv municipality during week of March 2, 2026?",
+      "slug": "russia-strike-impacts-kyiv-municipality-during-week-of-march-2-2026",
+      "yes_price": 0.9995,
+      "no_price": 0.0005,
+      "liquidity": 4556452,
+      "volume": 1697138
+    },
+    {
+      "question": "Will Iran strike Israel on March 10?",
+      "slug": "will-iran-strike-israel-on-march-10",
+      "yes_price": 0.9975,
+      "no_price": 0.0025,
+      "liquidity": 2245997,
+      "volume": 10176563
+    },
+    {
+      "question": "Will Brentford win the 2025–26 English Premier League?",
+      "slug": "will-brentford-win-the-202526-english-premier-league",
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "liquidity": 2145105,
+      "volume": 14214153
+    },
+    {
+      "question": "Will Zohran Mamdani win the 2028 Democratic presidential nomination?",
+      "slug": "will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445",
+      "yes_price": 0.0105,
+      "no_price": 0.9895,
+      "liquidity": 2094070,
+      "volume": 31399953
+    },
+    {
+      "question": "Will Grigor Dimitrov win the 2026 Australian Open?",
+      "slug": "will-grigor-dimitrov-win-the-2026-australian-open",
+      "yes_price": 0.0005,
+      "no_price": 0.9995,
+      "liquidity": 2024302,
+      "volume": 624539
+    },
+    {
+      "question": "Will Haiti win the 2026 FIFA World Cup?",
+      "slug": "will-haiti-win-the-2026-fifa-world-cup",
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "liquidity": 2016038,
+      "volume": 7356248
+    },
+    {
+      "question": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
+      "slug": "will-oprah-winfrey-win-the-2028-democratic-presidential-nomination",
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "liquidity": 1973306,
+      "volume": 39428312
+    },
+    {
+      "question": "Will Kim Kardashian win the 2028 Democratic presidential nomination?",
+      "slug": "will-kim-kardashian-win-the-2028-democratic-presidential-nomination",
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "liquidity": 1910243,
+      "volume": 25518477
+    },
+    {
+      "question": "Will Bitcoin reach $150,000 in March?",
+      "slug": "will-bitcoin-reach-150k-in-march-2026",
+      "yes_price": 0.0045,
+      "no_price": 0.9955,
+      "liquidity": 1862609,
+      "volume": 12434426
+    },
+    {
+      "question": "Will Tim Walz win the 2028 Democratic presidential nomination?",
+      "slug": "will-tim-walz-win-the-2028-democratic-presidential-nomination-475",
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "liquidity": 1844525,
+      "volume": 33946052
+    },
+    {
+      "question": "Will Curaçao win the 2026 FIFA World Cup?",
+      "slug": "will-curaao-win-the-2026-fifa-world-cup",
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "liquidity": 1844154,
+      "volume": 9872645
+    },
+    {
+      "question": "Will Jordan win the 2026 FIFA World Cup?",
+      "slug": "will-jordan-win-the-2026-fifa-world-cup-233",
+      "yes_price": 0.0015,
+      "no_price": 0.9985,
+      "liquidity": 1832810,
+      "volume": 11440077
+    },
+    {
+      "question": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
+      "slug": "will-andrew-yang-win-the-2028-democratic-presidential-nomination",
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "liquidity": 1805461,
+      "volume": 36793409
+    },
+    {
+      "question": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
+      "slug": "will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879",
+      "yes_price": 0.0065,
+      "no_price": 0.9935,
+      "liquidity": 1783623,
+      "volume": 35357341
+    },
+    {
+      "question": "Will Hillary Clinton win the 2028 Democratic presidential nomination?",
+      "slug": "will-hillary-clinton-win-the-2028-democratic-presidential-nomination",
+      "yes_price": 0.0085,
+      "no_price": 0.9915,
+      "liquidity": 1782278,
+      "volume": 32759518
+    },
+    {
+      "question": "Will MrBeast win the 2028 Democratic presidential nomination?",
+      "slug": "will-mrbeast-win-the-2028-democratic-presidential-nomination",
+      "yes_price": 0.0095,
+      "no_price": 0.9905,
+      "liquidity": 1769675,
+      "volume": 31891545
+    },
+    {
+      "question": "Will Qatar win the 2026 FIFA World Cup?",
+      "slug": "will-qatar-win-the-2026-fifa-world-cup",
+      "yes_price": 0.0025,
+      "no_price": 0.9975,
+      "liquidity": 1749472,
+      "volume": 8097525
+    },
+    {
+      "question": "Will Trump create a tariff dividend by March 31?",
+      "slug": "will-trump-create-a-tariff-dividend-by-march-31",
+      "yes_price": 0.022,
+      "no_price": 0.978,
+      "liquidity": 28033,
+      "volume": 135943
+    }
+  ]
+}

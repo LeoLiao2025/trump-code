@@ -367,6 +367,12 @@ Trump 發推文 Truth Social
     </div>
   </div>
 
+  <!-- 即時市場數據 -->
+  <div style="margin-bottom:16px">
+    <h3 style="color:var(--gold);font-size:20px;margin-bottom:12px">📊 Live Markets 即時市場 ライブ</h3>
+    <div style="overflow-x:auto" id="pm-live-area"><span style="color:var(--dim)">Loading markets...</span></div>
+  </div>
+
   <!-- 平台列表 -->
   <div class="platform">
     <div class="pcard"><div class="name">Polymarket</div><div class="detail">$56B volume 交易量<br>✅ 即時價格追蹤 Real-time<br>✅ 信號→套利分數計算</div></div>
@@ -606,8 +612,29 @@ async function load(){
   }catch(e){}
 }
 
-load();
+// Polymarket 即時數據
+async function loadPM(){
+  try{
+    const d = await(await fetch(B+'/api/polymarket')).json();
+    const markets = (d.markets||[]).filter(m=>m.liquidity>500);
+    if(!markets.length){document.getElementById('pm-live-area').innerHTML='<span style="color:var(--dim)">No active markets / 暫無活躍市場</span>';return}
+    let html='<table><thead><tr><th>Market 市場</th><th>YES</th><th>NO</th><th>Liquidity 流動性</th></tr></thead><tbody>';
+    markets.slice(0,12).forEach(m=>{
+      const yes=m.yes_price||0,no=m.no_price||0,liq=m.liquidity||0;
+      const yesColor=yes>0.7?'var(--green)':yes<0.3?'var(--red)':'var(--gold)';
+      html+=`<tr><td style="max-width:300px">${esc(m.question.substring(0,60))}</td>`;
+      html+=`<td style="color:${yesColor};font-weight:700">${(yes*100).toFixed(1)}%</td>`;
+      html+=`<td style="color:var(--dim)">${(no*100).toFixed(1)}%</td>`;
+      html+=`<td style="color:var(--dim)">$${liq.toLocaleString()}</td></tr>`;
+    });
+    html+='</tbody></table>';
+    document.getElementById('pm-live-area').innerHTML=html;
+  }catch(e){document.getElementById('pm-live-area').innerHTML='<span style="color:var(--dim)">Error loading markets</span>'}
+}
+
+load();loadPM();
 setInterval(load, 30000);
+setInterval(loadPM, 60000);
 </script>
 </body>
 </html>
