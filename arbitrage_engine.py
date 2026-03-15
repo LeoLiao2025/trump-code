@@ -19,6 +19,18 @@ from polymarket_client import (
 )
 from signal_market_mapper import match_signals_to_markets
 
+# Kalshi 跨平台套利（可選，import 失敗不影響主流程）
+try:
+    from kalshi_client import (
+        KalshiAPIError,
+        fetch_trump_markets as kalshi_fetch_trump,
+        get_market_price as kalshi_get_price,
+        find_cross_platform_arb,
+    )
+    KALSHI_AVAILABLE = True
+except ImportError:
+    KALSHI_AVAILABLE = False
+
 
 # =====================================================================
 # 核心計算
