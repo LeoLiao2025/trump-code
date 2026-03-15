@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-03-15T05:20:22Z",
+  "x_total": 7,
+  "truth_total": 5306,
+  "both_platforms": 2,
+  "x_only": 0,
+  "truth_only": 3567,
+  "truth_only_ratio": 67.2,
+  "summary": {
+    "en": "Gap Analysis: 2 posts on both platforms, 3567 Truth Social exclusive (67% hidden from X)",
+    "zh": "落差分析: 2 篇兩邊都有，3567 篇只在 Truth Social（67% 沒放到 X）",
+    "ja": "ギャップ分析: 2件が両方、3567件がTruth Social限定（67%がXに非公開）"
+  },
+  "x_only_sample": [],
+  "truth_only_sample": [
+    {
+      "text": "The Fake News Media hates to report how well the United States Military has done against Iran, which is totally defeated",
+      "date": "2026-03-14T03:53"
+    },
+    {
+      "text": "Kevin Hern, from the Wonderful State of Oklahoma (where I won all 77 out of 77 Counties, in 2016, 2020, and 2024!), is a",
+      "date": "2026-03-14T00:12"
+    },
+    {
+      "text": "Trump Investment Surge: Trillions Pour Into America As Economic Revival Accelerates: https://thenevadaglobe.com/articles",
+      "date": "2026-03-14T00:12"
+    },
+    {
+      "text": "US Olympic bobsledder surprises Trump, awards him prestigious Order of Ikkos medal: https://nypost.com/2026/03/12/us-new",
+      "date": "2026-03-14T00:12"
+    },
+    {
+      "text": "Trump honors Virginia mom, farmer at White House Women's History Month event: https://wjla.com/news/local/president-dona",
+      "date": "2026-03-14T00:11"
+    },
+    {
+      "text": "Baltimore woman honored by President Trump during Women's History Month: https://www.wbal.com/baltimore-woman-honored-by",
+      "date": "2026-03-14T00:11"
+    },
+    {
+      "text": "Iran had plans of taking over the entire Middle East, and completely obliterating Israel. JUST LIKE IRAN ITSELF, THOSE P",
+      "date": "2026-03-13T23:43"
+    },
+    {
+      "text": "Moments ago, at my direction, the United States Central Command executed one of the most powerful bombing raids in the H",
+      "date": "2026-03-13T22:54"
+    },
+    {
+      "text": "It is my Great Honor to endorse America First Patriot, Jon Maples, who is running to represent the wonderful people of F",
+      "date": "2026-01-06T22:12"
+    },
+    {
+      "text": "After meeting with Governor Gretchen Whitmer, and hearing from our GREAT Republican Candidate for the United States Sena",
+      "date": "2026-03-13T22:17"
+    },
+    {
+      "text": "Thank you to Highly Respected America First Congresswoman, Stephanie Bice, of the Great State of Oklahoma, for deciding,",
+      "date": "2026-03-13T21:05"
+    },
+    {
+      "text": "I am pleased to announce that Matt Floca, subject to the approval of the Board of Directors, will be named the Chief Ope",
+      "date": "2026-03-13T20:35"
+    },
+    {
+      "text": "Maggot Hagerman, just another SLEAZEBAG writer for The Failing New York Times, insists on writing false stories about me",
+      "date": "2026-03-13T20:32"
+    },
+    {
+      "text": "Two renderings of the new, highly improved, TRUMP KENNEDY CENTER!",
+      "date": "2026-03-13T17:43"
+    },
+    {
+      "text": "Cuba confirms talks with Trump officials, raising hopes for US deal: https://www.usatoday.com/story/news/world/2026/03/1",
+      "date": "2026-03-13T13:54"
+    },
+    {
+      "text": "Retired Army general: Iran regime 'fundamentally miscalculated' Trump: https://thehill.com/policy/defense/5777128-jack-k",
+      "date": "2026-03-13T13:53"
+    },
+    {
+      "text": "We are totally destroying the terrorist regime of Iran, militarily, economically, and otherwise, yet, if you read the Fa",
+      "date": "2026-03-13T04:33"
+    },
+    {
+      "text": "At Military Academy with my parents, Fred and Mary!",
+      "date": "2026-03-13T00:57"
+    },
+    {
+      "text": "The United States of America looks very much forward to hosting the FIFA World Cup. Ticket sales are \"through the roof!\"",
+      "date": "2026-03-12T23:05"
+    },
+    {
+      "text": "Where is the Federal Reserve Chairman, Jerome \"Too Late\" Powell, today? He should be dropping Interest Rates, IMMEDIATEL",
+      "date": "2026-03-12T19:05"
+    }
+  ]
+}
