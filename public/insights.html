@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trump Code | Crowd Insights</title>
+  <style>
+    /* === 全域重置與深色暖調主題 === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-primary: #1a1410;
+      --bg-secondary: #242018;
+      --bg-card: #2e2820;
+      --bg-card-hover: #3a3228;
+      --text-primary: #f0e6d6;
+      --text-secondary: #b8a890;
+      --text-muted: #8a7e6e;
+      --accent-gold: #d4a848;
+      --accent-amber: #e8963e;
+      --accent-warm: #c47832;
+      --accent-green: #6abf69;
+      --accent-red: #e06060;
+      --border: #3e3628;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Noto Sans JP', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* === 頂部導航列 === */
+    .navbar {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .navbar-brand .logo {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+
+    .navbar-brand .badge {
+      font-size: 11px;
+      background: var(--accent-warm);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .navbar-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .navbar-links a:hover { color: var(--accent-gold); }
+
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-card);
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-primary) !important;
+      transition: all 0.2s;
+    }
+
+    .github-link:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent-gold);
+    }
+
+    .github-link svg { width: 18px; height: 18px; fill: var(--text-primary); }
+
+    /* === 主容器 === */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    /* === 三語標題區 === */
+    .hero {
+      text-align: center;
+      padding: 40px 16px 32px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-amber) 50%, var(--accent-warm) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .hero .subtitle-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .hero .subtitle {
+      font-size: 16px;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .hero .subtitle .divider {
+      color: var(--border);
+      margin: 0 4px;
+    }
+
+    .hero .live-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* === 狀態面板（頂部四格） === */
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .status-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: all 0.2s;
+    }
+
+    .status-card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .status-card .value {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .status-card .sub {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    /* === 區塊卡片 === */
+    .section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .section-header .tag {
+      font-size: 11px;
+      background: rgba(212, 168, 72, 0.15);
+      color: var(--accent-gold);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .section-body {
+      padding: 20px 24px;
+    }
+
+    /* === 今日信號列表 === */
+    .signal-list {
+      list-style: none;
+    }
+
+    .signal-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .signal-item:last-child { border-bottom: none; }
+
+    .signal-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      background: rgba(212, 168, 72, 0.12);
+    }
+
+    .signal-content { flex: 1; }
+
+    .signal-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .signal-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .signal-score {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      flex-shrink: 0;
+      min-width: 48px;
+      text-align: right;
+    }
+
+    .score-bullish { color: var(--accent-green); }
+    .score-bearish { color: var(--accent-red); }
+
+    /* === 模型排行表格 === */
+    .ranking-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .ranking-table th {
+      text-align: left;
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ranking-table td {
+      padding: 12px;
+      font-size: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ranking-table tr:last-child td { border-bottom: none; }
+
+    .ranking-table tr:hover td {
+      background: rgba(212, 168, 72, 0.04);
+    }
+
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .rank-1 { background: linear-gradient(135deg, #d4a848, #b8922e); color: #1a1410; }
+    .rank-2 { background: linear-gradient(135deg, #a8a8a8, #888); color: #1a1410; }
+    .rank-3 { background: linear-gradient(135deg, #c47832, #a06028); color: #1a1410; }
+    .rank-other { background: var(--bg-secondary); color: var(--text-muted); }
+
+    .accuracy-bar {
+      width: 80px;
+      height: 6px;
+      background: var(--bg-primary);
+      border-radius: 3px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    .accuracy-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--accent-warm), var(--accent-gold));
+    }
+
+    /* === 群眾洞見卡片列表 === */
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .insight-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      transition: all 0.2s;
+    }
+
+    .insight-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .insight-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .insight-source {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .insight-time {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .insight-text {
+      font-size: 14px;
+      color: var(--text-primary);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .insight-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .insight-tag {
+      font-size: 11px;
+      background: rgba(212, 168, 72, 0.1);
+      color: var(--accent-gold);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* === 頁尾 === */
+    .footer {
+      text-align: center;
+      padding: 40px 16px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    .footer a { color: var(--accent-gold); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    /* === 更新倒數 === */
+    .refresh-bar {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 8px;
+    }
+
+    /* === 載入中動畫 === */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      color: var(--text-muted);
+      gap: 10px;
+    }
+
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent-gold);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* === 錯誤狀態 === */
+    .error-state {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-muted);
+    }
+
+    .error-state .icon { font-size: 36px; margin-bottom: 12px; }
+
+    /* === 響應式設計 === */
+    @media (max-width: 768px) {
+      .navbar { padding: 12px 16px; flex-wrap: wrap; gap: 8px; }
+      .navbar-brand .logo { font-size: 22px; }
+      .status-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .status-card { padding: 14px; }
+      .status-card .value { font-size: 22px; }
+      .section-body { padding: 14px 16px; }
+      .insight-grid { grid-template-columns: 1fr; }
+      .ranking-table { font-size: 13px; }
+      .ranking-table th, .ranking-table td { padding: 8px 6px; }
+      .accuracy-bar { width: 50px; }
+      .hero { padding: 28px 16px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .status-grid { grid-template-columns: 1fr; }
+      .navbar-links { font-size: 12px; gap: 10px; }
+      .signal-item { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 導航列 -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="logo">TRUMP CODE</span>
+      <span class="badge">LIVE</span>
+    </div>
+    <div class="navbar-links">
+      <a href="#signals">Signals</a>
+      <a href="#rankings">Rankings</a>
+      <a href="#insights">Insights</a>
+      <a href="https://github.com/washinmura/trump-code" target="_blank" rel="noopener" class="github-link">
+        <!-- GitHub SVG 圖示 -->
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+            .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+            -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56
+            .82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07
+            -.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </nav>
+
+  <!-- 三語標題 -->
+  <div class="hero">
+    <h1>Crowd Intelligence Dashboard</h1>
+    <div class="subtitle-row">
+      <span class="subtitle">群眾智慧儀表板</span>
+      <span class="subtitle" style="color: var(--border);">|</span>
+      <span class="subtitle">クラウド・インテリジェンス</span>
+    </div>
+    <p style="margin-top: 12px; font-size: 13px; color: var(--text-muted);">
+      <span class="live-dot"></span>
+      <span id="refresh-text">Auto-refresh every 30s</span>
+    </p>
+  </div>
+
+  <div class="container">
+
+    <!-- 系統狀態面板 -->
+    <div class="status-grid" id="status-grid">
+      <div class="status-card">
+        <div class="label">System Status</div>
+        <div class="value" id="sys-status">--</div>
+        <div class="sub" id="sys-uptime"></div>
+      </div>
+      <div class="status-card">
+        <div class="label">Signals Today</div>
+        <div class="value" id="sys-signals">--</div>
+        <div class="sub" id="sys-signals-sub"></div>
+      </div>
+      <div class="status-card">
+        <div class="label">Models Active</div>
+        <div class="value" id="sys-models">--</div>
+        <div class="sub" id="sys-models-sub"></div>
+      </div>
+      <div class="status-card">
+        <div class="label">Last Update</div>
+        <div class="value" id="sys-updated">--</div>
+        <div class="sub" id="sys-updated-sub"></div>
+      </div>
+    </div>
+
+    <!-- 今日信號 -->
+    <div class="section" id="signals">
+      <div class="section-header">
+        <h2>Today's Signals / 今日信號 / 本日シグナル</h2>
+        <span class="tag" id="signal-count">Loading...</span>
+      </div>
+      <div class="section-body">
+        <div id="signal-list" class="loading">
+          <div class="spinner"></div>
+          <span>Loading signals...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 模型排行 -->
+    <div class="section" id="rankings">
+      <div class="section-header">
+        <h2>Model Rankings / 模型排行 / モデルランキング</h2>
+        <span class="tag">Accuracy</span>
+      </div>
+      <div class="section-body">
+        <div id="ranking-table" class="loading">
+          <div class="spinner"></div>
+          <span>Loading rankings...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 群眾洞見 -->
+    <div class="section" id="insights">
+      <div class="section-header">
+        <h2>Crowd Insights / 群眾洞見 / クラウドインサイト</h2>
+        <span class="tag" id="insight-count">Loading...</span>
+      </div>
+      <div class="section-body">
+        <div id="insight-grid" class="loading">
+          <div class="spinner"></div>
+          <span>Loading insights...</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 頁尾 -->
+  <div class="footer">
+    <p>
+      TRUMP CODE &mdash; AI-Powered Political Signal Intelligence<br>
+      <a href="https://github.com/washinmura/trump-code" target="_blank" rel="noopener">Open Source on GitHub</a>
+      &nbsp;&middot;&nbsp; Data refreshes every 30 seconds
+    </p>
+    <p style="margin-top: 8px; font-size: 11px;">
+      This is a research project. Not financial advice. 本專案僅供研究用途。
+    </p>
+  </div>
+
+  <script>
+    /**
+     * ===== 群眾洞見前端邏輯 =====
+     * - 每 30 秒從 /api/insights 和 /api/status 拉取資料
+     * - 無資料時顯示 placeholder
+     * - 錯誤時顯示友善提示
+     */
+
+    const API_BASE = window.location.origin;
+    const REFRESH_INTERVAL = 30000; // 30 秒自動更新
+
+    let countdown = 30;
+    let countdownTimer = null;
+
+    // === 工具函式 ===
+
+    /** 格式化時間戳為可讀字串 */
+    function formatTime(ts) {
+      if (!ts) return '--';
+      const d = new Date(ts);
+      if (isNaN(d.getTime())) return ts;
+      return d.toLocaleString('en-US', {
+        month: 'short', day: 'numeric',
+        hour: '2-digit', minute: '2-digit',
+        hour12: false
+      });
+    }
+
+    /** 根據分數回傳 CSS class */
+    function scoreClass(score) {
+      if (score > 0) return 'score-bullish';
+      if (score < 0) return 'score-bearish';
+      return '';
+    }
+
+    /** 信號圖示（依據類型） */
+    function signalIcon(type) {
+      const icons = {
+        'truth_social': '\u{1F4E2}',
+        'executive_order': '\u{1F4DC}',
+        'tariff': '\u{1F4B0}',
+        'market': '\u{1F4C8}',
+        'deletion': '\u{1F5D1}',
+        'anomaly': '\u{26A0}',
+        'combo': '\u{1F3AF}'
+      };
+      return icons[type] || '\u{1F4A1}';
+    }
+
+    /** 排名徽章 class */
+    function rankClass(i) {
+      if (i === 0) return 'rank-1';
+      if (i === 1) return 'rank-2';
+      if (i === 2) return 'rank-3';
+      return 'rank-other';
+    }
+
+    /** 顯示錯誤狀態 */
+    function showError(containerId, message) {
+      const el = document.getElementById(containerId);
+      el.innerHTML = `
+        <div class="error-state">
+          <div class="icon">\u{1F50C}</div>
+          <p>${message}</p>
+          <p style="margin-top: 8px; font-size: 12px;">Will retry in 30 seconds...</p>
+        </div>`;
+    }
+
+    // === 資料拉取 ===
+
+    /** 從 /api/status 讀取系統狀態並更新面板 */
+    async function fetchStatus() {
+      try {
+        const res = await fetch(`${API_BASE}/api/status`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        // 更新四張狀態卡
+        document.getElementById('sys-status').textContent =
+          data.status === 'online' ? '\u2705' : '\u{1F534}';
+        document.getElementById('sys-uptime').textContent =
+          data.uptime || 'System running';
+
+        document.getElementById('sys-signals').textContent =
+          data.signals_today ?? data.total_signals ?? '--';
+        document.getElementById('sys-signals-sub').textContent =
+          data.signals_description || 'detected today';
+
+        document.getElementById('sys-models').textContent =
+          data.active_models ?? data.models ?? '--';
+        document.getElementById('sys-models-sub').textContent =
+          data.models_description || 'analysis engines';
+
+        document.getElementById('sys-updated').textContent =
+          formatTime(data.last_update || data.updated_at) || 'Now';
+        document.getElementById('sys-updated-sub').textContent =
+          data.pipeline || 'daily pipeline';
+
+      } catch (err) {
+        console.warn('[status] fetch failed:', err.message);
+        // 狀態拉取失敗不阻塞，保持 placeholder
+      }
+    }
+
+    /** 從 /api/insights 讀取群眾智慧並更新三個區塊 */
+    async function fetchInsights() {
+      try {
+        const res = await fetch(`${API_BASE}/api/insights`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        renderSignals(data.signals || data.today_signals || []);
+        renderRankings(data.rankings || data.model_rankings || []);
+        renderInsights(data.insights || data.crowd_insights || []);
+
+      } catch (err) {
+        console.warn('[insights] fetch failed:', err.message);
+        showError('signal-list', 'Unable to load signals. API may be offline.');
+        showError('ranking-table', 'Unable to load rankings.');
+        showError('insight-grid', 'Unable to load insights.');
+      }
+    }
+
+    // === 渲染函式 ===
+
+    /** 渲染今日信號列表 */
+    function renderSignals(signals) {
+      const container = document.getElementById('signal-list');
+      document.getElementById('signal-count').textContent = `${signals.length} signals`;
+
+      if (signals.length === 0) {
+        container.innerHTML = `
+          <div class="error-state">
+            <div class="icon">\u{1F4ED}</div>
+            <p>No signals detected today</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = `<ul class="signal-list">
+        ${signals.map(s => `
+          <li class="signal-item">
+            <div class="signal-icon">${signalIcon(s.type)}</div>
+            <div class="signal-content">
+              <div class="signal-title">${escapeHtml(s.title || s.name || s.type || 'Signal')}</div>
+              <div class="signal-desc">${escapeHtml(s.description || s.summary || '')}</div>
+            </div>
+            <div class="signal-score ${scoreClass(s.score)}">${s.score != null ? (s.score > 0 ? '+' : '') + s.score : '--'}</div>
+          </li>
+        `).join('')}
+      </ul>`;
+    }
+
+    /** 渲染模型排行表格 */
+    function renderRankings(rankings) {
+      const container = document.getElementById('ranking-table');
+
+      if (rankings.length === 0) {
+        container.innerHTML = `
+          <div class="error-state">
+            <div class="icon">\u{1F3C6}</div>
+            <p>No ranking data available</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = `
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Model</th>
+              <th>Accuracy</th>
+              <th>Predictions</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rankings.map((r, i) => {
+              const acc = r.accuracy ?? r.score ?? 0;
+              const pct = typeof acc === 'number' ? (acc > 1 ? acc : acc * 100) : 0;
+              return `
+                <tr>
+                  <td><span class="rank-badge ${rankClass(i)}">${i + 1}</span></td>
+                  <td style="font-weight: 600;">${escapeHtml(r.name || r.model || 'Model')}</td>
+                  <td>
+                    ${pct.toFixed(1)}%
+                    <div class="accuracy-bar">
+                      <div class="accuracy-fill" style="width: ${Math.min(pct, 100)}%"></div>
+                    </div>
+                  </td>
+                  <td style="color: var(--text-secondary);">${r.predictions ?? r.count ?? '--'}</td>
+                </tr>`;
+            }).join('')}
+          </tbody>
+        </table>`;
+    }
+
+    /** 渲染群眾洞見卡片 */
+    function renderInsights(insights) {
+      const container = document.getElementById('insight-grid');
+      document.getElementById('insight-count').textContent = `${insights.length} insights`;
+
+      if (insights.length === 0) {
+        container.innerHTML = `
+          <div class="error-state">
+            <div class="icon">\u{1F52E}</div>
+            <p>No crowd insights yet</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = `<div class="insight-grid">
+        ${insights.map(ins => `
+          <div class="insight-card">
+            <div class="insight-meta">
+              <span class="insight-source">${escapeHtml(ins.source || ins.platform || 'Unknown')}</span>
+              <span class="insight-time">${formatTime(ins.timestamp || ins.time || ins.created_at)}</span>
+            </div>
+            <div class="insight-text">${escapeHtml(ins.text || ins.content || ins.summary || '')}</div>
+            <div class="insight-tags">
+              ${(ins.tags || []).map(t => `<span class="insight-tag">${escapeHtml(t)}</span>`).join('')}
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+    }
+
+    /** 防止 XSS 的 HTML 跳脫 */
+    function escapeHtml(str) {
+      if (!str) return '';
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    // === 自動更新倒數計時 ===
+
+    function startCountdown() {
+      countdown = 30;
+      if (countdownTimer) clearInterval(countdownTimer);
+      countdownTimer = setInterval(() => {
+        countdown--;
+        const el = document.getElementById('refresh-text');
+        if (el) el.textContent = `Next refresh in ${countdown}s`;
+        if (countdown <= 0) {
+          clearInterval(countdownTimer);
+        }
+      }, 1000);
+    }
+
+    /** 主更新迴圈 */
+    async function refresh() {
+      startCountdown();
+      await Promise.all([fetchStatus(), fetchInsights()]);
+    }
+
+    // === 啟動 ===
+    refresh();
+    setInterval(refresh, REFRESH_INTERVAL);
+  </script>
+</body>
+</html>
