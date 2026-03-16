@@ -584,6 +584,21 @@ class ChatHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(HTML_PAGE.encode('utf-8'))
 
+        elif self.path in ('/robots.txt', '/sitemap.xml', '/llms.txt'):
+            # SEO/AEO 靜態檔案
+            fname = self.path.lstrip('/')
+            fpath = BASE / 'public' / fname
+            if fpath.exists():
+                ct = 'text/plain; charset=utf-8' if fname.endswith('.txt') else 'application/xml; charset=utf-8'
+                self.send_response(200)
+                self.send_header('Content-Type', ct)
+                self.send_header('Cache-Control', 'public, max-age=3600')
+                self.end_headers()
+                self.wfile.write(fpath.read_bytes())
+            else:
+                self.send_response(404)
+                self.end_headers()
+
         elif self.path == '/chat':
             # 純聊天頁面（給 iframe 嵌入用）
             self.send_response(200)
