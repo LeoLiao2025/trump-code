@@ -335,7 +335,7 @@ Thanks to everyone who helps make Trump Code better!
 
 | Contributor | Contribution |
 |-------------|-------------|
-| [@yongjer](https://github.com/yongjer) | PyTorch GPU acceleration for brute-force engine |
+| [@yongjer](https://github.com/yongjer) | PyTorch GPU acceleration for brute-force engine — **857x faster** (60s → 0.07s on RTX 4060 Ti) |
 
 Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
