@@ -1,20 +1,42 @@
 #!/usr/bin/env python3
 """
-川普密碼 分析 #11 — 暴力搜索
+川普密碼 分析 #11 — 暴力搜索 (PyTorch GPU 加速版)
 把所有特徵的 2 條件、3 條件、4 條件組合全部跑一遍
 前 10 個月找規則 → 最後 3 個月驗證 → 兩段都對的才是真密碼
+使用 Tensor 平行運算將原本需要數十分鐘的回測縮短到數秒鐘。
 """
 
 import json
-import re
-from itertools import combinations
+import itertools
+import time
 from math import comb
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
+
+# 載入 PyTorch
+try:
+    import torch
+except ImportError:
+    print("❌ 找不到 PyTorch！請先執行: pip install torch 或 uv pip install torch")
+    exit(1)
+
 from utils import est_hour
 
 BASE = Path(__file__).parent
+
+
+def binomial_pvalue(wins: int, total: int, p0: float = 0.5) -> float:
+    """
+    二項檢定 p-value（單尾）
+    H0: 勝率 = p0（隨機）
+    H1: 勝率 > p0
+    """
+    pval = sum(
+        comb(total, k) * (p0 ** k) * ((1 - p0) ** (total - k))
+        for k in range(wins, total + 1)
+    )
+    return pval
 
 
 def main():
@@ -34,7 +56,6 @@ def main():
     )
 
     # === 每天算 20+ 個二元特徵 ===
-
     daily_posts = defaultdict(list)
     for p in originals:
         daily_posts[p['created_at'][:10]].append(p)
@@ -92,7 +113,6 @@ def main():
             if this_iran: iran += 1
             if this_russia: russia += 1
 
-            # 修正 pre_tariff bug: 用當前貼文的 this_* 判斷，不用累計值
             if is_pre and this_tariff: pre_tariff += 1
             if is_pre and this_deal: pre_deal += 1
             if is_pre and this_relief: pre_relief += 1
@@ -110,7 +130,6 @@ def main():
             total_alpha += sum(1 for ch in c if ch.isalpha())
             total_len += len(c)
 
-        # 二元特徵
         f['has_tariff'] = tariff >= 1
         f['tariff_heavy'] = tariff >= 3
         f['has_deal'] = deal >= 1
@@ -142,7 +161,6 @@ def main():
         f['long_posts'] = (total_len / max(post_count, 1)) > 400
         f['short_posts'] = (total_len / max(post_count, 1)) < 150
 
-        # 多天趨勢特徵
         if idx >= 3:
             prev_tariff = sum(1 for j in range(max(0,idx-3), idx)
                              if any('tariff' in p['content'].lower() for p in daily_posts.get(sorted_dates[j], [])))
@@ -152,12 +170,10 @@ def main():
             f['tariff_streak_3d'] = False
             f['tariff_rising'] = False
 
-        # Deal 和 Tariff 的相對比例
         f['deal_over_tariff'] = deal > tariff and deal >= 1
         f['tariff_only'] = tariff >= 1 and deal == 0
         f['deal_only'] = deal >= 1 and tariff == 0
 
-        # 前 7 天發文量比較
         if idx >= 7:
             prev_avg = sum(len(daily_posts.get(sorted_dates[j], []))
                           for j in range(idx-7, idx)) / 7
@@ -169,7 +185,6 @@ def main():
 
         return f
 
-
     def next_trading_day(date_str):
         dt = datetime.strptime(date_str, '%Y-%m-%d')
         for i in range(1, 6):
@@ -177,7 +192,6 @@ def main():
             if d in sp_by_date:
                 return d
         return None
-
 
     # === 計算所有天的特徵 ===
     print("📊 計算每日特徵中...")
@@ -187,13 +201,11 @@ def main():
         if feat:
             all_features[date] = feat
 
-    # 取得所有特徵名
     feature_names = sorted(list(all_features[sorted_dates[10]].keys()))
     print(f"   特徵數: {len(feature_names)} 個")
     print(f"   天數: {len(all_features)} 天")
 
     # === 分割：訓練 vs 驗證 ===
-    # 動態計算：後 25% 做驗證，確保資料更新後比例不失衡
     _all_valid_dates = [d for d in sorted_dates if d in all_features and d in sp_by_date]
     _n_dates = len(_all_valid_dates)
     _cutoff_idx = int(_n_dates * 0.75)
@@ -208,129 +220,182 @@ def main():
     print(f"   訓練期: {train_dates[0]} ~ {train_dates[-1]} ({len(train_dates)} 天)")
     print(f"   驗證期: {test_dates[0]} ~ {test_dates[-1]} ({len(test_dates)} 天)")
 
-    # === 暴力搜索 ===
+    # === PyTorch GPU 環境準備 ===
     print(f"\n{'='*90}")
-    print(f"🔨 暴力搜索 — 所有 2/3/4 條件組合 × 2 方向 × 3 持有天數")
+    print(f"🚀 初始化 PyTorch 張量與運算環境")
     print(f"{'='*90}")
 
+    # 選擇運算設備 (NVIDIA / Apple Silicon MPS / CPU)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu')
+    print(f"   使用設備: {device}")
+
+    # 1. 建立特徵矩陣 X: (N_dates, N_features) 的布林張量
+    N = len(_all_valid_dates)
+    K = len(feature_names)
+    X = torch.zeros((N, K), dtype=torch.bool)
+    
+    for i, date in enumerate(_all_valid_dates):
+        feat = all_features[date]
+        for j, fname in enumerate(feature_names):
+            X[i, j] = feat.get(fname, False)
+            
+    X = X.to(device)
+
+    # 2. 建立回報率矩陣 R 與有效遮罩 V: (N_dates, 3)
     hold_options = [1, 2, 3]
     direction_options = ['LONG', 'SHORT']
+    
+    R = torch.zeros((N, len(hold_options)), dtype=torch.float32)
+    V = torch.zeros((N, len(hold_options)), dtype=torch.bool)
 
-    # 計算組合數
-    n_features = len(feature_names)
-    n2 = comb(n_features, 2)
-    n3 = comb(n_features, 3)
-    n4 = comb(n_features, 4)
+    for i, date in enumerate(_all_valid_dates):
+        entry_day = next_trading_day(date)
+        if not entry_day or entry_day not in sp_by_date:
+            continue
+            
+        entry_p = sp_by_date[entry_day]['open']
+        for h_idx, hold in enumerate(hold_options):
+            exit_day = entry_day
+            for _ in range(hold):
+                nd = next_trading_day(exit_day)
+                if nd:
+                    exit_day = nd
+                    
+            if exit_day in sp_by_date:
+                exit_p = sp_by_date[exit_day]['close']
+                R[i, h_idx] = (exit_p - entry_p) / entry_p * 100.0
+                V[i, h_idx] = True
+
+    R = R.to(device)
+    V = V.to(device)
+
+    # 3. 建立 Train / Test 布林遮罩
+    train_mask = torch.zeros(N, dtype=torch.bool, device=device)
+    train_mask[:_cutoff_idx] = True
+    test_mask = torch.zeros(N, dtype=torch.bool, device=device)
+    test_mask[_cutoff_idx:] = True
+
+    # === 計算組合總數 ===
+    n2 = comb(K, 2)
+    n3 = comb(K, 3)
+    n4 = comb(K, 4)
     total_combos = (n2 + n3 + n4) * len(hold_options) * len(direction_options)
+    
     print(f"   2 條件: {n2} 組")
     print(f"   3 條件: {n3} 組")
     print(f"   4 條件: {n4} 組")
     print(f"   × {len(hold_options)} 持有天數 × {len(direction_options)} 方向")
     print(f"   總計: {total_combos:,} 組合")
 
-    # 回測單個組合
-    def backtest_combo(feature_combo, direction, hold, dates):
-        """回測一個特定的條件組合"""
-        trades = []
-
-        for date in dates:
-            feat = all_features.get(date)
-            if not feat:
-                continue
-
-            # 檢查所有條件是否同時滿足
-            triggered = all(feat.get(f, False) for f in feature_combo)
-            if not triggered:
-                continue
-
-            # 找入場/出場
-            entry_day = next_trading_day(date)
-            if not entry_day:
-                continue
-
-            exit_day = entry_day
-            for _ in range(hold):
-                nd = next_trading_day(exit_day)
-                if nd:
-                    exit_day = nd
-
-            if entry_day not in sp_by_date or exit_day not in sp_by_date:
-                continue
-
-            entry_p = sp_by_date[entry_day]['open']
-            exit_p = sp_by_date[exit_day]['close']
-
-            if direction == 'LONG':
-                ret = (exit_p - entry_p) / entry_p * 100
-            else:
-                ret = (entry_p - exit_p) / entry_p * 100
-
-            trades.append({'date': date, 'return': ret})
-
-        if len(trades) < 10:  # 至少 10 筆才有統計意義
-            return None
-
-        wins = sum(1 for t in trades if t['return'] > 0)
-        total_ret = sum(t['return'] for t in trades)
-        avg_ret = total_ret / len(trades)
-        win_rate = wins / len(trades) * 100
-
-        return {
-            'trades': len(trades),
-            'wins': wins,
-            'win_rate': win_rate,
-            'avg_return': avg_ret,
-            'total_return': total_ret,
-            'details': trades,
-        }
-
-
-    def binomial_pvalue(wins: int, total: int, p0: float = 0.5) -> float:
-        """
-        二項檢定 p-value（單尾）
-        H0: 勝率 = p0（隨機）
-        H1: 勝率 > p0
-        """
-        pval = sum(
-            comb(total, k) * (p0 ** k) * ((1 - p0) ** (total - k))
-            for k in range(wins, total + 1)
-        )
-        return pval
-
-
-    # === 跑所有組合 ===
-    winners_train = []  # 訓練期勝率 > 60% 的
+    winners_train = []
     total_tested = 0
-    progress_interval = 5000
 
-    print(f"\n🔄 開跑...\n")
+    print(f"\n🔄 啟動張量平行回測...\n")
+    start_time = time.time()
 
-    for n_conditions in [2, 3, 4]:
-        for combo in combinations(range(n_features), n_conditions):
-            feature_combo = [feature_names[i] for i in combo]
-
-            for hold in hold_options:
-                for direction in direction_options:
-                    total_tested += 1
-
-                    if total_tested % progress_interval == 0:
-                        print(f"   已跑 {total_tested:,} / {total_combos:,} ({total_tested/total_combos*100:.1f}%) | 候選: {len(winners_train)}", flush=True)
-
-                    # 訓練期回測
-                    result = backtest_combo(feature_combo, direction, hold, train_dates)
-                    if result and result['win_rate'] >= 60 and result['avg_return'] > 0.1:
-                        pval = binomial_pvalue(result['wins'], result['trades'])
-                        if pval < 0.05:  # 個別 p < 0.05
-                            result['p_value'] = round(pval, 6)
+    for n_cond in [2, 3, 4]:
+        # 展開當前條件數的所有組合
+        combos = list(itertools.combinations(range(K), n_cond))
+        C = len(combos)
+        if C == 0: continue
+        
+        # 準備組合指標: (C, n_cond)
+        indices = torch.tensor(combos, device=device)
+        
+        # 利用廣播與花式索引一次抓出所有組合在每一天的狀態 -> (N, C, n_cond)
+        X_combo = X[:, indices]
+        
+        # 當所有條件 (dim=2) 都為 True 時才觸發 -> (N, C)
+        triggered = X_combo.all(dim=2)
+        
+        for h_idx, hold in enumerate(hold_options):
+            # 取出特定 hold_day 的有效交易日遮罩 -> (N, 1)
+            valid_h = V[:, h_idx].unsqueeze(1)
+            
+            # 分別建立訓練期與測試期的有效觸發矩陣 -> (N, C)
+            train_valid = valid_h & train_mask.unsqueeze(1)
+            train_triggered = triggered & train_valid
+            train_trades = train_triggered.sum(dim=0)
+            
+            test_valid = valid_h & test_mask.unsqueeze(1)
+            test_triggered = triggered & test_valid
+            test_trades = test_triggered.sum(dim=0)
+            
+            # 過濾門檻：訓練期至少 10 筆交易
+            min_trades_mask = train_trades >= 10
+            
+            for direction in direction_options:
+                total_tested += C
+                
+                # 計算方向回報率
+                R_h = R[:, h_idx] if direction == 'LONG' else -R[:, h_idx]
+                R_h = R_h.unsqueeze(1) # (N, 1)
+                
+                # 訓練期績效計算 (所有組合平行運算)
+                train_combo_returns = train_triggered * R_h
+                train_total_ret = train_combo_returns.sum(dim=0)
+                train_avg_ret = train_total_ret / train_trades.clamp(min=1)
+                train_wins = (train_combo_returns > 0).sum(dim=0) # 大於 0 才算贏
+                train_win_rate = (train_wins.float() / train_trades.clamp(min=1).float()) * 100.0
+                
+                # 測試期績效計算 (與訓練期一併算出，省下後續重新回測時間)
+                test_combo_returns = test_triggered * R_h
+                test_total_ret = test_combo_returns.sum(dim=0)
+                test_avg_ret = test_total_ret / test_trades.clamp(min=1)
+                test_wins = (test_combo_returns > 0).sum(dim=0)
+                test_win_rate = (test_wins.float() / test_trades.clamp(min=1).float()) * 100.0
+                
+                # 初步篩選：訓練期勝率 >= 60% 且 平均回報 > 0.1%
+                pass_mask = min_trades_mask & (train_win_rate >= 60.0) & (train_avg_ret > 0.1)
+                pass_indices = torch.where(pass_mask)[0]
+                
+                # 將合格的少數結果轉回 CPU 進行 p-value 計算及存檔
+                if len(pass_indices) > 0:
+                    trades_cpu = train_trades[pass_indices].cpu().tolist()
+                    wins_cpu = train_wins[pass_indices].cpu().tolist()
+                    win_rate_cpu = train_win_rate[pass_indices].cpu().tolist()
+                    avg_ret_cpu = train_avg_ret[pass_indices].cpu().tolist()
+                    total_ret_cpu = train_total_ret[pass_indices].cpu().tolist()
+                    
+                    t_trades_cpu = test_trades[pass_indices].cpu().tolist()
+                    t_wins_cpu = test_wins[pass_indices].cpu().tolist()
+                    t_win_rate_cpu = test_win_rate[pass_indices].cpu().tolist()
+                    t_avg_ret_cpu = test_avg_ret[pass_indices].cpu().tolist()
+                    t_total_ret_cpu = test_total_ret[pass_indices].cpu().tolist()
+                    
+                    pass_indices_cpu = pass_indices.cpu().tolist()
+                    
+                    for i, c_idx in enumerate(pass_indices_cpu):
+                        w_trades = trades_cpu[i]
+                        w_wins = wins_cpu[i]
+                        
+                        pval = binomial_pvalue(w_wins, w_trades)
+                        if pval < 0.05:
+                            feature_combo = [feature_names[idx] for idx in combos[c_idx]]
                             winners_train.append({
                                 'features': feature_combo,
                                 'direction': direction,
                                 'hold': hold,
-                                'n_conditions': n_conditions,
-                                'train': result,
+                                'n_conditions': n_cond,
+                                'train': {
+                                    'trades': w_trades,
+                                    'wins': w_wins,
+                                    'win_rate': win_rate_cpu[i],
+                                    'avg_return': avg_ret_cpu[i],
+                                    'total_return': total_ret_cpu[i],
+                                    'p_value': round(pval, 6),
+                                },
+                                'test': {
+                                    'trades': t_trades_cpu[i],
+                                    'wins': t_wins_cpu[i],
+                                    'win_rate': t_win_rate_cpu[i],
+                                    'avg_return': t_avg_ret_cpu[i],
+                                    'total_return': t_total_ret_cpu[i],
+                                }
                             })
 
-    print(f"\n✅ 全部跑完！")
+    elapsed = time.time() - start_time
+    print(f"✅ 平行回測完成！GPU 運算耗時: {elapsed:.2f} 秒")
     print(f"   總組合: {total_tested:,}")
     print(f"   訓練期過關: {len(winners_train)} 組 (勝率>60% & 平均報酬>0.1%)")
 
@@ -340,18 +405,18 @@ def main():
     print(f"{'='*90}")
 
     final_winners = []
-    bonferroni_alpha = 0.05 / max(total_combos, 1)  # Bonferroni 校正後的顯著性門檻
+    bonferroni_alpha = 0.05 / max(total_combos, 1)
 
     for w in winners_train:
-        test_result = backtest_combo(w['features'], w['direction'], w['hold'], test_dates)
-        if test_result and test_result['trades'] >= 5 and test_result['win_rate'] >= 60 and test_result['avg_return'] > 0.1:
-            test_pval = binomial_pvalue(test_result['wins'], test_result['trades'])
-            test_result['p_value'] = round(test_pval, 6)
-            w['test'] = test_result
+        t = w['test']
+        # 驗證期條件（這裡使用的是事前 GPU 平行運算好的結果）
+        if t['trades'] >= 5 and t['win_rate'] >= 60.0 and t['avg_return'] > 0.1:
+            test_pval = binomial_pvalue(t['wins'], t['trades'])
+            t['p_value'] = round(test_pval, 6)
             w['test_p_value'] = round(test_pval, 6)
-            w['bonferroni_significant'] = (w['train'].get('p_value', 1) < bonferroni_alpha)
-            w['combined_win_rate'] = (w['train']['win_rate'] + test_result['win_rate']) / 2
-            w['combined_avg_return'] = (w['train']['avg_return'] + test_result['avg_return']) / 2
+            w['bonferroni_significant'] = (w['train']['p_value'] < bonferroni_alpha)
+            w['combined_win_rate'] = (w['train']['win_rate'] + t['win_rate']) / 2
+            w['combined_avg_return'] = (w['train']['avg_return'] + t['avg_return']) / 2
             final_winners.append(w)
 
     # 按綜合表現排序
