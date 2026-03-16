@@ -1,53 +1,51 @@
 # 交接文件
-> 日期：2026-03-16 (Session 2) | 摘要：即時引擎大升級 — 三源抓取 + Polymarket 修復 + 48h 追蹤 + systemd 常駐 + Devvit App 起步
+> 日期：2026-03-16 (Session 2) | 摘要：即時引擎三源 + 信號接前端 + Devvit 預測遊戲 App 完工（待部署）
 
 ## 已完成
 
-### 即時引擎（realtime_loop.py）
-- [x] 推文抓取從 CNN 單源 → CNN + trumpstruth.org + X API 三源齊發
-- [x] 新推文自動寫入 trump_posts_all.json — 前端即時顯示（44,070→44,076 篇）
-- [x] Polymarket 快照修復 — 改用 /public-search API（390 個市場）
-- [x] 追蹤窗口從 6h 延長到 48h（1h/3h/6h/12h/24h/48h）
-- [x] VPS systemd 常駐服務 — 每 5 分鐘掃一次，掛了 30 秒重啟，開機自動啟動
-- [x] X API Bearer Token 更新到 VPS .env（新 Token 測試通過）
-- [x] Truth Social 帳號已設定在 VPS .env（API 被 Cloudflare 擋，備用）
-- [x] commit + push 到 GitHub ✅
+### 即時引擎（VPS 已上線）
+- [x] 三源抓取 — CNN + trumpstruth.org + X API，每 5 分鐘掃
+- [x] systemd 常駐服務 — `trump-realtime.service`，掛了 30 秒重啟
+- [x] 新推文自動寫入網站 — 44,076 篇，前端即時顯示
+- [x] Polymarket 快照修復 — /public-search API，390 個市場
+- [x] 追蹤窗口延長 — 1h/3h/6h/12h/24h/48h
+- [x] X API Bearer Token 更新到 VPS
+- [x] 即時信號接回前端 — 每篇推文卡片都有信號標籤（TARIFF 90% 等）
+- [x] 遊戲 API 4 端點 — game-signal / game-result / game-leaderboard / game-stats
 
-### Reddit / Devvit
-- [x] Devvit CLI 安裝成功 — v0.12.14
-- [x] Devvit 帳號登入成功 — PipeAccording5302
-- [x] Devvit App 專案建立 — /tmp/trump-code-bot/trumpcode/（bare 模板）
-- [x] Devvit MCP 設定到 ~/.claude/.mcp.json
+### Devvit 預測遊戲（本機完成，待部署）
+- [x] Devvit CLI 安裝 + 登入（PipeAccording5302）
+- [x] 4 張卡全部完成，build 成功
+- [x] Server：拉信號 + 建帖 + 投票 + 開獎 + 排行榜 + AI vs Crowd
+- [x] 前端：投票按鈕 + 即時比例 + 倒數計時 + 結果面板 + 排行榜頁
+- [x] 積分系統：猜對 +10、反 AI +25、猜錯 -5、連勝加成
+- [x] devvit.json：2 個 menu items（建帖 + 開獎）
 
-### 推廣
-- [x] 日文版 X 推文文案（翻譯完成，待發）
+### 其他
+- [x] Devvit MCP 設定到 Claude Code（~/.claude/.mcp.json）
+- [x] Reddit API 調查 — 被 Responsible Builder Policy 擋，走 Devvit
+- [x] 日文版 X 推文文案翻譯
 
 ## 進行中
-- [ ] Devvit 預測遊戲 App — 已建專案，還沒改程式碼
-- [ ] Reddit API 申請被擋 — Responsible Builder Policy 2025/11 後要人工審核，create app 頁面過不去
-- [ ] Reddit 手動推廣文案 — 還沒寫 r/sideproject、r/dataisbeautiful 版本
+- [ ] Devvit App 部署 — build 好了，需要先建 subreddit 再 `npm run deploy`
+- [ ] VPS 遊戲 API 部署 — chatbot_server.py 有新的 4 個端點，需重啟 server
 
 ## 已知問題
-- Reddit API 無法自助申請 — 被 Responsible Builder Policy 擋住，只能走 Devvit 或手動
-- Truth Social 直接 API 被 Cloudflare 403 擋 — client_id/secret 是佔位符，暫不影響（CNN+trumpstruth 已覆蓋）
-- VPS 上 polymarket_client.py 還是舊版 — 不影響（realtime_loop 已自己實作 /public-search）
-- og:image 還沒做 — 需要 1200×630 社群分享圖
+- Truth Social API 被 Cloudflare 403 擋 — client_id/secret 是佔位符，不影響（CNN+trumpstruth 覆蓋）
+- Reddit API 無法自助申請 — 只能走 Devvit
+- og:image 還沒做
 
 ## 下一步（按優先順序）
-1. Devvit 預測遊戲 — `cd /tmp/trump-code-bot/trumpcode && npm run dev`
-   - 川普發文 → Reddit 用戶投票漲跌 → 6h 後比對真實市場 → 排行榜
-   - 建一個 subreddit r/TrumpCodeGame 安裝 App
-2. Reddit 推廣文案 — 寫好 r/sideproject、r/dataisbeautiful、r/Python 的貼文
-3. 跟單機器人 — $TRUMP 幣信號→Binance API 自動下單
-4. Telegram Bot — 信號即時推送給訂閱者
-5. OG 預覽圖 — 做一張 1200×630 社群分享圖
+1. 建 subreddit — 去 Reddit 建 r/TrumpCodeGame
+2. 部署 Devvit — `cd /tmp/trump-code-bot/trumpcode && npm run deploy`
+3. 部署 VPS 遊戲 API — `ssh washin 'cd /home/ubuntu/trump-code && git pull && kill $(pgrep -f chatbot_server); nohup python3 chatbot_server.py >> server.log 2>&1 &'`
+4. 測試完整流程 — menu 建帖 → 投票 → 6h 後開獎
+5. 跟單機器人 — $TRUMP 幣信號→Binance API
 
 ## 重要連結
 - 線上：https://trumpcode.washinmura.jp
 - GitHub：https://github.com/sstklen/trump-code
 - VPS 即時引擎：`sudo systemctl status trump-realtime`
-- VPS 即時 log：`tail -f /home/ubuntu/trump-code/realtime.log`
 - Devvit 專案：/tmp/trump-code-bot/trumpcode/
 - Devvit Token：~/.devvit/token
 - Reddit 帳號：PipeAccording5302
-- Cron：每天 22:30 UTC 跑 daily_pipeline.py
