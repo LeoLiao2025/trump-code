@@ -24,7 +24,7 @@
     "verify_6h": null,
     "direction_correct_1h": null,
     "direction_correct_3h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1773553862",
@@ -59,7 +59,7 @@
     "verify_6h": null,
     "direction_correct_1h": null,
     "direction_correct_3h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1773553862",
@@ -86,7 +86,7 @@
     "verify_6h": null,
     "direction_correct_1h": null,
     "direction_correct_3h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1773553862",
@@ -114,6 +114,394 @@
     "verify_6h": null,
     "direction_correct_1h": null,
     "direction_correct_3h": null,
+    "status": "EXPIRED"
+  },
+  {
+    "id": "rt_1773632751",
+    "created_at": "2026-03-16T03:45:51Z",
+    "post_time": "2026-03-16T02:30:04.645Z",
+    "post_preview": "Mark Levin, a truly Great American Patriot, is somewhat under siege by other people with far less Intellect, Capability, and Love for our Country. Mark is Tough, Strong, and Brilliant, hence the nickn",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "deal"
+        ]
+      }
+    ],
+    "signal_types": [
+      "DEAL"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.65,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773632751",
+    "created_at": "2026-03-16T03:45:51Z",
+    "post_time": "2026-03-15T23:48:04.619Z",
+    "post_preview": "Iran has long been known as a Master of Media Manipulation and Public Relations. They are Militarily ineffective and weak, but are really good at \"feeding\" the very appreciative Fake News Media false ",
+    "signals": [
+      {
+        "type": "RELIEF",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "exception"
+        ]
+      },
+      {
+        "type": "ACTION",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "effective"
+        ]
+      }
+    ],
+    "signal_types": [
+      "RELIEF",
+      "ACTION"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.75,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773632751",
+    "created_at": "2026-03-16T03:45:51Z",
+    "post_time": "2026-03-15T22:46:00.000Z",
+    "post_preview": "The Courts treat Republicans, and me, so unfairly, always seeming to protect those who should not be protected. They are highly politicized. Cases don’t matter, the Judge does! As an example, how is t",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "tariff"
+        ]
+      },
+      {
+        "type": "BEARISH",
+        "confidence": 0.9,
+        "matched_keywords": [
+          "disaster",
+          "terrible"
+        ]
+      }
+    ],
+    "signal_types": [
+      "TARIFF",
+      "BEARISH"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.9,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773632751",
+    "created_at": "2026-03-16T03:45:51Z",
+    "post_time": "2026-03-15T22:45:00.000Z",
+    "post_preview": "The decision that mattered most to me was TARIFFS! The Court knew where I stood, how badly I wanted this Victory for our Country, and instead decided to, potentially, give away Trillions of Dollars to",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.9,
+        "matched_keywords": [
+          "tariff",
+          "tariffs"
+        ]
+      }
+    ],
+    "signal_types": [
+      "TARIFF"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.9,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773632933",
+    "created_at": "2026-03-16T03:48:53Z",
+    "post_time": "2026-03-16T02:46:08.637Z",
+    "post_preview": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116236559151421767The Courts treat Republicans, and me, so unfairly, always seeming to protect those who should not be protected. They are hi",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "tariff"
+        ]
+      },
+      {
+        "type": "BEARISH",
+        "confidence": 0.9,
+        "matched_keywords": [
+          "disaster",
+          "terrible"
+        ]
+      }
+    ],
+    "signal_types": [
+      "TARIFF",
+      "BEARISH"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.9,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773632933",
+    "created_at": "2026-03-16T03:48:53Z",
+    "post_time": "2026-03-16T02:45:37.478Z",
+    "post_preview": "The decision that mattered most to me was TARIFFS! The Court knew where I stood, how badly I wanted this Victory for our Country, and instead decided to, potentially, give away Trillions of Dollars to",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.9,
+        "matched_keywords": [
+          "tariff",
+          "tariffs"
+        ]
+      }
+    ],
+    "signal_types": [
+      "TARIFF"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.9,
+    "tracked_markets": [],
+    "pm_price_at_signal": null,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 662.29,
+    "es_at_signal": 6669.0,
+    "spy_change_at_signal": -0.623,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773668718",
+    "created_at": "2026-03-16T13:45:18Z",
+    "post_time": "2026-03-16T13:16:38.898Z",
+    "post_preview": "The crazed Democrats are not allowing TSA Agents to get paid. The deal was made a long time ago. They broke it in order to get money for Sanctuary Cities and illegal aliens, many of them hardened crim",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "deal"
+        ]
+      }
+    ],
+    "signal_types": [
+      "DEAL"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.65,
+    "tracked_markets": [
+      {
+        "token_id": "455706941283062355801017880406",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "112691699136636025197139638532",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "498217121642241685638993540748",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "323789873922294151961812443627",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "127617713601282837094220087247",
+        "question": "Trump announces end of military operations against Iran by March 7th?",
+        "price_at_signal": 0.0
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 669.91,
+    "es_at_signal": 6702.25,
+    "spy_change_at_signal": 1.035,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1773677187",
+    "created_at": "2026-03-16T16:06:27Z",
+    "post_time": "2026-03-16T15:57:47.583Z",
+    "post_preview": "Susie Wiles is an incredible Chief of Staff, a great person, and one of the strongest people I know but, unfortunately, she has been diagnosed with early stage breast cancer, and has decided to take o",
+    "signals": [
+      {
+        "type": "ACTION",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "immediately"
+        ]
+      }
+    ],
+    "signal_types": [
+      "ACTION"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.75,
+    "tracked_markets": [
+      {
+        "token_id": "455706941283062355801017880406",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "112691699136636025197139638532",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "498217121642241685638993540748",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "323789873922294151961812443627",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "127617713601282837094220087247",
+        "question": "Trump announces end of military operations against Iran by March 7th?",
+        "price_at_signal": 0.0
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 668.64,
+    "es_at_signal": 6756.0,
+    "spy_change_at_signal": 0.842,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
     "status": "LIVE"
   }
 ]

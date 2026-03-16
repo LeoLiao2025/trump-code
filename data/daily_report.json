@@ -1,21 +1,21 @@
 {
   "date": "2026-03-16",
-  "generated_at": "2026-03-16T14:59:19Z",
-  "posts_today": 7,
+  "generated_at": "2026-03-16T22:30:01Z",
+  "posts_today": 8,
   "latest_post": {
-    "time": "2026-03-16T13:19",
-    "content_preview": "News Conference today, prior to Trump Kennedy Center Board Meeting. Thank you!"
+    "time": "2026-03-16T15:57",
+    "content_preview": "Susie Wiles is an incredible Chief of Staff, a great person, and one of the strongest people I know "
   },
   "signals_detected": [
     "TARIFF",
     "DEAL",
     "IRAN"
   ],
-  "models_triggered": 0,
+  "models_triggered": 1,
   "direction_summary": {
     "LONG": 0,
-    "SHORT": 0,
-    "consensus": "NEUTRAL"
+    "SHORT": 1,
+    "consensus": "BEARISH"
   },
   "historical_hit_rate": {
     "verified": 0,
@@ -24,12 +24,24 @@
   },
   "sp500_latest": {
     "date": "2026-03-16",
-    "close": 6703.05
+    "close": 6699.38
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-03-16\nPosts today: 7 | Models triggered: 0\nSignals: TARIFF, DEAL, IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: News Conference today, prior to Trump Kennedy Center Board Meeting. Thank you!",
-    "zh": "川普密碼每日報告 -- 2026-03-16\n今日推文: 7 篇 | 觸發模型: 0 組\n偵測信號: 關稅, Deal, 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: News Conference today, prior to Trump Kennedy Center Board Meeting. Thank you!",
-    "ja": "トランプ・コード日次レポート -- 2026-03-16\n本日の投稿: 7件 | トリガーモデル: 0組\n検出シグナル: 関税, ディール, イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: News Conference today, prior to Trump Kennedy Center Board Meeting. Thank you!"
+    "en": "Trump Code Daily Report -- 2026-03-16\nPosts today: 8 | Models triggered: 1\nSignals: TARIFF, DEAL, IRAN\nConsensus: 0 LONG vs 1 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: Susie Wiles is an incredible Chief of Staff, a great person, and one of the strongest people I know ",
+    "zh": "川普密碼每日報告 -- 2026-03-16\n今日推文: 8 篇 | 觸發模型: 1 組\n偵測信號: 關稅, Deal, 伊朗\n共識方向: 0 組看多 vs 1 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: Susie Wiles is an incredible Chief of Staff, a great person, and one of the strongest people I know ",
+    "ja": "トランプ・コード日次レポート -- 2026-03-16\n本日の投稿: 8件 | トリガーモデル: 1組\n検出シグナル: 関税, ディール, イラン\nコンセンサス: 0組ロング vs 1組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: Susie Wiles is an incredible Chief of Staff, a great person, and one of the strongest people I know "
   },
-  "triggered_rules_sample": []
+  "triggered_rules_sample": [
+    {
+      "features": [
+        "both_tariff_and_deal",
+        "kw_disaster",
+        "kw_incredible"
+      ],
+      "direction": "SHORT",
+      "hold": 3,
+      "train_wr": 100.0,
+      "test_wr": 100.0
+    }
+  ]
 }
