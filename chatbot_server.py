@@ -1063,6 +1063,17 @@ class ChatHandler(BaseHTTPRequestHandler):
                 'user_agents': _analytics_cache.get('user_agents', {}),
             })
 
+        elif self.path == '/api/chat-log':
+            # 聊天記錄（最近 50 筆）
+            chat_log_file = DATA / "chat_log.json"
+            logs = []
+            if chat_log_file.exists():
+                try:
+                    logs = json.load(open(chat_log_file, encoding='utf-8'))
+                except Exception:
+                    pass
+            self._json_response(200, {'chats': logs[-50:], 'total': len(logs)})
+
         elif self.path == '/api/recent-posts':
             # 公開端點：最近推文+信號分析（第二任期 2025-01-20 起）
             posts_data = _load('trump_posts_all.json') or {}
@@ -1137,6 +1148,24 @@ class ChatHandler(BaseHTTPRequestHandler):
                 return
 
             reply = call_gemini(user_msg, history)
+
+            # 聊天記錄存檔
+            chat_log_file = DATA / "chat_log.json"
+            try:
+                chat_log = json.load(open(chat_log_file, encoding='utf-8')) if chat_log_file.exists() else []
+                chat_log.append({
+                    'time': datetime.now(timezone.utc).isoformat()[:19],
+                    'anon': anon[:4] + '****',
+                    'user': user_msg[:200],
+                    'reply': reply[:300],
+                })
+                # 只保留最近 200 筆
+                if len(chat_log) > 200:
+                    chat_log = chat_log[-200:]
+                with open(chat_log_file, 'w', encoding='utf-8') as f:
+                    json.dump(chat_log, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
 
             # 如果有洞見，存的時候帶匿名 ID
             if '[💡用戶洞見]' in reply or '[用戶洞見]' in reply:
