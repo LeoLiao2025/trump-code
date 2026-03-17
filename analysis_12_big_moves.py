@@ -407,7 +407,7 @@ def main():
         test_dates, test_next, useful, log_features
     )
 
-    popcount = lambda x: bin(x).count('1')
+    popcount = int.bit_count
 
     winners = []
     tested = 0
