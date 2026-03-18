@@ -1056,6 +1056,7 @@ def run_once() -> dict[str, Any]:
                 f" | ES: ${stock_snapshot.get('es_futures', '?')}"
                 f" | VIX: {stock_snapshot.get('vix', '?')} ({stock_snapshot.get('vix_level', '?')})")
 
+
         # 3. 對每篇新推文做即時預測
         predictions: list[dict] = []
         if RT_PREDICTIONS_FILE.exists():
@@ -1134,6 +1135,48 @@ def run_once() -> dict[str, Any]:
         pass
     except Exception as e:
         log(f"   事件偵測失敗: {e}")
+
+    # 2.5 保存 $TRUMP 幣價歷史（每輪都跑，不管有沒有新推文）
+    coin_snapshot = snapshot_trump_coin()
+    if coin_snapshot.get('price'):
+        log(f"   🪙 $TRUMP: ${coin_snapshot['price']:.2f} ({coin_snapshot.get('change_24h', 0):+.1f}%)")
+        try:
+            coin_hist_file = DATA / "trump_coin_history.json"
+            coin_hist = []
+            if coin_hist_file.exists():
+                with open(coin_hist_file, encoding="utf-8") as _f:
+                    coin_hist = json.load(_f)
+            should_save = True
+            if coin_hist:
+                last_ts = coin_hist[-1].get("timestamp", "")
+                if last_ts[:13] == coin_snapshot.get("timestamp", "")[:13]:
+                    should_save = False
+            if should_save:
+                coin_hist.append({
+                    "price": coin_snapshot["price"],
+                    "change_24h": coin_snapshot.get("change_24h", 0),
+                    "market_cap": coin_snapshot.get("market_cap", 0),
+                    "timestamp": coin_snapshot.get("timestamp", now_str()),
+                    "date": now_str()[:10],
+                })
+                coin_hist = coin_hist[-720:]
+                with open(coin_hist_file, "w", encoding="utf-8") as _f:
+                    json.dump(coin_hist, _f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            log(f"   ⚠️ 幣價歷史存檔失敗: {e}")
+
+    # 2.6 保存 Polymarket 快照（每輪都跑）
+    pm_snapshot = snapshot_pm_prices()
+    if pm_snapshot and pm_snapshot.get('markets'):
+        try:
+            pm_file = DATA / "polymarket_live.json"
+            pm_snapshot["updated"] = now_str()
+            pm_snapshot["total"] = len(pm_snapshot.get("markets", []))
+            with open(pm_file, "w", encoding="utf-8") as _f:
+                json.dump(pm_snapshot, _f, ensure_ascii=False, indent=2)
+            log(f"   📊 Polymarket: {pm_snapshot['total']} 個市場已更新")
+        except Exception as e:
+            log(f"   ⚠️ Polymarket 快照存檔失敗: {e}")
 
     # 5. 驗證過去的預測
     verify_result = verify_predictions()

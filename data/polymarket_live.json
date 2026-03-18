@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-17T22:26:19Z",
+  "timestamp": "2026-03-18T02:17:21Z",
   "markets": [
     {
       "question": "Will Trump visit China by October 31?",
@@ -19,98 +19,98 @@
       "question": "Will Trump visit China by March 31?",
       "token_id": "702356444324129641219178642559",
       "outcome": "Yes",
-      "price": 0.028,
+      "price": 0.0235,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by March 31?",
       "token_id": "349596532702482778959985375766",
       "outcome": "No",
-      "price": 0.972,
+      "price": 0.9765,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by April 30?",
       "token_id": "444468044968899072090277873935",
       "outcome": "Yes",
-      "price": 0.455,
+      "price": 0.395,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by April 30?",
       "token_id": "811975148857315698173473872299",
       "outcome": "No",
-      "price": 0.545,
+      "price": 0.605,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by May 31?",
       "token_id": "515455328614863858736929345247",
       "outcome": "Yes",
-      "price": 0.76,
+      "price": 0.745,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by May 31?",
       "token_id": "930397776349648880560943587609",
       "outcome": "No",
-      "price": 0.24,
+      "price": 0.255,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by June 30?",
       "token_id": "696253648468405987165767664091",
       "outcome": "Yes",
-      "price": 0.795,
+      "price": 0.785,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump visit China by June 30?",
       "token_id": "228676793593280413070360100750",
       "outcome": "No",
-      "price": 0.205,
+      "price": 0.215,
       "slug": "will-trump-visit-china-by"
     },
     {
       "question": "Will Trump and Putin meet next in Belarus?",
       "token_id": "473409074357459717749364142772",
       "outcome": "Yes",
-      "price": 0.0095,
+      "price": 0.011,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Belarus?",
       "token_id": "817072510006262378362159043321",
       "outcome": "No",
-      "price": 0.9905,
+      "price": 0.989,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Finland?",
       "token_id": "153583878518252445620725889127",
       "outcome": "Yes",
-      "price": 0.0035,
+      "price": 0.003,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Finland?",
       "token_id": "107677846214438741966636226654",
       "outcome": "No",
-      "price": 0.9965,
+      "price": 0.997,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Russia?",
       "token_id": "114969117085303536359017775946",
       "outcome": "Yes",
-      "price": 0.036,
+      "price": 0.035,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Russia?",
       "token_id": "841607265207227347458531131043",
       "outcome": "No",
-      "price": 0.964,
+      "price": 0.965,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -145,140 +145,140 @@
       "question": "Will Trump and Putin meet next in another country?",
       "token_id": "987609691443856705719793234882",
       "outcome": "Yes",
-      "price": 0.0375,
+      "price": 0.0395,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in another country?",
       "token_id": "114256876154213600277644878606",
       "outcome": "No",
-      "price": 0.9625,
+      "price": 0.9605,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Ukraine?",
       "token_id": "147914044230572529376611410664",
       "outcome": "Yes",
-      "price": 0.0115,
+      "price": 0.0075,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Ukraine?",
       "token_id": "106682481186987633026080201327",
       "outcome": "No",
-      "price": 0.9885,
+      "price": 0.9925,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Turkey?",
       "token_id": "742163029850327613545883939489",
       "outcome": "Yes",
-      "price": 0.0305,
+      "price": 0.044,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Turkey?",
       "token_id": "933802810878161824680490509355",
       "outcome": "No",
-      "price": 0.9695,
+      "price": 0.956,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Switzerland?",
       "token_id": "886438802800586175086506606385",
       "outcome": "Yes",
-      "price": 0.0125,
+      "price": 0.012,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Switzerland?",
       "token_id": "947367489828793920732653187782",
       "outcome": "No",
-      "price": 0.9875,
+      "price": 0.988,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in a Gulf country?",
       "token_id": "114740238485572031075485221686",
       "outcome": "Yes",
-      "price": 0.032,
+      "price": 0.0345,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in a Gulf country?",
       "token_id": "938545769039226141742152973921",
       "outcome": "No",
-      "price": 0.968,
+      "price": 0.9655,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in South Korea?",
       "token_id": "480009643119251897040440950739",
       "outcome": "Yes",
-      "price": 0.007,
+      "price": 0.006,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in South Korea?",
       "token_id": "699298172409358275109969186868",
       "outcome": "No",
-      "price": 0.993,
+      "price": 0.994,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Australia?",
       "token_id": "702297667626970568088554644156",
       "outcome": "Yes",
-      "price": 0.003,
+      "price": 0.0035,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Australia?",
       "token_id": "105489369510459017302230205156",
       "outcome": "No",
-      "price": 0.997,
+      "price": 0.9965,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in another EU country?",
       "token_id": "588205739318232459483409664394",
       "outcome": "Yes",
-      "price": 0.0615,
+      "price": 0.055,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in another EU country?",
       "token_id": "366378804547335039070067132167",
       "outcome": "No",
-      "price": 0.9385,
+      "price": 0.945,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin not meet?",
       "token_id": "497639180095989976122376956272",
       "outcome": "Yes",
-      "price": 0.712,
+      "price": 0.706,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin not meet?",
       "token_id": "113815968600583754149446319361",
       "outcome": "No",
-      "price": 0.288,
+      "price": 0.294,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in China?",
       "token_id": "744581702129947391461211007278",
       "outcome": "Yes",
-      "price": 0.0315,
+      "price": 0.0305,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in China?",
       "token_id": "676530230698688619693619672728",
       "outcome": "No",
-      "price": 0.9685,
+      "price": 0.9695,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -313,14 +313,14 @@
       "question": "Will Trump say \"Tariff\" 5+ times during Taoiseach events?",
       "token_id": "276950870360595784714545725233",
       "outcome": "Yes",
-      "price": 0.002,
+      "price": 0.046,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Tariff\" 5+ times during Taoiseach events?",
       "token_id": "125670399392454331432823798021",
       "outcome": "No",
-      "price": 0.998,
+      "price": 0.954,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -397,42 +397,42 @@
       "question": "Will Trump say \"Ayatollah\" during Taoiseach events?",
       "token_id": "708261632541069369942085967933",
       "outcome": "Yes",
-      "price": 0.0045,
+      "price": 0.4355,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Ayatollah\" during Taoiseach events?",
       "token_id": "111567185488727746070435415156",
       "outcome": "No",
-      "price": 0.9955,
+      "price": 0.5645,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Hormuz\" during Taoiseach events?",
       "token_id": "226539939936625403162596146604",
       "outcome": "Yes",
-      "price": 0.004,
+      "price": 0.0085,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Hormuz\" during Taoiseach events?",
       "token_id": "588060898728796424489878822835",
       "outcome": "No",
-      "price": 0.996,
+      "price": 0.9915,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Greenland\" during Taoiseach events?",
       "token_id": "957201522891730808670729368293",
       "outcome": "Yes",
-      "price": 0.0055,
+      "price": 0.036,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Greenland\" during Taoiseach events?",
       "token_id": "854560465436831537767997362518",
       "outcome": "No",
-      "price": 0.9945,
+      "price": 0.964,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -467,42 +467,42 @@
       "question": "Will Trump say \"Epic Fury\" during Taoiseach events?",
       "token_id": "684109602377522500966915414135",
       "outcome": "Yes",
-      "price": 0.0075,
+      "price": 0.006,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Epic Fury\" during Taoiseach events?",
       "token_id": "819102529872747489652842044336",
       "outcome": "No",
-      "price": 0.9925,
+      "price": 0.994,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Peace in the Middle East\" during Taoiseach events?",
       "token_id": "107917181987102272849015175220",
       "outcome": "Yes",
-      "price": 0.0055,
+      "price": 0.005,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Peace in the Middle East\" during Taoiseach events?",
       "token_id": "960264330848743023078906098473",
       "outcome": "No",
-      "price": 0.9945,
+      "price": 0.995,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Bibi\" or \"Netanyahu\" during Taoiseach events?",
       "token_id": "518796628396387506647193345807",
       "outcome": "Yes",
-      "price": 0.09,
+      "price": 0.04,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Bibi\" or \"Netanyahu\" during Taoiseach events?",
       "token_id": "131138711766205701035873262274",
       "outcome": "No",
-      "price": 0.91,
+      "price": 0.96,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -523,42 +523,42 @@
       "question": "Will Trump say \"Daddy\" during Taoiseach events?",
       "token_id": "260951675454036212116050408438",
       "outcome": "Yes",
-      "price": 0.0085,
+      "price": 0.0155,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Daddy\" during Taoiseach events?",
       "token_id": "952792887083591228010197562050",
       "outcome": "No",
-      "price": 0.9915,
+      "price": 0.9845,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Six Seven\" during Taoiseach events?",
       "token_id": "380323068485523739586896439335",
       "outcome": "Yes",
-      "price": 0.011,
+      "price": 0.0055,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Six Seven\" during Taoiseach events?",
       "token_id": "813336405097707204308937540640",
       "outcome": "No",
-      "price": 0.989,
+      "price": 0.9945,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Crypto\" or \"Bitcoin\" during Taoiseach events?",
       "token_id": "703434913366080143727176165699",
       "outcome": "Yes",
-      "price": 0.4845,
+      "price": 0.11,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Crypto\" or \"Bitcoin\" during Taoiseach events?",
       "token_id": "745840652964540127163489357213",
       "outcome": "No",
-      "price": 0.5155,
+      "price": 0.89,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -579,14 +579,14 @@
       "question": "Will Trump say \"New York\" during Taoiseach events?",
       "token_id": "635458625355111713575083092995",
       "outcome": "Yes",
-      "price": 0.9995,
+      "price": 1.0,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"New York\" during Taoiseach events?",
       "token_id": "592898231091245782063568044857",
       "outcome": "No",
-      "price": 0.0005,
+      "price": 0.0,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -607,14 +607,14 @@
       "question": "Will Trump say \"Pipeline\" or \"Road\" during Taoiseach events?",
       "token_id": "460457757732017921468722093667",
       "outcome": "Yes",
-      "price": 0.006,
+      "price": 0.35,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Pipeline\" or \"Road\" during Taoiseach events?",
       "token_id": "883797317839703610362587186786",
       "outcome": "No",
-      "price": 0.994,
+      "price": 0.65,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -649,14 +649,14 @@
       "question": "Will Trump say \"Ballroom\" or \"Arch\" during Taoiseach events?",
       "token_id": "835566678436833500137761124466",
       "outcome": "Yes",
-      "price": 0.9995,
+      "price": 1.0,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
       "question": "Will Trump say \"Ballroom\" or \"Arch\" during Taoiseach events?",
       "token_id": "789899261750184123966360403888",
       "outcome": "No",
-      "price": 0.0005,
+      "price": 0.0,
       "slug": "what-will-trump-say-during-bilateral-events-with-the-taoiseach"
     },
     {
@@ -761,28 +761,28 @@
       "question": "Trump announces end of military operations against Iran by April 30th?",
       "token_id": "112434828665041337854033745240",
       "outcome": "Yes",
-      "price": 0.525,
+      "price": 0.54,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
       "question": "Trump announces end of military operations against Iran by April 30th?",
       "token_id": "433062015592936774679028787842",
       "outcome": "No",
-      "price": 0.475,
+      "price": 0.46,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
       "question": "Trump announces end of military operations against Iran by June 30th?",
       "token_id": "772004059209194060472223967143",
       "outcome": "Yes",
-      "price": 0.74,
+      "price": 0.73,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
       "question": "Trump announces end of military operations against Iran by June 30th?",
       "token_id": "665000241352350005491186142603",
       "outcome": "No",
-      "price": 0.26,
+      "price": 0.27,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
@@ -971,14 +971,14 @@
       "question": "Will Trump say \"Ayatollah\" or \"Khamenei\" this week? (March 15)",
       "token_id": "225451234750380320408272018770",
       "outcome": "Yes",
-      "price": 0.0165,
+      "price": 0.017,
       "slug": "what-will-trump-say-this-week-march-15"
     },
     {
       "question": "Will Trump say \"Ayatollah\" or \"Khamenei\" this week? (March 15)",
       "token_id": "444046053107215803645380524451",
       "outcome": "No",
-      "price": 0.9835,
+      "price": 0.983,
       "slug": "what-will-trump-say-this-week-march-15"
     },
     {
@@ -1248,608 +1248,6 @@
       "slug": "what-will-trump-say-this-week-march-15"
     },
     {
-      "question": "Will Donald Trump post 0-19 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "629094479487009141329469151939",
-      "outcome": "Yes",
-      "price": 0.0005,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 0-19 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "785010038346871555426889771816",
-      "outcome": "No",
-      "price": 0.9995,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 40-59 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "852539166836477148768776133827",
-      "outcome": "Yes",
-      "price": 0.0245,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 40-59 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "973952856189853735738621169386",
-      "outcome": "No",
-      "price": 0.9755,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 80-99 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "828334160931331381248207019052",
-      "outcome": "Yes",
-      "price": 0.275,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 80-99 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "785745135893648974162028619146",
-      "outcome": "No",
-      "price": 0.725,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 120-139 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "242943887776519377492981836409",
-      "outcome": "Yes",
-      "price": 0.165,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 120-139 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "626340594179165369960778877217",
-      "outcome": "No",
-      "price": 0.835,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 160-179 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "204424737899968255314186904277",
-      "outcome": "Yes",
-      "price": 0.032,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 160-179 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "888667500090574684447211300421",
-      "outcome": "No",
-      "price": 0.968,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 200+ Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "456318822366158486091106011783",
-      "outcome": "Yes",
-      "price": 0.0175,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 200+ Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "654720877895139664341670684136",
-      "outcome": "No",
-      "price": 0.9825,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 20-39 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "587022285752208384269259723673",
-      "outcome": "Yes",
-      "price": 0.0015,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 20-39 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "113626757813935286087799459689",
-      "outcome": "No",
-      "price": 0.9985,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 60-79 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "106857401877745036641669655659",
-      "outcome": "Yes",
-      "price": 0.125,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 60-79 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "661301335826686123098305695760",
-      "outcome": "No",
-      "price": 0.875,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 100-119 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "765652381668852531953855611919",
-      "outcome": "Yes",
-      "price": 0.275,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 100-119 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "228628190845422206632574754515",
-      "outcome": "No",
-      "price": 0.725,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 140-159 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "102949516419001996765732276993",
-      "outcome": "Yes",
-      "price": 0.095,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 140-159 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "107591570448515645928373413932",
-      "outcome": "No",
-      "price": 0.905,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 180-199 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "240535310646919626795838394296",
-      "outcome": "Yes",
-      "price": 0.0195,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Donald Trump post 180-199 Truth Social posts from March 17 to March 24, 2026?",
-      "token_id": "409153681953011097681343461092",
-      "outcome": "No",
-      "price": 0.9805,
-      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
-    },
-    {
-      "question": "Will Trump say \"Doug\" or \"Burgum\" this week? (March 22)",
-      "token_id": "783505821784198656681664915144",
-      "outcome": "Yes",
-      "price": 0.755,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Doug\" or \"Burgum\" this week? (March 22)",
-      "token_id": "414769721599648043424846843517",
-      "outcome": "No",
-      "price": 0.245,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Medal of Honor\" this week? (March 22)",
-      "token_id": "691814999481412639716315885565",
-      "outcome": "Yes",
-      "price": 0.9445,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Medal of Honor\" this week? (March 22)",
-      "token_id": "108313376900000175950644808087",
-      "outcome": "No",
-      "price": 0.0555,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Wind\" or \"Solar\" this week? (March 22)",
-      "token_id": "104467117654704474941461524650",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Wind\" or \"Solar\" this week? (March 22)",
-      "token_id": "607450571351149382175433612281",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Too Late\" this week? (March 22)",
-      "token_id": "360602467911223594461687492755",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Too Late\" this week? (March 22)",
-      "token_id": "129316466900714033494889505854",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Affair\" this week? (March 22)",
-      "token_id": "159345634116614307809425879720",
-      "outcome": "Yes",
-      "price": 0.385,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Affair\" this week? (March 22)",
-      "token_id": "111860928085579011321974412198",
-      "outcome": "No",
-      "price": 0.615,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Golf\" or \"Golfer\" or \"Golfing\" this week? (March 22)",
-      "token_id": "105021609567736571303377625768",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Golf\" or \"Golfer\" or \"Golfing\" this week? (March 22)",
-      "token_id": "301345994347445941582057933605",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"President Xi\" this week? (March 22)",
-      "token_id": "488220753175932312097508783395",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"President Xi\" this week? (March 22)",
-      "token_id": "248814235317658391563341305540",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Egghead\" this week? (March 22)",
-      "token_id": "540006404337909107156468674091",
-      "outcome": "Yes",
-      "price": 0.095,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Egghead\" this week? (March 22)",
-      "token_id": "355975014903646715478181220410",
-      "outcome": "No",
-      "price": 0.905,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"No Inflation\" this week? (March 22)",
-      "token_id": "415078850504346948165033711049",
-      "outcome": "Yes",
-      "price": 0.46,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"No Inflation\" this week? (March 22)",
-      "token_id": "102054893965258153965766012390",
-      "outcome": "No",
-      "price": 0.54,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Finish the Job\" this week? (March 22)",
-      "token_id": "115315822874172094374631822828",
-      "outcome": "Yes",
-      "price": 0.35,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Finish the Job\" this week? (March 22)",
-      "token_id": "368264658594254564901007197250",
-      "outcome": "No",
-      "price": 0.65,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Migrant Crime\" this week? (March 22)",
-      "token_id": "443937842589238880013137510820",
-      "outcome": "Yes",
-      "price": 0.13,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Migrant Crime\" this week? (March 22)",
-      "token_id": "161140003708697217659096670501",
-      "outcome": "No",
-      "price": 0.87,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Ceasefire\" this week? (March 22)",
-      "token_id": "317982348332587246184637589528",
-      "outcome": "Yes",
-      "price": 0.24,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Ceasefire\" this week? (March 22)",
-      "token_id": "573139604061703633928137817746",
-      "outcome": "No",
-      "price": 0.76,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Hillary\" or \"Clinton\" this week? (March 22)",
-      "token_id": "624029317422257398385343501454",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Hillary\" or \"Clinton\" this week? (March 22)",
-      "token_id": "796120105277495084397703161763",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"UFC\" this week? (March 22)",
-      "token_id": "891203499109608600738383764204",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"UFC\" this week? (March 22)",
-      "token_id": "216282413397671048654289658033",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Cure to Cancer\" this week? (March 22)",
-      "token_id": "922551365025313556949771777442",
-      "outcome": "Yes",
-      "price": 0.17,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Cure to Cancer\" this week? (March 22)",
-      "token_id": "136589556436969039197296990141",
-      "outcome": "No",
-      "price": 0.83,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Armada\" this week? (March 22)",
-      "token_id": "204642933173953319763285446348",
-      "outcome": "Yes",
-      "price": 0.415,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Armada\" this week? (March 22)",
-      "token_id": "851867992884653743710957051608",
-      "outcome": "No",
-      "price": 0.585,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Drone\" this week? (March 22)",
-      "token_id": "500489251294706588914021125628",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Drone\" this week? (March 22)",
-      "token_id": "633843790806676730371063358714",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"What's Up\" this week? (March 22)",
-      "token_id": "424197373657058897507495579413",
-      "outcome": "Yes",
-      "price": 0.21,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"What's Up\" this week? (March 22)",
-      "token_id": "868675866843250904246374450714",
-      "outcome": "No",
-      "price": 0.79,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Transgender\" this week? (March 22)",
-      "token_id": "782529337552478089890894408525",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Transgender\" this week? (March 22)",
-      "token_id": "361332544264964569298495555278",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Too Big to Rig\" this week? (March 22)",
-      "token_id": "840850829518224440787592304886",
-      "outcome": "Yes",
-      "price": 0.445,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Too Big to Rig\" this week? (March 22)",
-      "token_id": "961701726152172632894002836134",
-      "outcome": "No",
-      "price": 0.555,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Roadside Bomb\" this week? (March 22)",
-      "token_id": "102033291465002636632665583538",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Roadside Bomb\" this week? (March 22)",
-      "token_id": "628259005924793620893327577743",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Putin\" this week? (March 22)",
-      "token_id": "677180880497604394787247266500",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Putin\" this week? (March 22)",
-      "token_id": "976534408391683257554302594921",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"No No No\" this week? (March 22)",
-      "token_id": "292389640731497814216416313063",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"No No No\" this week? (March 22)",
-      "token_id": "445013547648293545026852307447",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Nancy\" or \"Pelosi\" this week? (March 22)",
-      "token_id": "307367536486101332163007284625",
-      "outcome": "Yes",
-      "price": 0.4,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Nancy\" or \"Pelosi\" this week? (March 22)",
-      "token_id": "394084214729049018842671907044",
-      "outcome": "No",
-      "price": 0.6,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Sleepy Joe\" this week? (March 22)",
-      "token_id": "770790468605554697554089957620",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Sleepy Joe\" this week? (March 22)",
-      "token_id": "710454576501830358134301533081",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Crypto\" or \"Bitcoin\" this week? (March 22)",
-      "token_id": "109762172005462725704478811280",
-      "outcome": "Yes",
-      "price": 0.275,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Crypto\" or \"Bitcoin\" this week? (March 22)",
-      "token_id": "520691314973556351109861351249",
-      "outcome": "No",
-      "price": 0.725,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Democrat Shutdown\" this week? (March 22)",
-      "token_id": "165151594769589323207008198128",
-      "outcome": "Yes",
-      "price": 0.62,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Democrat Shutdown\" this week? (March 22)",
-      "token_id": "980069251095493454860987437741",
-      "outcome": "No",
-      "price": 0.38,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Claude\" or \"Anthropic\" this week? (March 22)",
-      "token_id": "318476177155108552851906878614",
-      "outcome": "Yes",
-      "price": 0.17,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Claude\" or \"Anthropic\" this week? (March 22)",
-      "token_id": "373366037545469863952866885801",
-      "outcome": "No",
-      "price": 0.83,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Khamenei\" this week? (March 22)",
-      "token_id": "104880254966129544582199801571",
-      "outcome": "Yes",
-      "price": 0.335,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Khamenei\" this week? (March 22)",
-      "token_id": "586571715434920130525020512369",
-      "outcome": "No",
-      "price": 0.665,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Women's Sports\" this week? (March 22)",
-      "token_id": "922601604056412323037886048877",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Women's Sports\" this week? (March 22)",
-      "token_id": "154579913600565381029939177220",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Barack Hussein Obama\" this week? (March 22)",
-      "token_id": "335376782991293177431337080304",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Barack Hussein Obama\" this week? (March 22)",
-      "token_id": "796411002279789681590509626979",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Hormuz\" this week? (March 22)",
-      "token_id": "109916272545531872827787662177",
-      "outcome": "Yes",
-      "price": 1.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
-      "question": "Will Trump say \"Hormuz\" this week? (March 22)",
-      "token_id": "906377298541739341068356878832",
-      "outcome": "No",
-      "price": 0.0,
-      "slug": "what-will-trump-say-this-week-march-22"
-    },
-    {
       "question": "Will Trump talk to Friedrich Merz in March?",
       "token_id": "297727069373672618132496442270",
       "outcome": "Yes",
@@ -1867,42 +1265,42 @@
       "question": "Will Trump talk to Nicolás Maduro in March?",
       "token_id": "863489908331037237092454619366",
       "outcome": "Yes",
-      "price": 0.0265,
+      "price": 0.025,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Nicolás Maduro in March?",
       "token_id": "924635777719053364654176096665",
       "outcome": "No",
-      "price": 0.9735,
+      "price": 0.975,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Kim Jong Un in March?",
       "token_id": "708533295988503448595624584346",
       "outcome": "Yes",
-      "price": 0.028,
+      "price": 0.027,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Kim Jong Un in March?",
       "token_id": "396028725500866646083195117049",
       "outcome": "No",
-      "price": 0.972,
+      "price": 0.973,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Mohammed bin Salman in March?",
       "token_id": "108959140933086666194654192420",
       "outcome": "Yes",
-      "price": 0.59,
+      "price": 0.625,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Mohammed bin Salman in March?",
       "token_id": "378811553271807543751225282642",
       "outcome": "No",
-      "price": 0.41,
+      "price": 0.375,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
@@ -1951,14 +1349,14 @@
       "question": "Will Trump talk to Ursula von der Leyen in March?",
       "token_id": "348543498121277256536640576711",
       "outcome": "Yes",
-      "price": 0.9735,
+      "price": 0.855,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Ursula von der Leyen in March?",
       "token_id": "831413907573773678183860772497",
       "outcome": "No",
-      "price": 0.0265,
+      "price": 0.145,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
@@ -1979,14 +1377,14 @@
       "question": "Will Trump talk to Reza Pahlavi in March?",
       "token_id": "607372410704075162555426570212",
       "outcome": "Yes",
-      "price": 0.105,
+      "price": 0.085,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Reza Pahlavi in March?",
       "token_id": "882977157014363626353483033943",
       "outcome": "No",
-      "price": 0.895,
+      "price": 0.915,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
@@ -2021,113 +1419,701 @@
       "question": "Will Trump talk to Xi Jinping in March?",
       "token_id": "977995486178835623710999875243",
       "outcome": "Yes",
-      "price": 0.23,
+      "price": 0.215,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Xi Jinping in March?",
       "token_id": "485360711488650258779956610756",
       "outcome": "No",
-      "price": 0.77,
+      "price": 0.785,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to MrBeast in March?",
       "token_id": "550659490635920442077630015755",
       "outcome": "Yes",
-      "price": 0.0135,
+      "price": 0.0145,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to MrBeast in March?",
       "token_id": "853755662507882589370558332079",
       "outcome": "No",
-      "price": 0.9865,
+      "price": 0.9855,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Pope Leo XIV in March?",
       "token_id": "662955369112897888441735322342",
       "outcome": "Yes",
-      "price": 0.065,
+      "price": 0.195,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Pope Leo XIV in March?",
       "token_id": "920770289494332389843138360097",
       "outcome": "No",
-      "price": 0.935,
+      "price": 0.805,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Yoon Suk Yeol in March?",
       "token_id": "548031667227451160233827013897",
       "outcome": "Yes",
-      "price": 0.023,
+      "price": 0.0235,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Yoon Suk Yeol in March?",
       "token_id": "967522801323629671096709942472",
       "outcome": "No",
-      "price": 0.977,
+      "price": 0.9765,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Ahmed al-Sharaa in March?",
       "token_id": "334209694113412141316531049530",
       "outcome": "Yes",
-      "price": 0.26,
+      "price": 0.28,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Ahmed al-Sharaa in March?",
       "token_id": "582647060520787708272749753225",
       "outcome": "No",
-      "price": 0.74,
+      "price": 0.72,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Mark Rutte in March?",
       "token_id": "328121884486914857255810202420",
       "outcome": "Yes",
-      "price": 0.655,
+      "price": 0.66,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Mark Rutte in March?",
       "token_id": "127575328147960410923147267243",
       "outcome": "No",
-      "price": 0.345,
+      "price": 0.34,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Masoud Pezeshkian in March?",
       "token_id": "726192447808275918386929464848",
       "outcome": "Yes",
-      "price": 0.43,
+      "price": 0.37,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
       "question": "Will Trump talk to Masoud Pezeshkian in March?",
       "token_id": "156466591211085039233744611209",
       "outcome": "No",
-      "price": 0.57,
+      "price": 0.63,
       "slug": "who-will-trump-talk-to-in-march"
     },
     {
-      "question": "Trump out as President by June 30?",
-      "token_id": "217124527749384865794050655033",
+      "question": "Will Donald Trump post 0-19 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "629094479487009141329469151939",
       "outcome": "Yes",
-      "price": 0.065,
-      "slug": "trump-out-as-president-by-june-30"
+      "price": 0.0015,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
     },
     {
-      "question": "Trump out as President by June 30?",
-      "token_id": "789282528931522593329354669094",
+      "question": "Will Donald Trump post 0-19 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "785010038346871555426889771816",
       "outcome": "No",
-      "price": 0.935,
-      "slug": "trump-out-as-president-by-june-30"
+      "price": 0.9985,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 40-59 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "852539166836477148768776133827",
+      "outcome": "Yes",
+      "price": 0.022,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 40-59 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "973952856189853735738621169386",
+      "outcome": "No",
+      "price": 0.978,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 80-99 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "828334160931331381248207019052",
+      "outcome": "Yes",
+      "price": 0.285,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 80-99 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "785745135893648974162028619146",
+      "outcome": "No",
+      "price": 0.715,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 120-139 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "242943887776519377492981836409",
+      "outcome": "Yes",
+      "price": 0.17,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 120-139 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "626340594179165369960778877217",
+      "outcome": "No",
+      "price": 0.83,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 160-179 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "204424737899968255314186904277",
+      "outcome": "Yes",
+      "price": 0.0325,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 160-179 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "888667500090574684447211300421",
+      "outcome": "No",
+      "price": 0.9675,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 200+ Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "456318822366158486091106011783",
+      "outcome": "Yes",
+      "price": 0.0145,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 200+ Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "654720877895139664341670684136",
+      "outcome": "No",
+      "price": 0.9855,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 20-39 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "587022285752208384269259723673",
+      "outcome": "Yes",
+      "price": 0.0015,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 20-39 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "113626757813935286087799459689",
+      "outcome": "No",
+      "price": 0.9985,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 60-79 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "106857401877745036641669655659",
+      "outcome": "Yes",
+      "price": 0.13,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 60-79 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "661301335826686123098305695760",
+      "outcome": "No",
+      "price": 0.87,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 100-119 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "765652381668852531953855611919",
+      "outcome": "Yes",
+      "price": 0.265,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 100-119 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "228628190845422206632574754515",
+      "outcome": "No",
+      "price": 0.735,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 140-159 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "102949516419001996765732276993",
+      "outcome": "Yes",
+      "price": 0.085,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 140-159 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "107591570448515645928373413932",
+      "outcome": "No",
+      "price": 0.915,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 180-199 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "240535310646919626795838394296",
+      "outcome": "Yes",
+      "price": 0.0185,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Donald Trump post 180-199 Truth Social posts from March 17 to March 24, 2026?",
+      "token_id": "409153681953011097681343461092",
+      "outcome": "No",
+      "price": 0.9815,
+      "slug": "donald-trump-of-truth-social-posts-march-17-march-24"
+    },
+    {
+      "question": "Will Trump say \"Doug\" or \"Burgum\" this week? (March 22)",
+      "token_id": "783505821784198656681664915144",
+      "outcome": "Yes",
+      "price": 0.665,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Doug\" or \"Burgum\" this week? (March 22)",
+      "token_id": "414769721599648043424846843517",
+      "outcome": "No",
+      "price": 0.335,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Medal of Honor\" this week? (March 22)",
+      "token_id": "691814999481412639716315885565",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Medal of Honor\" this week? (March 22)",
+      "token_id": "108313376900000175950644808087",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Wind\" or \"Solar\" this week? (March 22)",
+      "token_id": "104467117654704474941461524650",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Wind\" or \"Solar\" this week? (March 22)",
+      "token_id": "607450571351149382175433612281",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Too Late\" this week? (March 22)",
+      "token_id": "360602467911223594461687492755",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Too Late\" this week? (March 22)",
+      "token_id": "129316466900714033494889505854",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Affair\" this week? (March 22)",
+      "token_id": "159345634116614307809425879720",
+      "outcome": "Yes",
+      "price": 0.235,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Affair\" this week? (March 22)",
+      "token_id": "111860928085579011321974412198",
+      "outcome": "No",
+      "price": 0.765,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Golf\" or \"Golfer\" or \"Golfing\" this week? (March 22)",
+      "token_id": "105021609567736571303377625768",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Golf\" or \"Golfer\" or \"Golfing\" this week? (March 22)",
+      "token_id": "301345994347445941582057933605",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"President Xi\" this week? (March 22)",
+      "token_id": "488220753175932312097508783395",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"President Xi\" this week? (March 22)",
+      "token_id": "248814235317658391563341305540",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Egghead\" this week? (March 22)",
+      "token_id": "540006404337909107156468674091",
+      "outcome": "Yes",
+      "price": 0.095,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Egghead\" this week? (March 22)",
+      "token_id": "355975014903646715478181220410",
+      "outcome": "No",
+      "price": 0.905,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"No Inflation\" this week? (March 22)",
+      "token_id": "415078850504346948165033711049",
+      "outcome": "Yes",
+      "price": 0.455,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"No Inflation\" this week? (March 22)",
+      "token_id": "102054893965258153965766012390",
+      "outcome": "No",
+      "price": 0.545,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Finish the Job\" this week? (March 22)",
+      "token_id": "115315822874172094374631822828",
+      "outcome": "Yes",
+      "price": 0.3,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Finish the Job\" this week? (March 22)",
+      "token_id": "368264658594254564901007197250",
+      "outcome": "No",
+      "price": 0.7,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Migrant Crime\" this week? (March 22)",
+      "token_id": "443937842589238880013137510820",
+      "outcome": "Yes",
+      "price": 0.105,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Migrant Crime\" this week? (March 22)",
+      "token_id": "161140003708697217659096670501",
+      "outcome": "No",
+      "price": 0.895,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Ceasefire\" this week? (March 22)",
+      "token_id": "317982348332587246184637589528",
+      "outcome": "Yes",
+      "price": 0.375,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Ceasefire\" this week? (March 22)",
+      "token_id": "573139604061703633928137817746",
+      "outcome": "No",
+      "price": 0.625,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Hillary\" or \"Clinton\" this week? (March 22)",
+      "token_id": "624029317422257398385343501454",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Hillary\" or \"Clinton\" this week? (March 22)",
+      "token_id": "796120105277495084397703161763",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"UFC\" this week? (March 22)",
+      "token_id": "891203499109608600738383764204",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"UFC\" this week? (March 22)",
+      "token_id": "216282413397671048654289658033",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Cure to Cancer\" this week? (March 22)",
+      "token_id": "922551365025313556949771777442",
+      "outcome": "Yes",
+      "price": 0.21,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Cure to Cancer\" this week? (March 22)",
+      "token_id": "136589556436969039197296990141",
+      "outcome": "No",
+      "price": 0.79,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Armada\" this week? (March 22)",
+      "token_id": "204642933173953319763285446348",
+      "outcome": "Yes",
+      "price": 0.405,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Armada\" this week? (March 22)",
+      "token_id": "851867992884653743710957051608",
+      "outcome": "No",
+      "price": 0.595,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Drone\" this week? (March 22)",
+      "token_id": "500489251294706588914021125628",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Drone\" this week? (March 22)",
+      "token_id": "633843790806676730371063358714",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"What's Up\" this week? (March 22)",
+      "token_id": "424197373657058897507495579413",
+      "outcome": "Yes",
+      "price": 0.215,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"What's Up\" this week? (March 22)",
+      "token_id": "868675866843250904246374450714",
+      "outcome": "No",
+      "price": 0.785,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Transgender\" this week? (March 22)",
+      "token_id": "782529337552478089890894408525",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Transgender\" this week? (March 22)",
+      "token_id": "361332544264964569298495555278",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Too Big to Rig\" this week? (March 22)",
+      "token_id": "840850829518224440787592304886",
+      "outcome": "Yes",
+      "price": 0.53,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Too Big to Rig\" this week? (March 22)",
+      "token_id": "961701726152172632894002836134",
+      "outcome": "No",
+      "price": 0.47,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Roadside Bomb\" this week? (March 22)",
+      "token_id": "102033291465002636632665583538",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Roadside Bomb\" this week? (March 22)",
+      "token_id": "628259005924793620893327577743",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Putin\" this week? (March 22)",
+      "token_id": "677180880497604394787247266500",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Putin\" this week? (March 22)",
+      "token_id": "976534408391683257554302594921",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"No No No\" this week? (March 22)",
+      "token_id": "292389640731497814216416313063",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"No No No\" this week? (March 22)",
+      "token_id": "445013547648293545026852307447",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Nancy\" or \"Pelosi\" this week? (March 22)",
+      "token_id": "307367536486101332163007284625",
+      "outcome": "Yes",
+      "price": 0.405,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Nancy\" or \"Pelosi\" this week? (March 22)",
+      "token_id": "394084214729049018842671907044",
+      "outcome": "No",
+      "price": 0.595,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Sleepy Joe\" this week? (March 22)",
+      "token_id": "770790468605554697554089957620",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Sleepy Joe\" this week? (March 22)",
+      "token_id": "710454576501830358134301533081",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Crypto\" or \"Bitcoin\" this week? (March 22)",
+      "token_id": "109762172005462725704478811280",
+      "outcome": "Yes",
+      "price": 0.215,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Crypto\" or \"Bitcoin\" this week? (March 22)",
+      "token_id": "520691314973556351109861351249",
+      "outcome": "No",
+      "price": 0.785,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Democrat Shutdown\" this week? (March 22)",
+      "token_id": "165151594769589323207008198128",
+      "outcome": "Yes",
+      "price": 0.425,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Democrat Shutdown\" this week? (March 22)",
+      "token_id": "980069251095493454860987437741",
+      "outcome": "No",
+      "price": 0.575,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Claude\" or \"Anthropic\" this week? (March 22)",
+      "token_id": "318476177155108552851906878614",
+      "outcome": "Yes",
+      "price": 0.145,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Claude\" or \"Anthropic\" this week? (March 22)",
+      "token_id": "373366037545469863952866885801",
+      "outcome": "No",
+      "price": 0.855,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Khamenei\" this week? (March 22)",
+      "token_id": "104880254966129544582199801571",
+      "outcome": "Yes",
+      "price": 0.28,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Khamenei\" this week? (March 22)",
+      "token_id": "586571715434920130525020512369",
+      "outcome": "No",
+      "price": 0.72,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Women's Sports\" this week? (March 22)",
+      "token_id": "922601604056412323037886048877",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Women's Sports\" this week? (March 22)",
+      "token_id": "154579913600565381029939177220",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Barack Hussein Obama\" this week? (March 22)",
+      "token_id": "335376782991293177431337080304",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Barack Hussein Obama\" this week? (March 22)",
+      "token_id": "796411002279789681590509626979",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Hormuz\" this week? (March 22)",
+      "token_id": "109916272545531872827787662177",
+      "outcome": "Yes",
+      "price": 1.0,
+      "slug": "what-will-trump-say-this-week-march-22"
+    },
+    {
+      "question": "Will Trump say \"Hormuz\" this week? (March 22)",
+      "token_id": "906377298541739341068356878832",
+      "outcome": "No",
+      "price": 0.0,
+      "slug": "what-will-trump-say-this-week-march-22"
     },
     {
       "question": "Will Donald Trump post 0-19 Truth Social posts from March 13 to March 20, 2026?",
@@ -2147,28 +2133,28 @@
       "question": "Will Donald Trump post 120-139 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "850476170997777824715751041259",
       "outcome": "Yes",
-      "price": 0.105,
+      "price": 0.115,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 120-139 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "450480821754284155564950325511",
       "outcome": "No",
-      "price": 0.895,
+      "price": 0.885,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 180-199 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "113398413378518341438457294406",
       "outcome": "Yes",
-      "price": 0.0055,
+      "price": 0.0065,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 180-199 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "524408931566185547335720302464",
       "outcome": "No",
-      "price": 0.9945,
+      "price": 0.9935,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
@@ -2189,56 +2175,56 @@
       "question": "Will Donald Trump post 160-179 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "103582164127570755791799148058",
       "outcome": "Yes",
-      "price": 0.0205,
+      "price": 0.0185,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 160-179 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "588643204060854090083223200159",
       "outcome": "No",
-      "price": 0.9795,
+      "price": 0.9815,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 60-79 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "271653541648772935645877916123",
       "outcome": "Yes",
-      "price": 0.075,
+      "price": 0.085,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 60-79 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "100405016981854663630438888392",
       "outcome": "No",
-      "price": 0.925,
+      "price": 0.915,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 80-99 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "797788543358203075703723129882",
       "outcome": "Yes",
-      "price": 0.465,
+      "price": 0.485,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 80-99 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "943424648009014200045453095196",
       "outcome": "No",
-      "price": 0.535,
+      "price": 0.515,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 100-119 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "732865121243256881875235261106",
       "outcome": "Yes",
-      "price": 0.3,
+      "price": 0.28,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 100-119 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "689498560018158373608726539031",
       "outcome": "No",
-      "price": 0.7,
+      "price": 0.72,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
@@ -2259,28 +2245,28 @@
       "question": "Will Donald Trump post 140-159 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "341215473751166603069693215648",
       "outcome": "Yes",
-      "price": 0.039,
+      "price": 0.0315,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 140-159 Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "946401873719235283662339397871",
       "outcome": "No",
-      "price": 0.961,
+      "price": 0.9685,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "104059696596654726743816254767",
       "outcome": "Yes",
-      "price": 0.0145,
+      "price": 0.0085,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from March 13 to March 20, 2026?",
       "token_id": "108248503679753342348182128443",
       "outcome": "No",
-      "price": 0.9855,
+      "price": 0.9915,
       "slug": "donald-trump-of-truth-social-posts-march-13-march-20"
     },
     {
@@ -2301,28 +2287,28 @@
       "question": "Will Donald Trump visit Syria in 2026?",
       "token_id": "400762690419055227829284024905",
       "outcome": "Yes",
-      "price": 0.09,
+      "price": 0.085,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Syria in 2026?",
       "token_id": "788938994596996684592190699264",
       "outcome": "No",
-      "price": 0.91,
+      "price": 0.915,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit the United Kingdom in 2026?",
       "token_id": "313661970932273746797028852529",
       "outcome": "Yes",
-      "price": 0.76,
+      "price": 0.825,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit the United Kingdom in 2026?",
       "token_id": "572905039416617670726393006243",
       "outcome": "No",
-      "price": 0.24,
+      "price": 0.175,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
@@ -2343,14 +2329,14 @@
       "question": "Will Donald Trump visit Canada in 2026?",
       "token_id": "111173078110622502975146485705",
       "outcome": "Yes",
-      "price": 0.36,
+      "price": 0.35,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Canada in 2026?",
       "token_id": "270785517613358028166995268181",
       "outcome": "No",
-      "price": 0.64,
+      "price": 0.65,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
@@ -2371,70 +2357,70 @@
       "question": "Will Donald Trump visit Saudi Arabia in 2026?",
       "token_id": "989583169086712809854109438346",
       "outcome": "Yes",
-      "price": 0.455,
+      "price": 0.45,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Saudi Arabia in 2026?",
       "token_id": "112722141916035411726564670505",
       "outcome": "No",
-      "price": 0.545,
+      "price": 0.55,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Japan in 2026?",
       "token_id": "406012340175099836270823133488",
       "outcome": "Yes",
-      "price": 0.56,
+      "price": 0.595,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Japan in 2026?",
       "token_id": "509390420317035729260922351113",
       "outcome": "No",
-      "price": 0.44,
+      "price": 0.405,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Germany in 2026?",
       "token_id": "110859084351224598102665068250",
       "outcome": "Yes",
-      "price": 0.705,
+      "price": 0.7,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Germany in 2026?",
       "token_id": "457586292062782965232414919927",
       "outcome": "No",
-      "price": 0.295,
+      "price": 0.3,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit South Korea in 2026?",
       "token_id": "823728606580788120575175379530",
       "outcome": "Yes",
-      "price": 0.45,
+      "price": 0.455,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit South Korea in 2026?",
       "token_id": "572230122664642452668396757809",
       "outcome": "No",
-      "price": 0.55,
+      "price": 0.545,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit France in 2026?",
       "token_id": "102039279333374870115811329950",
       "outcome": "Yes",
-      "price": 0.895,
+      "price": 0.815,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit France in 2026?",
       "token_id": "924551313830843091700133389115",
       "outcome": "No",
-      "price": 0.105,
+      "price": 0.185,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
@@ -2483,56 +2469,56 @@
       "question": "Will Donald Trump visit China in 2026?",
       "token_id": "104550993782851064229827172565",
       "outcome": "Yes",
-      "price": 0.9265,
+      "price": 0.927,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit China in 2026?",
       "token_id": "681672788038141209070032886977",
       "outcome": "No",
-      "price": 0.0735,
+      "price": 0.073,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Italy in 2026?",
       "token_id": "272843924008598253314024120780",
       "outcome": "Yes",
-      "price": 0.565,
+      "price": 0.575,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Italy in 2026?",
       "token_id": "492277946969056796594710021564",
       "outcome": "No",
-      "price": 0.435,
+      "price": 0.425,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Oman in 2026?",
       "token_id": "105466163642430976608196989060",
       "outcome": "Yes",
-      "price": 0.225,
+      "price": 0.22,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Oman in 2026?",
       "token_id": "566814688793031832970296235016",
       "outcome": "No",
-      "price": 0.775,
+      "price": 0.78,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit India in 2026?",
       "token_id": "476664365836216605422352856931",
       "outcome": "Yes",
-      "price": 0.32,
+      "price": 0.365,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit India in 2026?",
       "token_id": "162574292405081920771420183679",
       "outcome": "No",
-      "price": 0.68,
+      "price": 0.635,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
@@ -2553,29 +2539,43 @@
       "question": "Will Donald Trump visit Turkey in 2026?",
       "token_id": "805656621280113579624555719834",
       "outcome": "Yes",
-      "price": 0.765,
+      "price": 0.74,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit Turkey in 2026?",
       "token_id": "880299218295591556440402664695",
       "outcome": "No",
-      "price": 0.235,
+      "price": 0.26,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit North Korea in 2026?",
       "token_id": "670911971765256237422561606811",
       "outcome": "Yes",
-      "price": 0.18,
+      "price": 0.165,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
     },
     {
       "question": "Will Donald Trump visit North Korea in 2026?",
       "token_id": "753612810094120037057985420732",
       "outcome": "No",
-      "price": 0.82,
+      "price": 0.835,
       "slug": "which-countries-will-donald-trump-visit-in-2026"
+    },
+    {
+      "question": "Trump out as President by June 30?",
+      "token_id": "217124527749384865794050655033",
+      "outcome": "Yes",
+      "price": 0.065,
+      "slug": "trump-out-as-president-by-june-30"
+    },
+    {
+      "question": "Trump out as President by June 30?",
+      "token_id": "789282528931522593329354669094",
+      "outcome": "No",
+      "price": 0.935,
+      "slug": "trump-out-as-president-by-june-30"
     },
     {
       "question": "Trump out as President before 2027?",
@@ -2595,126 +2595,126 @@
       "question": "Will Trump acquire Greenland before 2027?",
       "token_id": "516162325567819335283998515633",
       "outcome": "Yes",
-      "price": 0.0965,
+      "price": 0.0955,
       "slug": "will-trump-acquire-greenland-before-2027"
     },
     {
       "question": "Will Trump acquire Greenland before 2027?",
       "token_id": "572162725645295484646864636912",
       "outcome": "No",
-      "price": 0.9035,
+      "price": 0.9045,
       "slug": "will-trump-acquire-greenland-before-2027"
     },
     {
       "question": "Will Trump post \"Donald Trump\" on Truth Social this week?",
       "token_id": "449543629448569598167767696738",
       "outcome": "Yes",
-      "price": 0.58,
+      "price": 0.68,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Donald Trump\" on Truth Social this week?",
       "token_id": "412113458585527459695335682012",
       "outcome": "No",
-      "price": 0.42,
+      "price": 0.32,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Chairman\" on Truth Social this week?",
       "token_id": "650195593348707735915722059707",
       "outcome": "Yes",
-      "price": 0.868,
+      "price": 0.87,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Chairman\" on Truth Social this week?",
       "token_id": "852169618476643353001563730310",
       "outcome": "No",
-      "price": 0.132,
+      "price": 0.13,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hillary\" or \"Clinton\" on Truth Social this week?",
       "token_id": "863237932197638453390251789376",
       "outcome": "Yes",
-      "price": 0.285,
+      "price": 0.315,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hillary\" or \"Clinton\" on Truth Social this week?",
       "token_id": "399492111774390161165881929931",
       "outcome": "No",
-      "price": 0.715,
+      "price": 0.685,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Filibuster\" on Truth Social this week?",
       "token_id": "130063895084834213808314465858",
       "outcome": "Yes",
-      "price": 0.51,
+      "price": 0.55,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Filibuster\" on Truth Social this week?",
       "token_id": "348103902759312289634538765620",
       "outcome": "No",
-      "price": 0.49,
+      "price": 0.45,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Stupid\" on Truth Social this week?",
       "token_id": "201151123077884112663843498578",
       "outcome": "Yes",
-      "price": 0.665,
+      "price": 0.685,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Stupid\" on Truth Social this week?",
       "token_id": "575680823603797253735001170984",
       "outcome": "No",
-      "price": 0.335,
+      "price": 0.315,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Claude\" or \"Anthropic\" on Truth Social this week?",
       "token_id": "790233866481954306175380602623",
       "outcome": "Yes",
-      "price": 0.25,
+      "price": 0.29,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Claude\" or \"Anthropic\" on Truth Social this week?",
       "token_id": "446932132793462961960521200425",
       "outcome": "No",
-      "price": 0.75,
+      "price": 0.71,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Strait of Hormuz\" on Truth Social this week?",
       "token_id": "830311815345965215545861696696",
       "outcome": "Yes",
-      "price": 0.755,
+      "price": 0.785,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Strait of Hormuz\" on Truth Social this week?",
       "token_id": "235500633337550314309131643589",
       "outcome": "No",
-      "price": 0.245,
+      "price": 0.215,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"SOTU\" or \"State of the Union\" or \"State of Our Union\"on Truth Social this week?",
       "token_id": "702761741245692045843966944056",
       "outcome": "Yes",
-      "price": 0.505,
+      "price": 0.405,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"SOTU\" or \"State of the Union\" or \"State of Our Union\"on Truth Social this week?",
       "token_id": "448296372580118616784781889906",
       "outcome": "No",
-      "price": 0.495,
+      "price": 0.595,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
@@ -2735,112 +2735,112 @@
       "question": "Will Trump post \"Too Big to Rig\" on Truth Social this week?",
       "token_id": "821510726170428612071629516595",
       "outcome": "Yes",
-      "price": 0.25,
+      "price": 0.255,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Too Big to Rig\" on Truth Social this week?",
       "token_id": "927039451342121660976931227174",
       "outcome": "No",
-      "price": 0.75,
+      "price": 0.745,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"RINO\" on Truth Social this week?",
       "token_id": "679891228824677165789739269850",
       "outcome": "Yes",
-      "price": 0.655,
+      "price": 0.64,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"RINO\" on Truth Social this week?",
       "token_id": "486166693357387607760055428048",
       "outcome": "No",
-      "price": 0.345,
+      "price": 0.36,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Ass\" on Truth Social this week?",
       "token_id": "992949479735407213160509212592",
       "outcome": "Yes",
-      "price": 0.195,
+      "price": 0.185,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Ass\" on Truth Social this week?",
       "token_id": "917833409667531450140109838088",
       "outcome": "No",
-      "price": 0.805,
+      "price": 0.815,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Illinois\" on Truth Social this week?",
       "token_id": "952328154723240226204765308614",
       "outcome": "Yes",
-      "price": 0.535,
+      "price": 0.53,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Illinois\" on Truth Social this week?",
       "token_id": "853625635354530396842143990311",
       "outcome": "No",
-      "price": 0.465,
+      "price": 0.47,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"IRGC\" or \"Islamic Revolutionary Guard Corps\" on Truth Social this week?",
       "token_id": "194185060618605332073034150072",
       "outcome": "Yes",
-      "price": 0.6,
+      "price": 0.47,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"IRGC\" or \"Islamic Revolutionary Guard Corps\" on Truth Social this week?",
       "token_id": "658118415585291661969800467315",
       "outcome": "No",
-      "price": 0.4,
+      "price": 0.53,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Death to America\" on Truth Social this week?",
       "token_id": "294390181922593721913865491001",
       "outcome": "Yes",
-      "price": 0.22,
+      "price": 0.155,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Death to America\" on Truth Social this week?",
       "token_id": "823170604121623753021442477453",
       "outcome": "No",
-      "price": 0.78,
+      "price": 0.845,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hamas\" or \"Hezbollah\" on Truth Social this week?",
       "token_id": "189962126415257417726251380308",
       "outcome": "Yes",
-      "price": 0.455,
+      "price": 0.445,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hamas\" or \"Hezbollah\" on Truth Social this week?",
       "token_id": "502530194843054254182560160149",
       "outcome": "No",
-      "price": 0.545,
+      "price": 0.555,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Cornyn\" on Truth Social this week?",
       "token_id": "629835392696513441271757750405",
       "outcome": "Yes",
-      "price": 0.53,
+      "price": 0.48,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Cornyn\" on Truth Social this week?",
       "token_id": "402024502956047067933652476136",
       "outcome": "No",
-      "price": 0.47,
+      "price": 0.52,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
@@ -2861,70 +2861,70 @@
       "question": "Will Trump post \"Democrat Shutdown\" on Truth Social this week?",
       "token_id": "934947308142468086835682952790",
       "outcome": "Yes",
-      "price": 0.55,
+      "price": 0.52,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Democrat Shutdown\" on Truth Social this week?",
       "token_id": "730855568636687664719156569723",
       "outcome": "No",
-      "price": 0.45,
+      "price": 0.48,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hormuz\" on Truth Social this week?",
       "token_id": "988818162284305855950542371061",
       "outcome": "Yes",
-      "price": 0.859,
+      "price": 0.85,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Hormuz\" on Truth Social this week?",
       "token_id": "460343403064618938956766210090",
       "outcome": "No",
-      "price": 0.141,
+      "price": 0.15,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Jake Paul\" on Truth Social this week?",
       "token_id": "486572073773826484179786860873",
       "outcome": "Yes",
-      "price": 0.285,
+      "price": 0.23,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Jake Paul\" on Truth Social this week?",
       "token_id": "931874380413307147290240165923",
       "outcome": "No",
-      "price": 0.715,
+      "price": 0.77,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Mamdani\" on Truth Social this week?",
       "token_id": "152424092873706237369226735326",
       "outcome": "Yes",
-      "price": 0.135,
+      "price": 0.145,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Mamdani\" on Truth Social this week?",
       "token_id": "277907044399955698851057577723",
       "outcome": "No",
-      "price": 0.865,
+      "price": 0.855,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Lawsuit\" on Truth Social this week?",
       "token_id": "446500561318914262593304658499",
       "outcome": "Yes",
-      "price": 0.52,
+      "price": 0.49,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Lawsuit\" on Truth Social this week?",
       "token_id": "154039298110140892416502518077",
       "outcome": "No",
-      "price": 0.48,
+      "price": 0.51,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
@@ -2945,56 +2945,56 @@
       "question": "Will Trump post \"Ayatollah\" or \"Khamenei\" on Truth Social this week?",
       "token_id": "262453974576814078851468504970",
       "outcome": "Yes",
-      "price": 0.73,
+      "price": 0.685,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Ayatollah\" or \"Khamenei\" on Truth Social this week?",
       "token_id": "115231901017686921822050733859",
       "outcome": "No",
-      "price": 0.27,
+      "price": 0.315,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Epic Fury\" on Truth Social this week?",
       "token_id": "139989140502700670967173826945",
       "outcome": "Yes",
-      "price": 0.415,
+      "price": 0.43,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Epic Fury\" on Truth Social this week?",
       "token_id": "203186508137254556678875731614",
       "outcome": "No",
-      "price": 0.585,
+      "price": 0.57,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Oscar\" or \"Oscars\" on Truth Social this week?",
       "token_id": "894516651690429067385781812717",
       "outcome": "Yes",
-      "price": 0.425,
+      "price": 0.415,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Oscar\" or \"Oscars\" on Truth Social this week?",
       "token_id": "547575139132641703490921089539",
       "outcome": "No",
-      "price": 0.575,
+      "price": 0.585,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Son\" on Truth Social this week?",
       "token_id": "386045634387065742200157157319",
       "outcome": "Yes",
-      "price": 0.565,
+      "price": 0.525,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Son\" on Truth Social this week?",
       "token_id": "411486193442601693796858813984",
       "outcome": "No",
-      "price": 0.435,
+      "price": 0.475,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
@@ -3015,56 +3015,28 @@
       "question": "Will Trump post \"Texas\" on Truth Social this week?",
       "token_id": "100245793340620726553167561026",
       "outcome": "Yes",
-      "price": 0.525,
+      "price": 0.465,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
     },
     {
       "question": "Will Trump post \"Texas\" on Truth Social this week?",
       "token_id": "627020285839705063670908398388",
       "outcome": "No",
-      "price": 0.475,
+      "price": 0.535,
       "slug": "what-will-trump-post-this-week-march-16-march-22"
-    },
-    {
-      "question": "Will Trump cut off trade with Spain?",
-      "token_id": "101611318545579453475986810415",
-      "outcome": "Yes",
-      "price": 0.0185,
-      "slug": "will-trump-cut-off-trade-with-spain"
-    },
-    {
-      "question": "Will Trump cut off trade with Spain?",
-      "token_id": "652460204063593524876399926836",
-      "outcome": "No",
-      "price": 0.9815,
-      "slug": "will-trump-cut-off-trade-with-spain"
-    },
-    {
-      "question": "Will Trump visit Greenland by March 31?",
-      "token_id": "457942889980145160904542456366",
-      "outcome": "Yes",
-      "price": 0.0125,
-      "slug": "will-trump-visit-greenland-by-march-31"
-    },
-    {
-      "question": "Will Trump visit Greenland by March 31?",
-      "token_id": "165903820300579378881606013488",
-      "outcome": "No",
-      "price": 0.9875,
-      "slug": "will-trump-visit-greenland-by-march-31"
     },
     {
       "question": "Will Donald Trump post 0-19 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "369420316570785609668791037515",
       "outcome": "Yes",
-      "price": 0.0025,
+      "price": 0.003,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 0-19 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "301370250305047133332009386329",
       "outcome": "No",
-      "price": 0.9975,
+      "price": 0.997,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
@@ -3085,84 +3057,84 @@
       "question": "Will Donald Trump post 40-59 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "504464102872830003556913460245",
       "outcome": "Yes",
-      "price": 0.05,
+      "price": 0.063,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 40-59 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "936645750431084257269381043687",
       "outcome": "No",
-      "price": 0.95,
+      "price": 0.937,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 60-79 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "333154292896376962681306735635",
       "outcome": "Yes",
-      "price": 0.2,
+      "price": 0.175,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 60-79 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "301887896498474572067875181016",
       "outcome": "No",
-      "price": 0.8,
+      "price": 0.825,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 80-99 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "584298124653173033176266459689",
       "outcome": "Yes",
-      "price": 0.285,
+      "price": 0.265,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 80-99 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "382640528986213852177689128377",
       "outcome": "No",
-      "price": 0.715,
+      "price": 0.735,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 100-119 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "327087936431001033794795506313",
       "outcome": "Yes",
-      "price": 0.24,
+      "price": 0.21,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 100-119 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "928261607314265616483927495030",
       "outcome": "No",
-      "price": 0.76,
+      "price": 0.79,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 120-139 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "858748127376152131598291626642",
       "outcome": "Yes",
-      "price": 0.185,
+      "price": 0.16,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 120-139 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "303039907217507234917071603695",
       "outcome": "No",
-      "price": 0.815,
+      "price": 0.84,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 140-159 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "537165951067878352362309641355",
       "outcome": "Yes",
-      "price": 0.11,
+      "price": 0.115,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 140-159 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "114244265319363622483570993337",
       "outcome": "No",
-      "price": 0.89,
+      "price": 0.885,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
@@ -3183,29 +3155,57 @@
       "question": "Will Donald Trump post 180-199 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "279509409068468632407422528633",
       "outcome": "Yes",
-      "price": 0.05,
+      "price": 0.051,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 180-199 Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "365820895141784409134172342731",
       "outcome": "No",
-      "price": 0.95,
+      "price": 0.949,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "967176618150957578248081385329",
       "outcome": "Yes",
-      "price": 0.032,
+      "price": 0.0295,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from March 20 to March 27, 2026?",
       "token_id": "702967339594140289018438554844",
       "outcome": "No",
-      "price": 0.968,
+      "price": 0.9705,
       "slug": "donald-trump-of-truth-social-posts-march-20-march-27"
+    },
+    {
+      "question": "Will Trump visit Greenland by March 31?",
+      "token_id": "457942889980145160904542456366",
+      "outcome": "Yes",
+      "price": 0.011,
+      "slug": "will-trump-visit-greenland-by-march-31"
+    },
+    {
+      "question": "Will Trump visit Greenland by March 31?",
+      "token_id": "165903820300579378881606013488",
+      "outcome": "No",
+      "price": 0.989,
+      "slug": "will-trump-visit-greenland-by-march-31"
+    },
+    {
+      "question": "Will the Court Force Trump to Refund Tariffs?",
+      "token_id": "725206963305360763600779466818",
+      "outcome": "Yes",
+      "price": 0.415,
+      "slug": "will-the-court-force-trump-to-refund-tariffs-2026-06-30"
+    },
+    {
+      "question": "Will the Court Force Trump to Refund Tariffs?",
+      "token_id": "125223994654850534368545651341",
+      "outcome": "No",
+      "price": 0.585,
+      "slug": "will-the-court-force-trump-to-refund-tariffs-2026-06-30"
     },
     {
       "question": "Will Trump meet with Volodymyr Zelenskyy in March 2026?",
@@ -3239,140 +3239,140 @@
       "question": "Will Trump meet with Pope Leo XIV in March 2026?",
       "token_id": "105939168829771411366380305187",
       "outcome": "Yes",
-      "price": 0.038,
+      "price": 0.037,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Pope Leo XIV in March 2026?",
       "token_id": "801175080037221505651071591143",
       "outcome": "No",
-      "price": 0.962,
+      "price": 0.963,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Luiz Inácio Lula da Silva in March 2026?",
       "token_id": "673077896161952307858272824551",
       "outcome": "Yes",
-      "price": 0.0215,
+      "price": 0.021,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Luiz Inácio Lula da Silva in March 2026?",
       "token_id": "406577604000170291530192747218",
       "outcome": "No",
-      "price": 0.9785,
+      "price": 0.979,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Dario Amodei in March 2026?",
       "token_id": "505398381072217834381384916105",
       "outcome": "Yes",
-      "price": 0.325,
+      "price": 0.33,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Dario Amodei in March 2026?",
       "token_id": "629122702825738974149721022366",
       "outcome": "No",
-      "price": 0.675,
+      "price": 0.67,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Sundar Pichai in March 2026?",
       "token_id": "275985975961447592139587493331",
       "outcome": "Yes",
-      "price": 0.495,
+      "price": 0.48,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Sundar Pichai in March 2026?",
       "token_id": "420980109304992278313050614866",
       "outcome": "No",
-      "price": 0.505,
+      "price": 0.52,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with King of Morocco Mohammed VI in March 2026?",
       "token_id": "581098709624002185743858875740",
       "outcome": "Yes",
-      "price": 0.031,
+      "price": 0.0345,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with King of Morocco Mohammed VI in March 2026?",
       "token_id": "287699001554212557444560488911",
       "outcome": "No",
-      "price": 0.969,
+      "price": 0.9655,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Nicolás Maduro in March 2026?",
       "token_id": "534300270034930950762957072348",
       "outcome": "Yes",
-      "price": 0.0425,
+      "price": 0.044,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Nicolás Maduro in March 2026?",
       "token_id": "296624900889579113463193940322",
       "outcome": "No",
-      "price": 0.9575,
+      "price": 0.956,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Reza Pahlavi in March 2026?",
       "token_id": "933253805480021026597779347721",
       "outcome": "Yes",
-      "price": 0.0885,
+      "price": 0.0935,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Reza Pahlavi in March 2026?",
       "token_id": "595477288181414876667155789211",
       "outcome": "No",
-      "price": 0.9115,
+      "price": 0.9065,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Kim Jong Un in March 2026?",
       "token_id": "710010495926396037784272296887",
       "outcome": "Yes",
-      "price": 0.0085,
+      "price": 0.0225,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Kim Jong Un in March 2026?",
       "token_id": "279839083289531111135982249120",
       "outcome": "No",
-      "price": 0.9915,
+      "price": 0.9775,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Xi Jinping in March 2026?",
       "token_id": "172171593392116318427494743849",
       "outcome": "Yes",
-      "price": 0.014,
+      "price": 0.0115,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Xi Jinping in March 2026?",
       "token_id": "118153161999834945811271491300",
       "outcome": "No",
-      "price": 0.986,
+      "price": 0.9885,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with MrBeast in March 2026?",
       "token_id": "106821890201190373846618934850",
       "outcome": "Yes",
-      "price": 0.101,
+      "price": 0.09,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with MrBeast in March 2026?",
       "token_id": "126246329194660613073773478382",
       "outcome": "No",
-      "price": 0.899,
+      "price": 0.91,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
@@ -3421,87 +3421,101 @@
       "question": "Will Trump meet with Jerome Powell in March 2026?",
       "token_id": "104222402712175073045615133986",
       "outcome": "Yes",
-      "price": 0.05,
+      "price": 0.065,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Jerome Powell in March 2026?",
       "token_id": "101497473537487690310536855001",
       "outcome": "No",
-      "price": 0.95,
+      "price": 0.935,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Mohammed bin Salman in March 2026?",
       "token_id": "910560879558033673627872489920",
       "outcome": "Yes",
-      "price": 0.06,
+      "price": 0.07,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Mohammed bin Salman in March 2026?",
       "token_id": "742580601044653393183369932900",
       "outcome": "No",
-      "price": 0.94,
+      "price": 0.93,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Keir Starmer in March 2026?",
       "token_id": "445402918182203968921837799916",
       "outcome": "Yes",
-      "price": 0.39,
+      "price": 0.355,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Keir Starmer in March 2026?",
       "token_id": "321833212184134282739445599556",
       "outcome": "No",
-      "price": 0.61,
+      "price": 0.645,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Mark Zuckerberg in March 2026?",
       "token_id": "386352845582646908092522607864",
       "outcome": "Yes",
-      "price": 0.3,
+      "price": 0.315,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Mark Zuckerberg in March 2026?",
       "token_id": "716860156122268216666573880692",
       "outcome": "No",
-      "price": 0.7,
+      "price": 0.685,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Andy Jassy in March 2026?",
       "token_id": "504912915083784311840174145037",
       "outcome": "Yes",
-      "price": 0.42,
+      "price": 0.385,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
       "question": "Will Trump meet with Andy Jassy in March 2026?",
       "token_id": "299467571301195305032247327628",
       "outcome": "No",
-      "price": 0.58,
+      "price": 0.615,
       "slug": "who-will-trump-meet-with-in-march"
     },
     {
-      "question": "Will Trump talk to Mojtaba Khamenei by March 31?",
-      "token_id": "468261840916779274861697993718",
+      "question": "Will Trump meet with Delcy Rodríguez by March 31?",
+      "token_id": "861978965382923951674988880315",
       "outcome": "Yes",
-      "price": 0.014,
-      "slug": "will-trump-talk-to-mojtaba-khamenei-by-march-31"
+      "price": 0.085,
+      "slug": "will-trump-meet-with-delcy-rodrguez-by-march-31"
     },
     {
-      "question": "Will Trump talk to Mojtaba Khamenei by March 31?",
-      "token_id": "403660343195949069659748479552",
+      "question": "Will Trump meet with Delcy Rodríguez by March 31?",
+      "token_id": "794737350440359465797378130582",
       "outcome": "No",
-      "price": 0.986,
-      "slug": "will-trump-talk-to-mojtaba-khamenei-by-march-31"
+      "price": 0.915,
+      "slug": "will-trump-meet-with-delcy-rodrguez-by-march-31"
+    },
+    {
+      "question": "Will Trump meet with Delcy Rodríguez by February 15?",
+      "token_id": "115777641787766305441179512712",
+      "outcome": "Yes",
+      "price": 0.0,
+      "slug": "will-trump-meet-with-delcy-rodrguez-by-march-31"
+    },
+    {
+      "question": "Will Trump meet with Delcy Rodríguez by February 15?",
+      "token_id": "632407107499543910482353931186",
+      "outcome": "No",
+      "price": 1.0,
+      "slug": "will-trump-meet-with-delcy-rodrguez-by-march-31"
     }
   ],
-  "updated": "2026-03-17T22:26:19Z",
-  "total": 500
+  "updated": "2026-03-18T02:17:21Z",
+  "total": 502
 }

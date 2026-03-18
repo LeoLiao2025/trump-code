@@ -1003,6 +1003,18 @@ class ChatHandler(BaseHTTPRequestHandler):
                 self.send_response(404)
                 self.end_headers()
 
+        elif self.path == '/analysis' or self.path == '/analysis.html':
+            # AI 分析頁
+            analysis_file = BASE / 'public' / 'analysis.html'
+            if analysis_file.exists():
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.end_headers()
+                self.wfile.write(analysis_file.read_bytes())
+            else:
+                self.send_response(404)
+                self.end_headers()
+
         elif self.path == '/game' or self.path == '/game.html':
             # 預測遊戲
             game_file = BASE / 'public' / 'game.html'
