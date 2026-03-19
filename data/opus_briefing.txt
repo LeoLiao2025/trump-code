@@ -1,30 +1,30 @@
-# 川普密碼 Opus 簡報 — 2026-03-18
-準備時間: 2026-03-18T15:02:17Z
+# 川普密碼 Opus 簡報 — 2026-03-19
+準備時間: 2026-03-19T14:45:50Z
 
-## 今日推文: 14 篇
-時間: 2026-03-18T02:57:06.825Z ~ 2026-03-18T12:59:38.157Z
+## 今日推文: 15 篇
+時間: 2026-03-19T02:05:29.919Z ~ 2026-03-19T14:07:19.678Z
 
-[09:20] Trump steamrolls over California's anti-fossil fuel crusade to get oil flowing from offshore rigs: https://justthenews.com/politics-policy/energy/trump-steamrolls-over-californias-anti-fossil-fuel-crusade-get-oil-flowing
+[14:01] Jon McNaughton working on The Forgotten Man in The Eisenhower Executive Office Building!
 
-[09:23] Britain had meltdown when China hacked voter files, but U.S. intel kept it secret in America: https://justthenews.com/government/security/us-intel-has-known-2020-china-gained-access-us-voter-files-memos-show
+[14:04] From Douglas MacKinnon: "This is a photo from yesterday on the drive from LA to Palm Springs. Hundreds and Hundreds of these pieces of junk windmills. No surprise to The President, but ONLY ten percent of them working as we drove past!!! Eagle and bird killers which suck the taxpayers dry!! My best 
 
-[11:11] The Democrat's purposeful DHS SHUTDOWN is causing chaos at the airports. These Lunatics are being totally unreasonable in their Radical Left asks. They are FULLY TO BLAME, and must pay a big price, for the good of our Country, in the Midterm Elections. MAKE AMERICA GREAT AGAIN!
+[14:04] MORNING GLORY: Why Trump must finish what he started with Iran's regime: https://www.foxnews.com/opinion/morning-glory-why-trump-must-finish-what-he-started-irans-regime
 
-[11:22] I wonder what would happen if we "finished off" what's left of the Iranian Terror State, and let the Countries that use it, we don't, be responsible for the so called "Straight?" That would get some of our non-responsive "Allies" in gear, and fast!!! President DJT
+[14:04] Khamenei's Unforced Errors Proved Fatal: https://www.wsj.com/opinion/khameneis-unforced-errors-proved-fatal-635fb5e4
 
-[12:01] Remember, for all of those absolute "fools" out there, Iran is considered, by everyone, to be the NUMBER ONE STATE SPONSOR OF TERROR. We are rapidly putting them out of business!
+[14:05] The Left Is Petrified That Trump Will Succeed in Iran and Expose Them As Mind-Twisted Frauds: https://townhall.com/columnists/douglasmackinnon/2026/03/02/the-left-is-petrified-that-trump-will-succeed-in-iran-and-expose-them-as-mind-twisted-frauds-n2672119
 
-[12:13] When is "Too Late" Powell lowering INTEREST RATES? President DJT
+[14:05] Asia-Pacific Allies Ink $56 Billion in Deals with US Companies at Tokyo Forum, Burgum Says: https://www.newsmax.com/finance/streettalk/doug-burgum/2026/03/15/id/1249564/
 
-[12:20] For all of the Fake News out there, it's called THE SAVE AMERICA ACT, not the SAVE ACT. Nobody knows what the Save Act means!!!
+[14:05] President Trump Has Prevented Another Holocaust: https://www.israelnationalnews.com/news/423965
 
-[12:35] I wonder what would happen if we "finished off" what's left of the Iranian Terror State, and let the Countries that use it, we don't, be responsible for the so called "Strait?" That would get some of our non-responsive "Allies" in gear, and fast!!! President DJT
+[14:06] Britain had meltdown when China hacked voter files, but U.S. intel kept it secret in America: https://justthenews.com/government/security/us-intel-has-known-2020-china-gained-access-us-voter-files-memos-show
 
-[12:43] US allies need to get a grip – step up and help open the Strait of Hormuz: https://nypost.com/2026/03/17/opinion/us-allies-germany-the-uk-owe-america-their-help-in-opening-the-strait-of-hormuz/
+[14:06] Michael Whatley is so Great! Running against a really bad former Governor who set murderers free to kill again, and was grossly incompetent on the big hurricane cleanup. I had to get it done when I took office on January 20th, and I did! I hope the Great people of North Carolina remember how BAD Roy
 
-[12:59] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116250297283069512
+[14:07] Passing The Save America Act Is Indispensable To Preserve Representative Democracy: https://paulingrassia.substack.com/p/passing-the-save-america-act-is-indispensable
 
-## 關鍵字偵測到的信號: CHINA, IRAN
+## 關鍵字偵測到的信號: DEAL, CHINA, IRAN, DEAL_ONLY
 
 ## 模型績效排行
   A3_relief_rocket (盤前 RELIEF→當天飆): 72.7% | 報酬 +1.206% | 11 筆
@@ -48,10 +48,10 @@
 
 ## 學習引擎上次動作: 4 升級 / 1 降級 / 1 淘汰
 
-## 規則進化: 新增 40 條規則
+## 規則進化: 新增 45 條規則
 
 ## 信號信心度
-  ACTION: 0.841
+  ACTION: 0.854
   CHINA: 0.6
   DEAL: 0.55
   DEAL_ONLY: 0.65
