@@ -1,92 +1,97 @@
 {
   "date": "2026-03-21",
-  "prepared_at": "2026-03-21T14:26:36Z",
+  "prepared_at": "2026-03-21T22:30:04Z",
   "status": "PENDING",
   "today_posts": {
-    "count": 6,
-    "latest": "The Great State of Colorado, and a pathetic RINO District Attorney, together with the Radical Left Governor, gave a wonderful woman named Tina Peters, a 73-year-old Gold Star Mom, who has cancer, nine",
-    "earliest_time": "2026-03-20T13:22:29.346Z",
-    "latest_time": "2026-03-20T22:01:03.569Z",
+    "count": 8,
+    "latest": "The Democrats want to give our Country away to the illegals who they allowed to pour through our now very strong Border. I won't allow that to happen. The Democrats are grossly incompetent! ICE is rea",
+    "earliest_time": "2026-03-21T11:34:00.000Z",
+    "latest_time": "2026-03-21T22:13:38.554Z",
     "sample": [
       {
-        "time": "13:22",
-        "text": "CONGRESS, PASS THE FARM BILL, NOW! President DJT"
+        "time": "11:34",
+        "text": "If the Radical Left Democrats don’t immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o"
       },
       {
-        "time": "13:27",
-        "text": "THE SAVE AMERICA ACT MUST BE PASSED BY THE SENATE. THERE IS NOTHING THAT IS MORE IMPORTANT FOR THE U.S.A. Voter I.D., Proof of Citizenship, etc. Get it done and watch all of the good things that will happen!!! President DJT"
+        "time": "13:26",
+        "text": "Robert Mueller just died. Good, I’m glad he’s dead. He can no longer hurt innocent people! President DONALD J. TRUMP"
       },
       {
-        "time": "13:43",
-        "text": "Without the U.S.A., NATO IS A PAPER TIGER! They didn't want to join the fight to stop a Nuclear Powered Iran. Now that fight is Militarily WON, with very little danger for them, they complain about the high oil prices they are forced to pay, but don't want to help open the Strait of Hormuz, a simple"
+        "time": "15:34",
+        "text": "If the Radical Left Democrats don't immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o"
       },
       {
-        "time": "13:56",
-        "text": "I met with Hope Scheppelman and her husband Steven, of the Radical Left State of Colorado, to discuss various opportunities to serve our Country in a different capacity than her current run for the United States Congress. Hope and Steven are wonderful and patriotic Veterans of our U.S. Navy, and loy"
+        "time": "16:52",
+        "text": "Highly Respected America First Congresswoman, Julia Letlow, of the wonderful State of Louisiana, is a Great Star, has been from the very beginning, and only gets better! Julia is running for the United States Senate in Louisiana, a place I love and WON BIG, six times, including Primaries, in 2016, 2"
       },
       {
-        "time": "21:13",
-        "text": "We are getting very close to meeting our objectives as we consider winding down our great Military efforts in the Middle East with respect to the Terrorist Regime of Iran: (1) Completely degrading Iranian Missile Capability, Launchers, and everything else pertaining to them. (2) Destroying Iran's De"
+        "time": "17:26",
+        "text": "Robert Mueller just died. Good, I'm glad he's dead. He can no longer hurt innocent people! President DONALD J. TRUMP"
       },
       {
-        "time": "22:01",
-        "text": "The Great State of Colorado, and a pathetic RINO District Attorney, together with the Radical Left Governor, gave a wonderful woman named Tina Peters, a 73-year-old Gold Star Mom, who has cancer, nine years in prison because, as a Republican Voting Official, she went after the Democrats for cheating"
+        "time": "17:42",
+        "text": "The Radical Left Democrats have hurt so many people with their vicious and uncaring ways. What they have done to the Department of Homeland Security, our fantastic TSA Officers, and, most importantly, the great people of our Country, is an absolute disgrace. If the Democrats do not allow for Just an"
+      },
+      {
+        "time": "19:01",
+        "text": "In the early days of Mar-a-Lago!"
+      },
+      {
+        "time": "22:13",
+        "text": "The Democrats want to give our Country away to the illegals who they allowed to pour through our now very strong Border. I won't allow that to happen. The Democrats are grossly incompetent! ICE is ready to go on Monday. President DONALD J. TRUMP"
       }
     ]
   },
-  "keyword_signals": [
-    "IRAN"
-  ],
   "today_features": {
     "posts_6_10": true,
-    "avg_len_very_long": true,
+    "avg_len_long": true,
     "caps_medium": true,
     "excl_heavy": true,
     "questions_no": true,
-    "kw_ban": true,
-    "open_ban": true,
-    "kw_iran": true,
-    "kw_iran_2plus": true,
-    "open_iran": true,
-    "kw_israel": true,
-    "kw_saudi": true,
+    "mostly_open": true,
+    "kw_agreement": true,
+    "kw_agreement_2plus": true,
+    "pre_agreement": true,
+    "open_agreement": true,
+    "kw_immediately": true,
+    "kw_immediately_2plus": true,
+    "pre_immediately": true,
+    "open_immediately": true,
     "kw_dow": true,
+    "kw_dow_2plus": true,
+    "open_dow": true,
     "kw_economy": true,
     "open_economy": true,
-    "kw_inflation": true,
-    "open_inflation": true,
     "kw_oil": true,
     "open_oil": true,
+    "kw_gas": true,
+    "open_gas": true,
     "kw_energy": true,
     "open_energy": true,
     "kw_great": true,
     "kw_great_2plus": true,
+    "pre_great": true,
     "open_great": true,
-    "kw_historic": true,
-    "open_historic": true,
+    "kw_amazing": true,
+    "open_amazing": true,
     "kw_fantastic": true,
     "open_fantastic": true,
     "kw_wonderful": true,
-    "kw_wonderful_2plus": true,
     "open_wonderful": true,
     "kw_corrupt": true,
+    "kw_corrupt_2plus": true,
+    "pre_corrupt": true,
     "open_corrupt": true,
-    "kw_disaster": true,
-    "open_disaster": true,
-    "kw_pathetic": true,
-    "kw_maga": true,
-    "open_maga": true,
-    "kw_save_america": true,
-    "pre_save_america": true,
-    "kw_president_djt": true,
-    "kw_president_djt_2plus": true,
-    "pre_president_djt": true,
-    "open_president_djt": true,
-    "kw_thank_you_for_your_attention": true,
+    "kw_disgrace": true,
+    "open_disgrace": true,
+    "kw_incompetent": true,
+    "kw_america_first": true,
+    "open_america_first": true,
+    "kw_never_let_you_down": true,
+    "open_never_let_you_down": true,
     "kw_complete_and_total": true,
     "open_complete_and_total": true,
-    "is_friday": true,
-    "volume_rising_3d": true
+    "is_weekend": true
   },
   "model_performance": {
     "A1_tariff_bearish": {
@@ -196,28 +201,17 @@
   },
   "evolution_latest": {
     "date": "2026-03-21",
-    "crossover": 11,
-    "mutation": 10,
+    "crossover": 16,
+    "mutation": 9,
     "distill": 17,
-    "total_new": 38,
+    "total_new": 42,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_fake",
-          "kw_economy",
-          "mostly_open"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 100.0,
-        "origin": "mutation_replace"
-      },
-      {
-        "features": [
-          "kw_dow_2plus",
           "questions_yes",
-          "kw_signed"
+          "kw_thank_you_for_your_attention",
+          "kw_tariffs_2plus"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -226,14 +220,24 @@
       },
       {
         "features": [
-          "questions_yes",
+          "open_inflation",
           "kw_thank_you_for_your_attention",
-          "kw_signed"
+          "open_great"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 91.7,
+        "origin": "mutation_replace"
+      },
+      {
+        "features": [
+          "open_china",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 83.3,
-        "origin": "crossover"
+        "score": 90.0,
+        "origin": "mutation_remove"
       }
     ]
   },
@@ -249,7 +253,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-03-21",
+    "date": "2026-03-20",
     "signals": [
       "IRAN"
     ],

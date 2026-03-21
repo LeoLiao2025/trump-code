@@ -146,13 +146,11 @@
   },
   {
     "date": "2026-03-21",
-    "posts": 6,
+    "posts": 8,
     "triggered": 0,
     "long": 0,
     "short": 0,
-    "signals": [
-      "IRAN"
-    ],
+    "signals": [],
     "consensus": "NEUTRAL"
   }
 ]

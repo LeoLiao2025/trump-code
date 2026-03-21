@@ -1,0 +1,279 @@
+[
+  {
+    "post_id": "116261847910261480",
+    "pub_time": "Fri, 20 Mar 2026 13:56:53 +0000",
+    "detected_at": "2026-03-21T12:35:00.507116+00:00",
+    "detect_latency_sec": 81487.5,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 81487.5,
+    "signals": [
+      "THREAT",
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.65,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "I met with Hope Scheppelman and her husband Steven, of the Radical Left State of"
+  },
+  {
+    "post_id": "116256219531850396",
+    "pub_time": "Thu, 19 Mar 2026 14:05:31 +0000",
+    "detected_at": "2026-03-21T12:35:00.523727+00:00",
+    "detect_latency_sec": 167369.5,
+    "classify_ms": 0.0,
+    "predict_ms": 0.0,
+    "total_sec": 167369.5,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Asia-Pacific Allies Ink $56 Billion in Deals with US Companies at Tokyo Forum, B"
+  },
+  {
+    "post_id": "116239674084445278",
+    "pub_time": "Mon, 16 Mar 2026 15:57:47 +0000",
+    "detected_at": "2026-03-21T12:35:00.587801+00:00",
+    "detect_latency_sec": 419833.6,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 419833.6,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.75,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Susie Wiles is an incredible Chief of Staff, a great person, and one of the stro"
+  },
+  {
+    "post_id": "116239040439932874",
+    "pub_time": "Mon, 16 Mar 2026 13:16:38 +0000",
+    "detected_at": "2026-03-21T12:35:00.591285+00:00",
+    "detect_latency_sec": 429502.6,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 429502.6,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "The crazed Democrats are not allowing TSA Agents to get paid. The deal was made "
+  },
+  {
+    "post_id": "116236561191626050",
+    "pub_time": "Mon, 16 Mar 2026 02:46:08 +0000",
+    "detected_at": "2026-03-21T12:35:00.601010+00:00",
+    "detect_latency_sec": 467332.6,
+    "classify_ms": 0.4,
+    "predict_ms": 0.0,
+    "total_sec": 467332.6,
+    "signals": [
+      "TARIFF",
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.9,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "The Courts treat Republicans, and me, so unfairly, always seeming to protect tho"
+  },
+  {
+    "post_id": "116236559151421767",
+    "pub_time": "Mon, 16 Mar 2026 02:45:37 +0000",
+    "detected_at": "2026-03-21T12:35:00.602861+00:00",
+    "detect_latency_sec": 467363.6,
+    "classify_ms": 0.4,
+    "predict_ms": 0.0,
+    "total_sec": 467363.6,
+    "signals": [
+      "TARIFF"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.9,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "The decision that mattered most to me was TARIFFS! The Court knew where I stood,"
+  },
+  {
+    "post_id": "116236498017197393",
+    "pub_time": "Mon, 16 Mar 2026 02:30:04 +0000",
+    "detected_at": "2026-03-21T12:35:00.604575+00:00",
+    "detect_latency_sec": 468296.6,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 468296.6,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Mark Levin, a truly Great American Patriot, is somewhat under siege by other peo"
+  },
+  {
+    "post_id": "116235861005528220",
+    "pub_time": "Sun, 15 Mar 2026 23:48:04 +0000",
+    "detected_at": "2026-03-21T12:35:00.606401+00:00",
+    "detect_latency_sec": 478016.6,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 478016.6,
+    "signals": [
+      "RELIEF",
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.75,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "Iran has long been known as a Master of Media Manipulation and Public Relations."
+  },
+  {
+    "post_id": "116227789768118115",
+    "pub_time": "Sat, 14 Mar 2026 13:35:27 +0000",
+    "detected_at": "2026-03-21T12:35:00.615110+00:00",
+    "detect_latency_sec": 601173.6,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 601173.6,
+    "signals": [
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Yet again, an intentionally misleading headline by the Fake News Media about the"
+  },
+  {
+    "post_id": "116227449614232103",
+    "pub_time": "Sat, 14 Mar 2026 12:08:56 +0000",
+    "detected_at": "2026-03-21T12:35:00.616767+00:00",
+    "detect_latency_sec": 606364.6,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 606364.6,
+    "signals": [
+      "DEAL",
+      "BEARISH"
+    ],
+    "direction": "NEUTRAL",
+    "confidence": 0.3,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "Thank you to Johnny Jones and all of our GREAT TSA Agents who are going to work "
+  },
+  {
+    "post_id": "116225502010036899",
+    "pub_time": "Sat, 14 Mar 2026 03:53:38 +0000",
+    "detected_at": "2026-03-21T12:35:00.618580+00:00",
+    "detect_latency_sec": 636082.6,
+    "classify_ms": 0.0,
+    "predict_ms": 0.0,
+    "total_sec": 636082.6,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "The Fake News Media hates to report how well the United States Military has done"
+  },
+  {
+    "post_id": "116224969438347868",
+    "pub_time": "Sat, 14 Mar 2026 01:38:12 +0000",
+    "detected_at": "2026-03-21T12:35:00.624232+00:00",
+    "detect_latency_sec": 644208.6,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 644208.6,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "RT @realDonaldTrumpMoments ago, at my direction, the United States Central Comma"
+  },
+  {
+    "post_id": "116224689504709938",
+    "pub_time": "Sat, 14 Mar 2026 00:27:01 +0000",
+    "detected_at": "2026-03-21T12:35:00.632471+00:00",
+    "detect_latency_sec": 648479.6,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 648479.6,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "RT @realDonaldTrumpMoments ago, at my direction, the United States Central Comma"
+  },
+  {
+    "post_id": "116224679791927248",
+    "pub_time": "Sat, 14 Mar 2026 00:24:32 +0000",
+    "detected_at": "2026-03-21T12:35:00.638946+00:00",
+    "detect_latency_sec": 648628.6,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 648628.6,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "RT @realDonaldTrumpMoments ago, at my direction, the United States Central Comma"
+  },
+  {
+    "post_id": "116224324444349237",
+    "pub_time": "Fri, 13 Mar 2026 22:54:10 +0000",
+    "detected_at": "2026-03-21T12:35:00.658239+00:00",
+    "detect_latency_sec": 654050.7,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 654050.7,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Moments ago, at my direction, the United States Central Command executed one of "
+  },
+  {
+    "post_id": "116267892671497457",
+    "pub_time": "Sat, 21 Mar 2026 15:34:09 +0000",
+    "detected_at": "2026-03-21T15:35:23.990855+00:00",
+    "detect_latency_sec": 75.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 75.0,
+    "signals": [
+      "DEAL",
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "If the Radical Left Democrats don’t immediately sign an agreement to let our Cou"
+  }
+]

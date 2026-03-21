@@ -503,5 +503,400 @@
     "pm_vs_stock_divergence": null,
     "divergence_detail": null,
     "status": "EXPIRED"
+  },
+  {
+    "id": "rt_1774096512",
+    "created_at": "2026-03-21T12:35:12Z",
+    "post_time": "2026-03-20T13:56:53.277Z",
+    "post_preview": "I met with Hope Scheppelman and her husband Steven, of the Radical Left State of Colorado, to discuss various opportunities to serve our Country in a different capacity than her current run for the Un",
+    "signals": [
+      {
+        "type": "THREAT",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "ban"
+        ]
+      },
+      {
+        "type": "BEARISH",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "disaster"
+        ]
+      }
+    ],
+    "signal_types": [
+      "THREAT",
+      "BEARISH"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.65,
+    "tracked_markets": [
+      {
+        "token_id": "456013945544970901736423546303",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "102652665954921241745169157447",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "702356444324129641219178642559",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.014
+      },
+      {
+        "token_id": "349596532702482778959985375766",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.986
+      },
+      {
+        "token_id": "444468044968899072090277873935",
+        "question": "Will Trump visit China by April 30?",
+        "price_at_signal": 0.125
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 648.57,
+    "es_at_signal": 6559.0,
+    "spy_change_at_signal": -1.898,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 3.35,
+    "trump_coin_24h_change": 0.18,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1774096512",
+    "created_at": "2026-03-21T12:35:12Z",
+    "post_time": "2026-03-19T20:54:21.047Z",
+    "post_preview": "GAVIN M. WAX: Trump Quietly Set Up Future Of American Manufacturing With Stroke Of A Pen: https://dailycaller.com/2026/02/22/gavin-wax-donald-trump-supreme-court-tariffs-american-manufacturing-climate",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.8,
+        "matched_keywords": [
+          "tariff",
+          "tariffs"
+        ]
+      }
+    ],
+    "signal_types": [
+      "TARIFF"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.8,
+    "tracked_markets": [
+      {
+        "token_id": "456013945544970901736423546303",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "102652665954921241745169157447",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "702356444324129641219178642559",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.014
+      },
+      {
+        "token_id": "349596532702482778959985375766",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.986
+      },
+      {
+        "token_id": "444468044968899072090277873935",
+        "question": "Will Trump visit China by April 30?",
+        "price_at_signal": 0.125
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 648.57,
+    "es_at_signal": 6559.0,
+    "spy_change_at_signal": -1.898,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 3.35,
+    "trump_coin_24h_change": 0.18,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1774096512",
+    "created_at": "2026-03-21T12:35:12Z",
+    "post_time": "2026-03-19T14:05:31.037Z",
+    "post_preview": "Asia-Pacific Allies Ink $56 Billion in Deals with US Companies at Tokyo Forum, Burgum Says: https://www.newsmax.com/finance/streettalk/doug-burgum/2026/03/15/id/1249564/",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "deal"
+        ]
+      }
+    ],
+    "signal_types": [
+      "DEAL"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.65,
+    "tracked_markets": [
+      {
+        "token_id": "456013945544970901736423546303",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "102652665954921241745169157447",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "702356444324129641219178642559",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.014
+      },
+      {
+        "token_id": "349596532702482778959985375766",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.986
+      },
+      {
+        "token_id": "444468044968899072090277873935",
+        "question": "Will Trump visit China by April 30?",
+        "price_at_signal": 0.125
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 648.57,
+    "es_at_signal": 6559.0,
+    "spy_change_at_signal": -1.898,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 3.35,
+    "trump_coin_24h_change": 0.18,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1774107463",
+    "created_at": "2026-03-21T15:37:43Z",
+    "post_time": "2026-03-21T15:34:09.011Z",
+    "post_preview": "If the Radical Left Democrats don't immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Air",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "agreement"
+        ]
+      },
+      {
+        "type": "ACTION",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "immediately"
+        ]
+      }
+    ],
+    "signal_types": [
+      "DEAL",
+      "ACTION"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.65,
+    "tracked_markets": [
+      {
+        "token_id": "456013945544970901736423546303",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "102652665954921241745169157447",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "702356444324129641219178642559",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.0125
+      },
+      {
+        "token_id": "349596532702482778959985375766",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.9875
+      },
+      {
+        "token_id": "444468044968899072090277873935",
+        "question": "Will Trump visit China by April 30?",
+        "price_at_signal": 0.135
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 648.57,
+    "es_at_signal": 6559.0,
+    "spy_change_at_signal": -1.898,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 3.37,
+    "trump_coin_24h_change": 1.43,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1774107463",
+    "created_at": "2026-03-21T15:37:43Z",
+    "post_time": "2026-03-21T11:34:00.000Z",
+    "post_preview": "If the Radical Left Democrats don’t immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Air",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "agreement"
+        ]
+      },
+      {
+        "type": "ACTION",
+        "confidence": 0.65,
+        "matched_keywords": [
+          "immediately"
+        ]
+      }
+    ],
+    "signal_types": [
+      "DEAL",
+      "ACTION"
+    ],
+    "predicted_direction": "UP",
+    "confidence": 0.65,
+    "tracked_markets": [
+      {
+        "token_id": "456013945544970901736423546303",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "102652665954921241745169157447",
+        "question": "Will Trump visit China by October 31?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "702356444324129641219178642559",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.0125
+      },
+      {
+        "token_id": "349596532702482778959985375766",
+        "question": "Will Trump visit China by March 31?",
+        "price_at_signal": 0.9875
+      },
+      {
+        "token_id": "444468044968899072090277873935",
+        "question": "Will Trump visit China by April 30?",
+        "price_at_signal": 0.135
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 648.57,
+    "es_at_signal": 6559.0,
+    "spy_change_at_signal": -1.898,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 3.37,
+    "trump_coin_24h_change": 1.43,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
   }
 ]

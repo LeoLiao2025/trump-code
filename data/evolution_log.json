@@ -334,28 +334,17 @@
   },
   {
     "date": "2026-03-21",
-    "crossover": 11,
-    "mutation": 10,
+    "crossover": 16,
+    "mutation": 9,
     "distill": 17,
-    "total_new": 38,
+    "total_new": 42,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_fake",
-          "kw_economy",
-          "mostly_open"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 100.0,
-        "origin": "mutation_replace"
-      },
-      {
-        "features": [
-          "kw_dow_2plus",
           "questions_yes",
-          "kw_signed"
+          "kw_thank_you_for_your_attention",
+          "kw_tariffs_2plus"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -364,14 +353,24 @@
       },
       {
         "features": [
-          "questions_yes",
+          "open_inflation",
           "kw_thank_you_for_your_attention",
-          "kw_signed"
+          "open_great"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 91.7,
+        "origin": "mutation_replace"
+      },
+      {
+        "features": [
+          "open_china",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 83.3,
-        "origin": "crossover"
+        "score": 90.0,
+        "origin": "mutation_remove"
       }
     ]
   }
