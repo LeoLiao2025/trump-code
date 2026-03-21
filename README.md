@@ -1,5 +1,10 @@
 <div align="center">
 
+> 🐱 **[cat Treehouse](https://github.com/sstklen/cat-treehouse)** — Win a treehouse stay in Japan for you + 3 friends. Your GitHub stars are your lottery tickets. **一人中獎，四人同行。**
+> [Enter the Draw →](https://github.com/sstklen/cat-treehouse/issues/new?template=enter.yml)
+
+---
+
 # 🔐 TRUMP CODE
 
 **AI-powered cryptanalysis of presidential communications × stock market impact.**
