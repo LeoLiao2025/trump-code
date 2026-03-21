@@ -1,8 +1,8 @@
-# 川普密碼 Opus 簡報 — 2026-03-20
-準備時間: 2026-03-20T14:43:00Z
+# 川普密碼 Opus 簡報 — 2026-03-21
+準備時間: 2026-03-21T14:26:36Z
 
-## 今日推文: 4 篇
-時間: 2026-03-20T13:22:29.346Z ~ 2026-03-20T13:56:53.277Z
+## 今日推文: 6 篇
+時間: 2026-03-20T13:22:29.346Z ~ 2026-03-20T22:01:03.569Z
 
 [13:22] CONGRESS, PASS THE FARM BILL, NOW! President DJT
 
@@ -11,6 +11,10 @@
 [13:43] Without the U.S.A., NATO IS A PAPER TIGER! They didn't want to join the fight to stop a Nuclear Powered Iran. Now that fight is Militarily WON, with very little danger for them, they complain about the high oil prices they are forced to pay, but don't want to help open the Strait of Hormuz, a simple
 
 [13:56] I met with Hope Scheppelman and her husband Steven, of the Radical Left State of Colorado, to discuss various opportunities to serve our Country in a different capacity than her current run for the United States Congress. Hope and Steven are wonderful and patriotic Veterans of our U.S. Navy, and loy
+
+[21:13] We are getting very close to meeting our objectives as we consider winding down our great Military efforts in the Middle East with respect to the Terrorist Regime of Iran: (1) Completely degrading Iranian Missile Capability, Launchers, and everything else pertaining to them. (2) Destroying Iran's De
+
+[22:01] The Great State of Colorado, and a pathetic RINO District Attorney, together with the Radical Left Governor, gave a wonderful woman named Tina Peters, a 73-year-old Gold Star Mom, who has cancer, nine years in prison because, as a Republican Voting Official, she went after the Democrats for cheating
 
 ## 關鍵字偵測到的信號: IRAN
 
@@ -36,10 +40,10 @@
 
 ## 學習引擎上次動作: 4 升級 / 1 降級 / 1 淘汰
 
-## 規則進化: 新增 44 條規則
+## 規則進化: 新增 38 條規則
 
 ## 信號信心度
-  ACTION: 0.867
+  ACTION: 0.88
   CHINA: 0.6
   DEAL: 0.55
   DEAL_ONLY: 0.65

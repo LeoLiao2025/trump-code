@@ -1,12 +1,12 @@
 {
-  "date": "2026-03-20",
-  "prepared_at": "2026-03-20T14:43:00Z",
+  "date": "2026-03-21",
+  "prepared_at": "2026-03-21T14:26:36Z",
   "status": "PENDING",
   "today_posts": {
-    "count": 4,
-    "latest": "I met with Hope Scheppelman and her husband Steven, of the Radical Left State of Colorado, to discuss various opportunities to serve our Country in a different capacity than her current run for the Un",
+    "count": 6,
+    "latest": "The Great State of Colorado, and a pathetic RINO District Attorney, together with the Radical Left Governor, gave a wonderful woman named Tina Peters, a 73-year-old Gold Star Mom, who has cancer, nine",
     "earliest_time": "2026-03-20T13:22:29.346Z",
-    "latest_time": "2026-03-20T13:56:53.277Z",
+    "latest_time": "2026-03-20T22:01:03.569Z",
     "sample": [
       {
         "time": "13:22",
@@ -23,6 +23,14 @@
       {
         "time": "13:56",
         "text": "I met with Hope Scheppelman and her husband Steven, of the Radical Left State of Colorado, to discuss various opportunities to serve our Country in a different capacity than her current run for the United States Congress. Hope and Steven are wonderful and patriotic Veterans of our U.S. Navy, and loy"
+      },
+      {
+        "time": "21:13",
+        "text": "We are getting very close to meeting our objectives as we consider winding down our great Military efforts in the Middle East with respect to the Terrorist Regime of Iran: (1) Completely degrading Iranian Missile Capability, Launchers, and everything else pertaining to them. (2) Destroying Iran's De"
+      },
+      {
+        "time": "22:01",
+        "text": "The Great State of Colorado, and a pathetic RINO District Attorney, together with the Radical Left Governor, gave a wonderful woman named Tina Peters, a 73-year-old Gold Star Mom, who has cancer, nine years in prison because, as a Republican Voting Official, she went after the Democrats for cheating"
       }
     ]
   },
@@ -30,15 +38,19 @@
     "IRAN"
   ],
   "today_features": {
-    "posts_1_5": true,
+    "posts_6_10": true,
     "avg_len_very_long": true,
-    "caps_high": true,
+    "caps_medium": true,
     "excl_heavy": true,
     "questions_no": true,
     "kw_ban": true,
     "open_ban": true,
     "kw_iran": true,
+    "kw_iran_2plus": true,
     "open_iran": true,
+    "kw_israel": true,
+    "kw_saudi": true,
+    "kw_dow": true,
     "kw_economy": true,
     "open_economy": true,
     "kw_inflation": true,
@@ -48,17 +60,20 @@
     "kw_energy": true,
     "open_energy": true,
     "kw_great": true,
+    "kw_great_2plus": true,
     "open_great": true,
     "kw_historic": true,
     "open_historic": true,
     "kw_fantastic": true,
     "open_fantastic": true,
     "kw_wonderful": true,
+    "kw_wonderful_2plus": true,
     "open_wonderful": true,
     "kw_corrupt": true,
     "open_corrupt": true,
     "kw_disaster": true,
     "open_disaster": true,
+    "kw_pathetic": true,
     "kw_maga": true,
     "open_maga": true,
     "kw_save_america": true,
@@ -67,11 +82,11 @@
     "kw_president_djt_2plus": true,
     "pre_president_djt": true,
     "open_president_djt": true,
+    "kw_thank_you_for_your_attention": true,
     "kw_complete_and_total": true,
     "open_complete_and_total": true,
     "is_friday": true,
-    "volume_rising_3d": true,
-    "volume_drop": true
+    "volume_rising_3d": true
   },
   "model_performance": {
     "A1_tariff_bearish": {
@@ -180,38 +195,40 @@
     "signal_adjusted": 1
   },
   "evolution_latest": {
-    "date": "2026-03-20",
-    "crossover": 16,
-    "mutation": 11,
+    "date": "2026-03-21",
+    "crossover": 11,
+    "mutation": 10,
     "distill": 17,
-    "total_new": 44,
+    "total_new": 38,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_signed",
-          "kw_tariffs"
+          "kw_fake",
+          "kw_economy",
+          "mostly_open"
         ],
         "direction": "LONG",
-        "hold": 2,
-        "score": 92.3,
+        "hold": 3,
+        "score": 100.0,
+        "origin": "mutation_replace"
+      },
+      {
+        "features": [
+          "kw_dow_2plus",
+          "questions_yes",
+          "kw_signed"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 91.7,
         "origin": "crossover"
       },
       {
         "features": [
-          "kw_signed",
-          "kw_deal"
-        ],
-        "direction": "LONG",
-        "hold": 2,
-        "score": 85.0,
-        "origin": "mutation_remove"
-      },
-      {
-        "features": [
-          "kw_china",
-          "kw_economy",
-          "kw_tremendous"
+          "questions_yes",
+          "kw_thank_you_for_your_attention",
+          "kw_signed"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -224,7 +241,7 @@
     "TARIFF": 0.7,
     "DEAL": 0.55,
     "RELIEF": 0.95,
-    "ACTION": 0.867,
+    "ACTION": 0.88,
     "THREAT": 0.6,
     "CHINA": 0.6,
     "IRAN": 0.55,
@@ -232,7 +249,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-03-20",
+    "date": "2026-03-21",
     "signals": [
       "IRAN"
     ],
