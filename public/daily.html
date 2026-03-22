@@ -85,8 +85,11 @@ function md2html(md) {
 
 async function loadArticle(date, lang) {
   const el = document.getElementById('article');
+  // 目錄結構：articles/2026-03/21-zh.md（月份目錄 + 日-語言.md）
+  const month = date.slice(0, 7);   // "2026-03"
+  const day = date.slice(8);        // "21"
   try {
-    const resp = await fetch(`/articles/${date}/${lang}.md`);
+    const resp = await fetch(`/articles/${month}/${day}-${lang}.md`);
     if (!resp.ok) throw new Error('not found');
     const text = await resp.text();
     el.innerHTML = md2html(text);
