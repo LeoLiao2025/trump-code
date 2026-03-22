@@ -1,24 +1,30 @@
-# 川普密碼 Opus 簡報 — 2026-03-21
-準備時間: 2026-03-21T22:30:04Z
+# 川普密碼 Opus 簡報 — 2026-03-22
+準備時間: 2026-03-22T14:28:06Z
 
-## 今日推文: 8 篇
-時間: 2026-03-21T11:34:00.000Z ~ 2026-03-21T22:13:38.554Z
+## 今日推文: 10 篇
+時間: 2026-03-22T02:04:34.472Z ~ 2026-03-22T13:46:09.261Z
 
-[11:34] If the Radical Left Democrats don’t immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o
+[02:04] Tina Peters, a 73-year-old woman with cancer, was given a nine year jail sentence in Colorado because she caught the Democrats CHEATING on the Presidential Election of 2020. FREE TINA! President DJT
 
-[13:26] Robert Mueller just died. Good, I’m glad he’s dead. He can no longer hurt innocent people! President DONALD J. TRUMP
+[12:00] On Monday, ICE will be going to airports to help our wonderful TSA Agents who have stayed on the job despite the fact that the Radical Left Democrats, who are only focused on protecting hard line criminals who have entered our Country illegally, are endangering the USA by holding back the money that
 
-[15:34] If the Radical Left Democrats don't immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o
+[12:13] https://truthsocial.com/@IStandWithTrump47/116164006155671847
 
-[16:52] Highly Respected America First Congresswoman, Julia Letlow, of the wonderful State of Louisiana, is a Great Star, has been from the very beginning, and only gets better! Julia is running for the United States Senate in Louisiana, a place I love and WON BIG, six times, including Primaries, in 2016, 2
+[12:14] https://truthsocial.com/@IStandWithTrump47/116272413318941729
 
-[17:26] Robert Mueller just died. Good, I'm glad he's dead. He can no longer hurt innocent people! President DONALD J. TRUMP
+[12:14] https://truthsocial.com/@IStandWithTrump47/116269851029760378
 
-[17:42] The Radical Left Democrats have hurt so many people with their vicious and uncaring ways. What they have done to the Department of Homeland Security, our fantastic TSA Officers, and, most importantly, the great people of our Country, is an absolute disgrace. If the Democrats do not allow for Just an
+[12:17] https://truthsocial.com/users/CrazyCatRescuer/statuses/116268355575900202
 
-[19:01] In the early days of Mar-a-Lago!
+[12:24] Now with the death of Iran, the greatest enemy America has is the Radical Left, Highly Incompetent, Democrat Party! Thank you for your attention to this matter. President DJT
 
-[22:13] The Democrats want to give our Country away to the illegals who they allowed to pour through our now very strong Border. I won't allow that to happen. The Democrats are grossly incompetent! ICE is ready to go on Monday. President DONALD J. TRUMP
+[13:33] SAVE America Act Hits the Achilles Heel of Democrats' Fraud Scheme: https://www.stonecoldtruth.com/p/save-america-act-hits-the-achilles
+
+[13:34] THE LIES OF ROBERT MUELLER AND HIS CRIMINAL GANG: https://stonezone.com/russian-collusion-lies-recycled-yet-again/
+
+[13:46] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116273127672345044
+
+## 關鍵字偵測到的信號: IRAN
 
 ## 模型績效排行
   A3_relief_rocket (盤前 RELIEF→當天飆): 72.7% | 報酬 +1.206% | 11 筆
@@ -42,10 +48,10 @@
 
 ## 學習引擎上次動作: 4 升級 / 1 降級 / 1 淘汰
 
-## 規則進化: 新增 42 條規則
+## 規則進化: 新增 45 條規則
 
 ## 信號信心度
-  ACTION: 0.88
+  ACTION: 0.893
   CHINA: 0.6
   DEAL: 0.55
   DEAL_ONLY: 0.65

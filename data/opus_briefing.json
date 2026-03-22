@@ -1,96 +1,89 @@
 {
-  "date": "2026-03-21",
-  "prepared_at": "2026-03-21T22:30:04Z",
+  "date": "2026-03-22",
+  "prepared_at": "2026-03-22T14:28:06Z",
   "status": "PENDING",
   "today_posts": {
-    "count": 8,
-    "latest": "The Democrats want to give our Country away to the illegals who they allowed to pour through our now very strong Border. I won't allow that to happen. The Democrats are grossly incompetent! ICE is rea",
-    "earliest_time": "2026-03-21T11:34:00.000Z",
-    "latest_time": "2026-03-21T22:13:38.554Z",
+    "count": 10,
+    "latest": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116273127672345044",
+    "earliest_time": "2026-03-22T02:04:34.472Z",
+    "latest_time": "2026-03-22T13:46:09.261Z",
     "sample": [
       {
-        "time": "11:34",
-        "text": "If the Radical Left Democrats don’t immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o"
+        "time": "02:04",
+        "text": "Tina Peters, a 73-year-old woman with cancer, was given a nine year jail sentence in Colorado because she caught the Democrats CHEATING on the Presidential Election of 2020. FREE TINA! President DJT"
       },
       {
-        "time": "13:26",
-        "text": "Robert Mueller just died. Good, I’m glad he’s dead. He can no longer hurt innocent people! President DONALD J. TRUMP"
+        "time": "12:00",
+        "text": "On Monday, ICE will be going to airports to help our wonderful TSA Agents who have stayed on the job despite the fact that the Radical Left Democrats, who are only focused on protecting hard line criminals who have entered our Country illegally, are endangering the USA by holding back the money that"
       },
       {
-        "time": "15:34",
-        "text": "If the Radical Left Democrats don't immediately sign an agreement to let our Country, in particular, our Airports, be FREE and SAFE again, I will move our brilliant and patriotic ICE Agents to the Airports where they will do Security like no one has ever seen before, including the immediate arrest o"
+        "time": "12:13",
+        "text": "https://truthsocial.com/@IStandWithTrump47/116164006155671847"
       },
       {
-        "time": "16:52",
-        "text": "Highly Respected America First Congresswoman, Julia Letlow, of the wonderful State of Louisiana, is a Great Star, has been from the very beginning, and only gets better! Julia is running for the United States Senate in Louisiana, a place I love and WON BIG, six times, including Primaries, in 2016, 2"
+        "time": "12:14",
+        "text": "https://truthsocial.com/@IStandWithTrump47/116272413318941729"
       },
       {
-        "time": "17:26",
-        "text": "Robert Mueller just died. Good, I'm glad he's dead. He can no longer hurt innocent people! President DONALD J. TRUMP"
+        "time": "12:14",
+        "text": "https://truthsocial.com/@IStandWithTrump47/116269851029760378"
       },
       {
-        "time": "17:42",
-        "text": "The Radical Left Democrats have hurt so many people with their vicious and uncaring ways. What they have done to the Department of Homeland Security, our fantastic TSA Officers, and, most importantly, the great people of our Country, is an absolute disgrace. If the Democrats do not allow for Just an"
+        "time": "12:17",
+        "text": "https://truthsocial.com/users/CrazyCatRescuer/statuses/116268355575900202"
       },
       {
-        "time": "19:01",
-        "text": "In the early days of Mar-a-Lago!"
+        "time": "12:24",
+        "text": "Now with the death of Iran, the greatest enemy America has is the Radical Left, Highly Incompetent, Democrat Party! Thank you for your attention to this matter. President DJT"
       },
       {
-        "time": "22:13",
-        "text": "The Democrats want to give our Country away to the illegals who they allowed to pour through our now very strong Border. I won't allow that to happen. The Democrats are grossly incompetent! ICE is ready to go on Monday. President DONALD J. TRUMP"
+        "time": "13:33",
+        "text": "SAVE America Act Hits the Achilles Heel of Democrats' Fraud Scheme: https://www.stonecoldtruth.com/p/save-america-act-hits-the-achilles"
+      },
+      {
+        "time": "13:34",
+        "text": "THE LIES OF ROBERT MUELLER AND HIS CRIMINAL GANG: https://stonezone.com/russian-collusion-lies-recycled-yet-again/"
+      },
+      {
+        "time": "13:46",
+        "text": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116273127672345044"
       }
     ]
   },
+  "keyword_signals": [
+    "IRAN"
+  ],
   "today_features": {
     "posts_6_10": true,
-    "avg_len_long": true,
+    "avg_len_medium": true,
     "caps_medium": true,
-    "excl_heavy": true,
+    "excl_normal": true,
     "questions_no": true,
-    "mostly_open": true,
-    "kw_agreement": true,
-    "kw_agreement_2plus": true,
-    "pre_agreement": true,
-    "open_agreement": true,
-    "kw_immediately": true,
-    "kw_immediately_2plus": true,
-    "pre_immediately": true,
-    "open_immediately": true,
-    "kw_dow": true,
-    "kw_dow_2plus": true,
-    "open_dow": true,
-    "kw_economy": true,
-    "open_economy": true,
-    "kw_oil": true,
-    "open_oil": true,
-    "kw_gas": true,
-    "open_gas": true,
-    "kw_energy": true,
-    "open_energy": true,
+    "mostly_premarket": true,
+    "has_night": true,
+    "kw_signed": true,
+    "pre_signed": true,
+    "kw_russia": true,
+    "open_russia": true,
+    "kw_iran": true,
+    "pre_iran": true,
     "kw_great": true,
     "kw_great_2plus": true,
     "pre_great": true,
-    "open_great": true,
-    "kw_amazing": true,
-    "open_amazing": true,
     "kw_fantastic": true,
-    "open_fantastic": true,
+    "pre_fantastic": true,
     "kw_wonderful": true,
-    "open_wonderful": true,
-    "kw_corrupt": true,
-    "kw_corrupt_2plus": true,
-    "pre_corrupt": true,
-    "open_corrupt": true,
-    "kw_disgrace": true,
-    "open_disgrace": true,
+    "pre_wonderful": true,
     "kw_incompetent": true,
-    "kw_america_first": true,
-    "open_america_first": true,
-    "kw_never_let_you_down": true,
-    "open_never_let_you_down": true,
-    "kw_complete_and_total": true,
-    "open_complete_and_total": true,
+    "kw_incompetent_2plus": true,
+    "pre_incompetent": true,
+    "kw_save_america": true,
+    "open_save_america": true,
+    "kw_president_djt": true,
+    "kw_president_djt_2plus": true,
+    "pre_president_djt": true,
+    "kw_thank_you_for_your_attention": true,
+    "pre_thank_you_for_your_attention": true,
     "is_weekend": true
   },
   "model_performance": {
@@ -200,43 +193,42 @@
     "signal_adjusted": 1
   },
   "evolution_latest": {
-    "date": "2026-03-21",
-    "crossover": 16,
-    "mutation": 9,
-    "distill": 17,
-    "total_new": 42,
+    "date": "2026-03-22",
+    "crossover": 11,
+    "mutation": 16,
+    "distill": 18,
+    "total_new": 45,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "questions_yes",
+          "kw_china",
           "kw_thank_you_for_your_attention",
-          "kw_tariffs_2plus"
+          "open_china"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 91.7,
+        "score": 95.5,
         "origin": "crossover"
       },
       {
         "features": [
-          "open_inflation",
-          "kw_thank_you_for_your_attention",
-          "open_great"
+          "volume_falling_3d",
+          "open_thank_you_for_your_attention"
         ],
         "direction": "LONG",
         "hold": 2,
-        "score": 91.7,
-        "origin": "mutation_replace"
+        "score": 93.8,
+        "origin": "mutation_remove"
       },
       {
         "features": [
-          "open_china",
-          "kw_economy"
+          "kw_amazing",
+          "volume_spike"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 90.0,
+        "score": 88.9,
         "origin": "mutation_remove"
       }
     ]
@@ -245,7 +237,7 @@
     "TARIFF": 0.7,
     "DEAL": 0.55,
     "RELIEF": 0.95,
-    "ACTION": 0.88,
+    "ACTION": 0.893,
     "THREAT": 0.6,
     "CHINA": 0.6,
     "IRAN": 0.55,
@@ -253,7 +245,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-03-20",
+    "date": "2026-03-22",
     "signals": [
       "IRAN"
     ],
