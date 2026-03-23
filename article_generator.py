@@ -41,22 +41,29 @@ def call_llm(prompt: str, max_tokens: int = 2000) -> str:
         raise RuntimeError(f"washin_llm 失敗: {result.error}")
 
     # washin_llm 沒裝時的 fallback：直接用 claude -p
-    import subprocess
-    try:
-        result = subprocess.run(
-            ["claude", "-p", "--output-format", "json"],
-            input=prompt,
-            capture_output=True,
-            text=True,
-            timeout=120,
-        )
-        if result.returncode == 0:
-            data = json.loads(result.stdout)
-            text = data.get("result", "")
-            if text:
-                return text
-    except (FileNotFoundError, subprocess.TimeoutExpired, json.JSONDecodeError):
-        pass
+    import subprocess, shutil, sys
+    # Windows 上 claude 是 .cmd，需要完整路徑或 shell=True
+    claude_candidates = ["claude", "claude.cmd"]
+    if sys.platform == "win32":
+        npm_claude = shutil.which("claude.cmd") or shutil.which("claude")
+        if npm_claude:
+            claude_candidates = [npm_claude]
+    for claude_cmd in claude_candidates:
+        try:
+            result = subprocess.run(
+                [claude_cmd, "-p", "--output-format", "json"],
+                input=prompt,
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
+            if result.returncode == 0:
+                data = json.loads(result.stdout)
+                text = data.get("result", "")
+                if text:
+                    return text
+        except (FileNotFoundError, subprocess.TimeoutExpired, json.JSONDecodeError):
+            continue
     raise RuntimeError("所有 LLM 都失敗")
 
 

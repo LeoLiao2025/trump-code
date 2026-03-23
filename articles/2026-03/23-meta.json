@@ -1,0 +1,22 @@
+{
+  "date": "2026-03-23",
+  "generated_at": "2026-03-23T14:37:40.381824+00:00",
+  "posts_count": 11,
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "C:\\Users\\LEOLIAO\\.claude\\ClaudeProjects\\trump-code\\articles\\2026-03\\23-zh.md",
+      "length": 783
+    },
+    "en": {
+      "status": "ok",
+      "path": "C:\\Users\\LEOLIAO\\.claude\\ClaudeProjects\\trump-code\\articles\\2026-03\\23-en.md",
+      "length": 2913
+    },
+    "ja": {
+      "status": "ok",
+      "path": "C:\\Users\\LEOLIAO\\.claude\\ClaudeProjects\\trump-code\\articles\\2026-03\\23-ja.md",
+      "length": 906
+    }
+  }
+}
