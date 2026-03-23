@@ -1,76 +1,7 @@
 {
   "date": "2026-03-23",
-  "prepared_at": "2026-03-23T14:29:04Z",
+  "prepared_at": "2026-03-23T14:50:41Z",
   "status": "PENDING",
-  "today_posts": {
-    "count": 4,
-    "latest": "I am a BIG proponent of ICE wearing masks as they search for, and are forced to deal with, hardened criminals, many of whom were let into our Country by Sleepy Joe Biden and his wonderful \"Border Czar",
-    "earliest_time": "2026-03-23T00:31:43.742Z",
-    "latest_time": "2026-03-23T12:57:13.665Z",
-    "sample": [
-      {
-        "time": "00:31",
-        "text": "I don't think we should make any deal with the Crazy, Country Destroying, Radical Left Democrats unless, and until, they Vote with Republicans to pass \"THE SAVE AMERICA ACT.\" It is far more important than anything else we are doing in the Senate, and that includes giving these same terrible people, "
-      },
-      {
-        "time": "03:48",
-        "text": "PEACE THROUGH STRENGTH, TO PUT IT MILDLY!!!"
-      },
-      {
-        "time": "11:23",
-        "text": "I AM PLEASED TO REPORT THAT THE UNITED STATES OF AMERICA, AND THE COUNTRY OF IRAN, HAVE HAD, OVER THE LAST TWO DAYS, VERY GOOD AND PRODUCTIVE CONVERSATIONS REGARDING A COMPLETE AND TOTAL RESOLUTION OF OUR HOSTILITIES IN THE MIDDLE EAST. BASED ON THE TENOR AND TONE OF THESE IN DEPTH, DETAILED, AND CO"
-      },
-      {
-        "time": "12:57",
-        "text": "I am a BIG proponent of ICE wearing masks as they search for, and are forced to deal with, hardened criminals, many of whom were let into our Country by Sleepy Joe Biden and his wonderful \"Border Czar,\" Kamala (she never even went to the Border!), through their absolutely INSANE Open Border Policy. "
-      }
-    ]
-  },
-  "keyword_signals": [
-    "DEAL",
-    "IRAN",
-    "DEAL_ONLY"
-  ],
-  "today_features": {
-    "posts_1_5": true,
-    "avg_len_long": true,
-    "caps_very_high": true,
-    "excl_extreme": true,
-    "questions_no": true,
-    "has_night": true,
-    "kw_deal": true,
-    "kw_deal_2plus": true,
-    "pre_deal": true,
-    "kw_iran": true,
-    "pre_iran": true,
-    "kw_energy": true,
-    "pre_energy": true,
-    "kw_billion": true,
-    "kw_great": true,
-    "kw_great_2plus": true,
-    "pre_great": true,
-    "kw_wonderful": true,
-    "pre_wonderful": true,
-    "kw_terrible": true,
-    "kw_biden": true,
-    "pre_biden": true,
-    "kw_kamala": true,
-    "pre_kamala": true,
-    "kw_save_america": true,
-    "kw_filibuster": true,
-    "kw_president_djt": true,
-    "kw_president_djt_2plus": true,
-    "pre_president_djt": true,
-    "kw_thank_you_for_your_attention": true,
-    "pre_thank_you_for_your_attention": true,
-    "kw_complete_and_total": true,
-    "pre_complete_and_total": true,
-    "is_monday": true,
-    "volume_rising_3d": true,
-    "volume_drop": true,
-    "deal_without_tariff": true,
-    "deal_no_tariff": true
-  },
   "model_performance": {
     "A1_tariff_bearish": {
       "name": "盤中關稅→隔天跌",

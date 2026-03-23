@@ -1,0 +1,98 @@
+{
+  "A1_tariff_bearish": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "A2_deal_bullish": {
+    "predictions": 1,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 1,
+    "total_return": 0,
+    "trades": []
+  },
+  "A3_relief_rocket": {
+    "predictions": 1,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 1,
+    "total_return": 0,
+    "trades": []
+  },
+  "B1_triple_signal": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "B2_tariff_to_deal": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "B3_action_pre": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "C1_burst_silence": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "C2_brag_top": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "C3_night_alert": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "D1_new_phrase": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "D2_sig_change": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  },
+  "D3_volume_spike": {
+    "predictions": 0,
+    "correct": 0,
+    "wrong": 0,
+    "pending": 0,
+    "total_return": 0,
+    "trades": []
+  }
+}
