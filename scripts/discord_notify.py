@@ -68,7 +68,10 @@ def main():
     req = urllib.request.Request(
         webhook,
         data=json.dumps(payload).encode(),
-        headers={"Content-Type": "application/json"},
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": "TrumpCodeBot/1.0",
+        },
     )
     try:
         urllib.request.urlopen(req, timeout=10)
