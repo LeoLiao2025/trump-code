@@ -1,184 +1,195 @@
 {
   "date": "2026-03-23",
-  "generated_at": "2026-03-23T14:45:00Z",
-  "model": "claude-sonnet-4-6",
-  "analyzed_at": "2026-03-23T14:45:00Z",
+  "generated_at": "2026-03-23T14:50:00Z",
+  "analyzed_at": "2026-03-23T14:50:00Z",
   "analyzed_by": "claude-sonnet-4-6",
+  "version": 2,
+  "missed_signals": [
+    "IRAN_VICTORY_DECLARATION",
+    "FORMAL_PRESIDENTIAL_SIGNOFF",
+    "HORMUZ_STRAIT_THREAT",
+    "NATO_COWARD_ATTACK",
+    "ICE_ULTIMATUM_WITH_DATE",
+    "MUELLER_EXTREME_PERSONAL_ATTACK"
+  ],
   "q1_missed_signals": {
-    "summary": "關鍵字引擎捕捉到 DEAL/IRAN 但漏掉了 5 個高價值信號",
+    "summary": "6個漏掉信號，最重要是伊朗勝利宣告和正式總統署名格式",
     "missed": [
       {
-        "signal": "DEAL_NEGATIVE_POLARITY",
-        "evidence": "推文 00:31：I don\"t think we should make any deal unless...",
-        "why_missed": "引擎只偵測 DEAL 關鍵字，未辨別語意極性",
-        "market_implication": "BEARISH",
-        "priority": "HIGH"
+        "signal": "IRAN_VICTORY_DECLARATION",
+        "priority": "CRITICAL",
+        "evidence": "winding down military efforts + objectives met",
+        "market_implication": "中東衝突解除，S&P LONG 3天"
       },
       {
-        "signal": "PREVIEW_ANNOUNCE_SEQUENCE",
-        "evidence": "03:48 PEACE THROUGH STRENGTH 先於 11:23 伊朗聲明 7.5 小時",
-        "why_missed": "引擎未建模推文序列關係",
-        "market_implication": "BULLISH 信號放大器",
-        "priority": "HIGH"
+        "signal": "FORMAL_PRESIDENTIAL_SIGNOFF",
+        "priority": "HIGH",
+        "evidence": "Thank you for your attention! President DONALD J. TRUMP 完整姓名格式",
+        "market_implication": "官方聲明放大器，置信度+20%"
       },
       {
-        "signal": "IRAN_PEACE_COMPLETE_RESOLUTION",
-        "evidence": "11:23 COMPLETE AND TOTAL RESOLUTION OF OUR HOSTILITIES IN THE MIDDLE EAST",
-        "why_missed": "未識別完全去緊張化語境",
-        "market_implication": "S&P LONG 3天",
-        "priority": "HIGH"
+        "signal": "HORMUZ_STRAIT_THREAT",
+        "priority": "HIGH",
+        "evidence": "Hormuz/Strait 不在關鍵字庫",
+        "market_implication": "直接牽動油價"
       },
       {
-        "signal": "ALL_CAPS_FULL_TWEET_DIPLOMATIC",
-        "evidence": "整篇外交聲明全大寫",
-        "why_missed": "未區分全大寫+外交主題組合",
-        "market_implication": "BULLISH +0.15",
-        "priority": "MEDIUM"
+        "signal": "NATO_COWARD_ATTACK",
+        "priority": "MEDIUM",
+        "evidence": "PAPER TIGER, COWARDS",
+        "market_implication": "歐洲市場風險上升"
       },
       {
-        "signal": "TEMPORAL_ANCHOR_2DAYS",
-        "evidence": "OVER THE LAST TWO DAYS",
-        "why_missed": "未提取時間錨",
-        "market_implication": "follow-through +20%",
-        "priority": "MEDIUM"
+        "signal": "ICE_ULTIMATUM_WITH_DATE",
+        "priority": "LOW",
+        "evidence": "帶具體時間的ICE威脅",
+        "market_implication": "情緒前兆"
+      },
+      {
+        "signal": "MUELLER_EXTREME_PERSONAL_ATTACK",
+        "priority": "LOW",
+        "evidence": "極端個人攻擊語氣",
+        "market_implication": "情緒前兆"
       }
     ]
   },
-  "missed_signals": [
-    "DEAL_NEGATIVE_POLARITY",
-    "PREVIEW_ANNOUNCE_SEQUENCE",
-    "IRAN_PEACE_COMPLETE_RESOLUTION",
-    "ALL_CAPS_FULL_TWEET_DIPLOMATIC",
-    "TEMPORAL_ANCHOR_2DAYS"
-  ],
   "error_analysis": {
-    "C1_burst_silence": "3月失敗群集=環境問題，VIX>22時暫停C1",
-    "A2_deal_bullish": "DEAL語意過寬，需要polarity過濾，混入拒絕交易信號"
+    "root_cause": "系統缺少 Regime Detection",
+    "C1_burst_silence": "3月是4/2 Liberation Day前關稅恐慌期，VIX>22時沉默≠安心，需加VIX暫停機制",
+    "A2_deal_bullish": "DEAL語意污染：停火Deal≠貿易Deal，市場反應截然不同"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "單日敘事雙軌化（外交+國內同日）",
-    "預告推文→正式公告序列（短全大寫格言先行）",
-    "全大寫升級為外交最高優先級標記"
+    "主題從關稅/貿易戰→地緣軍事勝利宣告（伊朗）",
+    "修辭從威脅型→勝利宣告型（objectives met, winding down）",
+    "股市自誇3/19-3/21歸零（迴避為市場背書）",
+    "新焦點：Hormuz油路、NATO、ICE動員"
   ],
   "new_rules": [
     {
-      "id": "NEW_RULE_001",
-      "name": "伊朗完全解決→多",
+      "id": "E1_iran_victory",
+      "name": "伊朗勝利宣告→LONG",
       "features": [
-        "kw_iran",
-        "kw_complete_and_total",
-        "caps_very_high"
+        "kw_winding_down",
+        "kw_objectives_met",
+        "kw_iran"
       ],
       "direction": "LONG",
       "hold": 3,
-      "confidence": 0.78
+      "confidence": 0.75
     },
     {
-      "id": "NEW_RULE_002",
-      "name": "DEAL否定語境→過濾做多",
-      "negative_context": [
-        "don't think",
-        "unless",
-        "no deal"
+      "id": "E2_formal_signoff",
+      "name": "正式總統署名→放大器",
+      "features": [
+        "formal_presidential_signoff"
       ],
-      "direction": "SKIP_OR_SHORT",
+      "direction": "AMPLIFIER",
+      "amplify_factor": 0.2,
+      "confidence": 0.85
+    },
+    {
+      "id": "E3_hormuz_energy",
+      "name": "Hormuz→能源股LONG",
+      "features": [
+        "kw_hormuz",
+        "kw_strait"
+      ],
+      "direction": "LONG_ENERGY",
+      "hold": 2,
+      "confidence": 0.7
+    },
+    {
+      "id": "E4_nato_attack",
+      "name": "NATO攻擊→風險規避",
+      "features": [
+        "kw_nato",
+        "kw_paper_tiger"
+      ],
+      "direction": "RISK_OFF",
+      "hold": 1,
       "confidence": 0.65
     },
     {
-      "id": "NEW_RULE_003",
-      "name": "中東和平聲明→LONG",
-      "features": [
-        "kw_iran",
-        "kw_middle_east",
-        "kw_resolution"
-      ],
-      "direction": "LONG",
-      "hold": 2,
+      "id": "E5_deal_context_split",
+      "name": "DEAL三分類",
+      "description": "將DEAL拆分為貿易/軍事/政治三類",
+      "direction": "FILTER",
       "confidence": 0.72
     },
     {
-      "id": "NEW_RULE_004",
-      "name": "預告推文序列→放大信號",
-      "features": [
-        "short_standalone_caps_tweet_lt10words",
-        "pre_market_hours"
-      ],
-      "direction": "AMPLIFIER_NEXT_SIGNAL",
-      "amplify_factor": 0.15,
-      "confidence": 0.6
+      "id": "E6_vix_regime_filter",
+      "name": "VIX環境過濾器",
+      "description": "VIX>22時C1/A2/B1置信度降30%",
+      "direction": "REGIME_FILTER",
+      "vix_threshold": 22,
+      "confidence_reduction": 0.3,
+      "confidence": 0.8,
+      "priority": "HIGHEST"
     },
     {
-      "id": "NEW_RULE_005",
-      "name": "純國內攻擊→抑制多頭",
+      "id": "E7_ultimatum_deadline",
+      "name": "帶日期威脅→前一天SHORT",
       "features": [
-        "kw_biden",
-        "kw_kamala",
-        "kw_border"
+        "kw_ultimatum",
+        "specific_date_mentioned"
       ],
-      "direction": "SUPPRESS_LONG",
-      "suppress_factor": -0.1,
-      "confidence": 0.55
+      "direction": "SHORT",
+      "hold": 1,
+      "confidence": 0.6
     }
   ],
   "model_adjustments": {
     "eliminate": [
-      "C3_night_alert (confirmed)",
-      "C2_brag_top (test invert or eliminate)"
+      "C3_night_alert (勝率37.5%, streak -4, 負期望值)"
     ],
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.25,
-      "A1_tariff_bearish": 1.15
+      "A3_relief_rocket": 1.5,
+      "D3_volume_spike": 1.3
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.5,
+      "C2_brag_top": 0.7,
       "C1_burst_silence": 0.8
     }
   },
   "signal_confidence": {
-    "DEAL": 0.45,
-    "DEAL_POSITIVE": 0.72,
-    "DEAL_NEGATIVE": 0.6,
-    "IRAN": 0.68,
-    "IRAN_PEACE": 0.8,
-    "MIDDLE_EAST_PEACE": 0.8,
-    "DEAL_ONLY": 0.72,
-    "TARIFF": 0.7,
     "RELIEF": 0.95,
-    "ACTION": 0.906,
-    "THREAT": 0.6,
-    "CHINA": 0.6,
-    "TARIFF_ONLY": 0.7
+    "ACTION": 0.88,
+    "TARIFF": 0.65,
+    "DEAL": 0.45,
+    "DEAL_ONLY": 0.5,
+    "IRAN": 0.65,
+    "THREAT": 0.65,
+    "CHINA": 0.55,
+    "TARIFF_ONLY": 0.7,
+    "IRAN_VICTORY": 0.72,
+    "FORMAL_SIGNOFF": 0.85
   },
   "system_health": {
-    "score": "7.0/10",
-    "strengths": [
-      "D3_volume_spike 9連勝",
-      "A3_relief_rocket +1.206% avg",
-      "演化引擎600條規則",
-      "學習引擎正確淘汰C3"
-    ],
-    "weaknesses": [
-      "DEAL信號語意污染",
-      "C1缺乏宏觀環境感知",
-      "C2 45%勝率仍在運行"
+    "score": "68/100",
+    "grade": "B-",
+    "priorities": [
+      "1. 實作 Regime Filter（VIX閾值）→ 直接修復3月型錯誤",
+      "2. DEAL信號三分類（貿易/軍事/政治）",
+      "3. 新增地緣政治信號庫（Hormuz/NATO/Iran Victory）",
+      "4. 淘汰C3，降權A2"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
-    "hold_days": 2,
-    "confidence": 0.65,
+    "hold_days": 3,
+    "confidence": 0.72,
     "active_signals": [
-      "IRAN_PEACE",
-      "DEAL_ONLY",
-      "caps_very_high"
+      "IRAN_VICTORY_DECLARATION",
+      "FORMAL_PRESIDENTIAL_SIGNOFF",
+      "DEAL_ONLY"
     ],
     "suppressing_signals": [
-      "DEAL_NEGATIVE",
-      "domestic_attack"
+      "NATO_COWARD_ATTACK",
+      "ICE_ULTIMATUM"
     ],
-    "note": "伊朗和平是主導信號，國內政治推文部分抵消"
+    "note": "伊朗勝利宣告是本日最強信號，但NATO攻擊和ICE動員構成局部抵消"
   }
 }
