@@ -1,5 +1,5 @@
 {
-  "total_requests": 3561650,
+  "total_requests": 3561850,
   "total_unique_ips": 6846,
   "daily": {
     "2026-03-16": {
@@ -14721,6 +14721,25 @@
         "/api/polymarket": 1,
         "/.well-known/security.txt": 1
       }
+    },
+    "2026-03-23": {
+      "views": 200,
+      "unique_ips": [
+        "12ca17b49af2"
+      ],
+      "pages": {
+        "/": 2,
+        "/chat": 1,
+        "/game": 1,
+        "/api/dashboard": 22,
+        "/api/signals": 22,
+        "/api/models": 18,
+        "/api/insights": 22,
+        "/api/recent-posts": 22,
+        "/api/polymarket-trump": 1,
+        "/api/game-state": 70,
+        "/api/game-leaderboard": 19
+      }
     }
   },
   "hourly": {
@@ -14874,18 +14893,20 @@
     "2026-03-22T03": 19227,
     "2026-03-22T04": 20463,
     "2026-03-22T05": 21363,
-    "2026-03-22T06": 21482
+    "2026-03-22T06": 21482,
+    "2026-03-23T02": 27,
+    "2026-03-23T03": 173
   },
   "pages": {
-    "/api/insights": 532995,
-    "/api/dashboard": 533206,
-    "/api/signals": 544212,
-    "/api/recent-posts": 543776,
-    "/api/models": 469441,
-    "/api/polymarket-trump": 7248,
+    "/api/insights": 533017,
+    "/api/dashboard": 533228,
+    "/api/signals": 544234,
+    "/api/recent-posts": 543798,
+    "/api/models": 469459,
+    "/api/polymarket-trump": 7249,
     "/api/analytics": 6,
-    "/": 8680,
-    "/chat": 5197,
+    "/": 8682,
+    "/chat": 5198,
     "/og-image.png": 1072,
     "/api/chat-log": 4,
     "/robots.txt": 110,
@@ -14954,10 +14975,10 @@
     "/js/twint_ch.js": 2,
     "/assets/js/message.js": 3,
     "/css/support_parent.css": 3,
-    "/api/game-state": 560179,
-    "/api/game-leaderboard": 348275,
+    "/api/game-state": 560249,
+    "/api/game-leaderboard": 348294,
     "/insights": 2,
-    "/game": 4104,
+    "/game": 4105,
     "/info.php.bak": 1,
     "/php-info.php": 1,
     "/newinfo.php": 1,
@@ -15074,8 +15095,8 @@
     "/api/": 1
   },
   "user_agents": {
-    "Chrome": 3266775,
-    "curl": 1270,
+    "Chrome": 3266974,
+    "curl": 1271,
     "Firefox": 222570,
     "Safari": 55856,
     "Python": 3806,
