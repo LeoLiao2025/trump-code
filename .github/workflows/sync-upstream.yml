@@ -1,0 +1,151 @@
+# ===================================================================
+# 上游同步偵測 — 自動檢查 sstklen/trump-code 有無更新
+# 每天 UTC 06:00 執行
+# 有新 commit → 自動開 PR + 發 Discord 通知
+# 沒有更新 → 靜默跳過
+# ===================================================================
+
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-upstream:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/sstklen/trump-code.git
+          git fetch upstream main
+
+      - name: Check for new commits
+        id: check
+        run: |
+          # 計算上游比 fork 多幾個 commit
+          BEHIND=$(git rev-list --count HEAD..upstream/main)
+          echo "behind=$BEHIND" >> $GITHUB_OUTPUT
+
+          if [ "$BEHIND" -gt "0" ]; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+
+            # 收集新 commit 資訊（最多顯示 10 條）
+            COMMITS=$(git log HEAD..upstream/main --oneline --no-merges | head -10)
+            # 用 base64 避免換行符號破壞 output
+            COMMITS_B64=$(echo "$COMMITS" | base64 -w 0)
+            echo "commits_b64=$COMMITS_B64" >> $GITHUB_OUTPUT
+
+            LATEST=$(git log upstream/main -1 --format="%s (%ad)" --date=short)
+            echo "latest=$LATEST" >> $GITHUB_OUTPUT
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create sync branch and PR
+        if: steps.check.outputs.has_updates == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="sync/upstream-$(date -u +%Y%m%d)"
+
+          # 如果 branch 已存在就跳過（今天已經開過 PR）
+          if git ls-remote --exit-code origin "$BRANCH"; then
+            echo "Branch $BRANCH already exists, skipping PR creation."
+            exit 0
+          fi
+
+          git checkout -b "$BRANCH"
+          git merge upstream/main --no-edit --allow-unrelated-histories || true
+          git push origin "$BRANCH"
+
+          BEHIND=${{ steps.check.outputs.behind }}
+          COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
+          LATEST="${{ steps.check.outputs.latest }}"
+
+          gh pr create \
+            --title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
+            --body "## 上游同步
+
+**新 commit 數：** ${BEHIND} 個
+**最新：** ${LATEST}
+
+### Commit 列表
+\`\`\`
+${COMMITS}
+\`\`\`
+
+### 處理方式
+- ✅ **直接 Merge** — 接受上游所有更新
+- 🔍 **逐一審查** — 查看 Files changed 後決定
+
+> 此 PR 由 GitHub Actions 自動建立" \
+            --base main \
+            --head "$BRANCH"
+
+      - name: Send Discord notification
+        if: steps.check.outputs.has_updates == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          BEHIND=${{ steps.check.outputs.behind }}
+          COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
+          LATEST="${{ steps.check.outputs.latest }}"
+          REPO="${{ github.repository }}"
+          PR_URL="https://github.com/${REPO}/pulls"
+
+          # 組成 Discord embed 訊息
+          PAYLOAD=$(cat <<EOF
+{
+  "embeds": [{
+    "title": "⬆️ 川普密碼｜上游有新更新",
+    "color": 3447003,
+    "fields": [
+      {
+        "name": "新 commit 數",
+        "value": "${BEHIND} 個",
+        "inline": true
+      },
+      {
+        "name": "最新 commit",
+        "value": "${LATEST}",
+        "inline": true
+      },
+      {
+        "name": "Commit 列表",
+        "value": "\`\`\`${COMMITS}\`\`\`",
+        "inline": false
+      },
+      {
+        "name": "查看 PR",
+        "value": "${PR_URL}",
+        "inline": false
+      }
+    ],
+    "footer": {
+      "text": "sstklen/trump-code → LeoLiao2025/trump-code"
+    },
+    "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  }]
+}
+EOF
+)
+          curl -s -X POST "$DISCORD_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD"
+
+      - name: No updates notice
+        if: steps.check.outputs.has_updates == 'false'
+        run: echo "✅ 上游無新更新，跳過。"
