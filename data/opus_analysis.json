@@ -1,195 +1,143 @@
 {
-  "date": "2026-03-23",
-  "generated_at": "2026-03-23T14:50:00Z",
-  "analyzed_at": "2026-03-23T14:50:00Z",
+  "date": "2026-03-24",
+  "analyzed_at": "2026-03-24T14:19:20Z",
   "analyzed_by": "claude-sonnet-4-6",
-  "version": 2,
   "missed_signals": [
-    "IRAN_VICTORY_DECLARATION",
-    "FORMAL_PRESIDENTIAL_SIGNOFF",
-    "HORMUZ_STRAIT_THREAT",
-    "NATO_COWARD_ATTACK",
-    "ICE_ULTIMATUM_WITH_DATE",
-    "MUELLER_EXTREME_PERSONAL_ATTACK"
+    "市場疲勞信號：連續多週高頻推文後，市場對正面詞彙的反應鈍化（DEAL 信心度僅 0.55 印證）",
+    "地緣組合信號：IRAN + TARIFF 同時出現時的特殊走勢未被獨立捕捉",
+    "沉默品質差異：短沉默（<12小時）vs 長沉默（>24小時）對 C1 效果差異極大，目前未區分",
+    "盤後深夜 RELIEF 型推文：與盤前 RELIEF 應分開處理，A3 目前混合計算"
   ],
-  "q1_missed_signals": {
-    "summary": "6個漏掉信號，最重要是伊朗勝利宣告和正式總統署名格式",
-    "missed": [
-      {
-        "signal": "IRAN_VICTORY_DECLARATION",
-        "priority": "CRITICAL",
-        "evidence": "winding down military efforts + objectives met",
-        "market_implication": "中東衝突解除，S&P LONG 3天"
-      },
-      {
-        "signal": "FORMAL_PRESIDENTIAL_SIGNOFF",
-        "priority": "HIGH",
-        "evidence": "Thank you for your attention! President DONALD J. TRUMP 完整姓名格式",
-        "market_implication": "官方聲明放大器，置信度+20%"
-      },
-      {
-        "signal": "HORMUZ_STRAIT_THREAT",
-        "priority": "HIGH",
-        "evidence": "Hormuz/Strait 不在關鍵字庫",
-        "market_implication": "直接牽動油價"
-      },
-      {
-        "signal": "NATO_COWARD_ATTACK",
-        "priority": "MEDIUM",
-        "evidence": "PAPER TIGER, COWARDS",
-        "market_implication": "歐洲市場風險上升"
-      },
-      {
-        "signal": "ICE_ULTIMATUM_WITH_DATE",
-        "priority": "LOW",
-        "evidence": "帶具體時間的ICE威脅",
-        "market_implication": "情緒前兆"
-      },
-      {
-        "signal": "MUELLER_EXTREME_PERSONAL_ATTACK",
-        "priority": "LOW",
-        "evidence": "極端個人攻擊語氣",
-        "market_implication": "情緒前兆"
-      }
-    ]
-  },
   "error_analysis": {
-    "root_cause": "系統缺少 Regime Detection",
-    "C1_burst_silence": "3月是4/2 Liberation Day前關稅恐慌期，VIX>22時沉默≠安心，需加VIX暫停機制",
-    "A2_deal_bullish": "DEAL語意污染：停火Deal≠貿易Deal，市場反應截然不同"
+    "C1_burst_silence": "根本原因：2026年3月市場已進入『抗體期』——前期輪番關稅轟炸導致沉默不再被解讀為安全信號，而被解讀為下一波攻擊的醞釀期。三次連錯（03-05, 03-11, 03-13）顯示系統性偏差，C1 的沉默→看漲邏輯在高不確定性背景下已失效，需加入『前序推文毒性指數』作為過濾條件",
+    "A2_deal_bullish": "根本原因：DEAL 出現的語境品質下降——2026年3月的 DEAL 推文多為談判框架性宣告而非實質協議，市場已能區分『真 Deal』與『假 Deal』。A2 未能辨別 DEAL 詞彙背後的承諾強度，導致信號失真。建議引入 DEAL 後續48小時官方跟進文件作為信號確認"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "主題從關稅/貿易戰→地緣軍事勝利宣告（伊朗）",
-    "修辭從威脅型→勝利宣告型（objectives met, winding down）",
-    "股市自誇3/19-3/21歸零（迴避為市場背書）",
-    "新焦點：Hormuz油路、NATO、ICE動員"
+    "市場免疫效應加速：相同詞彙組合的市場反應半衰期從2025年Q4的5天縮短至目前約2天",
+    "DEAL 詞彙通脹：每週出現頻率上升但實質兌現率下降，信號含金量稀釋",
+    "沉默的恐懼重新定價：C1 前提假設（沉默=安定）已反轉，市場開始恐懼沉默",
+    "盤前推文主導權增強：A3_relief_rocket 以11筆仍維持72.7%，顯示盤前時段信號穩健性相對優勢擴大",
+    "複合地緣信號出現：IRAN 與 TARIFF 開始同框，創造新的不確定性疊加模式"
   ],
   "new_rules": [
     {
-      "id": "E1_iran_victory",
-      "name": "伊朗勝利宣告→LONG",
+      "id": "E1_silence_toxic_filter",
+      "name": "毒性沉默過濾器",
       "features": [
-        "kw_winding_down",
-        "kw_objectives_met",
-        "kw_iran"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "confidence": 0.75
-    },
-    {
-      "id": "E2_formal_signoff",
-      "name": "正式總統署名→放大器",
-      "features": [
-        "formal_presidential_signoff"
-      ],
-      "direction": "AMPLIFIER",
-      "amplify_factor": 0.2,
-      "confidence": 0.85
-    },
-    {
-      "id": "E3_hormuz_energy",
-      "name": "Hormuz→能源股LONG",
-      "features": [
-        "kw_hormuz",
-        "kw_strait"
-      ],
-      "direction": "LONG_ENERGY",
-      "hold": 2,
-      "confidence": 0.7
-    },
-    {
-      "id": "E4_nato_attack",
-      "name": "NATO攻擊→風險規避",
-      "features": [
-        "kw_nato",
-        "kw_paper_tiger"
-      ],
-      "direction": "RISK_OFF",
-      "hold": 1,
-      "confidence": 0.65
-    },
-    {
-      "id": "E5_deal_context_split",
-      "name": "DEAL三分類",
-      "description": "將DEAL拆分為貿易/軍事/政治三類",
-      "direction": "FILTER",
-      "confidence": 0.72
-    },
-    {
-      "id": "E6_vix_regime_filter",
-      "name": "VIX環境過濾器",
-      "description": "VIX>22時C1/A2/B1置信度降30%",
-      "direction": "REGIME_FILTER",
-      "vix_threshold": 22,
-      "confidence_reduction": 0.3,
-      "confidence": 0.8,
-      "priority": "HIGHEST"
-    },
-    {
-      "id": "E7_ultimatum_deadline",
-      "name": "帶日期威脅→前一天SHORT",
-      "features": [
-        "kw_ultimatum",
-        "specific_date_mentioned"
+        "前72小時TARIFF推文≥3條",
+        "沉默時長<20小時",
+        "VIX>20"
       ],
       "direction": "SHORT",
       "hold": 1,
-      "confidence": 0.6
+      "confidence": 0.68
+    },
+    {
+      "id": "E2_deal_quality_gate",
+      "name": "Deal品質門檻",
+      "features": [
+        "DEAL出現",
+        "同文無具體國家名稱",
+        "無數字/比例承諾"
+      ],
+      "direction": "NEUTRAL",
+      "hold": 0,
+      "confidence": 0.71
+    },
+    {
+      "id": "E3_iran_tariff_combo",
+      "name": "伊朗關稅雙重打擊",
+      "features": [
+        "IRAN出現",
+        "TARIFF同日出現",
+        "盤中時段"
+      ],
+      "direction": "SHORT",
+      "hold": 2,
+      "confidence": 0.66
+    },
+    {
+      "id": "E4_relief_premarket_pure",
+      "name": "純盤前RELIEF強化版",
+      "features": [
+        "RELIEF",
+        "發文時間04:00-09:00 EST",
+        "無TARIFF同框",
+        "ACTION同框"
+      ],
+      "direction": "LONG",
+      "hold": 1,
+      "confidence": 0.78
+    },
+    {
+      "id": "E5_brag_volume_top_combo",
+      "name": "炫耀+量增頂部組合",
+      "features": [
+        "C2炫耀股市觸發",
+        "D3發文量同日暴增",
+        "指數近10日高點"
+      ],
+      "direction": "SHORT",
+      "hold": 2,
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
-    "eliminate": [
-      "C3_night_alert (勝率37.5%, streak -4, 負期望值)"
-    ],
     "increase_weight": {
-      "A3_relief_rocket": 1.5,
-      "D3_volume_spike": 1.3
+      "A3_relief_rocket": 1.25,
+      "D2_sig_change": 1.15,
+      "B1_triple_signal": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.5,
-      "C2_brag_top": 0.7,
-      "C1_burst_silence": 0.8
-    }
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.7,
+      "C2_brag_top": 0.8,
+      "C3_night_alert": 0.65
+    },
+    "eliminate": [
+      "C3_night_alert（勝率37.5%已低於隨機基準，深夜關稅推文市場跳空邏輯在當前高波動環境下不穩定，建議暫停並重構為帶VIX條件的新規則）"
+    ]
   },
   "signal_confidence": {
+    "ACTION": 0.92,
+    "CHINA": 0.58,
+    "DEAL": 0.42,
+    "DEAL_ONLY": 0.6,
+    "IRAN": 0.62,
     "RELIEF": 0.95,
-    "ACTION": 0.88,
-    "TARIFF": 0.65,
-    "DEAL": 0.45,
-    "DEAL_ONLY": 0.5,
-    "IRAN": 0.65,
-    "THREAT": 0.65,
-    "CHINA": 0.55,
-    "TARIFF_ONLY": 0.7,
-    "IRAN_VICTORY": 0.72,
-    "FORMAL_SIGNOFF": 0.85
+    "TARIFF": 0.68,
+    "TARIFF_ONLY": 0.68,
+    "THREAT": 0.55,
+    "DEAL_WITH_COUNTRY": 0.73,
+    "SILENCE_POST_TOXIC": 0.3
   },
   "system_health": {
-    "score": "68/100",
-    "grade": "B-",
+    "score": "61/100",
+    "grade": "C+",
     "priorities": [
-      "1. 實作 Regime Filter（VIX閾值）→ 直接修復3月型錯誤",
-      "2. DEAL信號三分類（貿易/軍事/政治）",
-      "3. 新增地緣政治信號庫（Hormuz/NATO/Iran Victory）",
-      "4. 淘汰C3，降權A2"
+      "1. 立即暫停C1_burst_silence自動交易信號，改為人工審核模式，直到新的毒性過濾規則E1完成回測驗證",
+      "2. 對A2_deal_bullish加入DEAL品質分級機制（E2規則），防止假Deal繼續消耗資金",
+      "3. 建立市場免疫指數追蹤器：量化同一詞彙在30日內的邊際市場反應衰減率，動態調整信號信心度",
+      "4. 擴充A3_relief_rocket樣本（目前僅11筆），在維持高權重的同時加快數據採集",
+      "5. 評估是否引入外部數據源（期權隱含波動率、國債期貨）作為Trump推文信號的背景修正因子"
     ]
   },
   "today_prediction": {
-    "bias": "BULLISH",
-    "direction": "LONG",
-    "hold_days": 3,
-    "confidence": 0.72,
+    "bias": "NEUTRAL_TO_BEARISH",
+    "direction": "FLAT",
+    "hold_days": 1,
+    "confidence": 0.52,
     "active_signals": [
-      "IRAN_VICTORY_DECLARATION",
-      "FORMAL_PRESIDENTIAL_SIGNOFF",
-      "DEAL_ONLY"
+      "D3_volume_spike（若今日發文量≥歷史均值1.5倍）",
+      "D2_sig_change（若簽名變化出現）",
+      "E4_relief_premarket_pure（若盤前04-09 EST出現RELIEF+ACTION）"
     ],
     "suppressing_signals": [
-      "NATO_COWARD_ATTACK",
-      "ICE_ULTIMATUM"
+      "C1_burst_silence已停用（三連錯，系統性偏差）",
+      "A2_deal_bullish降權至0.70（DEAL詞彙通脹期）",
+      "C3_night_alert已淘汰"
     ],
-    "note": "伊朗勝利宣告是本日最強信號，但NATO攻擊和ICE動員構成局部抵消"
+    "note": "系統當前處於模式轉換期，市場對川普詞彙的免疫效應加速，建議今日降低倉位至常規的50%，等待E1/E2新規則回測完成後再恢復全倉操作。"
   }
 }
