@@ -112,40 +112,40 @@ jobs:
 
           # 組成 Discord embed 訊息
           PAYLOAD=$(cat <<EOF
-{
-  "embeds": [{
-    "title": "⬆️ 川普密碼｜上游有新更新",
-    "color": 3447003,
-    "fields": [
-      {
-        "name": "新 commit 數",
-        "value": "${BEHIND} 個",
-        "inline": true
-      },
-      {
-        "name": "最新 commit",
-        "value": "${LATEST}",
-        "inline": true
-      },
-      {
-        "name": "Commit 列表",
-        "value": "\`\`\`${COMMITS}\`\`\`",
-        "inline": false
-      },
-      {
-        "name": "查看 PR",
-        "value": "${PR_URL}",
-        "inline": false
-      }
-    ],
-    "footer": {
-      "text": "sstklen/trump-code → LeoLiao2025/trump-code"
-    },
-    "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-  }]
-}
-EOF
-)
+          {
+            "embeds": [{
+              "title": "⬆️ 川普密碼｜上游有新更新",
+              "color": 3447003,
+              "fields": [
+                {
+                  "name": "新 commit 數",
+                  "value": "${BEHIND} 個",
+                  "inline": true
+                },
+                {
+                  "name": "最新 commit",
+                  "value": "${LATEST}",
+                  "inline": true
+                },
+                {
+                  "name": "Commit 列表",
+                  "value": "\`\`\`${COMMITS}\`\`\`",
+                  "inline": false
+                },
+                {
+                  "name": "查看 PR",
+                  "value": "${PR_URL}",
+                  "inline": false
+                }
+              ],
+              "footer": {
+                "text": "sstklen/trump-code → LeoLiao2025/trump-code"
+              },
+              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            }]
+          }
+          EOF
+          )
           curl -s -X POST "$DISCORD_WEBHOOK_URL" \
             -H "Content-Type: application/json" \
             -d "$PAYLOAD"
