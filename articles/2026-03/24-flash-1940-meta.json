@@ -1,0 +1,27 @@
+{
+  "type": "flash",
+  "date": "2026-03-24",
+  "generated_at": "2026-03-24T19:40:22.514241+00:00",
+  "post_id": "116285846284609248",
+  "post_content": "State Senator Chris Garten is a true MAGA Warrior and America First Patriot for the Great People of Indiana’s 45th State Senate District! As the Majority Floor Leader of the Indiana State Senate, and ",
+  "signals": "",
+  "direction": "NEUTRAL",
+  "confidence": 0.0,
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/24-flash-1940-zh.md",
+      "length": 398
+    },
+    "en": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/24-flash-1940-en.md",
+      "length": 1515
+    },
+    "ja": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/24-flash-1940-ja.md",
+      "length": 467
+    }
+  }
+}
