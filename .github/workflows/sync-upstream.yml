@@ -75,23 +75,27 @@ jobs:
           COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
           LATEST="${{ steps.check.outputs.latest }}"
 
+          cat > /tmp/pr_body.md <<EOF
+          ## 上游同步
+
+          **新 commit 數：** ${BEHIND} 個
+          **最新：** ${LATEST}
+
+          ### Commit 列表
+          \`\`\`
+          ${COMMITS}
+          \`\`\`
+
+          ### 處理方式
+          - ✅ **直接 Merge** — 接受上游所有更新
+          - 🔍 **逐一審查** — 查看 Files changed 後決定
+
+          > 此 PR 由 GitHub Actions 自動建立
+          EOF
+
           gh pr create \
             --title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
-            --body "## 上游同步
-
-**新 commit 數：** ${BEHIND} 個
-**最新：** ${LATEST}
-
-### Commit 列表
-\`\`\`
-${COMMITS}
-\`\`\`
-
-### 處理方式
-- ✅ **直接 Merge** — 接受上游所有更新
-- 🔍 **逐一審查** — 查看 Files changed 後決定
-
-> 此 PR 由 GitHub Actions 自動建立" \
+            --body-file /tmp/pr_body.md \
             --base main \
             --head "$BRANCH"
 
