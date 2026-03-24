@@ -1,143 +1,141 @@
 {
   "date": "2026-03-24",
-  "analyzed_at": "2026-03-24T14:19:20Z",
+  "analyzed_at": "2026-03-24T15:05:31Z",
   "analyzed_by": "claude-sonnet-4-6",
   "missed_signals": [
-    "市場疲勞信號：連續多週高頻推文後，市場對正面詞彙的反應鈍化（DEAL 信心度僅 0.55 印證）",
-    "地緣組合信號：IRAN + TARIFF 同時出現時的特殊走勢未被獨立捕捉",
-    "沉默品質差異：短沉默（<12小時）vs 長沉默（>24小時）對 C1 效果差異極大，目前未區分",
-    "盤後深夜 RELIEF 型推文：與盤前 RELIEF 應分開處理，A3 目前混合計算"
+    "盤前RELIEF+ACTION同框但未觸發A3/B3聯合加權，導致信號強度低估",
+    "CHINA關鍵字出現後無後續DEAL跟進時的熊市確認信號缺失",
+    "多個TARIFF_ONLY推文連發但無Deal緩衝時的複合空頭信號",
+    "沉默期結束後首發非RELIEF類推文的方向確認機制不足"
   ],
   "error_analysis": {
-    "C1_burst_silence": "根本原因：2026年3月市場已進入『抗體期』——前期輪番關稅轟炸導致沉默不再被解讀為安全信號，而被解讀為下一波攻擊的醞釀期。三次連錯（03-05, 03-11, 03-13）顯示系統性偏差，C1 的沉默→看漲邏輯在高不確定性背景下已失效，需加入『前序推文毒性指數』作為過濾條件",
-    "A2_deal_bullish": "根本原因：DEAL 出現的語境品質下降——2026年3月的 DEAL 推文多為談判框架性宣告而非實質協議，市場已能區分『真 Deal』與『假 Deal』。A2 未能辨別 DEAL 詞彙背後的承諾強度，導致信號失真。建議引入 DEAL 後續48小時官方跟進文件作為信號確認"
+    "C1_burst_silence": "根本原因：沉默結束後若首發推文帶有TARIFF或THREAT關鍵字，多頭假設即失效。當前規則未區分沉默後復出的推文情緒性質，統一視為做多訊號，導致2026-03-05、03-11、03-13三次連續誤判。市場已學會辨別『沉默後恐嚇式復出』vs『沉默後緩和式復出』，規則需要加入情緒濾網。",
+    "A2_deal_bullish": "根本原因：DEAL信號在中美關係背景下信心度嚴重稀釋。當CHINA或IRAN標記同期出現時，DEAL可能是談判施壓手段而非真實讓步，市場不再無條件買單。2026-03-10、03-13兩次誤判均發生在地緣政治緊張背景下，需要加入背景國家標記的修正係數。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場免疫效應加速：相同詞彙組合的市場反應半衰期從2025年Q4的5天縮短至目前約2天",
-    "DEAL 詞彙通脹：每週出現頻率上升但實質兌現率下降，信號含金量稀釋",
-    "沉默的恐懼重新定價：C1 前提假設（沉默=安定）已反轉，市場開始恐懼沉默",
-    "盤前推文主導權增強：A3_relief_rocket 以11筆仍維持72.7%，顯示盤前時段信號穩健性相對優勢擴大",
-    "複合地緣信號出現：IRAN 與 TARIFF 開始同框，創造新的不確定性疊加模式"
+    "川普沉默後復出模式從『緩和型』轉向『施壓型』，C1規則多頭假設前提已不成立",
+    "DEAL關鍵字正在被過度使用作為談判籌碼，市場對其反應從正面轉為中性甚至負面",
+    "CHINA+DEAL組合的牛市效應顯著衰減，需要獨立建模",
+    "ACTION信號持續維持高信心度(0.932)，顯示市場仍高度尊重行動類聲明",
+    "RELIEF信號依然最強(0.95)，盤前RELIEF組合策略A3仍是最可靠模型"
   ],
   "new_rules": [
     {
-      "id": "E1_silence_toxic_filter",
-      "name": "毒性沉默過濾器",
+      "id": "E1_silence_break_bearish",
+      "name": "沉默破局熊市過濾器",
       "features": [
-        "前72小時TARIFF推文≥3條",
-        "沉默時長<20小時",
-        "VIX>20"
-      ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.68
-    },
-    {
-      "id": "E2_deal_quality_gate",
-      "name": "Deal品質門檻",
-      "features": [
-        "DEAL出現",
-        "同文無具體國家名稱",
-        "無數字/比例承諾"
-      ],
-      "direction": "NEUTRAL",
-      "hold": 0,
-      "confidence": 0.71
-    },
-    {
-      "id": "E3_iran_tariff_combo",
-      "name": "伊朗關稅雙重打擊",
-      "features": [
-        "IRAN出現",
-        "TARIFF同日出現",
-        "盤中時段"
+        "C1_burst_silence觸發",
+        "復出首推含TARIFF或THREAT",
+        "無RELIEF或DEAL緩衝"
       ],
       "direction": "SHORT",
       "hold": 2,
-      "confidence": 0.66
+      "confidence": 0.68
     },
     {
-      "id": "E4_relief_premarket_pure",
-      "name": "純盤前RELIEF強化版",
+      "id": "E2_deal_china_discount",
+      "name": "中國背景Deal折扣規則",
       "features": [
-        "RELIEF",
-        "發文時間04:00-09:00 EST",
-        "無TARIFF同框",
-        "ACTION同框"
+        "DEAL關鍵字出現",
+        "同日或前1日含CHINA標記",
+        "無具體數字或日期錨點"
       ],
-      "direction": "LONG",
+      "direction": "NEUTRAL",
       "hold": 1,
-      "confidence": 0.78
+      "confidence": 0.72
     },
     {
-      "id": "E5_brag_volume_top_combo",
-      "name": "炫耀+量增頂部組合",
+      "id": "E3_triple_tariff_no_deal",
+      "name": "純關稅轟炸無Deal對沖",
       "features": [
-        "C2炫耀股市觸發",
-        "D3發文量同日暴增",
-        "指數近10日高點"
+        "連續2天TARIFF_ONLY",
+        "無DEAL出現",
+        "無RELIEF出現",
+        "B2_tariff_to_deal未觸發"
       ],
       "direction": "SHORT",
       "hold": 2,
       "confidence": 0.65
+    },
+    {
+      "id": "E4_relief_action_combo",
+      "name": "盤前RELIEF+ACTION聯合超強做多",
+      "features": [
+        "盤前RELIEF出現",
+        "同日ACTION出現",
+        "無TARIFF或THREAT對沖"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.82
+    },
+    {
+      "id": "E5_brag_recovery_trap",
+      "name": "炫耀後回踩陷阱",
+      "features": [
+        "C2_brag_top觸發後1-2天",
+        "出現TARIFF或THREAT",
+        "未出現DEAL或RELIEF"
+      ],
+      "direction": "SHORT",
+      "hold": 1,
+      "confidence": 0.63
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
-      "D2_sig_change": 1.15,
-      "B1_triple_signal": 1.1
+      "A3_relief_rocket": 1.3,
+      "D2_sig_change": 1.2,
+      "B1_triple_signal": 1.15
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
       "A2_deal_bullish": 0.7,
+      "C1_burst_silence": 0.75,
       "C2_brag_top": 0.8,
-      "C3_night_alert": 0.65
+      "C3_night_alert": 0.6
     },
     "eliminate": [
-      "C3_night_alert（勝率37.5%已低於隨機基準，深夜關稅推文市場跳空邏輯在當前高波動環境下不穩定，建議暫停並重構為帶VIX條件的新規則）"
+      "C3_night_alert（勝率僅37.5%，低於隨機基準，且深夜推文市場反應已高度不穩定，建議停用並併入E3重建）"
     ]
   },
   "signal_confidence": {
-    "ACTION": 0.92,
-    "CHINA": 0.58,
+    "ACTION": 0.93,
+    "CHINA": 0.45,
     "DEAL": 0.42,
     "DEAL_ONLY": 0.6,
-    "IRAN": 0.62,
+    "IRAN": 0.5,
     "RELIEF": 0.95,
-    "TARIFF": 0.68,
-    "TARIFF_ONLY": 0.68,
-    "THREAT": 0.55,
-    "DEAL_WITH_COUNTRY": 0.73,
-    "SILENCE_POST_TOXIC": 0.3
+    "TARIFF": 0.72,
+    "TARIFF_ONLY": 0.75,
+    "THREAT": 0.65,
+    "CHINA_DEAL_COMBO": 0.35
   },
   "system_health": {
-    "score": "61/100",
+    "score": "63/100",
     "grade": "C+",
     "priorities": [
-      "1. 立即暫停C1_burst_silence自動交易信號，改為人工審核模式，直到新的毒性過濾規則E1完成回測驗證",
-      "2. 對A2_deal_bullish加入DEAL品質分級機制（E2規則），防止假Deal繼續消耗資金",
-      "3. 建立市場免疫指數追蹤器：量化同一詞彙在30日內的邊際市場反應衰減率，動態調整信號信心度",
-      "4. 擴充A3_relief_rocket樣本（目前僅11筆），在維持高權重的同時加快數據採集",
-      "5. 評估是否引入外部數據源（期權隱含波動率、國債期貨）作為Trump推文信號的背景修正因子"
+      "1. 緊急修復C1_burst_silence與A2_deal_bullish的情緒濾網，這兩個模型在近期連續誤判已侵蝕整體Alpha",
+      "2. 建立關鍵字組合背景修正機制：DEAL單獨出現 vs DEAL+CHINA/IRAN需有獨立信心度通道",
+      "3. 淘汰C3_night_alert並將深夜推文邏輯整合進E3新規則框架",
+      "4. 提升A3+E4聯合觸發的倉位規模，RELIEF系列是目前最穩定的Alpha來源應集中資源"
     ]
   },
   "today_prediction": {
-    "bias": "NEUTRAL_TO_BEARISH",
-    "direction": "FLAT",
+    "bias": "CAUTIOUSLY_BULLISH",
+    "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.52,
+    "confidence": 0.58,
     "active_signals": [
-      "D3_volume_spike（若今日發文量≥歷史均值1.5倍）",
-      "D2_sig_change（若簽名變化出現）",
-      "E4_relief_premarket_pure（若盤前04-09 EST出現RELIEF+ACTION）"
+      "RELIEF(0.95)",
+      "ACTION(0.93)",
+      "TARIFF_ONLY(0.75)"
     ],
     "suppressing_signals": [
-      "C1_burst_silence已停用（三連錯，系統性偏差）",
-      "A2_deal_bullish降權至0.70（DEAL詞彙通脹期）",
-      "C3_night_alert已淘汰"
+      "CHINA(0.45)降低DEAL可信度",
+      "C1近期連續誤判產生模型信心折扣",
+      "A2_deal_bullish暫時降權"
     ],
-    "note": "系統當前處於模式轉換期，市場對川普詞彙的免疫效應加速，建議今日降低倉位至常規的50%，等待E1/E2新規則回測完成後再恢復全倉操作。"
+    "note": "RELIEF+ACTION組合提供多頭基底，但CHINA背景壓制DEAL信號可信度，建議縮短持有天數至1天並設置較緊止損，等待沉默破局後的推文性質確認方向。"
   }
 }

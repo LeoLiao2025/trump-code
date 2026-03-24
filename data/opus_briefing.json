@@ -1,6 +1,6 @@
 {
   "date": "2026-03-24",
-  "prepared_at": "2026-03-24T14:18:36Z",
+  "prepared_at": "2026-03-24T15:04:52Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -111,42 +111,40 @@
   "evolution_latest": {
     "date": "2026-03-24",
     "crossover": 16,
-    "mutation": 11,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 43,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "open_tariffs",
+          "both_tariff_and_deal",
           "volume_falling_3d"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 86.4,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "open_tariffs",
-          "volume_falling_3d",
-          "kw_tariffs"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 86.4,
-        "origin": "crossover"
+        "hold": 2,
+        "score": 79.2,
+        "origin": "mutation_remove"
       },
       {
         "features": [
           "is_friday",
-          "kw_beautiful",
-          "kw_tremendous"
+          "kw_tariffs"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 83.3,
-        "origin": "crossover"
+        "score": 79.0,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "open_china",
+          "kw_economy"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 77.5,
+        "origin": "mutation_remove"
       }
     ]
   },
@@ -154,7 +152,7 @@
     "TARIFF": 0.7,
     "DEAL": 0.55,
     "RELIEF": 0.95,
-    "ACTION": 0.919,
+    "ACTION": 0.932,
     "THREAT": 0.6,
     "CHINA": 0.6,
     "IRAN": 0.55,
