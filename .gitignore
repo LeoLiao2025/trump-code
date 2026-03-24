@@ -26,6 +26,7 @@ overnight_log.txt
 .env.*
 *.key
 *.pem
+.claude/settings.local.json
 
 # IDE
 .vscode/
