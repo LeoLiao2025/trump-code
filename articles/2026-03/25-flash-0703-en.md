@@ -1,3 +1,5 @@
-⚡ Trump Code | Flash: Christmas Message Highlights Key Policy Stances
+⚡ Trump Code | Flash
 
-**What was said:** Trump's Christmas message combined holiday greetings with aggressive attacks on "Radical Left Scum,"
+**Trump Promotes Kennedy Center Honors Hosting Role**
+
+Former President Trump has announced he will host "THE TRUMP KENNEDY CENTER HONORS" broadcast tonight on CBS
