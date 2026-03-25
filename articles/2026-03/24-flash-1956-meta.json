@@ -1,0 +1,24 @@
+{
+  "type": "flash",
+  "date": "2026-03-24",
+  "generated_at": "2026-03-24T19:56:07.264723+00:00",
+  "post_id": "116285893161347117",
+  "post_content": "It is my Great Honor to endorse America First Patriot Tracey Powell, a fantastic Candidate for Indiana's 21st State Senate District (which I won by 24 points!). Tracey is running against a pathetic RI",
+  "signals": "ACTION",
+  "direction": "UP",
+  "confidence": 0.65,
+  "articles": {
+    "zh": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "en": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "ja": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    }
+  }
+}

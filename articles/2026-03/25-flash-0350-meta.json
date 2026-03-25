@@ -1,0 +1,24 @@
+{
+  "type": "flash",
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T03:50:23.741941+00:00",
+  "post_id": "116287761828408706",
+  "post_content": "Terrible!",
+  "signals": "BEARISH",
+  "direction": "DOWN",
+  "confidence": 0.65,
+  "articles": {
+    "zh": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "en": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "ja": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    }
+  }
+}

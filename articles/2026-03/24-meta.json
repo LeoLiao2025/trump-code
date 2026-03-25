@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-24",
+  "generated_at": "2026-03-25T04:00:31.901368+00:00",
+  "posts_count": 26,
+  "articles": {
+    "zh": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "en": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    },
+    "ja": {
+      "status": "error",
+      "error": "所有 LLM 都失敗"
+    }
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Trump Code Daily Analysis 2026-03-24",
+    "alternativeHeadline": "川普密碼日報 2026-03-24",
+    "datePublished": "2026-03-24",
+    "dateModified": "2026-03-25",
+    "author": {
+      "@type": "Organization",
+      "name": "Washin Mura (和心村)",
+      "url": "https://washinmura.jp"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TRUMP CODE",
+      "url": "https://trumpcode.washinmura.jp"
+    },
+    "inLanguage": [
+      "zh-TW",
+      "en",
+      "ja"
+    ],
+    "url": "https://trumpcode.washinmura.jp/daily.html?date=2026-03-24",
+    "isAccessibleForFree": true,
+    "about": "AI analysis of Trump social media posts and stock market impact"
+  }
+}
