@@ -1,8 +1,8 @@
 {
   "type": "flash",
   "date": "2026-03-25",
-  "generated_at": "2026-03-25T03:30:26.443661+00:00",
-  "post_id": "116287683741019472",
+  "generated_at": "2026-03-25T03:30:40.247299+00:00",
+  "post_id": "116287679930753202",
   "post_content": "",
   "signals": "",
   "direction": "NEUTRAL",
@@ -11,17 +11,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0330-zh.md",
-      "length": 105
+      "length": 86
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0330-en.md",
-      "length": 102
+      "length": 159
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0330-ja.md",
-      "length": 59
+      "length": 74
     }
   }
 }
