@@ -1,0 +1,27 @@
+{
+  "type": "flash",
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T03:50:32.174003+00:00",
+  "post_id": "116287761828408706",
+  "post_content": "Terrible!",
+  "signals": "",
+  "direction": "NEUTRAL",
+  "confidence": 0.0,
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0350-zh.md",
+      "length": 431
+    },
+    "en": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0350-en.md",
+      "length": 1370
+    },
+    "ja": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0350-ja.md",
+      "length": 417
+    }
+  }
+}
