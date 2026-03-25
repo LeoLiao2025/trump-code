@@ -1,0 +1,27 @@
+{
+  "type": "flash",
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T03:45:39.959321+00:00",
+  "post_id": "116287752129128324",
+  "post_content": "Trump admin looks to streamline permitting, lower costs to help make home ownership more attainable:",
+  "signals": "RELIEF, ACTION",
+  "direction": "UP",
+  "confidence": 0.55,
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0345-zh.md",
+      "length": 471
+    },
+    "en": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0345-en.md",
+      "length": 1672
+    },
+    "ja": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-0345-ja.md",
+      "length": 458
+    }
+  }
+}
