@@ -1,0 +1,33 @@
+{
+  "type": "flash",
+  "date": "2026-03-26",
+  "generated_at": "2026-03-26T10:05:43.309047+00:00",
+  "post_id": "116294906575864350",
+  "post_content": "RT @realDonaldTrumpBlame the Democrats for the Airport’s mess. They want our Country to do badly. They want our Country to fail. They broke the already signed Bill because they want to take care of Cr",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116294906575864350",
+  "post_source": "Truth Social",
+  "post_time": "Thu, 26 Mar 2026 10:04:08 +0000",
+  "signals": "DEAL",
+  "direction": "UP",
+  "confidence": 0.65,
+  "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
+  "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
+  "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/26-flash-1005-zh.md",
+      "length": 916
+    },
+    "en": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/26-flash-1005-en.md",
+      "length": 2168
+    },
+    "ja": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/26-flash-1005-ja.md",
+      "length": 905
+    }
+  }
+}
