@@ -25,7 +25,10 @@ sys.path.insert(0, str(Path.home() / "Projects" / "washin-llm"))
 # === 設定 ===
 RSS_URL = "https://www.trumpstruth.org/feed"
 POLL_INTERVAL = 30  # 秒
+X_POLL_MULTIPLIER = 10  # 每 10 輪 RSS 掃一次 X（= 5 分鐘，省 API credit）
+TRUMP_X_USER_ID = "25073877"  # @realDonaldTrump
 SEEN_FILE = Path(__file__).parent / "data" / "rss_seen_ids.json"
+X_SEEN_FILE = Path(__file__).parent / "data" / "x_seen_ids.json"
 LOG_FILE = Path(__file__).parent / "data" / "rss_watcher.log"
 LATENCY_LOG = Path(__file__).parent / "data" / "rss_latency_log.json"
 
@@ -100,11 +103,74 @@ def fetch_rss() -> list[dict]:
     return items, fetch_ms
 
 
+def fetch_x_timeline() -> tuple[list[dict], float]:
+    """抓川普 X 時間線，回傳推文列表。格式與 fetch_rss 一致。"""
+    import os as _os
+    from pathlib import Path as _Path
+
+    # 讀 Bearer token
+    env_path = _Path(__file__).parent / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                _os.environ.setdefault(k.strip(), v.strip())
+
+    bearer = _os.environ.get("X_BEARER_TOKEN_TRUMPCODE", "")
+    if not bearer:
+        return [], 0
+
+    t0 = time.time()
+    url = (
+        f"https://api.x.com/2/users/{TRUMP_X_USER_ID}/tweets"
+        f"?max_results=10&tweet.fields=created_at,text,public_metrics"
+        f"&exclude=retweets,replies"
+    )
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {bearer}"})
+
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read())
+    except Exception as e:
+        log(f"  ⚠️ X timeline 抓取失敗: {e}")
+        return [], (time.time() - t0) * 1000
+
+    fetch_ms = (time.time() - t0) * 1000
+    items = []
+    for tweet in data.get("data", []):
+        text = tweet.get("text", "")
+        # X 推文常常只有一個 URL（指向 Truth Social），跳過這種
+        if text.startswith("https://t.co/") and len(text) < 30:
+            continue
+        items.append({
+            "id": f"x_{tweet['id']}",  # 加 x_ 前綴避免跟 TS ID 撞
+            "guid": tweet["id"],
+            "content": text,
+            "pub_date": tweet.get("created_at", ""),
+            "original_url": f"https://x.com/realDonaldTrump/status/{tweet['id']}",
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "source": "x",  # 標記來源
+        })
+
+    return items, fetch_ms
+
+
 def load_seen() -> set:
-    """載入已看過的 ID。"""
+    """載入已看過的 ID（Truth Social）。"""
     if SEEN_FILE.exists():
         try:
             return set(json.load(open(SEEN_FILE)))
+        except:
+            pass
+    return set()
+
+
+def load_x_seen() -> set:
+    """載入已看過的 X 推文 ID。"""
+    if X_SEEN_FILE.exists():
+        try:
+            return set(json.load(open(X_SEEN_FILE)))
         except:
             pass
     return set()
@@ -114,6 +180,13 @@ def save_seen(seen: set):
     """存已看過的 ID（只保留最近 500 個）。"""
     recent = sorted(seen)[-500:]
     with open(SEEN_FILE, "w") as f:
+        json.dump(recent, f)
+
+
+def save_x_seen(seen: set):
+    """存已看過的 X 推文 ID。"""
+    recent = sorted(seen)[-200:]
+    with open(X_SEEN_FILE, "w") as f:
         json.dump(recent, f)
 
 
@@ -219,10 +292,11 @@ def on_new_post(post: dict):
                              signals, direction, confidence, triggered)
 
         # === 步驟 5: 即時三語快報生成（背景執行，不阻塞監控）===
-        if confidence and confidence >= 0.5:
-            _trigger_flash_article(post, signals, direction, confidence)
+        _trigger_flash_article(post, signals, direction, confidence)
     else:
-        log(f"     ⚪ 無信號 ({classify_ms:.0f}ms)")
+        # 無信號也寫 — 每篇都寫，累積一年就有信心了
+        log(f"     ⚪ 無市場信號，仍生成快報 ({classify_ms:.0f}ms)")
+        _trigger_flash_article(post, [], 'NEUTRAL', 0.0)
 
 
 def _append_pipeline_log(post, detect_latency, classify_ms, predict_ms,
@@ -260,6 +334,14 @@ def _append_pipeline_log(post, detect_latency, classify_ms, predict_ms,
         log(f"  ⚠️ pipeline log 寫入失敗: {e}")
 
 
+# git 操作鎖 — 防止多個快報 thread 同時 commit 撞 index.lock
+_git_lock = threading.Lock()
+
+# X 發推失敗計數（跨 thread 共享）
+_x_fail_count = 0
+_x_fail_lock = threading.Lock()
+
+
 def _trigger_flash_article(post: dict, signals: list, direction: str, confidence: float):
     """背景執行即時三語快報生成（不阻塞 RSS 監控迴圈）。"""
     def _run():
@@ -270,36 +352,65 @@ def _trigger_flash_article(post: dict, signals: list, direction: str, confidence
             ok = sum(1 for v in meta.get('articles', {}).values() if v.get('status') == 'ok')
             log(f"     📝 即時快報完成：{ok}/3 語言成功")
 
-            # 自動 git commit（快報）
+            # 發 X 三語 Thread
+            if ok > 0:
+                global _x_fail_count
+                try:
+                    from x_poster import post_flash_thread
+                    x_result = post_flash_thread(meta)
+                    if x_result.get('ok'):
+                        tweets = x_result.get('tweets', [])
+                        langs = '/'.join(t['lang'] for t in tweets)
+                        log(f"     🐦 X Thread {len(tweets)} 則 ({langs}): {x_result.get('main_url', '')}")
+                        with _x_fail_lock:
+                            _x_fail_count = 0
+                    else:
+                        with _x_fail_lock:
+                            _x_fail_count += 1
+                        log(f"     ⚠️ X 發推失敗 (連續{_x_fail_count}次): {x_result.get('error', '')[:80]}")
+                except Exception as e:
+                    with _x_fail_lock:
+                        _x_fail_count += 1
+                    log(f"     ⚠️ X 發推例外 (連續{_x_fail_count}次): {e}")
+
+            # git commit（加鎖防止併發衝突）
             if ok > 0:
                 import subprocess
                 cwd = str(Path(__file__).parent)
-                subprocess.run(["git", "add", "articles/"], cwd=cwd, capture_output=True)
-                subprocess.run(
-                    ["git", "commit", "-m", f"flash: {post['id'][:20]} 即時快報 ({direction})"],
-                    cwd=cwd, capture_output=True,
-                )
-                log(f"     📝 Git commit 完成")
+                with _git_lock:
+                    r1 = subprocess.run(["git", "add", "articles/"], cwd=cwd, capture_output=True)
+                    r2 = subprocess.run(
+                        ["git", "commit", "-m", f"flash: {post['id'][:20]} 即時快報 ({direction})"],
+                        cwd=cwd, capture_output=True,
+                    )
+                    if r2.returncode == 0:
+                        log(f"     📝 Git commit 完成")
+                    else:
+                        log(f"     ⚠️ Git commit 失敗: {r2.stderr.decode()[:100]}")
         except Exception as e:
             log(f"     ⚠️ 即時快報失敗: {e}")
 
-    # 背景執行，不阻塞 RSS 監控
     t = threading.Thread(target=_run, daemon=True)
     t.start()
 
 
 # === 主程式 ===
 
-def run_once():
-    """跑一次掃描。"""
-    seen = load_seen()
-    initial_count = len(seen)
+_x_poll_counter = 0  # X 掃描計數器（每 X_POLL_MULTIPLIER 輪掃一次）
 
+
+def run_once():
+    """跑一次掃描（Truth Social RSS + 定期 X timeline）。"""
+    global _x_poll_counter
+    total_new = 0
+
+    # === Truth Social RSS（每輪都掃）===
+    seen = load_seen()
     try:
         items, fetch_ms = fetch_rss()
     except Exception as e:
         log(f"❌ RSS 抓取失敗: {e}")
-        return 0
+        return -1  # 負數表示 RSS 失敗
 
     new_posts = []
     for item in items:
@@ -308,23 +419,53 @@ def run_once():
             seen.add(item["id"])
 
     if new_posts:
-        log(f"📡 RSS 掃描: {len(items)} 篇, {len(new_posts)} 篇新的 ({fetch_ms:.0f}ms)")
+        log(f"📡 TS 掃描: {len(items)} 篇, {len(new_posts)} 篇新的 ({fetch_ms:.0f}ms)")
         for post in new_posts:
             on_new_post(post)
         save_seen(seen)
-    else:
-        # 靜默 — 沒新推文不刷 log（每 10 輪印一次心跳）
-        pass
+    total_new += len(new_posts)
 
-    return len(new_posts)
+    # === X Timeline（每 X_POLL_MULTIPLIER 輪掃一次 = 約 5 分鐘）===
+    _x_poll_counter += 1
+    if _x_poll_counter >= X_POLL_MULTIPLIER:
+        _x_poll_counter = 0
+        x_seen = load_x_seen()
+        try:
+            x_items, x_ms = fetch_x_timeline()
+
+            # 首次掃描：靜默初始化（不觸發 on_new_post）
+            if not x_seen and x_items:
+                for item in x_items:
+                    if item["id"]:
+                        x_seen.add(item["id"])
+                save_x_seen(x_seen)
+                log(f"📡 X 初始化: 已知 {len(x_seen)} 篇，開始監控新推文")
+            else:
+                x_new = []
+                for item in x_items:
+                    if item["id"] and item["id"] not in x_seen:
+                        x_new.append(item)
+                        x_seen.add(item["id"])
+
+                if x_new:
+                    log(f"📡 X 掃描: {len(x_items)} 篇, {len(x_new)} 篇新的 ({x_ms:.0f}ms)")
+                    for post in x_new:
+                        log(f"  🐦 X 新推文: {post['content'][:80]}")
+                        on_new_post(post)
+                    save_x_seen(x_seen)
+                    total_new += len(x_new)
+        except Exception as e:
+            log(f"  ⚠️ X 掃描失敗: {e}")
+
+    return total_new
 
 
 def run_loop():
-    """持續監控。"""
+    """持續監控（Truth Social + X 雙源）。"""
     log("=" * 55)
-    log("🔴 Trump RSS 高頻監控器")
-    log(f"   來源: {RSS_URL}")
-    log(f"   間隔: {POLL_INTERVAL} 秒")
+    log("🔴 Trump 雙源監控器（TS + X）")
+    log(f"   Truth Social: {RSS_URL} (每 {POLL_INTERVAL}s)")
+    log(f"   X Timeline: @realDonaldTrump (每 {POLL_INTERVAL * X_POLL_MULTIPLIER}s)")
     log("=" * 55)
 
     # 第一次掃描：初始化已看過的 ID（不觸發 on_new_post）
@@ -343,18 +484,96 @@ def run_loop():
 
     heartbeat = 0
     last_article_date = None  # 追蹤上次生成文章的日期
+    last_health_hour = -1     # 追蹤上次健康檢查的小時
+    consecutive_rss_fails = 0 # 連續 RSS 失敗次數
+    health_file = Path(__file__).parent / "data" / "health_status.json"
+
+    def _write_health(status: str, details: dict = None):
+        """寫入健康狀態檔 — 外部監控可讀。"""
+        health = {
+            "status": status,  # "ok" / "degraded" / "down"
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "uptime_min": heartbeat * POLL_INTERVAL // 60,
+            "consecutive_rss_fails": consecutive_rss_fails,
+            "consecutive_x_fails": _x_fail_count,
+            "details": details or {},
+        }
+        try:
+            health_file.write_text(json.dumps(health, ensure_ascii=False, indent=2))
+        except Exception:
+            pass
+
+    def _self_check() -> list[str]:
+        """自我健康檢查，回傳問題清單。"""
+        issues = []
+
+        # 1. RSS 連續失敗？
+        if consecutive_rss_fails >= 5:
+            issues.append(f"🔴 RSS 連續失敗 {consecutive_rss_fails} 次")
+
+        # 2. X API key 有效？
+        try:
+            from x_poster import API_KEY, ACCESS_TOKEN
+            if not API_KEY or not ACCESS_TOKEN:
+                issues.append("🔴 X API key 未設定")
+        except Exception:
+            issues.append("🔴 x_poster import 失敗")
+
+        # 3. X 連續發推失敗？
+        if _x_fail_count >= 3:
+            issues.append(f"🟡 X 連續發推失敗 {_x_fail_count} 次")
+
+        # 4. LLM 可用？
+        try:
+            from realtime_loop import HAS_WASHIN_LLM
+            if not HAS_WASHIN_LLM:
+                issues.append("🟡 washin_llm 不可用（快報會降級）")
+        except Exception:
+            pass
+
+        # 5. 磁碟空間（articles 目錄）
+        try:
+            import shutil
+            usage = shutil.disk_usage(Path(__file__).parent)
+            free_gb = usage.free / (1024**3)
+            if free_gb < 1:
+                issues.append(f"🟡 磁碟剩餘 {free_gb:.1f}GB")
+        except Exception:
+            pass
+
+        return issues
 
     while True:
         try:
             new_count = run_once()
+            if new_count >= 0:
+                consecutive_rss_fails = 0
+            else:
+                consecutive_rss_fails += 1
             heartbeat += 1
+
             # 每 10 輪（5 分鐘）印一次心跳
             if heartbeat % 10 == 0 and new_count == 0:
                 log(f"💓 心跳: 已監控 {heartbeat * POLL_INTERVAL // 60} 分鐘, 無新推文")
 
+            # === 每小時自我健康檢查 ===
+            now_utc = datetime.now(timezone.utc)
+            if now_utc.hour != last_health_hour:
+                last_health_hour = now_utc.hour
+                issues = _self_check()
+                if issues:
+                    status = "down" if any("🔴" in i for i in issues) else "degraded"
+                    log(f"🏥 健康檢查: {status}")
+                    for issue in issues:
+                        log(f"   {issue}")
+                    _write_health(status, {"issues": issues})
+                else:
+                    _write_health("ok")
+                    if heartbeat > 1:  # 不在啟動時印
+                        log(f"🏥 健康檢查: ✅ 全部正常")
+
             # === 每日文章自動生成 ===
             # 美東 23:00-23:59（UTC 04:00-04:59）觸發當天文章
-            now_utc = datetime.now(timezone.utc)
             today_str = now_utc.strftime('%Y-%m-%d')
             if now_utc.hour == 4 and last_article_date != today_str:
                 # 生成前一天的文章（美東今天 = UTC 明天凌晨）
@@ -369,9 +588,10 @@ def run_loop():
 
                     # Git commit + push
                     import subprocess
-                    subprocess.run(["git", "add", f"articles/"], cwd=str(Path(__file__).parent), capture_output=True)
-                    subprocess.run(["git", "commit", "-m", f"daily: {yesterday} 三語分析文章"], cwd=str(Path(__file__).parent), capture_output=True)
-                    subprocess.run(["git", "push"], cwd=str(Path(__file__).parent), capture_output=True)
+                    cwd = str(Path(__file__).parent)
+                    subprocess.run(["git", "add", "articles/"], cwd=cwd, capture_output=True)
+                    subprocess.run(["git", "commit", "-m", f"daily: {yesterday} 三語分析文章"], cwd=cwd, capture_output=True)
+                    subprocess.run(["git", "push"], cwd=cwd, capture_output=True)
                     log(f"📝 Git push 完成")
                 except Exception as e:
                     log(f"📝 文章生成失敗: {e}")
@@ -379,9 +599,13 @@ def run_loop():
 
         except KeyboardInterrupt:
             log("停止。")
+            _write_health("stopped", {"reason": "KeyboardInterrupt"})
             break
         except Exception as e:
             log(f"⚠️ 錯誤: {e}")
+            # RSS 失敗計數（run_once 裡 exception 會到這）
+            if "RSS" in str(e) or "urllib" in str(e):
+                consecutive_rss_fails += 1
 
         time.sleep(POLL_INTERVAL)
 

@@ -166,7 +166,7 @@
   },
   {
     "date": "2026-03-23",
-    "posts": 4,
+    "posts": 9,
     "triggered": 0,
     "long": 0,
     "short": 0,
@@ -179,31 +179,15 @@
   },
   {
     "date": "2026-03-24",
+<<<<<<< HEAD
+    "posts": 21,
+=======
     "posts": 2,
+>>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
     "triggered": 0,
     "long": 0,
     "short": 0,
     "signals": [],
-    "consensus": "NEUTRAL"
-  },
-  {
-    "date": "2026-03-24",
-    "posts": 2,
-    "triggered": 0,
-    "long": 0,
-    "short": 0,
-    "signals": [],
-    "consensus": "NEUTRAL"
-  },
-  {
-    "date": "2026-03-25",
-    "posts": 5,
-    "triggered": 0,
-    "long": 0,
-    "short": 0,
-    "signals": [
-      "IRAN"
-    ],
     "consensus": "NEUTRAL"
   }
 ]

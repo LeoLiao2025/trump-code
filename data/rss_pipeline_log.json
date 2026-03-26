@@ -275,5 +275,350 @@
     "rules_triggered": 2,
     "polymarket_order": null,
     "content_preview": "If the Radical Left Democrats don’t immediately sign an agreement to let our Cou"
+  },
+  {
+    "post_id": "116272713025328785",
+    "pub_time": "Sun, 22 Mar 2026 12:00:01 +0000",
+    "detected_at": "2026-03-22T13:14:09.452220+00:00",
+    "detect_latency_sec": 4448.4,
+    "classify_ms": 2.1,
+    "predict_ms": 0.0,
+    "total_sec": 4448.5,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "On Monday, ICE will be going to airports to help our wonderful TSA Agents who ha"
+  },
+  {
+    "post_id": "116269555618597105",
+    "pub_time": "Sat, 21 Mar 2026 22:37:03 +0000",
+    "detected_at": "2026-03-22T13:14:09.469030+00:00",
+    "detect_latency_sec": 52626.5,
+    "classify_ms": 1.8,
+    "predict_ms": 0.0,
+    "total_sec": 52626.5,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "The United States has blown Iran off of the map, and yet their lightweight analy"
+  },
+  {
+    "post_id": "116273343074887409",
+    "pub_time": "Sun, 22 Mar 2026 14:40:15 +0000",
+    "detected_at": "2026-03-22T14:46:07.421553+00:00",
+    "detect_latency_sec": 352.4,
+    "classify_ms": 4.3,
+    "predict_ms": 0.0,
+    "total_sec": 352.4,
+    "signals": [
+      "ACTION",
+      "BEARISH"
+    ],
+    "direction": "NEUTRAL",
+    "confidence": 0.3,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "The Democrat running in Texas, James Talarico, turns out to be a FRAUD! It showe"
+  },
+  {
+    "post_id": "116275668825285445",
+    "pub_time": "Mon, 23 Mar 2026 00:31:43 +0000",
+    "detected_at": "2026-03-23T00:35:13.706190+00:00",
+    "detect_latency_sec": 210.7,
+    "classify_ms": 5.5,
+    "predict_ms": 0.0,
+    "total_sec": 210.7,
+    "signals": [
+      "DEAL",
+      "RELIEF",
+      "BEARISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.75,
+    "rules_triggered": 3,
+    "polymarket_order": null,
+    "content_preview": "I don’t think we should make any deal with the Crazy, Country Destroying, Radica"
+  },
+  {
+    "post_id": "116276442445755599",
+    "pub_time": "Mon, 23 Mar 2026 03:48:28 +0000",
+    "detected_at": "2026-03-23T09:49:51.581700+00:00",
+    "detect_latency_sec": 21672.4,
+    "classify_ms": 11176.8,
+    "predict_ms": 0.0,
+    "total_sec": 21683.6,
+    "signals": [
+      "THREAT",
+      "BULLISH"
+    ],
+    "direction": "NEUTRAL",
+    "confidence": 0.3,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "PEACE THROUGH STRENGTH, TO PUT IT MILDLY!!!"
+  },
+  {
+    "post_id": "116278600245530358",
+    "pub_time": "Mon, 23 Mar 2026 12:57:13 +0000",
+    "detected_at": "2026-03-23T13:00:06.979866+00:00",
+    "detect_latency_sec": 174.0,
+    "classify_ms": 4.3,
+    "predict_ms": 0.0,
+    "total_sec": 174.0,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "I am a BIG proponent of ICE wearing masks as they search for, and are forced to "
+  },
+  {
+    "post_id": "116278963682644203",
+    "pub_time": "Mon, 23 Mar 2026 14:29:39 +0000",
+    "detected_at": "2026-03-23T14:30:12.935946+00:00",
+    "detect_latency_sec": 33.9,
+    "classify_ms": 4.9,
+    "predict_ms": 0.0,
+    "total_sec": 33.9,
+    "signals": [
+      "DEAL"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "RT @realDonaldTrumpI am a BIG proponent of ICE wearing masks as they search for,"
+  },
+  {
+    "post_id": "116278959605267870",
+    "pub_time": "Mon, 23 Mar 2026 14:28:37 +0000",
+    "detected_at": "2026-03-23T14:30:12.955143+00:00",
+    "detect_latency_sec": 96.0,
+    "classify_ms": 1.9,
+    "predict_ms": 0.0,
+    "total_sec": 96.0,
+    "signals": [
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "For years, Democrats ignored Violent and Vicious Crime of all shapes, sizes, col"
+  },
+  {
+    "post_id": "116285845418508842",
+    "pub_time": "Tue, 24 Mar 2026 19:39:46 +0000",
+    "detected_at": "2026-03-24T19:40:24.987296+00:00",
+    "detect_latency_sec": 39.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 39.0,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Randy Maxwell is a Tremendous Champion for the incredible people o"
+  },
+  {
+    "post_id": "116285837978693829",
+    "pub_time": "Tue, 24 Mar 2026 19:37:52 +0000",
+    "detected_at": "2026-03-24T19:40:24.997611+00:00",
+    "detect_latency_sec": 153.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 153.0,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Mike Gaskill is a MAGA Warrior who is doing a tremendous job repre"
+  },
+  {
+    "post_id": "116285835312448196",
+    "pub_time": "Tue, 24 Mar 2026 19:37:11 +0000",
+    "detected_at": "2026-03-24T19:40:25.002164+00:00",
+    "detect_latency_sec": 194.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 194.0,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Ron Alting is a Strong Champion and Highly Effective Representativ"
+  },
+  {
+    "post_id": "116285831257066510",
+    "pub_time": "Tue, 24 Mar 2026 19:36:10 +0000",
+    "detected_at": "2026-03-24T19:40:25.011164+00:00",
+    "detect_latency_sec": 255.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 255.0,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Tyler Johnson is an America First Patriot who is doing a fantastic"
+  },
+  {
+    "post_id": "116285854736419949",
+    "pub_time": "Tue, 24 Mar 2026 19:42:08 +0000",
+    "detected_at": "2026-03-24T19:45:28.257556+00:00",
+    "detect_latency_sec": 200.3,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 200.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Daryl Schmidt is doing a tremendous job representing the Great Peo"
+  },
+  {
+    "post_id": "116285866660628943",
+    "pub_time": "Tue, 24 Mar 2026 19:45:10 +0000",
+    "detected_at": "2026-03-24T19:50:32.258540+00:00",
+    "detect_latency_sec": 322.3,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 322.3,
+    "signals": [
+      "ACTION",
+      "THREAT"
+    ],
+    "direction": "NEUTRAL",
+    "confidence": 0.3,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "Bluffton City Councilman Blake Fiechter, a True America First Patriot, is runnin"
+  },
+  {
+    "post_id": "116285903958791106",
+    "pub_time": "Tue, 24 Mar 2026 19:54:39 +0000",
+    "detected_at": "2026-03-24T19:56:07.250949+00:00",
+    "detect_latency_sec": 88.2,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 88.2,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Vigo County Commissioner Brenda Wilson, a Proven America First Patriot, is runni"
+  },
+  {
+    "post_id": "116285900153878228",
+    "pub_time": "Tue, 24 Mar 2026 19:53:41 +0000",
+    "detected_at": "2026-03-24T19:56:07.256002+00:00",
+    "detect_latency_sec": 146.3,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 146.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse MAGA Warrior and Fountain County GOP Chair, Paul"
+  },
+  {
+    "post_id": "116285893161347117",
+    "pub_time": "Tue, 24 Mar 2026 19:51:54 +0000",
+    "detected_at": "2026-03-24T19:56:07.263193+00:00",
+    "detect_latency_sec": 253.3,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 253.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse America First Patriot Tracey Powell, a fantastic"
+  },
+  {
+    "post_id": "116285908636437489",
+    "pub_time": "Tue, 24 Mar 2026 19:55:50 +0000",
+    "detected_at": "2026-03-24T20:00:10.225212+00:00",
+    "detect_latency_sec": 260.2,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 260.2,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse State Representative Michelle Davis, a REAL Repu"
+  },
+  {
+    "post_id": "116287761828408706",
+    "pub_time": "Wed, 25 Mar 2026 03:47:08 +0000",
+    "detected_at": "2026-03-25T13:01:52.329382+00:00",
+    "detect_latency_sec": 33284.3,
+    "classify_ms": 7.0,
+    "predict_ms": 0.0,
+    "total_sec": 33284.3,
+    "signals": [
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Terrible!"
+  },
+  {
+    "post_id": "116286710096907230",
+    "pub_time": "Tue, 24 Mar 2026 23:19:40 +0000",
+    "detected_at": "2026-03-25T13:01:52.391368+00:00",
+    "detect_latency_sec": 49332.4,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 49332.4,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Highly Respected Prime Minister of Hungary, Viktor Orbán, is a truly strong and "
   }
 ]
