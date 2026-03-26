@@ -1,14 +1,12 @@
 {
-  "date": "2026-03-25",
-  "generated_at": "2026-03-25T14:59:02Z",
-  "posts_today": 5,
+  "date": "2026-03-26",
+  "generated_at": "2026-03-26T08:02:07Z",
+  "posts_today": 1,
   "latest_post": {
-    "time": "2026-03-25T14:08",
-    "content_preview": "Trump and Pirro deserve credit for big cuts to Washington, DC crime: https://www.washingtonexaminer."
+    "time": "2026-03-26T02:42",
+    "content_preview": "NY AG Letitia James referred again for criminal prosecution for alleged homeowner insurance fraud: h"
   },
-  "signals_detected": [
-    "IRAN"
-  ],
+  "signals_detected": [],
   "models_triggered": 0,
   "direction_summary": {
     "LONG": 0,
@@ -22,12 +20,12 @@
   },
   "sp500_latest": {
     "date": "2026-03-25",
-    "close": 6615.56
+    "close": 6591.9
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-03-25\nPosts today: 5 | Models triggered: 0\nSignals: IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: Trump and Pirro deserve credit for big cuts to Washington, DC crime: https://www.washingtonexaminer.",
-    "zh": "川普密碼每日報告 -- 2026-03-25\n今日推文: 5 篇 | 觸發模型: 0 組\n偵測信號: 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: Trump and Pirro deserve credit for big cuts to Washington, DC crime: https://www.washingtonexaminer.",
-    "ja": "トランプ・コード日次レポート -- 2026-03-25\n本日の投稿: 5件 | トリガーモデル: 0組\n検出シグナル: イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: Trump and Pirro deserve credit for big cuts to Washington, DC crime: https://www.washingtonexaminer."
+    "en": "Trump Code Daily Report -- 2026-03-26\nPosts today: 1 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: NY AG Letitia James referred again for criminal prosecution for alleged homeowner insurance fraud: h",
+    "zh": "川普密碼每日報告 -- 2026-03-26\n今日推文: 1 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: NY AG Letitia James referred again for criminal prosecution for alleged homeowner insurance fraud: h",
+    "ja": "トランプ・コード日次レポート -- 2026-03-26\n本日の投稿: 1件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: NY AG Letitia James referred again for criminal prosecution for alleged homeowner insurance fraud: h"
   },
   "triggered_rules_sample": []
 }
