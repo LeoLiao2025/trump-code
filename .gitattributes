@@ -1,0 +1,4 @@
+# 合併時永遠保留 fork 自己的版本，不被上游覆蓋
+data/*.json merge=ours
+.github/workflows/sync-upstream.yml merge=ours
+.github/workflows/daily.yml merge=ours
