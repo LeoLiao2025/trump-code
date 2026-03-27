@@ -71,7 +71,15 @@ jobs:
           git config user.name "github-actions[bot]"
 
           git checkout -b "$BRANCH"
-          git merge upstream/main --no-edit --allow-unrelated-histories || true
+
+          # 嘗試合併；衝突時對 data/ 自動保留我們的版本
+          if ! git merge upstream/main --no-edit --allow-unrelated-histories; then
+            echo "Merge conflicts detected, resolving data files with ours..."
+            git checkout --ours -- data/
+            git add data/
+            git commit --no-edit -m "merge: sync upstream (resolve data conflicts with ours)"
+          fi
+
           git push origin "$BRANCH"
 
           BEHIND=${{ steps.check.outputs.behind }}
