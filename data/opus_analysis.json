@@ -1,138 +1,158 @@
 {
   "date": "2026-03-28",
-  "analyzed_at": "2026-03-28T07:41:21Z",
+  "analyzed_at": "2026-03-28T14:38:17Z",
   "analyzed_by": "claude-sonnet-4-6",
   "missed_signals": [
-    "Indiana州內初選清洗行動：川普密集背書多位挑戰RINO的候選人，這是黨內政治整合信號，非市場直接信號但反映政治資本集中行動",
-    "RINO攻擊模式升級：單日連續針對多位共和黨現任參議員，顯示黨內權鬥白熱化，可能影響後續立法進程（預算、關稅、債務上限）",
-    "俄克拉荷馬州地方選舉背書（T.W. Shannon）：跨州背書行動，顯示川普在全國黨內清洗行動的規模擴大",
-    "ICE/非法移民攻擊民主黨推文（05:48）：強硬執法立場重申，若伴隨後續政策行動可能引發市場波動",
-    "Git衝突顯示簡報數據分歧：HEAD版本顯示21篇推文（19:40-19:57大量背書），另一版本僅2篇，數據管道存在嚴重分歧問題"
+    "INDIANA_PRIMARY_PURGE: 川普在同一天密集背書印第安納州初選，針對投票反對重劃選區的RINO議員，這是黨內清洗行動信號，關鍵字引擎未捕捉 RINO+Redistricting 組合",
+    "ENDORSEMENT_BLITZ: 單日10+背書且全部指向同一州，屬於政治動員爆發型推文，不同於一般背書，但引擎未區分單一背書與批量背書",
+    "MARGIN_BOAST_IN_ENDORSEMENT: 推文中反覆強調勝選幅度（39點、24點、26點、28點、55點、33點），此為政治強勢信號，與C2_brag_top模式有重疊但未觸發",
+    "VIETNAM_VET_PATRIOT: 軍事背景人物背書（Jim Tomes, Vietnam Veteran）往往伴隨國防支出/軍事相關政策信號，引擎未建立此連結",
+    "OKLAHOMA_77_COUNTIES: T.W. Shannon背書提及贏得全部77縣，歷史性勝選強調，屬於BRAG類型但與地方選舉捆綁，信號混淆"
   ],
   "error_analysis": {
-    "C1_burst_silence": "根本原因：2026年3月市場背景已從『川普推文→市場反應』的簡單關聯轉變為結構性熊市壓力。沉默後的做多信號未考慮宏觀環境（關稅戰升級、衰退預期），導致3次連續失敗（-1.621%, -1.730%, -0.619%）。信號本身捕捉的是情緒反彈邏輯，但在持續下跌趨勢中反彈幅度不足以彌補下行風險",
-    "A2_deal_bullish": "根本原因：DEAL信號的市場新鮮度衰減。市場已學會區分『真實交易落地』vs『談判語言中的deal』，川普使用deal一詞的頻率過高導致信號稀釋。2026年3月兩次失敗（-0.305%, -0.619%）均發生在關稅背景下，DEAL信號被TARIFF環境壓制，未建立條件觸發邏輯"
+    "C1_burst_silence": "根本原因：沉默→做多邏輯在宏觀熊市背景下失效。2026年3月市場處於關稅恐慌高度敏感期，沉默不代表利多已消化，而可能是下一波利空醞釀期。C1模型未納入市場宏觀情緒指數作為過濾條件，導致在恐慌底部尚未確認前過早進場。3次連續失敗（3/5、3/11、3/13）顯示此模型在高波動率環境下系統性失效。",
+    "A2_deal_bullish": "根本原因：DEAL信號品質下降。市場已開始區分'真實交易'與'談判戰術性DEAL表態'。當DEAL出現在連續談判拉鋸背景下，市場反應從正面轉為懷疑甚至反向。A2模型未建立DEAL信號的可信度衰減機制，重複出現的DEAL信號應逐次降低信心度。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "黨內清洗模式啟動：川普推文從政策宣示轉向黨內人事清洗，單日密集背書挑戰RINO的新候選人，這一模式在2026年3月首次大規模出現",
-    "推文主題分裂：政策推文（移民/關稅）與黨內政治推文（初選背書）混合出現，市場信號噪音增加",
-    "RINO攻擊語言標準化：攻擊詞彙（incompetent、ineffective、pathetic）趨於固定，可能可以作為新的信號特徵",
-    "地方選舉介入規模擴大：從國會選舉延伸至州參議院初選，顯示2026年期中選舉布局加速，可能預示後續重大政策推動前的政治鋪墊"
+    "川普溝通重心從對外政策（關稅/中國/伊朗）轉向對內政治清洗（RINO清算/初選背書），今日21篇推文中90%屬於黨內動員",
+    "批量背書模式出現：單日針對同一州多位候選人，且全部附帶勝選幅度數據，這是新型政治強度信號",
+    "Redistricting投票作為攻擊RINO的統一標準出現，顯示川普正在建立新的黨內忠誠度篩選機制",
+    "推文從早晨4點到晚上7點57分，跨越15小時，但集中在19:40-19:57的密集批量發文，顯示有組織的計劃性發布",
+    "兩版本簡報存在衝突（2篇vs21篇），Git merge conflict未解決，數據完整性存疑，今日分析基於21篇版本"
   ],
   "new_rules": [
     {
-      "id": "E1_rino_purge",
-      "name": "黨內清洗模式→立法不確定性壓制",
+      "id": "E1_indiana_purge",
+      "name": "黨內清洗爆發→政治穩定溢價",
       "features": [
-        "單日3篇以上RINO攻擊推文",
-        "涉及國會相關州選舉",
-        "不含TARIFF或DEAL關鍵字"
+        "單日5+背書",
+        "同州集中",
+        "RINO攻擊",
+        "Redistricting關鍵字"
       ],
-      "direction": "NEUTRAL",
-      "hold": 1,
-      "confidence": 0.55
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.62
     },
     {
-      "id": "E2_deal_with_tariff_suppression",
-      "name": "DEAL信號在TARIFF環境下降效",
+      "id": "E2_endorsement_blitz",
+      "name": "批量背書日→隔日震盪後回升",
       "features": [
-        "DEAL信號觸發",
-        "前7日內有TARIFF推文",
-        "TARIFF信號信心度>0.6"
+        "單日背書數>=5",
+        "含勝選幅度數字",
+        "非政策性推文佔比>80%"
       ],
-      "direction": "NEUTRAL",
+      "direction": "LONG",
       "hold": 1,
-      "confidence": 0.65
+      "confidence": 0.58
     },
     {
-      "id": "E3_silence_trend_check",
-      "name": "沉默信號需趨勢過濾",
+      "id": "E3_rino_purge_signal",
+      "name": "RINO清算→共和黨政策推進預期上升",
       "features": [
-        "C1_burst_silence觸發",
-        "SPY 5日均線向下",
-        "VIX>22"
+        "RINO關鍵字",
+        "incumbent攻擊",
+        "初選背景",
+        "勝選幅度>20點"
       ],
-      "direction": "SHORT",
-      "hold": 1,
+      "direction": "LONG",
+      "hold": 3,
       "confidence": 0.6
     },
     {
-      "id": "E4_endorsement_blitz",
-      "name": "單日大量背書→政治資本消耗→政策空窗期",
+      "id": "E4_deal_decay",
+      "name": "重複DEAL信號可信度衰減→反向過濾",
       "features": [
-        "單日背書推文5篇以上",
-        "均為地方/州選舉",
-        "非政策類推文佔比>80%"
+        "DEAL信號",
+        "30日內已出現DEAL>=3次",
+        "無具體協議細節"
       ],
       "direction": "NEUTRAL",
-      "hold": 2,
-      "confidence": 0.5
+      "hold": 0,
+      "confidence": 0.68
     },
     {
-      "id": "E5_ice_immigration_hardline",
-      "name": "ICE/移民強硬推文→執法行動預期",
+      "id": "E5_silence_macro_filter",
+      "name": "沉默信號在高VIX環境下抑制",
       "features": [
-        "ICE關鍵字",
-        "illegals關鍵字",
-        "VOTE陰謀論敘事"
+        "C1_burst_silence觸發",
+        "市場恐慌指標高位",
+        "前5日累計跌幅>3%"
       ],
       "direction": "NEUTRAL",
+      "hold": 0,
+      "confidence": 0.72
+    },
+    {
+      "id": "E6_oklahoma_77county_brag",
+      "name": "全州制霸型炫耀→短期做多",
+      "features": [
+        "提及全部縣份勝選",
+        "歷史性勝選強調",
+        "地方選舉背書捆綁"
+      ],
+      "direction": "LONG",
       "hold": 1,
-      "confidence": 0.45
+      "confidence": 0.55
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
+      "A3_relief_rocket": 1.3,
       "D2_sig_change": 1.15,
-      "B2_tariff_to_deal": 1.1
+      "B1_triple_signal": 1.2
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.7,
-      "A2_deal_bullish": 0.75,
-      "C3_night_alert": 0.6
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.7,
+      "C3_night_alert": 0.5,
+      "C2_brag_top": 0.75
     },
     "eliminate": [
-      "C3_night_alert（37.5%勝率低於隨機基準，負報酬-0.414%，樣本8筆統計意義薄弱）"
+      "C3_night_alert（勝率37.5%低於隨機基準，報酬-0.414%，已連續8筆表現不佳，深夜推文市場反應已被套利者提前消化）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.919,
     "CHINA": 0.55,
     "DEAL": 0.42,
-    "DEAL_ONLY": 0.5,
-    "IRAN": 0.5,
+    "DEAL_ONLY": 0.58,
+    "IRAN": 0.52,
     "RELIEF": 0.95,
-    "TARIFF": 0.72,
-    "TARIFF_ONLY": 0.72,
-    "THREAT": 0.58,
-    "RINO_ATTACK": 0.4,
-    "ICE_IMMIGRATION": 0.45
+    "TARIFF": 0.68,
+    "TARIFF_ONLY": 0.65,
+    "THREAT": 0.55,
+    "RINO": 0.6,
+    "ENDORSEMENT_BLITZ": 0.58,
+    "REDISTRICTING": 0.55
   },
   "system_health": {
-    "score": "58/100",
+    "score": "62/100",
     "grade": "C+",
     "priorities": [
-      "1. 緊急修復數據管道：Git衝突顯示同一日期存在兩個版本（2篇vs21篇推文），數據不一致將導致所有後續分析失效，必須立即解決數據源唯一性問題",
-      "2. 為C1和A2加入宏觀過濾層：在觸發條件中加入趨勢判斷（SPY均線方向、VIX水位），避免在結構性下跌中逆勢做多",
-      "3. 建立DEAL信號新鮮度衰減機制：追蹤過去N日DEAL出現頻率，高頻期間降低信號權重"
+      "1. 緊急修復C1_burst_silence模型，加入宏觀市場恐慌過濾層（VIX或近期跌幅閾值），防止在熊市環境中系統性觸發做多",
+      "2. 建立DEAL信號可信度衰減機制，追蹤30日內DEAL出現頻率，重複信號自動降低A2觸發權重",
+      "3. 解決Git merge conflict數據衝突問題（2篇vs21篇），數據完整性是所有分析的基礎，必須優先確保輸入數據一致性",
+      "4. 新增黨內政治動員信號分類器（RINO_PURGE、ENDORSEMENT_BLITZ），今日模式顯示川普進入選舉備戰模式，此類推文將增加",
+      "5. 淘汰C3_night_alert並將其信號特徵重新整合入B1_triple_signal作為輔助特徵，而非獨立模型"
     ]
   },
   "today_prediction": {
-    "bias": "NEUTRAL",
-    "direction": "NEUTRAL",
+    "bias": "NEUTRAL_TO_BULLISH",
+    "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.38,
+    "confidence": 0.52,
     "active_signals": [
-      "E4_endorsement_blitz（若21篇版本為真）",
-      "ICE_IMMIGRATION（05:48推文）"
+      "ENDORSEMENT_BLITZ（21篇批量背書，政治穩定溢價）",
+      "非政策性推文主導（無關稅/貿易戰升級信號）",
+      "RELIEF背景信號（無新利空出現）"
     ],
     "suppressing_signals": [
-      "數據不一致導致信號可靠性存疑",
-      "無RELIEF/ACTION/DEAL明確觸發",
-      "近期C1連續失敗降低系統信心"
+      "C1_burst_silence近期3連敗，宏觀恐慌環境未解除",
+      "A2_deal_bullish信心度已降至0.42，今日無DEAL信號但背景壓制",
+      "數據完整性疑慮（merge conflict）導致整體信心折扣"
     ],
-    "note": "數據管道Git衝突是今日最大風險，無法確認真實推文數量與內容，建議今日不開新倉，優先修復數據問題後重新評估"
+    "note": "今日推文全面轉向黨內政治清洗，無新增關稅或貿易戰利空，短期做多偏向但信心有限，建議輕倉觀望並等待明日盤前ACTION信號確認。"
   }
 }
