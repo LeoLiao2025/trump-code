@@ -81,6 +81,12 @@ jobs:
             git commit --no-edit -m "merge: sync upstream (resolve data conflicts with ours)"
           fi
 
+          # 若 tree 內容與 main 完全相同（上游只改了 data/，ours 保留），跳過推送與 PR
+          if git diff --quiet origin/main "$BRANCH"; then
+            echo "No effective changes vs main (data-only upstream update, kept ours). Skipping PR."
+            exit 0
+          fi
+
           git push origin "$BRANCH"
 
           BEHIND=${{ steps.check.outputs.behind }}
@@ -104,13 +110,6 @@ jobs:
 
           > 此 PR 由 GitHub Actions 自動建立
           EOF
-
-          # 若 branch 與 main 無實際差異（上游只改了 data/），跳過 PR
-          DIFF_COUNT=$(git rev-list --count origin/main.."$BRANCH" 2>/dev/null || echo 0)
-          if [ "$DIFF_COUNT" -eq "0" ]; then
-            echo "No effective changes vs main (data-only upstream update, kept ours). Skipping PR."
-            exit 0
-          fi
 
           gh pr create \
             --title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
