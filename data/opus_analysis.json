@@ -1,159 +1,154 @@
 {
-  "date": "2026-04-01",
-  "analyzed_at": "2026-04-01T15:11:37Z",
+  "date": "2026-04-02",
+  "analyzed_at": "2026-04-02T15:04:01Z",
   "analyzed_by": "claude-sonnet-4-6",
   "missed_signals": [
-    "RINO_purge_campaign: 川普密集背書印第安納州初選候選人，針對RINO投票行為（反重劃選區）進行系統性清洗，此為黨內整合信號而非市場直接信號",
-    "ENDORSEMENT_BLITZ: 單日10篇以上背書推文，且集中在特定州（Indiana），顯示政治資本集中動員，可能預告重大政策推動前的黨內鞏固",
-    "ICE_DEFEND: 移民執法強化言論（05:48），與反民主黨框架結合，屬於內政強硬信號",
-    "REDISTRICTING_LEVERAGE: 重複提及重劃選區投票作為背書/攻擊依據，顯示川普將2026期中選舉準備視為當前優先項目，短期政策分心風險"
+    "INDIANA_PRIMARY_PURGE: 大規模州參議員背書推文（10篇）針對RINO初選對手，屬於黨內政治整合信號，非市場信號但反映權力鞏固情緒",
+    "RINO_ATTACK_CLUSTER: 連續攻擊多名RINO議員（Holdman/Buck/Deery/Goode/Bassler/Walker），顯示川普正在清洗黨內異見，可能預告後續政策推行無阻力",
+    "REDISTRICTING_GRIEVANCE: 多篇推文強調議員「投票反對重劃選區」，這是具體的黨內紀律執行，非空泛批評",
+    "OKLAHOMA_TW_SHANNON: 背書副州長候選人，強調77/77縣全贏，屬於政治擴張信號",
+    "ILLEGAL_IMMIGRATION_ICE: 早間推文攻擊民主黨阻撓ICE執法，THREAT情緒明確但引擎未標記為THREAT信號",
+    "VOLUME_DIVERGENCE: 兩個版本的推文數量衝突（HEAD顯示21篇vs merge顯示2篇），系統存在數據版本控制問題"
   ],
   "error_analysis": {
-    "C1_burst_silence": "根本原因：2026年3月沉默期出現在總體市場宏觀壓力背景下（關稅不確定性、聯準會立場），沉默不再代表政策緩和，而可能是談判僵局。模型假設沉默=風險退潮，但實際環境中沉默=消息真空+市場自填恐慌。需要加入宏觀背景過濾條件。",
-    "A2_deal_bullish": "根本原因：DEAL關鍵字出現頻率過高導致信號稀釋，市場已對川普的DEAL聲明產生免疫（credibility fatigue）。3月份多次DEAL出現後無實質進展，市場開始反向解讀為拖延戰術。信心度0.55已反映此問題，但模型仍未加入'DEAL重複出現懲罰項'。"
+    "C1_burst_silence": "根本原因：2026年3月的沉默期後反彈模式失效，因為沉默結束後川普恢復的推文主題是關稅升級或地緣政治緊張（非RELIEF），導致市場繼續下跌而非反彈。C1規則未區分『沉默後恢復內容的性質』，僅計算沉默時長而忽略恢復推文的情緒方向。",
+    "A2_deal_bullish": "根本原因：DEAL信號在2026年3月已出現語義稀釋，川普頻繁使用『deal』一詞但指向的是政治協議（黨內背書/州級協議）而非貿易協議，市場對非貿易性DEAL推文已失去反應。信心度0.55過高，實際有效DEAL需要特定上下文（CHINA/TARIFF共現）。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "政治模式轉向黨內整合（RINO清洗）：2026年3月川普推文重心從對外政策（關稅/貿易）轉向黨內初選，市場直接信號密度下降",
-    "背書轟炸模式：單日大量背書推文（本日10篇Indiana相關）成為新的'政治佈局'信號，與市場波動相關性待確認",
-    "衝突框架升級：RINO攻擊語言強化（incompetent、pathetic、No Goode等），情緒烈度上升但市場敏感度下降",
-    "早盤沉默+午後爆發：本日04:12後長達約15小時沉默，然後19:40-19:57集中爆發，時間模式異常",
-    "ICE/移民話題重燃：配合政治動員，移民執法強化言論重新出現，可能預告相關政策行動"
+    "政治模式轉向：2026年3月下旬推文重心從政策宣示轉向黨內初選整合，大量背書+攻擊RINO推文，市場信號密度降低",
+    "RINO清洗模式：單日10篇以上針對特定州議員的背書/攻擊推文，這在歷史上較少見，可能預告後續政策推行效率提升（長期利多但短期無直接市場影響）",
+    "早間沉默+晚間爆發：今日推文集中在19:40-19:57（UTC），早間僅2篇（ICE/移民），顯示新的日內時間分佈模式",
+    "DEAL信號語義污染加劇：DEAL一詞越來越多出現在非貿易語境，需要上下文過濾",
+    "git衝突存在：簡報數據存在HEAD與merge衝突，系統數據管道需要修復"
   ],
   "new_rules": [
     {
-      "id": "E1_rino_purge",
-      "name": "RINO清洗動員→政策鞏固後市場中性",
+      "id": "E1_rino_purge_bullish",
+      "name": "RINO清洗→政策通道暢通→中期利多",
       "features": [
-        "單日背書推文≥5篇",
-        "攻擊RINO關鍵字",
-        "集中特定州初選",
-        "無關稅/貿易關鍵字"
+        "單日背書推文>=5篇",
+        "攻擊RINO/incompetent/ineffective",
+        "提及具體選區+川普勝差>=20點"
       ],
-      "direction": "NEUTRAL",
-      "hold": 1,
+      "direction": "LONG",
+      "hold": 5,
       "confidence": 0.55
     },
     {
-      "id": "E2_endorsement_blitz",
-      "name": "背書轟炸→政治資本消耗→政策窗口前兆",
+      "id": "E2_deal_context_filter",
+      "name": "DEAL需CHINA或TARIFF共現才有效",
       "features": [
-        "單日背書推文≥8篇",
-        "多個不同候選人",
-        "含'Great Honor to endorse'",
-        "48小時內無重大政策推文"
+        "DEAL出現",
+        "同推文含CHINA或TARIFF或trade",
+        "非黨內政治語境"
       ],
-      "direction": "NEUTRAL",
+      "direction": "LONG",
       "hold": 2,
-      "confidence": 0.5
+      "confidence": 0.68
     },
     {
-      "id": "E3_deal_fatigue",
-      "name": "DEAL重複出現懲罰→信號衰減",
+      "id": "E3_silence_resume_quality",
+      "name": "沉默結束後首篇推文情緒決定方向",
       "features": [
-        "7日內DEAL出現≥3次",
-        "無具體協議細節",
-        "市場前期對DEAL已上漲"
+        "沉默>=6小時",
+        "恢復首篇含RELIEF或deal_bullish",
+        "無TARIFF共現"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.7
+    },
+    {
+      "id": "E4_silence_resume_bearish",
+      "name": "沉默結束後首篇含關稅/威脅→做空",
+      "features": [
+        "沉默>=6小時",
+        "恢復首篇含TARIFF或THREAT或tariff_threat"
       ],
       "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.6
-    },
-    {
-      "id": "E4_silence_macro_context",
-      "name": "沉默+宏觀壓力→不做多",
-      "features": [
-        "C1_burst_silence觸發",
-        "同期VIX>20或關稅不確定性高",
-        "沉默期間無正面政策確認"
-      ],
-      "direction": "NEUTRAL",
-      "hold": 1,
+      "hold": 2,
       "confidence": 0.65
     },
     {
-      "id": "E5_ice_immigration_hardline",
-      "name": "移民執法強化言論→短期市場波動抑制",
+      "id": "E5_ice_immigration_threat",
+      "name": "ICE/移民攻擊民主黨推文→中性偏空",
       "features": [
-        "ICE關鍵字",
-        "illegal/illegals關鍵字",
-        "Democrats攻擊框架",
-        "盤後推文"
+        "含illegals或ICE或immigrants",
+        "含Democrats或fight",
+        "早間時段(UTC 03-08)"
       ],
-      "direction": "NEUTRAL",
+      "direction": "NEUTRAL_SHORT",
       "hold": 1,
       "confidence": 0.52
     },
     {
-      "id": "E6_late_day_endorsement_burst",
-      "name": "晚間大量背書→隔日低波動",
+      "id": "E6_evening_political_purge_neutral",
+      "name": "晚間大量黨內背書推文→當日信號雜訊過高→觀望",
       "features": [
-        "19:00後推文≥5篇",
-        "內容為背書/支持",
-        "無市場相關關鍵字",
-        "次日開盤"
+        "UTC 18:00後推文>=8篇",
+        "80%以上為州級政治背書",
+        "無TARIFF/DEAL/CHINA"
       ],
       "direction": "NEUTRAL",
       "hold": 1,
-      "confidence": 0.58
+      "confidence": 0.6
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
+      "A3_relief_rocket": 1.3,
       "D2_sig_change": 1.15,
-      "B1_triple_signal": 1.1
+      "B1_triple_signal": 1.2
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.75,
       "A2_deal_bullish": 0.7,
-      "C3_night_alert": 0.8,
-      "C2_brag_top": 0.85
+      "C1_burst_silence": 0.75,
+      "C3_night_alert": 0.6
     },
     "eliminate": [
-      "C3_night_alert（勝率37.5%低於隨機，負報酬-0.414%，樣本數僅8筆，統計不顯著且有害）"
+      "C3_night_alert（勝率37.5%低於隨機基準，報酬-0.414%，樣本8筆，已無統計意義）"
     ]
   },
   "signal_confidence": {
-    "ACTION": 0.92,
-    "CHINA": 0.58,
+    "ACTION": 0.919,
+    "CHINA": 0.62,
     "DEAL": 0.42,
-    "DEAL_ONLY": 0.55,
-    "IRAN": 0.52,
+    "DEAL_ONLY": 0.5,
+    "DEAL_WITH_CONTEXT": 0.68,
+    "IRAN": 0.55,
     "RELIEF": 0.95,
-    "TARIFF": 0.68,
+    "TARIFF": 0.7,
     "TARIFF_ONLY": 0.68,
-    "THREAT": 0.58,
-    "RINO": 0.3,
-    "ENDORSEMENT": 0.25,
-    "ICE": 0.45
+    "THREAT": 0.62,
+    "RINO_PURGE": 0.55,
+    "ICE_IMMIGRATION": 0.5
   },
   "system_health": {
-    "score": "61/100",
+    "score": "58/100",
     "grade": "C+",
     "priorities": [
-      "1. 立即修復C1_burst_silence：加入宏觀背景過濾層，沉默信號需確認VIX<18且近期無未解關稅事件才觸發做多",
-      "2. 實施DEAL疲勞懲罰機制：7日內DEAL出現≥3次時自動降低A2信心度至0.30以下",
-      "3. 淘汰C3_night_alert並重新分配其權重至A3_relief_rocket",
-      "4. 建立政治vs市場推文分類器：背書/RINO推文應被路由至NEUTRAL而非觸發任何方向性模型",
-      "5. 增加樣本數：B1_triple_signal（17筆）和B2_tariff_to_deal（19筆）樣本不足，暫緩加重"
+      "1. 緊急修復數據管道：git衝突導致推文數量不一致（2篇vs21篇），分析基礎已失效，必須立即解決版本控制問題",
+      "2. DEAL信號語義過濾：將DEAL拆分為DEAL_TRADE（含CHINA/TARIFF）和DEAL_POLITICAL，前者維持權重後者大幅降低",
+      "3. C1_burst_silence規則重構：加入沉默結束後首篇內容判斷邏輯，當前純時長觸發邏輯已失效",
+      "4. 淘汰C3_night_alert並觀察E4_silence_resume_bearish替代效果",
+      "5. 建立政治週期濾鏡：初選季（3-6月）黨內背書推文爆量期間，降低所有信號敏感度30%"
     ]
   },
   "today_prediction": {
     "bias": "NEUTRAL",
-    "direction": "FLAT",
+    "direction": "NEUTRAL",
     "hold_days": 1,
-    "confidence": 0.45,
+    "confidence": 0.38,
     "active_signals": [
-      "ENDORSEMENT_BLITZ（晚間10篇背書，政治佈局模式）",
-      "ICE_DEFEND（移民強硬言論，內政信號）"
+      "ICE_IMMIGRATION早間推文（弱空偏向）",
+      "E6_evening_political_purge_neutral（晚間大量黨內背書→觀望）"
     ],
     "suppressing_signals": [
-      "無RELIEF/ACTION/DEAL關鍵字觸發",
-      "E6_late_day_endorsement_burst抑制方向性判斷",
-      "DEAL_fatigue（近期DEAL信號失效歷史）",
-      "C1_burst_silence宏觀過濾層介入"
+      "數據版本衝突導致信號可靠性下降",
+      "無TARIFF/DEAL/CHINA/RELIEF核心信號觸發",
+      "推文主題99%為黨內政治，市場相關度極低"
     ],
-    "note": "今日推文完全為黨內政治佈局（Indiana初選背書+移民攻擊），缺乏市場敏感關鍵字，系統應輸出FLAT/觀望，等待明日是否出現貿易/關稅/DEAL相關信號再行動。"
+    "note": "今日推文高度集中於印第安納州初選背書與RINO攻擊，缺乏任何直接市場催化信號，加上數據管道存在git衝突問題，建議今日觀望不操作，優先修復系統數據一致性。"
   }
 }
