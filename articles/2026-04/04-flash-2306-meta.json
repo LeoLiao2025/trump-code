@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:06:36.428855+00:00",
-  "post_id": "116315538702242081",
-  "post_content": "Bill Pulte files new criminal referral against Trump foe Letitia James:",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116315538702242081",
+  "generated_at": "2026-04-04T23:06:46.539473+00:00",
+  "post_id": "116315536925726627",
+  "post_content": "Trump housing chief requests new criminal investigation into Letitia James:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116315536925726627",
   "post_source": "Truth Social",
-  "post_time": "Mon, 30 Mar 2026 01:31:09 +0000",
+  "post_time": "Mon, 30 Mar 2026 01:30:42 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -22,12 +22,12 @@
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2306-en.md",
-      "length": 1159
+      "length": 1178
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2306-ja.md",
-      "length": 867
+      "length": 848
     }
   }
 }
