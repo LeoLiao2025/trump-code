@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:56:35.764097+00:00",
-  "post_id": "116344192713238962",
-  "post_content": "Third rate news “anchor” Jonathan Karl of ABC Fake News, the worst and most corrupt Network in the business, wrote another made up book about me where his stories and “reporting” bare no relationship ",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116344192713238962",
+  "generated_at": "2026-04-04T22:56:44.251601+00:00",
+  "post_id": "116343295412245120",
+  "post_content": "",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116343295412245120",
   "post_source": "Truth Social",
-  "post_time": "Sat, 04 Apr 2026 02:58:15 +0000",
+  "post_time": "Fri, 03 Apr 2026 23:10:03 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-zh.md",
-      "length": 796
+      "length": 768
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-en.md",
-      "length": 2001
+      "length": 984
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-ja.md",
-      "length": 847
+      "length": 462
     }
   }
 }
