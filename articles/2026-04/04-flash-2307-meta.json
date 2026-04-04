@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:07:12.869760+00:00",
-  "post_id": "116315527972027723",
-  "post_content": "Pulte Makes New Fraud Allegations Against New York AG James:",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116315527972027723",
+  "generated_at": "2026-04-04T23:07:20.326944+00:00",
+  "post_id": "116315526664604618",
+  "post_content": "TRUMP HOUSING BOSS HURLS FRESH CRIMINAL REFERRALS AT LETITIA JAMES FROM MIAMI TO CHICAGO:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116315526664604618",
   "post_source": "Truth Social",
-  "post_time": "Mon, 30 Mar 2026 01:28:26 +0000",
+  "post_time": "Mon, 30 Mar 2026 01:28:06 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-zh.md",
-      "length": 864
+      "length": 823
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-en.md",
-      "length": 1122
+      "length": 2451
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-ja.md",
-      "length": 879
+      "length": 823
     }
   }
 }
