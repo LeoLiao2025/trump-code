@@ -415,5 +415,210 @@
     "rules_triggered": 1,
     "polymarket_order": null,
     "content_preview": "For years, Democrats ignored Violent and Vicious Crime of all shapes, sizes, col"
+  },
+  {
+    "post_id": "116285845418508842",
+    "pub_time": "Tue, 24 Mar 2026 19:39:46 +0000",
+    "detected_at": "2026-03-24T19:40:24.987296+00:00",
+    "detect_latency_sec": 39.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 39.0,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Randy Maxwell is a Tremendous Champion for the incredible people o"
+  },
+  {
+    "post_id": "116285837978693829",
+    "pub_time": "Tue, 24 Mar 2026 19:37:52 +0000",
+    "detected_at": "2026-03-24T19:40:24.997611+00:00",
+    "detect_latency_sec": 153.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 153.0,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Mike Gaskill is a MAGA Warrior who is doing a tremendous job repre"
+  },
+  {
+    "post_id": "116285835312448196",
+    "pub_time": "Tue, 24 Mar 2026 19:37:11 +0000",
+    "detected_at": "2026-03-24T19:40:25.002164+00:00",
+    "detect_latency_sec": 194.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 194.0,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Ron Alting is a Strong Champion and Highly Effective Representativ"
+  },
+  {
+    "post_id": "116285831257066510",
+    "pub_time": "Tue, 24 Mar 2026 19:36:10 +0000",
+    "detected_at": "2026-03-24T19:40:25.011164+00:00",
+    "detect_latency_sec": 255.0,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 255.0,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Tyler Johnson is an America First Patriot who is doing a fantastic"
+  },
+  {
+    "post_id": "116285854736419949",
+    "pub_time": "Tue, 24 Mar 2026 19:42:08 +0000",
+    "detected_at": "2026-03-24T19:45:28.257556+00:00",
+    "detect_latency_sec": 200.3,
+    "classify_ms": 0.1,
+    "predict_ms": 0.0,
+    "total_sec": 200.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "State Senator Daryl Schmidt is doing a tremendous job representing the Great Peo"
+  },
+  {
+    "post_id": "116285866660628943",
+    "pub_time": "Tue, 24 Mar 2026 19:45:10 +0000",
+    "detected_at": "2026-03-24T19:50:32.258540+00:00",
+    "detect_latency_sec": 322.3,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 322.3,
+    "signals": [
+      "ACTION",
+      "THREAT"
+    ],
+    "direction": "NEUTRAL",
+    "confidence": 0.3,
+    "rules_triggered": 2,
+    "polymarket_order": null,
+    "content_preview": "Bluffton City Councilman Blake Fiechter, a True America First Patriot, is runnin"
+  },
+  {
+    "post_id": "116285903958791106",
+    "pub_time": "Tue, 24 Mar 2026 19:54:39 +0000",
+    "detected_at": "2026-03-24T19:56:07.250949+00:00",
+    "detect_latency_sec": 88.2,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 88.2,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.8,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Vigo County Commissioner Brenda Wilson, a Proven America First Patriot, is runni"
+  },
+  {
+    "post_id": "116285900153878228",
+    "pub_time": "Tue, 24 Mar 2026 19:53:41 +0000",
+    "detected_at": "2026-03-24T19:56:07.256002+00:00",
+    "detect_latency_sec": 146.3,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 146.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse MAGA Warrior and Fountain County GOP Chair, Paul"
+  },
+  {
+    "post_id": "116285893161347117",
+    "pub_time": "Tue, 24 Mar 2026 19:51:54 +0000",
+    "detected_at": "2026-03-24T19:56:07.263193+00:00",
+    "detect_latency_sec": 253.3,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 253.3,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse America First Patriot Tracey Powell, a fantastic"
+  },
+  {
+    "post_id": "116285908636437489",
+    "pub_time": "Tue, 24 Mar 2026 19:55:50 +0000",
+    "detected_at": "2026-03-24T20:00:10.225212+00:00",
+    "detect_latency_sec": 260.2,
+    "classify_ms": 0.3,
+    "predict_ms": 0.0,
+    "total_sec": 260.2,
+    "signals": [
+      "ACTION"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "It is my Great Honor to endorse State Representative Michelle Davis, a REAL Repu"
+  },
+  {
+    "post_id": "116287761828408706",
+    "pub_time": "Wed, 25 Mar 2026 03:47:08 +0000",
+    "detected_at": "2026-03-25T13:01:52.329382+00:00",
+    "detect_latency_sec": 33284.3,
+    "classify_ms": 7.0,
+    "predict_ms": 0.0,
+    "total_sec": 33284.3,
+    "signals": [
+      "BEARISH"
+    ],
+    "direction": "DOWN",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Terrible!"
+  },
+  {
+    "post_id": "116286710096907230",
+    "pub_time": "Tue, 24 Mar 2026 23:19:40 +0000",
+    "detected_at": "2026-03-25T13:01:52.391368+00:00",
+    "detect_latency_sec": 49332.4,
+    "classify_ms": 0.2,
+    "predict_ms": 0.0,
+    "total_sec": 49332.4,
+    "signals": [
+      "BULLISH"
+    ],
+    "direction": "UP",
+    "confidence": 0.65,
+    "rules_triggered": 1,
+    "polymarket_order": null,
+    "content_preview": "Highly Respected Prime Minister of Hungary, Viktor Orbán, is a truly strong and "
   }
 ]

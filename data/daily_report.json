@@ -1,12 +1,16 @@
 {
-  "date": "2026-03-24",
-  "generated_at": "2026-03-24T14:58:22Z",
-  "posts_today": 2,
+  "date": "2026-04-04",
+  "generated_at": "2026-04-04T14:33:44Z",
+  "posts_today": 6,
   "latest_post": {
-    "time": "2026-03-24T05:48",
-    "content_preview": "Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country."
+    "time": "2026-04-04T14:05",
+    "content_preview": "Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT. Time is running out "
   },
-  "signals_detected": [],
+  "signals_detected": [
+    "TARIFF",
+    "DEAL",
+    "IRAN"
+  ],
   "models_triggered": 0,
   "direction_summary": {
     "LONG": 0,
@@ -19,13 +23,13 @@
     "rate": 0.0
   },
   "sp500_latest": {
-    "date": "2026-03-24",
-    "close": 6573.32
+    "date": "2026-04-02",
+    "close": 6582.69
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-03-24\nPosts today: 2 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country.",
-    "zh": "川普密碼每日報告 -- 2026-03-24\n今日推文: 2 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country.",
-    "ja": "トランプ・コード日次レポート -- 2026-03-24\n本日の投稿: 2件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country."
+    "en": "Trump Code Daily Report -- 2026-04-04\nPosts today: 6 | Models triggered: 0\nSignals: TARIFF, DEAL, IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT. Time is running out ",
+    "zh": "川普密碼每日報告 -- 2026-04-04\n今日推文: 6 篇 | 觸發模型: 0 組\n偵測信號: 關稅, Deal, 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT. Time is running out ",
+    "ja": "トランプ・コード日次レポート -- 2026-04-04\n本日の投稿: 6件 | トリガーモデル: 0組\n検出シグナル: 関税, ディール, イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT. Time is running out "
   },
   "triggered_rules_sample": []
 }
