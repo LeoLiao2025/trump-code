@@ -1,31 +1,30 @@
-⚡ Trump Code | Flash — 川普住房首長要求對 Letitia James 展開新刑事調查
+⚡ Trump Code | Flash — Housing Official Fires Criminal Referral at NY AG Letitia James
 
-## 川普說了什麼
+## What He Said
 
-川普在 Truth Social 轉發消息：**"Trump housing chief requests new criminal investigation into Letitia James"**——白宮住房部門主管正式要求對紐約州檢察長 Letitia James 發起刑事調查。這是川普陣營對 James 長期法律戰的最新升級，從被動應訴轉為主動出擊。
+Trump shared on Truth Social: **"Top Trump housing official issues new criminal referral for New York AG Letitia James."** A senior HUD appointee has formally referred New York Attorney General Letitia James for criminal investigation — escalating the administration's counter-offensive against the state official who secured a $454M civil fraud judgment against Trump's business empire.
 
-## 為什麼重要
+## Why It Matters
 
-Letitia James 是對川普集團提起民事詐欺訴訟的關鍵檢察官，該案導致數億美元罰款判決。此舉代表行政權直接針對州級司法官員施壓，屬罕見的跨層級對抗。
+This is **political, not directly market-moving** — signal detection returned **NEUTRAL with 0% confidence**, meaning no clear directional bias for equities or bonds. However, traders should note the second-order effects:
 
-**市場影響層面：**
-- **房地產板塊**（IYR、XLRE）：住房首長涉入政治調查，可能分散政策注意力，住房政策推進節奏存疑
-- **紐約州政治風險**：若調查升級，紐約州營商環境不確定性上升，金融機構（JPM、GS 紐約總部）情緒面承壓
-- **法律服務與合規成本**：政府間司法衝突加劇，企業合規成本預期上行
+- **NY real estate & Trump Media (DJT):** Any escalation in the Trump-vs-NY-AG saga can inject volatility into DJT shares and sentiment around Trump-linked NYC properties. DJT after-hours volume is the first thing to watch.
+- **Rule-of-law risk premium:** Federal officials criminally referring a sitting state AG is institutionally unprecedented. If this pattern widens, it raises governance risk for US assets broadly — relevant for sovereign CDS spreads and long-duration Treasuries.
+- **No immediate policy impact:** This is not an executive order, tariff, or regulation. No sector rotation trigger.
 
-**信號偵測結果：NEUTRAL，信心度 0%**——系統判定此為政治事件而非直接經濟政策信號，市場方向性影響尚不明確。
+## What to Watch
 
-## 建議關注
+1. **DJT pre-market** — any spike above 5% daily range signals retail narrative trade igniting
+2. **NY AG office response** — if James counter-sues or announces new Trump investigations, volatility compounds
+3. **HUD policy pipeline** — watch whether this referral is paired with housing policy changes (rent rules, fair lending) that carry real economic weight
 
-1. **DOJ 是否正式受理**調查請求——這是從政治喊話升級為實質行動的分水嶺
-2. **紐約州相關 ETF**（IYR、XLF）未來 48 小時價格波動
-3. **川普集團民事詐欺案上訴進度**——若刑事調查與上訴同步推進，法律風險定價將重新校準
+**Bottom line:** Noise, not signal — until it isn't. Keep on radar, don't trade it.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116315536925726627
-- Posted: Mon, 30 Mar 2026 01:30:42 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116315535910048103
+- Posted: Mon, 30 Mar 2026 01:30:27 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
