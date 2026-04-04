@@ -1,30 +1,33 @@
-⚡ Trump Code | Flash — 出生公民權再成焦點，但市場影響有限
+⚡ Trump Code | Flash — 美軍打擊伊朗，地緣風險急升
 
-## 川普說了什麼
+**信號：ACTION / BEARISH | 方向：NEUTRAL | 信心度：30%**
 
-Trump 在 Truth Social 重新開火出生公民權議題，主張第十四修正案的立法初衷是保障「THE BABIES OF SLAVES」，而非讓外國富人透過「birth tourism」取得美國公民身份。他強調「We are the only Country in the World that dignifies this subject with even discussion」，並指控全球正在「getting rich selling citizenships to our Country」。
+川普於 Truth Social 宣布美軍已對伊朗發動軍事打擊："Many long sought after targets have been taken out and destroyed by our GREAT MILITARY, the finest and most lethal in the World." 語氣明確——這不是威脅，是已完成的軍事行動。
 
 ## 為什麼重要
 
-**信號偵測：NEUTRAL，信心度 0%** — 這是一則政治立場宣示，缺乏具體政策行動或行政命令預告。
+這是美國首次公開宣布直接打擊伊朗境內目標，地緣政治等級瞬間拉到最高。市場影響路徑清晰：
 
-出生公民權是 Trump 長期議程的一部分（2025 年 1 月已簽署相關行政命令，但遭聯邦法院凍結）。此文本身不包含新的政策觸發點——沒有提到新的行政命令、國會法案推動時程、或最高法院相關動態。
+- **原油**：WTI / Brent 預期跳空高開，伊朗日產約 300 萬桶，荷莫茲海峽承載全球 20% 原油運輸
+- **避險資產**：黃金、美債、日圓、瑞郎將獲資金流入
+- **股市**：風險偏好遭壓制，S&P 500 期貨、歐洲期貨承壓，國防股逆勢看漲
+- **波動率**：VIX 預期飆升
 
-**市場直接影響有限：** 不涉及關稅、財政、貨幣政策或貿易協議。移民政策對勞動力市場的影響屬中長期結構性因素，非即時交易信號。
+信心度僅 30% 標記為 NEUTRAL，原因是：軍事行動規模未明，可能是單次精準打擊而非全面開戰，市場反應取決於伊朗是否報復升級。
 
 ## 建議關注
 
-- **短期：** 無需調整倉位。觀察 48 小時內是否有後續行政命令或國會動作
-- **中期指標：** 追蹤聯邦法院對出生公民權行政命令的裁定進展
-- **風險情境：** 若 Trump 將此議題與移民法案綁定政府預算談判，可能間接影響債務上限時程
-
-**底線：政治噪音，非市場信號。**
+1. **WTI 期貨開盤價** — 若突破 $85 關口，確認供應恐慌定價
+2. **伊朗官方回應** — 報復聲明 = 二次衝擊波
+3. **荷莫茲海峽航運動態** — 任何封鎖信號將引爆油價
+4. **VIX 指數** — 開盤若 >25，確認恐慌模式
+5. **亞洲盤反應** — 日經、港股開盤為歐美前哨
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116317726153845042
-- Posted: Mon, 30 Mar 2026 10:47:27 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116315768155415029
+- Posted: Mon, 30 Mar 2026 02:29:30 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
