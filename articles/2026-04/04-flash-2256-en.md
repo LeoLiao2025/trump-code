@@ -1,29 +1,32 @@
-⚡ Trump Code | Flash — Jobs Data Victory Lap, Markets Eye Follow-Through
+⚡ Trump Code | Flash — Trump Blasts ABC's Jonathan Karl Over New Book
 
-**Signal: BULLISH | Confidence: 75% | Direction: UP**
+## What He Said
 
-Trump took to Truth Social to trumpet March employment figures: **"178,000 new jobs in March. Unemployment DOWN. Great numbers by all accounts, even the Fake News. MAGA!"**
+Trump attacked ABC News anchor Jonathan Karl over a new book, calling him worse than George Stephanopoulos and labeling ABC "the worst and most corrupt Network in the business." Key quote: **"ABC was already forced to pay me $16,000,000 because of their false and misleading reporting."** He urged followers: **"Don't buy the book!"**
 
-## Why It Matters
+## Signal Detection
 
-The post is a textbook presidential endorsement of hard economic data — not a policy threat, not a tariff warning, but a pure sentiment booster. The 178K figure lands comfortably above the ~150K threshold economists consider consistent with steady labor market expansion. Trump's framing — citing even hostile media acknowledgment — signals confidence that the numbers speak for themselves.
+NLP classification across 551 validated rules (z=5.39) returned **NEUTRAL** with **0% confidence** on directional market impact. LLM causal reasoning confirms: this is a personal media feud, not a policy signal.
 
-However, the **75% confidence cap** reflects a critical limitation: this is cheerleading, not policy. No new executive orders, no fiscal stimulus announcement, no trade concessions. The causal chain runs short — strong data → presidential amplification → mild risk-on sentiment — but lacks a second-order catalyst to sustain momentum beyond the opening bell.
+## Why It Matters (Mostly Doesn't)
 
-## What to Watch
+This post is **pure media warfare** — no policy content, no regulatory threat, no tariff signal. The $16M reference is the settled Stephanopoulos defamation case from 2024, not new litigation. No new lawsuits announced. No executive action implied.
 
-- **NFP revisions**: March BLS revisions (due next month) — prior months have seen significant downward adjustments. If 178K gets revised sub-150K, the victory lap ages poorly.
-- **Fed reaction**: Watch for Fed speaker commentary Monday/Tuesday. Strong jobs + sticky inflation = hawkish lean = rates repricing that could neutralize the bullish tone.
-- **S&P 500 futures Sunday open**: First real-time read on whether traders treat this as signal or noise.
-- **USD/JPY & 10Y yield**: If yields push higher on the data, equity upside may be capped.
+**Low market relevance.** Disney (DIS), ABC's parent, may see minor social-media-driven volatility at Monday open, but the Stephanopoulos settlement is already priced in. No sector-wide implications.
 
-**Bottom line**: Positive but self-limiting. A feel-good post, not a market mover — unless paired with policy action this week.
+## Watch List
+
+- **DIS** pre-market Monday — any sympathy sell-off likely <0.5%, fade-worthy
+- **Truth Social (DJT)** — engagement spikes on media attacks historically don't sustain
+- **Follow-up posts** — if Trump escalates to regulatory language ("license," "FCC," "antitrust"), reassess immediately
+
+**Bottom line:** File under noise. Resume watching tariff and Fed signals.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116344212584161103
-- Posted: Sat, 04 Apr 2026 03:03:18 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116344192713238962
+- Posted: Sat, 04 Apr 2026 02:58:15 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring

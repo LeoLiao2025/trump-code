@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:56:27.579934+00:00",
-  "post_id": "116344212584161103",
-  "post_content": "178,000 new jobs in March. Unemployment DOWN. Great numbers by all accounts, even the Fake News. MAGA!",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116344212584161103",
+  "generated_at": "2026-04-04T22:56:35.764097+00:00",
+  "post_id": "116344192713238962",
+  "post_content": "Third rate news “anchor” Jonathan Karl of ABC Fake News, the worst and most corrupt Network in the business, wrote another made up book about me where his stories and “reporting” bare no relationship ",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116344192713238962",
   "post_source": "Truth Social",
-  "post_time": "Sat, 04 Apr 2026 03:03:18 +0000",
-  "signals": "BULLISH",
-  "direction": "UP",
-  "confidence": 0.75,
+  "post_time": "Sat, 04 Apr 2026 02:58:15 +0000",
+  "signals": "",
+  "direction": "NEUTRAL",
+  "confidence": 0.0,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-zh.md",
-      "length": 871
+      "length": 796
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-en.md",
-      "length": 2246
+      "length": 2001
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-ja.md",
-      "length": 845
+      "length": 847
     }
   }
 }
