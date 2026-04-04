@@ -1,16 +1,16 @@
-⚡ トランプ・コード｜速報：ゴルフ祝福ツイート、市場シグナルなし
+⚡ トランプ・コード｜速報：ベラルーシ政治犯250人解放、トランプ氏が外交成果を誇示
 
-**トランプ大統領がゴルファーのゲーリー・ウッドランドを祝福。** Truth Socialで「Gary is a total WINNER!!!」「What a GREAT comeback from a serious health problem」と投稿し、テキサス・チルドレンズ・ヒューストンオープンで21アンダーの優勝を称えた。
+トランプ大統領はTruth Socialで、ベラルーシのルカシェンコ大統領が新たに政治犯250人を解放したと発表。「my Envoy to Belarus, John Coale, after negotiating with Highly Respected President Alexander Lukashenko, got 250 more Political Prisoners freed!」と述べ、昨年5月以降の累計解放数は500人超に達したと強調。さらに「I look forward to being with him at the next Board of Peace meeting!」と次回会談への意欲を示した。
 
-**市場影響：ほぼゼロ。** 本投稿は政策・関税・外交・金融に一切言及しておらず、純粋なスポーツ祝辞。シグナル検出結果は **NEUTRAL（信頼度 0%）** ——方向性のある市場シグナルは検出されなかった。
+**シグナル判定：NEUTRAL（信心度 0%）**。貿易・関税・金融政策への直接言及がなく、市場への即時インパクトは限定的。ただし、ベラルーシはロシアの同盟国であり、この外交接近はロシア・ウクライナ停戦交渉の地ならしと読む向きもある。
 
-**注目ポイント：** 週明け（3/30 月曜）の日経先物・ドル円は本投稿単体での変動材料なし。ただしトランプ氏が「軽い話題」を投稿する時間帯の前後に政策系ポストが続く傾向があるため、**今後6〜12時間のTruth Social更新**を引き続き監視。関税・FRB・貿易関連の発言が出た場合は即座に速報を配信する。
+**注目ポイント：** ①「Board of Peace meeting」の日程・参加国の続報、②対ロシア制裁緩和の動き（地政学リスク指標）、③ドル円・日経先物のアジア時間帯の反応。地政学テーマとして中期的にウォッチ推奨。
 
 ---
 **📋 出典・分析手法**
 - 原文：Truth Social
-- リンク：https://truthsocial.com/@realDonaldTrump/116315744707013424
-- 投稿日時：Mon, 30 Mar 2026 02:23:33 +0000
+- リンク：https://truthsocial.com/@realDonaldTrump/116315554694698427
+- 投稿日時：Mon, 30 Mar 2026 01:35:13 +0000
 - 分析エンジン：Trump Code AI（Claude Opus / Gemini Flash）
 - シグナル検出：7,400件以上の投稿から検証済み551ルール（z=5.39）
 - 手法：NLPキーワード分類 → LLM因果推論 → 信頼度スコアリング

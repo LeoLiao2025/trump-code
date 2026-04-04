@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:05:45.716891+00:00",
-  "post_id": "116315744707013424",
-  "post_content": "Congratulations to a great guy, and golfer, Gary Woodland, on his big win today in the Texas Children’s Houston Open. He shot 21 under par! What a GREAT comeback from a serious health problem he has a",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116315744707013424",
+  "generated_at": "2026-04-04T23:05:55.689432+00:00",
+  "post_id": "116315554694698427",
+  "post_content": "RT @realDonaldTrumpLast week, my Envoy to Belarus, John Coale, after negotiating with Highly Respected President Alexander Lukashenko, got 250 more Political Prisoners freed! This brings the total Pri",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116315554694698427",
   "post_source": "Truth Social",
-  "post_time": "Mon, 30 Mar 2026 02:23:33 +0000",
+  "post_time": "Mon, 30 Mar 2026 01:35:13 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-zh.md",
-      "length": 775
+      "length": 820
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-en.md",
-      "length": 1997
+      "length": 1195
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-ja.md",
-      "length": 825
+      "length": 952
     }
   }
 }
