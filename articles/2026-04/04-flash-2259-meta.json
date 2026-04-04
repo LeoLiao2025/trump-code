@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:59:37.264296+00:00",
-  "post_id": "116334821717037813",
-  "post_content": "Kangaroo Court!!!",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116334821717037813",
+  "generated_at": "2026-04-04T22:59:46.180747+00:00",
+  "post_id": "116333046471233968",
+  "post_content": "Donald Trump - Clip from every year from 1980 to 2024:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116333046471233968",
   "post_source": "Truth Social",
-  "post_time": "Thu, 02 Apr 2026 11:15:05 +0000",
+  "post_time": "Thu, 02 Apr 2026 03:43:37 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-zh.md",
-      "length": 796
+      "length": 814
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-en.md",
-      "length": 1178
+      "length": 2115
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-ja.md",
-      "length": 845
+      "length": 868
     }
   }
 }
