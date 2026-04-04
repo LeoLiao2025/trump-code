@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:02:31.592659+00:00",
-  "post_id": "116325438537980532",
-  "post_content": "The National Trust for Historic Preservation sues me for a Ballroom that is under budget, ahead of schedule, being built at no cost to the Taxpayer, and will be the finest Building of its kind anywher",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116325438537980532",
+  "generated_at": "2026-04-04T23:02:39.731574+00:00",
+  "post_id": "116325374279671384",
+  "post_content": "Secretary of the Interior Doug Burgum and I are working on fixing the absolutely filthy Reflecting Pool between the Lincoln Memorial and the Washington Monument. This work was supposed to be done by t",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116325374279671384",
   "post_source": "Truth Social",
-  "post_time": "Tue, 31 Mar 2026 19:28:49 +0000",
+  "post_time": "Tue, 31 Mar 2026 19:12:28 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2302-zh.md",
-      "length": 897
+      "length": 771
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2302-en.md",
-      "length": 2270
+      "length": 2110
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2302-ja.md",
-      "length": 901
+      "length": 865
     }
   }
 }

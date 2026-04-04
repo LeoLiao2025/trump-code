@@ -1,18 +1,23 @@
-⚡ トランプ・コード｜速報：歴史保存団体との訴訟巡り反撃ポスト
+⚡ トランプ・コード｜速報
 
-**シグナル：NEUTRAL（信頼度 0%）｜市場インパクト：限定的**
+## リフレクティングプール清掃指示 — インフラ話題だが市場インパクトは限定的
 
-トランプ大統領がTruth Socialで、国立歴史保存トラスト（National Trust for Historic Preservation）からの訴訟に反発。ホワイトハウス舞踏場の改修とケネディ・センターの改名・改修を巡り、「under budget, ahead of schedule, being built at no cost to the Taxpayer（予算以下、前倒し、納税者負担ゼロ）」と主張し、「The Trump Kennedy Center」と改称したことを「A show of Bipartisan Unity（超党派の団結の証）」と表現した。
+トランプ大統領は Truth Social で、バーガム内務長官と共にリンカーン記念堂〜ワシントン記念塔間のリフレクティングプールの清掃に取り組むと発表。「This work was supposed to be done by the Biden Administration, but Sleepy Joe doesn't know what "CLEAN" or proper maintenance is」とバイデン前政権の怠慢を批判した。
 
-**市場への影響：** 本件は文化施設の改修・命名権を巡る政治的論争であり、財政政策・通商政策への直接的波及は薄い。NLPシグナルもNEUTRAL（信頼度0%）と判定しており、ドル円・日経平均への即時影響は極めて限定的。
+**シグナル検出：NEUTRAL（信頼度 0%）**
 
-**注目点：** 訴訟が連邦予算や政府支出議論に発展するか。関連して米10年債利回りと政府支出関連銘柄の動向を注視。現時点では静観で問題ない。
+今回は連邦施設の維持管理に関する発言であり、関税・金融政策・外交への直接的言及はない。市場を動かす材料としては極めて薄い。
+
+**注目ポイント：**
+- 日経先物・ドル円への直接影響はほぼゼロと判断
+- ただしバーガム内務長官の名前が出た点に注意 — 同長官はエネルギー・公有地政策も管轄。今後のエネルギー関連発言への布石か注視
+- 次の投稿で関税・貿易に話題が転換する可能性あり、TL監視継続推奨
 
 ---
 **📋 出典・分析手法**
 - 原文：Truth Social
-- リンク：https://truthsocial.com/@realDonaldTrump/116325438537980532
-- 投稿日時：Tue, 31 Mar 2026 19:28:49 +0000
+- リンク：https://truthsocial.com/@realDonaldTrump/116325374279671384
+- 投稿日時：Tue, 31 Mar 2026 19:12:28 +0000
 - 分析エンジン：Trump Code AI（Claude Opus / Gemini Flash）
 - シグナル検出：7,400件以上の投稿から検証済み551ルール（z=5.39）
 - 手法：NLPキーワード分類 → LLM因果推論 → 信頼度スコアリング
