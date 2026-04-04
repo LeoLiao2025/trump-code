@@ -1,123 +1,143 @@
 {
-  "date": "2026-04-03",
-  "analyzed_at": "2026-04-03T14:51:21Z",
+  "date": "2026-04-04",
+  "analyzed_at": "2026-04-04T14:39:24Z",
   "analyzed_by": "claude-sonnet-4-6",
   "missed_signals": [
-    "INDIANA_PRIMARY_PURGE：大規模同州初選背書（9篇印第安納州推文），針對RINO進行系統性清洗，屬黨內整合信號而非市場信號",
-    "RINO_TARGET：明確點名攻擊黨內異見者（Holdman/Buck/Deery/Goode/Bassler/Walker），黨內紀律強化，政策推行阻力降低的間接多頭信號",
-    "OKLAHOMA_ENDORSEMENT：跨州背書（T.W. Shannon），強調77/77縣全拿，政治基本盤鞏固信號",
-    "GIT_CONFLICT_DETECTED：簡報存在未解決的git merge conflict（HEAD vs a7678eae），今日推文數據衝突（21篇 vs 2篇），數據完整性存疑",
-    "IMMIGRATION_THREAT：ICE中和威脅推文（05:48），THREAT類信號觸發，民主黨對抗框架"
+    "印第安納州初選RINO清洗行動：川普密集背書多位挑戰現任RINO的候選人，涉及重新劃選區議題，這是政治資本集中釋放信號，市場對此類黨內整合信號尚未建立模型",
+    "俄克拉荷馬州副州長背書（T.W. Shannon）：跨州政治佈局，顯示選舉備戰進入高強度期，可能預示政策焦點即將轉向國內政治議題而非貿易政策",
+    "RINO攻擊語言密集出現（7次以上）：高頻RINO標籤可能預示黨內整合完成後的政策強硬化，對關稅/移民政策立場的鞏固",
+    "移民/ICE防禦性推文（05:48）：Democrats + illegals + VOTE + ICE組合，這是典型的基本盤動員信號，歷史上此類推文後市場對移民相關政策敏感度上升",
+    "Git衝突顯示兩個版本簡報並存：HEAD版本21篇推文（19:40-19:57密集背書）vs base版本2篇推文（04:12-05:48），當日實際推文量差異極大，D3_volume_spike模型的輸入數據可能存在版本混淆風險"
   ],
   "error_analysis": {
-    "C1_burst_silence": "根本原因：2026年3月宏觀背景下，沉默後的做多假設失效。川普的沉默期不再代表緊張情緒釋放，而是政策不確定性的醞釀期。關稅威脅懸而未決時，沉默=觀望=市場繼續定價下行風險。三次連續失敗（03-05/-1.621%、03-11/-1.730%、03-13/-0.619%）表明此模型的底層假設已結構性失效，需暫停或加入宏觀濾網",
-    "A2_deal_bullish": "根本原因：DEAL信號被市場透支定價。川普的DEAL推文出現頻率過高導致信號稀釋，市場已學會區分'真實協議'與'談判姿態'。03-10和03-13的失敗顯示在關稅升級背景下，孤立的DEAL信號無法對抗系統性下行壓力，需要搭配具體條款或對方回應才算有效"
+    "C1_burst_silence": "根本原因：模式識別未區分『沉默原因』。2026年3月的沉默期並非談判期待，而是關稅政策不確定性造成的市場主動迴避，沉默本身是負面信號而非底部信號。建議新增條件：沉默前最後一篇推文的情緒必須為中性或正面，若為關稅/威脅相關則反轉信號方向",
+    "A2_deal_bullish": "根本原因：DEAL信號在宏觀背景為關稅升級期間的信噪比下降。3月10日和3月13日的DEAL出現均發生在連續關稅推文序列中，市場已對部分DEAL公告產生免疫（credibility fatigue）。DEAL信號需要前置條件：前3天無A1_tariff_bearish觸發且VIX環境穩定"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "黨內整合模式啟動：從外部政策信號轉向大規模初選背書，單日9篇同主題推文為歷史罕見，暗示川普正在鞏固立法基本盤以推進政策議程",
-    "RINO獵殺清單化：不再是偶發攻擊，而是系統性、帶選區勝差數據（39pts/24pts/26pts/28pts/55pts/33pts）的精準打擊，顯示有幕僚協助策略化操作",
-    "數據版本衝突：git merge conflict顯示系統存在平行數據流，簡報可靠性下降，需優先修復",
-    "深夜/早晨推文模式：今日早盤推文（04:12/05:48）為政策威脅類，晚間（19:40-19:57）為政治背書類，時段分化明顯"
+    "政治資本釋放模式轉變：從政策宣示（關稅/貿易）轉向黨內整合（背書/清洗RINO），這可能是重大政策轉折前的政治基礎鞏固行為",
+    "地理聚焦：單日密集針對印第安納州（7-8篇），高度地域集中的背書行動是新出現的模式，與全國性政策推文性質不同",
+    "推文時間壓縮：19:40-19:57共17分鐘內發布多篇結構相似的背書推文，顯示這是程序性/事先準備的批量發布，非即時反應型推文，信號品質較低",
+    "RINO攻擊升級：攻擊現任共和黨議員的頻率和激烈程度上升，『No Goode』『pathetic RINO』『incompetent and ineffective』等語言強化，黨內矛盾外顯化",
+    "移民議題重新激活：ICE + Democrats + illegals組合在交易時段前出現，可能預示移民執法新行動即將宣布"
   ],
   "new_rules": [
     {
-      "id": "E1_indiana_purge",
-      "name": "州級初選清洗→立法動能多頭",
+      "id": "E1_rino_purge",
+      "name": "RINO清洗→政策強硬化前兆",
       "features": [
-        "同日5篇以上同州背書",
-        "明確點名RINO",
-        "附選區勝差百分比"
+        "單日RINO攻擊≥5次",
+        "涉及多州/多選區",
+        "背書挑戰者而非現任"
       ],
       "direction": "LONG",
       "hold": 3,
-      "confidence": 0.55
+      "confidence": 0.62,
+      "note": "黨內整合完成後政策推進加速，但需等待沉默期確認"
     },
     {
-      "id": "E2_rino_systematic_attack",
-      "name": "系統性RINO清洗→政策通過概率上升",
+      "id": "E2_batch_endorsement",
+      "name": "批量背書→低信號日→次日觀望",
       "features": [
-        "RINO關鍵字",
-        "具體議題投票記錄攻擊",
-        "跨多選區同日觸發"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.52
-    },
-    {
-      "id": "E3_silence_macro_filter",
-      "name": "沉默信號加宏觀濾網",
-      "features": [
-        "C1_burst_silence觸發",
-        "VIX<20或關稅無新聞",
-        "非關稅懸置期"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.63
-    },
-    {
-      "id": "E4_deal_quality_filter",
-      "name": "高質量DEAL信號（需對方回應）",
-      "features": [
-        "DEAL關鍵字",
-        "對方國家官員回應",
-        "具體條款提及"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.65
-    },
-    {
-      "id": "E5_ice_immigration_threat",
-      "name": "ICE/移民威脅→短期波動",
-      "features": [
-        "ICE關鍵字",
-        "VOTE關鍵字",
-        "Democrats攻擊框架"
+        "17分鐘內≥5篇結構相似推文",
+        "內容為選舉背書",
+        "無政策關鍵字"
       ],
       "direction": "NEUTRAL",
       "hold": 1,
-      "confidence": 0.48
+      "confidence": 0.71,
+      "note": "批量程序性推文日市場缺乏新信息，信號真空期，避免交易"
+    },
+    {
+      "id": "E3_ice_activation",
+      "name": "ICE防禦推文→移民執法預告",
+      "features": [
+        "ICE關鍵字",
+        "Democrats + illegals組合",
+        "盤前發布(04:00-06:00)"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.65,
+      "note": "移民執法強化消息通常在此類推文後1-2天宣布，市場對執法強化反應正面（私人監獄/邊境相關股）"
+    },
+    {
+      "id": "E4_deal_with_tariff_filter",
+      "name": "DEAL信號（關稅背景過濾版）",
+      "features": [
+        "DEAL關鍵字出現",
+        "前72小時無TARIFF推文",
+        "非批量發布格式"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.72,
+      "note": "修正A2_deal_bullish在關稅升級期的失效問題，加入前置條件過濾"
+    },
+    {
+      "id": "E5_silence_quality_filter",
+      "name": "沉默品質過濾（C1升級版）",
+      "features": [
+        "沉默期≥8小時",
+        "沉默前最後推文為非關稅/威脅類",
+        "沉默前有正面情緒推文"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.68,
+      "note": "修正C1_burst_silence誤判，區分『正面沉默』vs『負面沉默』"
+    },
+    {
+      "id": "E6_state_focus_exhaustion",
+      "name": "單州密集推文→次日信號衰減",
+      "features": [
+        "單一州名出現≥6次",
+        "推文集中在1小時內",
+        "純選舉內容無政策"
+      ],
+      "direction": "NEUTRAL",
+      "hold": 1,
+      "confidence": 0.66,
+      "note": "高度地域化的政治操作日，全國性市場信號缺席，降低當日所有信號權重20%"
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D2_sig_change": 1.2,
-      "B1_triple_signal": 1.15
+      "A3_relief_rocket": 1.25,
+      "D2_sig_change": 1.15,
+      "B1_triple_signal": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C3_night_alert": 0.6,
-      "C2_brag_top": 0.75
+      "C1_burst_silence": 0.7,
+      "A2_deal_bullish": 0.75,
+      "C3_night_alert": 0.65
     },
     "eliminate": [
-      "C1_burst_silence（三連敗，底層假設在當前宏觀環境下結構性失效，建議暫停並加入E3_silence_macro_filter替代）"
+      "C2_brag_top（原因：45%準確率低於隨機，+0.105%報酬率不足以補償信號噪音，炫耀股市的上下文判斷需要人工介入，建議降級為輔助指標而非獨立模型）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.919,
-    "CHINA": 0.55,
-    "DEAL": 0.42,
-    "DEAL_ONLY": 0.5,
-    "IRAN": 0.5,
+    "CHINA": 0.58,
+    "DEAL": 0.48,
+    "DEAL_ONLY": 0.6,
+    "IRAN": 0.52,
     "RELIEF": 0.95,
     "TARIFF": 0.72,
-    "TARIFF_ONLY": 0.68,
-    "THREAT": 0.55,
-    "RINO_PURGE": 0.52,
-    "PRIMARY_ENDORSEMENT": 0.48
+    "TARIFF_ONLY": 0.72,
+    "THREAT": 0.58,
+    "RINO": 0.45,
+    "ICE": 0.63,
+    "ENDORSEMENT_BATCH": 0.2
   },
   "system_health": {
-    "score": "58/100",
-    "grade": "D+",
+    "score": "61/100",
+    "grade": "C+",
     "priorities": [
-      "1. 緊急：修復git merge conflict，簡報數據存在21篇vs2篇的嚴重衝突，當前分析基於不可靠數據，所有結論可信度打折",
-      "2. 高優先：立即暫停C1_burst_silence模型，已造成連續三次重大虧損（累計-3.97%），啟用E3替代",
-      "3. 中優先：A2_deal_bullish加入質量濾網，裸DEAL信號在當前環境信心度降至0.42，需對方官方回應才觸發",
-      "4. 低優先：建立黨內整合信號追蹤器，大規模初選背書可能是未來政策突破的先行指標"
+      "1. 緊急：解決Git版本衝突問題——簡報顯示兩個相互矛盾的數據版本（21篇 vs 2篇推文），D3_volume_spike等依賴推文量的模型輸入數據不可靠，需要確認今日實際推文數量並建立數據一致性驗證機制",
+      "2. 高優先：修正C1_burst_silence和A2_deal_bullish的情境感知缺陷——這兩個模型在3月共造成5次錯誤預測，累計損失約-4.9%，需要加入宏觀關稅背景條件作為前置過濾器",
+      "3. 中優先：建立『政治資本週期』追蹤模組——川普在選舉背書期間的市場相關性顯著低於政策宣示期，需要自動識別當前處於哪個週期並相應調整信號閾值",
+      "4. 中優先：淘汰C2_brag_top並將其功能降級為B1_triple_signal的輔助確認指標，釋放模型複雜度"
     ]
   },
   "today_prediction": {
@@ -126,16 +146,14 @@
     "hold_days": 1,
     "confidence": 0.38,
     "active_signals": [
-      "RELIEF（信心0.95，但今日推文未見明確觸發）",
-      "THREAT（ICE推文，05:48，信心0.55）",
-      "E1_indiana_purge（大量初選背書，市場相關性低）"
+      "E3_ice_activation（弱觸發，盤前移民推文）",
+      "E2_batch_endorsement（中性抑制）"
     ],
     "suppressing_signals": [
-      "數據完整性危機（git conflict未解，推文數量21vs2無法確認）",
-      "C1_burst_silence模型已暫停（失去沉默後做多依據）",
-      "DEAL信號缺席（無積極催化劑）",
-      "宏觀不確定性持續壓制A2信號"
+      "E6_state_focus_exhaustion（印第安納密集推文→信號真空）",
+      "數據版本衝突→模型輸入不可信",
+      "無RELIEF/ACTION/DEAL/TARIFF核心關鍵字觸發"
     ],
-    "note": "今日推文主體為黨內初選政治操作，市場催化劑稀薄，加上數據版本衝突導致分析可信度嚴重下降，建議觀望等待數據確認後再行動"
+    "note": "今日推文以選舉背書為主，缺乏市場敏感政策信號，數據版本衝突使模型可靠性下降，建議觀望不操作，等待明日是否出現政策相關推文作為新進場依據"
   }
 }
