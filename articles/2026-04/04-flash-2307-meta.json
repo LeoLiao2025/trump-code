@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:07:34.590374+00:00",
-  "post_id": "116315523560021437",
-  "post_content": "Trump admin makes new criminal referrals to DOJ targeting New York AG Letitia James:",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116315523560021437",
+  "generated_at": "2026-04-04T23:07:42.465935+00:00",
+  "post_id": "116315522329057259",
+  "post_content": "NY AG Letitia James hit with two more criminal referrals alleging possible insurance fraud:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116315522329057259",
   "post_source": "Truth Social",
-  "post_time": "Mon, 30 Mar 2026 01:27:18 +0000",
+  "post_time": "Mon, 30 Mar 2026 01:26:59 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-zh.md",
-      "length": 857
+      "length": 848
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-en.md",
-      "length": 1158
+      "length": 2223
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2307-ja.md",
-      "length": 832
+      "length": 855
     }
   }
 }
