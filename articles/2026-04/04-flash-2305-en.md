@@ -1,33 +1,31 @@
-⚡ Trump Code | Flash — 川普確認對伊朗軍事行動，市場進入避險模式
+⚡ Trump Code | Flash — Iran Ultimatum: Blow Up Oil Wells or Deal
 
-**信號：ACTION / BEARISH / THREAT | 方向：DOWN ↓ | 信心度：75%**
+**Signal: DEAL + THREAT + BEARISH | Confidence: 80% DOWN**
 
-川普在 Truth Social 發文：**"The current war in Iran may prevent much greater bloodshed"**——這是美國總統首次以「war」一詞定性對伊朗的軍事行動，等同官方確認戰爭狀態。
+Trump just issued his most explicit military threat against Iran yet. On Truth Social, he declared the US is negotiating with "A NEW, AND MORE REASONABLE, REGIME" but warned that if a deal isn't reached soon and the Strait of Hormuz isn't "immediately Open for Business," he will order "blowing up and completely obliterating all of their Electric Generating Plants, Oil Wells and Kharg Island."
 
-## 為什麼重要
+## Why This Matters
 
-這不是威脅，是既成事實。「current war」措辭將地緣政治風險從「可能升級」直接推到「已在進行」。伊朗控制荷莫茲海峽，全球約 20% 石油運輸經此通過。戰爭一旦波及海峽，能源供應鏈立即受衝擊。
+- **Kharg Island handles ~90% of Iran's crude exports** (~1.5M bbl/day). Threatening to destroy it is a direct threat to global oil supply.
+- **Strait of Hormuz carries ~20% of world oil transit** (~21M bbl/day). Any disruption sends shockwaves through energy markets instantly.
+- The dual signal — negotiate OR annihilate — creates maximum uncertainty. Markets hate uncertainty.
+- Energy stocks may see short-term upside (supply fear premium), but broad indices face pressure from geopolitical risk repricing.
 
-預期影響：
-- **原油**：WTI / Brent 短線跳漲壓力，關注 $85-90 阻力區
-- **美股**：國防股（RTX、LMT、NOC）受惠；大盤承壓，S&P 500 期貨留意 -1% 以上回落
-- **避險資產**：黃金衝高、美債殖利率下行、日圓走強
-- **VIX**：恐慌指數若突破 22 將確認避險情緒擴散
+## Watch List
 
-## 建議關注
+1. **WTI / Brent crude** — expect $3-8 spike on open if no walkback
+2. **VIX** — fear gauge likely jumps above 20
+3. **Defense ETFs (ITA, XAR)** — momentum buy signal
+4. **USD/JPY** — yen as safe haven bid
+5. **Timeline** — Trump said "shortly," suggesting days not weeks; any Iranian response in next 24-48hrs is critical
 
-1. **未來 24 小時**：五角大廈及國防部後續聲明，確認行動規模
-2. **荷莫茲海峽航運動態**：任何封鎖跡象將觸發油價二次跳漲
-3. **Fed 官員談話**：戰爭通膨是否改變降息預期
-4. **伊朗回應**：報復行動的時間窗口通常在 48-72 小時內
-
-「may prevent much greater bloodshed」暗示行動將持續甚至擴大——這不是一次性打擊的措辭。交易者應為波動加劇做好準備。
+This is not a bluff template — it names specific infrastructure targets. Traders should position for elevated volatility through the week.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116318120548204193
-- Posted: Mon, 30 Mar 2026 12:27:45 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116317880658472708
+- Posted: Mon, 30 Mar 2026 11:26:45 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring

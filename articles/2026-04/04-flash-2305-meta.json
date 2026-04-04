@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:05:04.526209+00:00",
-  "post_id": "116318120548204193",
-  "post_content": "The current war in Iran may prevent much greater bloodshed:",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116318120548204193",
+  "generated_at": "2026-04-04T23:05:18.064647+00:00",
+  "post_id": "116317880658472708",
+  "post_content": "The United States of America is in serious discussions with A NEW, AND MORE REASONABLE, REGIME to end our Military Operations in Iran. Great progress has been made but, if for any reason a deal is not",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116317880658472708",
   "post_source": "Truth Social",
-  "post_time": "Mon, 30 Mar 2026 12:27:45 +0000",
-  "signals": "ACTION, BEARISH, THREAT",
+  "post_time": "Mon, 30 Mar 2026 11:26:45 +0000",
+  "signals": "DEAL, THREAT, BEARISH",
   "direction": "DOWN",
-  "confidence": 0.75,
+  "confidence": 0.8,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-zh.md",
-      "length": 833
+      "length": 866
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-en.md",
-      "length": 1199
+      "length": 2012
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2305-ja.md",
-      "length": 902
+      "length": 959
     }
   }
 }
