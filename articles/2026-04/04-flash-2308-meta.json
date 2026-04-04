@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:08:18.068431+00:00",
-  "post_id": "116312749090280206",
-  "post_content": "The Unaffordable Care Act, sometimes referred to as ObamaCare, must be replaced by payments being made directly to THE PEOPLE, so that they can buy their own Healthcare, rather than to bloated and unc",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116312749090280206",
+  "generated_at": "2026-04-04T23:08:50.757887+00:00",
+  "post_id": "116311739381872611",
+  "post_content": "",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116311739381872611",
   "post_source": "Truth Social",
-  "post_time": "Sun, 29 Mar 2026 13:41:43 +0000",
-  "signals": "ACTION, BEARISH",
+  "post_time": "Sun, 29 Mar 2026 09:24:56 +0000",
+  "signals": "",
   "direction": "NEUTRAL",
-  "confidence": 0.3,
+  "confidence": 0.0,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2308-zh.md",
-      "length": 914
+      "length": 800
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2308-en.md",
-      "length": 1322
+      "length": 999
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2308-ja.md",
-      "length": 877
+      "length": 465
     }
   }
 }
