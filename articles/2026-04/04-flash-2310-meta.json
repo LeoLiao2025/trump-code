@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:10:46.652899+00:00",
-  "post_id": "116310351855462881",
-  "post_content": "",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116310351855462881",
+  "generated_at": "2026-04-04T23:10:57.272728+00:00",
+  "post_id": "116309194049631675",
+  "post_content": "TrumpRX website sees steady growth in prescription offerings, proving MAHA doubters wrong:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116309194049631675",
   "post_source": "Truth Social",
-  "post_time": "Sun, 29 Mar 2026 03:32:04 +0000",
-  "signals": "",
-  "direction": "NEUTRAL",
-  "confidence": 0.0,
+  "post_time": "Sat, 28 Mar 2026 22:37:38 +0000",
+  "signals": "BULLISH",
+  "direction": "UP",
+  "confidence": 0.3,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2310-zh.md",
-      "length": 797
+      "length": 924
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2310-en.md",
-      "length": 1016
+      "length": 1220
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2310-ja.md",
-      "length": 477
+      "length": 871
     }
   }
 }
