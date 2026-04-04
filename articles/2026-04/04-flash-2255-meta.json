@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:55:45.748879+00:00",
-  "post_id": "116346816254869135",
-  "post_content": "Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT. Time is running out - 48 hours before all Hell will reign down on them. Glory be to GOD! President DONALD J. TRUMP",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116346816254869135",
+  "generated_at": "2026-04-04T22:55:55.924890+00:00",
+  "post_id": "116346686438015338",
+  "post_content": "Not only were the jobs numbers GREAT yesterday, 178,000 new jobs, but the TRADE DEFICIT was down 55%, the biggest drop in history. THANK YOU MR. TARIFF! All of this and, simultaneously, getting rid of",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116346686438015338",
   "post_source": "Truth Social",
-  "post_time": "Sat, 04 Apr 2026 14:05:27 +0000",
-  "signals": "THREAT, BEARISH",
-  "direction": "DOWN",
-  "confidence": 0.85,
+  "post_time": "Sat, 04 Apr 2026 13:32:26 +0000",
+  "signals": "BULLISH, TARIFF",
+  "direction": "NEUTRAL",
+  "confidence": 0.3,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-zh.md",
-      "length": 848
+      "length": 849
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-en.md",
-      "length": 2087
+      "length": 2173
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-ja.md",
-      "length": 884
+      "length": 891
     }
   }
 }
