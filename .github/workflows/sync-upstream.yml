@@ -89,6 +89,9 @@ jobs:
 
           git push origin "$BRANCH"
 
+          # 等待 GitHub API 完成分支索引，避免 "Head sha can't be blank" 錯誤
+          sleep 10
+
           BEHIND=${{ steps.check.outputs.behind }}
           COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
           LATEST="${{ steps.check.outputs.latest }}"
