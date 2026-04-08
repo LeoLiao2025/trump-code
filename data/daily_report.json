@@ -1,16 +1,13 @@
 {
-  "date": "2026-04-07",
-  "generated_at": "2026-04-07T15:15:11Z",
-  "posts_today": 5,
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T01:06:48Z",
+  "posts_today": 1,
   "latest_post": {
-    "time": "2026-04-07T12:06",
-    "content_preview": "A whole civilization will die tonight, never to be brought back again. I don't want that to happen, "
+    "time": "2026-04-08T00:01",
+    "content_preview": "The alleged Statement put out by CNN World News is a FRAUD, as CNN well knows. The false Statement w"
   },
   "signals_detected": [
-    "DEAL",
-    "CHINA",
-    "IRAN",
-    "DEAL_ONLY"
+    "IRAN"
   ],
   "models_triggered": 0,
   "direction_summary": {
@@ -25,12 +22,12 @@
   },
   "sp500_latest": {
     "date": "2026-04-07",
-    "close": 6544.07
+    "close": 6616.85
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-04-07\nPosts today: 5 | Models triggered: 0\nSignals: DEAL, CHINA, IRAN, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: A whole civilization will die tonight, never to be brought back again. I don't want that to happen, ",
-    "zh": "川普密碼每日報告 -- 2026-04-07\n今日推文: 5 篇 | 觸發模型: 0 組\n偵測信號: Deal, 中國, 伊朗, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: A whole civilization will die tonight, never to be brought back again. I don't want that to happen, ",
-    "ja": "トランプ・コード日次レポート -- 2026-04-07\n本日の投稿: 5件 | トリガーモデル: 0組\n検出シグナル: ディール, 中国, イラン, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: A whole civilization will die tonight, never to be brought back again. I don't want that to happen, "
+    "en": "Trump Code Daily Report -- 2026-04-08\nPosts today: 1 | Models triggered: 0\nSignals: IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 0.0% (0/0)\nLatest post: The alleged Statement put out by CNN World News is a FRAUD, as CNN well knows. The false Statement w",
+    "zh": "川普密碼每日報告 -- 2026-04-08\n今日推文: 1 篇 | 觸發模型: 0 組\n偵測信號: 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 0.0% (0/0)\n最新推文: The alleged Statement put out by CNN World News is a FRAUD, as CNN well knows. The false Statement w",
+    "ja": "トランプ・コード日次レポート -- 2026-04-08\n本日の投稿: 1件 | トリガーモデル: 0組\n検出シグナル: イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 0.0% (0/0)\n最新投稿: The alleged Statement put out by CNN World News is a FRAUD, as CNN well knows. The false Statement w"
   },
   "triggered_rules_sample": []
 }
