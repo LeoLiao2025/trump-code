@@ -89,8 +89,23 @@ jobs:
 
           git push origin "$BRANCH"
 
-          # 等待 GitHub API 完成分支索引，避免 "Head sha can't be blank" 錯誤
-          sleep 10
+          # 輪詢確認 branch 已被 GitHub API 索引（最多等 120 秒）
+          echo "Waiting for GitHub to index branch '$BRANCH'..."
+          AHEAD=0
+          for attempt in $(seq 1 12); do
+            AHEAD=$(gh api "repos/${{ github.repository }}/compare/main...$BRANCH" \
+              --jq '.ahead_by' 2>/dev/null || echo "0")
+            if [ "$AHEAD" -gt "0" ]; then
+              echo "Branch indexed after attempt $attempt ($AHEAD commits ahead of main)"
+              break
+            fi
+            echo "Attempt $attempt/12: not ready yet, sleeping 10s..."
+            sleep 10
+          done
+
+          if [ "$AHEAD" -eq "0" ]; then
+            echo "WARNING: Branch still not indexed after 120s, attempting PR creation anyway..."
+          fi
 
           BEHIND=${{ steps.check.outputs.behind }}
           COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
