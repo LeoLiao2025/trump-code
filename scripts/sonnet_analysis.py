@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Sonnet 信號分析腳本 — 供 GitHub Actions 呼叫
-讀取 data/opus_briefing.txt → 呼叫 Anthropic API → 寫入 data/opus_analysis.json
+Gemini 信號分析腳本 — 供 GitHub Actions 呼叫
+讀取 data/opus_briefing.txt → 呼叫 Gemini API → 寫入 data/opus_analysis.json
 """
 import json
 import os
@@ -15,13 +15,15 @@ BASE = Path(__file__).parent.parent
 BRIEFING_FILE = BASE / "data" / "opus_briefing.txt"
 OUTPUT_FILE = BASE / "data" / "opus_analysis.json"
 
+MODEL = "gemini-2.5-pro"
+
 SYSTEM_PROMPT = """你是川普密碼系統的信號分析師。根據簡報包內容，輸出嚴格的 JSON 格式分析，不要有任何額外文字或 markdown。
 
 必須輸出的 JSON 欄位：
 {
   "date": "YYYY-MM-DD",
   "analyzed_at": "ISO8601",
-  "analyzed_by": "claude-sonnet-4-6",
+  "analyzed_by": "gemini-2.5-pro",
   "missed_signals": ["信號1", "信號2"],
   "error_analysis": {"模型名": "根本原因說明"},
   "pattern_shift_detected": true,
@@ -53,9 +55,9 @@ SYSTEM_PROMPT = """你是川普密碼系統的信號分析師。根據簡報包�
 
 
 def main():
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        print("❌ ANTHROPIC_API_KEY 未設定，跳過 Sonnet 分析")
+        print("❌ GEMINI_API_KEY 未設定，跳過 Gemini 分析")
         sys.exit(0)
 
     if not BRIEFING_FILE.exists():
@@ -65,33 +67,32 @@ def main():
     briefing = BRIEFING_FILE.read_text(encoding="utf-8")
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={api_key}"
+
     payload = json.dumps({
-        "model": "claude-sonnet-4-6",
-        "max_tokens": 4096,
-        "system": SYSTEM_PROMPT,
-        "messages": [{"role": "user", "content": briefing}],
+        "systemInstruction": {
+            "parts": [{"text": SYSTEM_PROMPT}]
+        },
+        "contents": [
+            {"role": "user", "parts": [{"text": briefing}]}
+        ],
+        "generationConfig": {
+            "maxOutputTokens": 4096,
+            "temperature": 0,
+            "responseMimeType": "application/json",
+        },
     }).encode()
 
     req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
+        url,
         data=payload,
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
+        headers={"content-type": "application/json"},
     )
 
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
             data = json.loads(resp.read())
-            text = data["content"][0]["text"].strip()
-
-            # 清除可能的 markdown code block
-            if text.startswith("```"):
-                text = text.split("```")[1]
-                if text.startswith("json"):
-                    text = text[4:]
+            text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
             analysis = json.loads(text)
             analysis["date"] = today
@@ -99,7 +100,7 @@ def main():
             OUTPUT_FILE.write_text(json.dumps(analysis, ensure_ascii=False, indent=2), encoding="utf-8")
 
             pred = analysis.get("today_prediction", {})
-            print(f"✅ Sonnet 分析完成 → {OUTPUT_FILE}")
+            print(f"✅ Gemini 分析完成 → {OUTPUT_FILE}")
             print(f"   今日預測：{pred.get('direction')} 信心度 {pred.get('confidence')} 持有 {pred.get('hold_days')} 天")
 
     except urllib.error.HTTPError as e:
