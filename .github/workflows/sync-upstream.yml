@@ -129,11 +129,15 @@ jobs:
           > 此 PR 由 GitHub Actions 自動建立
           EOF
 
-          gh pr create \
-            --title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
-            --body-file /tmp/pr_body.md \
-            --base main \
-            --head "$BRANCH"
+          # 用 REST API 建立 PR（避免 GraphQL 索引延遲導致 "Head sha can't be blank" 錯誤）
+          PR_BODY=$(cat /tmp/pr_body.md)
+          jq -n \
+            --arg title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
+            --arg body "$PR_BODY" \
+            --arg head "$BRANCH" \
+            --arg base "main" \
+            '{title: $title, body: $body, head: $head, base: $base}' \
+            | gh api "repos/${{ github.repository }}/pulls" --method POST --input -
 
       - name: Send Discord notification
         if: steps.check.outputs.has_updates == 'true'
