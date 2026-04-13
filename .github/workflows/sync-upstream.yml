@@ -1,7 +1,7 @@
 # ===================================================================
-# 上游同步偵測 — 自動檢查 sstklen/trump-code 有無更新
+# 上游同步 — 自動檢查 sstklen/trump-code 有無更新
 # 每天 UTC 06:00 執行
-# 有新 commit → 自動開 PR + 發 Discord 通知
+# 有新 commit → 自動合併並 push 到 main + 發 Discord 通知
 # 沒有更新 → 靜默跳過
 # ===================================================================
 
@@ -14,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   check-upstream:
@@ -54,24 +53,12 @@ jobs:
             echo "has_updates=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Create sync branch and PR
+      - name: Merge upstream and push to main
         if: steps.check.outputs.has_updates == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          BRANCH="sync/upstream-$(date -u +%Y%m%d)"
-
-          # 如果 branch 已存在就跳過（今天已經開過 PR）
-          if git ls-remote --exit-code origin "$BRANCH"; then
-            echo "Branch $BRANCH already exists, skipping PR creation."
-            exit 0
-          fi
-
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git config merge.ours.driver true
-
-          git checkout -b "$BRANCH"
 
           # 嘗試合併；衝突時對 data/ 自動保留我們的版本
           if ! git merge upstream/main --no-edit --allow-unrelated-histories; then
@@ -81,63 +68,7 @@ jobs:
             git commit --no-edit -m "merge: sync upstream (resolve data conflicts with ours)"
           fi
 
-          # 若 tree 內容與 main 完全相同（上游只改了 data/，ours 保留），跳過推送與 PR
-          if git diff --quiet origin/main "$BRANCH"; then
-            echo "No effective changes vs main (data-only upstream update, kept ours). Skipping PR."
-            exit 0
-          fi
-
-          git push origin "$BRANCH"
-
-          # 輪詢確認 branch 已被 GitHub API 索引（最多等 120 秒）
-          echo "Waiting for GitHub to index branch '$BRANCH'..."
-          AHEAD=0
-          for attempt in $(seq 1 12); do
-            AHEAD=$(gh api "repos/${{ github.repository }}/compare/main...$BRANCH" \
-              --jq '.ahead_by' 2>/dev/null || echo "0")
-            if [ "$AHEAD" -gt "0" ]; then
-              echo "Branch indexed after attempt $attempt ($AHEAD commits ahead of main)"
-              break
-            fi
-            echo "Attempt $attempt/12: not ready yet, sleeping 10s..."
-            sleep 10
-          done
-
-          if [ "$AHEAD" -eq "0" ]; then
-            echo "WARNING: Branch still not indexed after 120s, attempting PR creation anyway..."
-          fi
-
-          BEHIND=${{ steps.check.outputs.behind }}
-          COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
-          LATEST="${{ steps.check.outputs.latest }}"
-
-          cat > /tmp/pr_body.md <<EOF
-          ## 上游同步
-
-          **新 commit 數：** ${BEHIND} 個
-          **最新：** ${LATEST}
-
-          ### Commit 列表
-          \`\`\`
-          ${COMMITS}
-          \`\`\`
-
-          ### 處理方式
-          - ✅ **直接 Merge** — 接受上游所有更新
-          - 🔍 **逐一審查** — 查看 Files changed 後決定
-
-          > 此 PR 由 GitHub Actions 自動建立
-          EOF
-
-          # 用 REST API 建立 PR（避免 GraphQL 索引延遲導致 "Head sha can't be blank" 錯誤）
-          PR_BODY=$(cat /tmp/pr_body.md)
-          jq -n \
-            --arg title "⬆️ 上游更新：sstklen/trump-code 有 ${BEHIND} 個新 commit" \
-            --arg body "$PR_BODY" \
-            --arg head "$BRANCH" \
-            --arg base "main" \
-            '{title: $title, body: $body, head: $head, base: $base}' \
-            | gh api "repos/${{ github.repository }}/pulls" --method POST --input -
+          git push origin main
 
       - name: Send Discord notification
         if: steps.check.outputs.has_updates == 'true'
@@ -148,13 +79,13 @@ jobs:
           COMMITS=$(echo "${{ steps.check.outputs.commits_b64 }}" | base64 -d)
           LATEST="${{ steps.check.outputs.latest }}"
           REPO="${{ github.repository }}"
-          PR_URL="https://github.com/${REPO}/pulls"
+          COMMITS_URL="https://github.com/${REPO}/commits/main"
 
           # 組成 Discord embed 訊息
           PAYLOAD=$(cat <<EOF
           {
             "embeds": [{
-              "title": "⬆️ 川普密碼｜上游有新更新",
+              "title": "⬆️ 川普密碼｜上游已自動同步",
               "color": 3447003,
               "fields": [
                 {
@@ -173,8 +104,8 @@ jobs:
                   "inline": false
                 },
                 {
-                  "name": "查看 PR",
-                  "value": "${PR_URL}",
+                  "name": "查看紀錄",
+                  "value": "${COMMITS_URL}",
                   "inline": false
                 }
               ],
