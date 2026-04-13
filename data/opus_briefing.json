@@ -1,6 +1,5 @@
 {
   "date": "2026-03-24",
-<<<<<<< HEAD
   "prepared_at": "2026-03-24T22:30:04Z",
   "status": "PENDING",
   "today_posts": {
@@ -48,28 +47,10 @@
       {
         "time": "19:57",
         "text": "It is my Great Honor to endorse T.W. Shannon, an America First Patriot who is running for Lieutenant Governor of Oklahoma, a place I love and WON BIG, winning all 77 out of 77 Counties in 2016, 2020, and 2024! As the youngest House Speaker in Oklahoma's History, the National Chair of Black Voices fo"
-=======
-  "prepared_at": "2026-03-24T14:58:25Z",
-  "status": "PENDING",
-  "today_posts": {
-    "count": 2,
-    "latest": "Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country. They want them to VOTE! That's why they are fighting so hard to neutralize ICE. We will fight them ",
-    "earliest_time": "2026-03-24T04:12:02.575Z",
-    "latest_time": "2026-03-24T05:48:38.818Z",
-    "sample": [
-      {
-        "time": "04:12",
-        "text": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116282191339559931"
-      },
-      {
-        "time": "05:48",
-        "text": "Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country. They want them to VOTE! That's why they are fighting so hard to neutralize ICE. We will fight them all the way, and WIN!"
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
       }
     ]
   },
   "today_features": {
-<<<<<<< HEAD
     "posts_21_35": true,
     "avg_len_very_long": true,
     "caps_medium": true,
@@ -142,15 +123,6 @@
     "kw_complete_and_total_2plus": true,
     "open_complete_and_total": true,
     "volume_spike": true
-=======
-    "posts_1_5": true,
-    "avg_len_short": true,
-    "caps_low": true,
-    "excl_normal": true,
-    "questions_no": true,
-    "mostly_premarket": true,
-    "volume_drop": true
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
   },
   "model_performance": {
     "A1_tariff_bearish": {
@@ -260,32 +232,18 @@
   },
   "evolution_latest": {
     "date": "2026-03-24",
-<<<<<<< HEAD
     "crossover": 15,
     "mutation": 12,
     "distill": 17,
     "total_new": 44,
-=======
-    "crossover": 16,
-    "mutation": 9,
-    "distill": 17,
-    "total_new": 42,
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-<<<<<<< HEAD
           "kw_tremendous",
           "kw_thank_you_for_your_attention",
           "is_friday",
           "kw_tariff"
-=======
-          "kw_tariffs",
-          "kw_thank_you_for_your_attention",
-          "is_friday",
-          "kw_tremendous"
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
         ],
         "direction": "LONG",
         "hold": 3,
@@ -294,7 +252,6 @@
       },
       {
         "features": [
-<<<<<<< HEAD
           "kw_immediately",
           "kw_beautiful",
           "volume_falling_3d"
@@ -313,26 +270,6 @@
         "direction": "LONG",
         "hold": 3,
         "score": 90.0,
-=======
-          "kw_jobs",
-          "is_friday",
-          "kw_thank_you_for_your_attention"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 87.5,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "kw_economy",
-          "kw_signed",
-          "questions_yes"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 85.0,
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
         "origin": "crossover"
       }
     ]

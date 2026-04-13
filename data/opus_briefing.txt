@@ -1,5 +1,4 @@
 # 川普密碼 Opus 簡報 — 2026-03-24
-<<<<<<< HEAD
 準備時間: 2026-03-24T22:30:04Z
 
 ## 今日推文: 21 篇
@@ -24,16 +23,6 @@
 [19:55] It is my Great Honor to endorse State Representative Michelle Davis, a REAL Republican running for Indiana's 41st State Senate District (which I won by 33 points!), against RINO incumbent Greg Walker! Michelle will be a fantastic replacement for Walker who, for whatever reason, voted against Redistr
 
 [19:57] It is my Great Honor to endorse T.W. Shannon, an America First Patriot who is running for Lieutenant Governor of Oklahoma, a place I love and WON BIG, winning all 77 out of 77 Counties in 2016, 2020, and 2024! As the youngest House Speaker in Oklahoma's History, the National Chair of Black Voices fo
-=======
-準備時間: 2026-03-24T14:58:25Z
-
-## 今日推文: 2 篇
-時間: 2026-03-24T04:12:02.575Z ~ 2026-03-24T05:48:38.818Z
-
-[04:12] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116282191339559931
-
-[05:48] Democrats are desperate to keep illegals, no matter how bad or dangerous they me be, in the Country. They want them to VOTE! That's why they are fighting so hard to neutralize ICE. We will fight them all the way, and WIN!
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
 
 ## 模型績效排行
   A3_relief_rocket (盤前 RELIEF→當天飆): 72.7% | 報酬 +1.206% | 11 筆
@@ -57,11 +46,7 @@
 
 ## 學習引擎上次動作: 4 升級 / 1 降級 / 1 淘汰
 
-<<<<<<< HEAD
 ## 規則進化: 新增 44 條規則
-=======
-## 規則進化: 新增 42 條規則
->>>>>>> a7678eae8d971fcb3ceadf48a96c333650c36a37
 
 ## 信號信心度
   ACTION: 0.919
