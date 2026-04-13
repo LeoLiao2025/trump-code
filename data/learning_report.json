@@ -1,6 +1,6 @@
 {
   "date": "2026-04-13",
-  "generated_at": "2026-04-13T06:15:48Z",
+  "generated_at": "2026-04-13T15:20:07Z",
   "total_models": 11,
   "total_verified": 564,
   "ranking": [
@@ -218,8 +218,8 @@
       {
         "date": "2026-04-13",
         "signal": "ACTION",
-        "old_confidence": 0.919,
-        "new_confidence": 0.932,
+        "old_confidence": 0.932,
+        "new_confidence": 0.945,
         "hit_rate": 62.6,
         "samples": 423
       }
