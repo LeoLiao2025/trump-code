@@ -15,7 +15,7 @@ BASE = Path(__file__).parent.parent
 BRIEFING_FILE = BASE / "data" / "opus_briefing.txt"
 OUTPUT_FILE = BASE / "data" / "opus_analysis.json"
 
-MODEL = "gemini-2.5-pro"
+MODEL = "gemini-3-flash-preview"
 
 SYSTEM_PROMPT = """你是川普密碼系統的信號分析師。根據簡報包內容，輸出嚴格的 JSON 格式分析，不要有任何額外文字或 markdown。
 
@@ -23,7 +23,7 @@ SYSTEM_PROMPT = """你是川普密碼系統的信號分析師。根據簡報包�
 {
   "date": "YYYY-MM-DD",
   "analyzed_at": "ISO8601",
-  "analyzed_by": "gemini-2.5-pro",
+  "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": ["信號1", "信號2"],
   "error_analysis": {"模型名": "根本原因說明"},
   "pattern_shift_detected": true,
