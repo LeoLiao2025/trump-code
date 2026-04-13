@@ -1,88 +1,86 @@
 {
   "date": "2026-04-13",
-  "analyzed_at": "2026-04-13T06:11:29Z",
+  "analyzed_at": "2026-04-13T06:16:12Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RINO_PURGE",
-    "REDISTRICTING_FOCUS",
-    "LOCAL_ENDORSEMENT_FLOOD",
-    "VETERAN_PATRIOT_SENTIMENT"
+    "DEAL_FATIGUE (DEAL 關鍵字邊際效用遞減)",
+    "SILENCE_ANXIETY (長沉默在震盪市轉為負面解讀)"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對沉默期的解讀從『利空出盡』轉向『缺乏動能』，在宏觀波動大時，沉默導致流動性枯竭而非反彈。",
-    "A2_deal_bullish": "協議疲勞效應，市場已提前消化預期，推文發布時往往已是短線高點。"
+    "C1_burst_silence": "在宏觀不確定性高時，長沉默被市場解讀為『政策真空期』而非『利空出盡』，導致做多失敗。",
+    "A2_deal_bullish": "DEAL 出現頻率過高導致市場鈍化，缺乏具體細節的 DEAL 僅能維持極短線熱度。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "從宏觀貿易戰轉向國內黨內清洗（RINO 獵殺）",
-    "推文密集度極高但單篇長度增加，顯示結構化政治動員",
-    "頻繁提及具體百分比（勝選點數）以強化權威感"
+    "市場反應重心從『協議達成(DEAL)』轉移至『壓力釋放(RELIEF)』",
+    "深夜推文(C3)的負面衝擊力正在減弱，市場出現抗藥性"
   ],
   "new_rules": [
     {
-      "id": "E1_RINO_PURGE",
-      "name": "RINO 清洗信號",
+      "id": "E1_relief_action_combo",
+      "name": "救贖行動複合規則",
       "features": [
-        "RINO",
-        "Endorse",
-        "Patriot"
+        "RELIEF",
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.68
+      "confidence": 0.88
     },
     {
-      "id": "E1_ENDORSE_FLOOD",
-      "name": "背書洪流",
+      "id": "E2_volume_sig_sync",
+      "name": "量能簽名同步",
       "features": [
-        "count > 10",
-        "Great Honor",
-        "Indiana"
+        "D3_volume_spike",
+        "D2_sig_change"
       ],
       "direction": "LONG",
       "hold": 2,
-      "confidence": 0.75
+      "confidence": 0.82
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "D3_volume_spike": 1.3,
-      "D2_sig_change": 1.1
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.2,
+      "D2_sig_change": 1.15
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.8
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且樣本不足)"
+      "C3_night_alert (勝率 37.5% 低於隨機水平且期望值為負)"
     ]
   },
   "signal_confidence": {
-    "ACTION": 0.92,
     "RELIEF": 0.95,
-    "RINO_PURGE": 0.72,
-    "ENDORSEMENT": 0.85
+    "ACTION": 0.932,
+    "TARIFF": 0.7,
+    "DEAL": 0.55,
+    "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
+    "score": "76/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新校準 C1 沉默期邏輯，加入宏觀波動率過濾器",
-      "2. 開發針對『RINO』關鍵字的政治穩定度情緒指標"
+      "1. 修正 C1 模型，加入市場波動率(VIX)作為過濾器",
+      "2. 強化 A3 模型與 D3 模型的權重聯動",
+      "3. 監控 DEAL 關鍵字的衰減速度"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.78,
+    "confidence": 0.85,
     "active_signals": [
-      "D3_volume_spike",
-      "LOCAL_ENDORSEMENT_FLOOD"
+      "A3_relief_rocket",
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "NONE"
+      "A2_deal_bullish"
     ],
-    "note": "極高頻率的正面政治背書與黨內動員通常伴隨市場對政策連續性的信心提升。"
+    "note": "高勝率的 RELIEF 與量能暴增信號抵消了 DEAL 的疲軟，短期看漲情緒強烈。"
   }
 }
