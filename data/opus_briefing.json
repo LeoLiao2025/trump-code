@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-13",
-  "prepared_at": "2026-04-13T15:20:21Z",
+  "date": "2026-04-14",
+  "prepared_at": "2026-04-14T15:19:01Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,28 +109,19 @@
     "signal_adjusted": 1
   },
   "evolution_latest": {
-    "date": "2026-04-13",
-    "crossover": 16,
-    "mutation": 13,
+    "date": "2026-04-14",
+    "crossover": 15,
+    "mutation": 9,
     "distill": 16,
-    "total_new": 45,
+    "total_new": 40,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "open_china",
-          "kw_thank_you_for_your_attention"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 95.5,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "kw_tariffs",
-          "open_thank_you_for_your_attention",
-          "kw_inflation"
+          "kw_corrupt",
+          "kw_beautiful",
+          "kw_tariff",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -139,13 +130,23 @@
       },
       {
         "features": [
-          "open_thank_you_for_your_attention",
-          "kw_beautiful",
-          "open_tariffs"
+          "questions_yes",
+          "kw_tariff_2plus"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 90.0,
+        "score": 86.7,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "open_jobs",
+          "kw_beautiful",
+          "open_dow"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 81.7,
         "origin": "crossover"
       }
     ]
@@ -154,7 +155,7 @@
     "TARIFF": 0.7,
     "DEAL": 0.55,
     "RELIEF": 0.95,
-    "ACTION": 0.945,
+    "ACTION": 0.95,
     "THREAT": 0.6,
     "CHINA": 0.6,
     "IRAN": 0.55,
@@ -162,11 +163,9 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-04-13",
+    "date": "2026-04-14",
     "signals": [
-      "DEAL",
-      "IRAN",
-      "DEAL_ONLY"
+      "IRAN"
     ],
     "opportunities": [],
     "total_scanned": 0
