@@ -1,24 +1,25 @@
 {
-  "date": "2026-04-14",
-  "analyzed_at": "2026-04-14T15:19:11Z",
+  "date": "2026-04-15",
+  "analyzed_at": "2026-04-15T15:11:35Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "INFRASTRUCTURE_SPENDING",
-    "ELECTION_POLL_REACTION"
+    "POLICY_REVERSAL_HINT",
+    "INTERNAL_STAFF_FRICTION_SILENCE"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默模式失效，沉默期可能轉向內部政策調整或法律應對，而非市場蓄勢。",
-    "A2_deal_bullish": "DEAL 關鍵字邊際效應遞減，市場對未經證實的協議承諾出現疲勞。"
+    "C1_burst_silence": "長沉默不再代表蓄勢待發，而是政策陷入僵局或內部衝突，導致市場不確定性增加而非利空出盡。",
+    "A2_deal_bullish": "市場對 DEAL 關鍵字的邊際效用遞減，缺乏具體細節的口頭承諾已無法驅動買盤。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場重心從 DEAL 轉向 RELIEF 與 ACTION 組合",
-    "盤前信號 (A3, B3) 的權重顯著高於盤中或深夜信號"
+    "DEAL 信號的市場反應時間縮短且強度減弱",
+    "沉默期（Silence）與波動率正相關，而非與上漲正相關",
+    "盤前 RELIEF 信號的權重顯著超越盤中信號"
   ],
   "new_rules": [
     {
       "id": "E1_relief_action_synergy",
-      "name": "救濟行動協同規則",
+      "name": "救贖行動協同規則",
       "features": [
         "RELIEF",
         "ACTION"
@@ -26,6 +27,17 @@
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
+    },
+    {
+      "id": "E2_tariff_fatigue_reversal",
+      "name": "關稅疲勞反轉",
+      "features": [
+        "TARIFF",
+        "VOLUME_DECREASE"
+      ],
+      "direction": "SHORT",
+      "hold": 1,
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
@@ -35,40 +47,41 @@
       "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.7
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且期望值為負)"
+      "C3_night_alert（勝率 37.5% 低於隨機水平）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "CHINA": 0.6,
-    "DEAL": 0.55
+    "DEAL": 0.45,
+    "CHINA": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新定義 C1 沉默期的時間閾值",
-      "2. 強化盤前信號與開盤跳空的關聯分析"
+      "1. 重新定義 C1 沉默期的特徵向量，區分『冷靜期』與『僵局期』",
+      "2. 移除表現不佳的 C3 模型以減少雜訊",
+      "3. 強化 A3 盤前信號的自動執行優先級"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.82,
     "active_signals": [
       "A3_relief_rocket",
-      "B3_action_pre"
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_fatigue"
+      "A2_deal_bullish"
     ],
-    "note": "盤前 RELIEF 與 ACTION 高信心度信號共振，預期當天表現強勁。"
+    "note": "儘管 DEAL 信號疲軟，但 RELIEF 與成交量激增顯示底部支撐強勁，建議短線做多。"
   }
 }
