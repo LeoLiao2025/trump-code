@@ -1,25 +1,25 @@
 {
-  "date": "2026-04-15",
-  "analyzed_at": "2026-04-15T15:11:35Z",
+  "date": "2026-04-16",
+  "analyzed_at": "2026-04-16T15:45:10Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "POLICY_REVERSAL_HINT",
-    "INTERNAL_STAFF_FRICTION_SILENCE"
+    "DEAL_DECOY (虛假協議信號)",
+    "SILENCE_DEADLOCK (政策僵局沉默)"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默不再代表蓄勢待發，而是政策陷入僵局或內部衝突，導致市場不確定性增加而非利空出盡。",
-    "A2_deal_bullish": "市場對 DEAL 關鍵字的邊際效用遞減，缺乏具體細節的口頭承諾已無法驅動買盤。"
+    "C1_burst_silence": "市場對『長沉默』的解讀已從『利空出盡』轉向『政策僵局不確定性』，導致預期落空。",
+    "A2_deal_bullish": "DEAL 關鍵字過度頻繁導致邊際效用遞減，市場對缺乏細節的口頭協議產生免疫。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "DEAL 信號的市場反應時間縮短且強度減弱",
-    "沉默期（Silence）與波動率正相關，而非與上漲正相關",
-    "盤前 RELIEF 信號的權重顯著超越盤中信號"
+    "市場驅動力從 DEAL 轉向 RELIEF",
+    "深夜推文 (C3) 的恐慌效應顯著鈍化",
+    "簽名切換 (D2) 的權威性權重提升"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_synergy",
-      "name": "救贖行動協同規則",
+      "id": "E1_relief_action_combo",
+      "name": "救贖行動組合規則",
       "features": [
         "RELIEF",
         "ACTION"
@@ -27,17 +27,6 @@
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
-    },
-    {
-      "id": "E2_tariff_fatigue_reversal",
-      "name": "關稅疲勞反轉",
-      "features": [
-        "TARIFF",
-        "VOLUME_DECREASE"
-      ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.65
     }
   ],
   "model_adjustments": {
@@ -51,23 +40,22 @@
       "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert（勝率 37.5% 低於隨機水平）"
+      "C3_night_alert (勝率 37.5% 低於隨機水平，視為無效雜訊)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
+    "DEAL": 0.55,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
-    "grade": "B+",
+    "score": "75/100",
+    "grade": "B",
     "priorities": [
-      "1. 重新定義 C1 沉默期的特徵向量，區分『冷靜期』與『僵局期』",
-      "2. 移除表現不佳的 C3 模型以減少雜訊",
-      "3. 強化 A3 盤前信號的自動執行優先級"
+      "1. 重新定義 DEAL 信號的觸發門檻，過濾口頭護盤",
+      "2. 強化 RELIEF 相關模型的自動化執行權重"
     ]
   },
   "today_prediction": {
@@ -77,11 +65,11 @@
     "confidence": 0.82,
     "active_signals": [
       "A3_relief_rocket",
-      "D3_volume_spike"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
       "A2_deal_bullish"
     ],
-    "note": "儘管 DEAL 信號疲軟，但 RELIEF 與成交量激增顯示底部支撐強勁，建議短線做多。"
+    "note": "RELIEF 與 ACTION 的高信心度重疊足以抵消 DEAL 效力減弱的負面影響。"
   }
 }
