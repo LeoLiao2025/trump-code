@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-17",
-  "prepared_at": "2026-04-17T15:01:57Z",
+  "date": "2026-04-18",
+  "prepared_at": "2026-04-18T14:46:01Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,44 +109,44 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-04-17",
+    "date": "2026-04-18",
     "crossover": 16,
-    "mutation": 13,
-    "distill": 17,
-    "total_new": 46,
+    "mutation": 9,
+    "distill": 18,
+    "total_new": 43,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_thank_you_for_your_attention",
-          "kw_trade",
-          "kw_china"
-        ],
-        "direction": "LONG",
-        "hold": 1,
-        "score": 86.7,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "kw_dow_2plus",
-          "is_friday",
-          "kw_energy"
+          "kw_tremendous",
+          "volume_spike",
+          "kw_fake"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 85.0,
+        "score": 92.9,
         "origin": "crossover"
       },
       {
         "features": [
-          "kw_thank_you_for_your_attention",
-          "kw_europe"
+          "kw_inflation",
+          "kw_president_of_the_united_states",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 2,
-        "score": 80.8,
+        "score": 87.5,
         "origin": "crossover"
+      },
+      {
+        "features": [
+          "is_friday",
+          "kw_economy"
+        ],
+        "direction": "LONG",
+        "hold": 1,
+        "score": 81.2,
+        "origin": "distilled"
       }
     ]
   },
@@ -162,11 +162,10 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-04-17",
+    "date": "2026-04-18",
     "signals": [
-      "DEAL",
-      "IRAN",
-      "DEAL_ONLY"
+      "CHINA",
+      "IRAN"
     ],
     "opportunities": [],
     "total_scanned": 0
