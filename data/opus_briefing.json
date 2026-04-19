@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-18",
-  "prepared_at": "2026-04-18T14:46:01Z",
+  "date": "2026-04-19",
+  "prepared_at": "2026-04-19T14:46:14Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,44 +109,45 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-04-18",
-    "crossover": 16,
-    "mutation": 9,
+    "date": "2026-04-19",
+    "crossover": 15,
+    "mutation": 15,
     "distill": 18,
-    "total_new": 43,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_tremendous",
-          "volume_spike",
-          "kw_fake"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 92.9,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "kw_inflation",
-          "kw_president_of_the_united_states",
+          "kw_interest_rate",
+          "kw_thank_you_for_your_attention",
           "kw_economy"
         ],
         "direction": "LONG",
         "hold": 2,
-        "score": 87.5,
+        "score": 91.7,
         "origin": "crossover"
       },
       {
         "features": [
-          "is_friday",
-          "kw_economy"
+          "kw_signed",
+          "open_tariff"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 81.2,
-        "origin": "distilled"
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
+      },
+      {
+        "features": [
+          "kw_inflation",
+          "kw_thank_you_for_your_attention",
+          "kw_economy",
+          "open_trade"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 83.3,
+        "origin": "crossover"
       }
     ]
   },
@@ -162,10 +163,11 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-04-18",
+    "date": "2026-04-19",
     "signals": [
-      "CHINA",
-      "IRAN"
+      "DEAL",
+      "IRAN",
+      "DEAL_ONLY"
     ],
     "opportunities": [],
     "total_scanned": 0

@@ -1,43 +1,42 @@
 {
-  "date": "2026-04-18",
-  "analyzed_at": "2026-04-18T14:46:12Z",
+  "date": "2026-04-19",
+  "analyzed_at": "2026-04-19T14:46:25Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "MACRO_VOLATILITY_OVERRIDE",
-    "DEAL_SKEPTICISM_INDEX",
-    "PRE_MARKET_MOMENTUM_DEVIATION"
+    "Signature consistency during high-frequency bursts",
+    "Cross-platform sentiment divergence",
+    "Macro-trend exhaustion filtering"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默期』的解讀從『利空出盡』轉向『不確定性增加』，宏觀經濟下行壓力抵消了情緒修復空間。",
-    "A2_deal_bullish": "『DEAL』關鍵字出現邊際效應遞減，市場將其視為口頭干預而非實質利多，導致多頭陷阱。"
+    "C1_burst_silence": "在宏觀看跌趨勢中，長沉默被錯誤解讀為蓄勢待發，實際上是市場對後續不確定性的恐懼（耗盡信號）。",
+    "A2_deal_bullish": "市場對 DEAL 關鍵字的邊際效用遞減，缺乏具體細節的聲明已無法驅動實質漲幅。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『情緒性推文』轉移至『實質性行動(ACTION)』與『政策緩解(RELIEF)』",
-    "深夜推文(C3)的恐慌效應顯著鈍化，市場已對夜間波動產生免疫力"
+    "從單一關鍵字驅動轉向發文頻率與簽名特徵驅動（D2, D3 表現優於 A2）",
+    "市場對正面消息（DEAL）的反應鈍化，對緩解型消息（RELIEF）的反應增強"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_sync",
-      "name": "救贖行動同步規則",
+      "id": "E1_vol_relief_combo",
+      "name": "爆量緩解組合規則",
       "features": [
-        "RELIEF",
-        "ACTION",
-        "PRE_MARKET"
+        "D3_volume_spike",
+        "A3_relief_rocket"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
     },
     {
-      "id": "E2_deal_trap_filter",
-      "name": "虛假協議過濾器",
+      "id": "E2_deal_fatigue_filter",
+      "name": "DEAL 疲勞過濾器",
       "features": [
-        "DEAL",
-        "LOW_VOLUME"
+        "A2_deal_bullish",
+        "negative_macro_trend"
       ],
-      "direction": "SHORT",
-      "hold": 1,
+      "direction": "NEUTRAL",
+      "hold": 0,
       "confidence": 0.65
     }
   ],
@@ -49,26 +48,25 @@
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.75
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 且期望值為負，失去統計顯著性)"
+      "C3_night_alert (勝率 37.5% 低於隨機水平，且造成負期望值)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "TARIFF": 0.75,
-    "DEAL": 0.45,
-    "CHINA": 0.6
+    "VOLUME_SPIKE": 0.85,
+    "TARIFF": 0.7,
+    "DEAL": 0.45
   },
   "system_health": {
-    "score": "78/100",
-    "grade": "B+",
+    "score": "75/100",
+    "grade": "B",
     "priorities": [
-      "1. 修正 C1 模型在宏觀波動下的假信號過濾機制",
-      "2. 強化 A3 模型與盤前成交量的關聯分析",
-      "3. 重新定義 DEAL 信號的有效性閾值"
+      "1. 修正 C1 模型，加入宏觀趨勢過濾器以避免在下跌段誤判沉默信號",
+      "2. 強化 D 系列結構化信號（發文量與簽名）的權重"
     ]
   },
   "today_prediction": {
@@ -83,6 +81,6 @@
     "suppressing_signals": [
       "A2_deal_bullish_fatigue"
     ],
-    "note": "市場目前對 RELIEF 與實質 ACTION 極度敏感，應忽略 DEAL 的口頭干預，專注於盤前動能爆發。"
+    "note": "高勝率的緩解信號與發文量暴增信號共振，抵消了 DEAL 關鍵字的疲軟表現。"
   }
 }
