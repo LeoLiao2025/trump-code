@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-25",
-  "prepared_at": "2026-04-25T14:49:30Z",
+  "date": "2026-04-26",
+  "prepared_at": "2026-04-26T14:52:15Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,19 +109,29 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-04-25",
-    "crossover": 14,
-    "mutation": 5,
+    "date": "2026-04-26",
+    "crossover": 16,
+    "mutation": 6,
     "distill": 16,
-    "total_new": 35,
+    "total_new": 38,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "is_friday",
-          "open_tariff",
-          "kw_thank_you_for_your_attention",
-          "open_tariffs"
+          "kw_signed",
+          "open_dow",
+          "questions_yes"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 91.7,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "kw_tremendous",
+          "volume_falling_3d",
+          "kw_tariff"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -130,22 +140,13 @@
       },
       {
         "features": [
-          "kw_tremendous_2plus",
-          "open_tremendous"
-        ],
-        "direction": "LONG",
-        "hold": 1,
-        "score": 83.3,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "volume_spike",
-          "pre_great"
+          "kw_signed",
+          "questions_yes",
+          "kw_tariff"
         ],
         "direction": "LONG",
         "hold": 2,
-        "score": 81.2,
+        "score": 88.9,
         "origin": "crossover"
       }
     ]
