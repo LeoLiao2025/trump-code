@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-04-28T16:10:03Z",
-    "evolved_rules_added": 39
+    "last_evolution": "2026-04-29T15:58:23Z",
+    "evolved_rules_added": 46
   },
   "rules": [
     {
@@ -12393,7 +12393,12 @@
       "parents": [
         "kw_energy+kw_hereby",
         "kw_dow_2plus+open_jobs"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -13567,7 +13572,12 @@
       "parents": [
         "is_friday+kw_economy",
         "open_dow+open_interest_rate"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -13683,6 +13693,31 @@
         "wrong": 0,
         "streak": 0
       }
+    },
+    {
+      "features": [
+        "kw_corrupt",
+        "kw_tariff",
+        "kw_beautiful"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "id": "a8e916108b5c",
+      "n_cond": 3,
+      "train_trades": 9,
+      "train_win_rate": 77.8,
+      "train_avg": 0.883,
+      "test_trades": 5,
+      "test_win_rate": 100.0,
+      "test_avg": 0.506,
+      "combined_score": 88.9,
+      "origin": "crossover",
+      "born_date": "2026-04-29",
+      "weight": 1.0,
+      "parents": [
+        "kw_corrupt+kw_tariff",
+        "kw_beautiful+kw_tariffs_2plus"
+      ]
     },
     {
       "features": [
@@ -14797,36 +14832,6 @@
       "parents": [
         "is_friday+kw_dow_2plus",
         "kw_energy+kw_interest_rate"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_deal",
-        "kw_inflation",
-        "kw_trade"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "d84251ec0677",
-      "n_cond": 3,
-      "train_trades": 10,
-      "train_win_rate": 70.0,
-      "train_avg": 1.901,
-      "test_trades": 4,
-      "test_win_rate": 100.0,
-      "test_avg": 0.707,
-      "combined_score": 85.0,
-      "origin": "crossover",
-      "born_date": "2026-04-24",
-      "weight": 1.0,
-      "parents": [
-        "kw_dow_2plus+kw_interest_rate",
-        "kw_deal+kw_inflation"
       ],
       "learn_stats": {
         "correct": 0,
