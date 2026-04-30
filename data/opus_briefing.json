@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-29",
-  "prepared_at": "2026-04-29T15:58:37Z",
+  "date": "2026-04-30",
+  "prepared_at": "2026-04-30T15:50:03Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,22 +109,22 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-04-29",
+    "date": "2026-04-30",
     "crossover": 16,
-    "mutation": 13,
+    "mutation": 15,
     "distill": 17,
-    "total_new": 46,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_corrupt",
-          "kw_tariff",
-          "kw_beautiful"
+          "volume_falling_3d",
+          "kw_thank_you_for_your_attention",
+          "kw_trade"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 88.9,
+        "hold": 2,
+        "score": 87.3,
         "origin": "crossover"
       },
       {
@@ -139,13 +139,13 @@
       },
       {
         "features": [
-          "is_friday",
-          "kw_dow_2plus"
+          "open_tariff",
+          "volume_falling_3d"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 83.7,
-        "origin": "distilled"
+        "hold": 2,
+        "score": 84.6,
+        "origin": "mutation_remove"
       }
     ]
   },
@@ -161,11 +161,9 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-04-29",
+    "date": "2026-04-30",
     "signals": [
-      "DEAL",
-      "IRAN",
-      "DEAL_ONLY"
+      "IRAN"
     ],
     "opportunities": [],
     "total_scanned": 0

@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-04-29T15:58:23Z",
-    "evolved_rules_added": 46
+    "last_evolution": "2026-04-30T15:49:49Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -13717,7 +13717,12 @@
       "parents": [
         "kw_corrupt+kw_tariff",
         "kw_beautiful+kw_tariffs_2plus"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14351,6 +14356,31 @@
     },
     {
       "features": [
+        "volume_falling_3d",
+        "kw_thank_you_for_your_attention",
+        "kw_trade"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "id": "194f969faabc",
+      "n_cond": 3,
+      "train_trades": 7,
+      "train_win_rate": 85.7,
+      "train_avg": 1.007,
+      "test_trades": 9,
+      "test_win_rate": 88.9,
+      "test_avg": 0.628,
+      "combined_score": 87.3,
+      "origin": "crossover",
+      "born_date": "2026-04-30",
+      "weight": 1.0,
+      "parents": [
+        "kw_thank_you_for_your_attention+kw_trade",
+        "both_tariff_and_deal+excl_heavy"
+      ]
+    },
+    {
+      "features": [
         "open_russia",
         "kw_economy"
       ],
@@ -14802,36 +14832,6 @@
       "parents": [
         "is_friday+kw_economy",
         "kw_signed+kw_tariffs_2plus"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_dow_2plus",
-        "is_friday",
-        "kw_energy"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "e1a99e9a25e7",
-      "n_cond": 3,
-      "train_trades": 10,
-      "train_win_rate": 70.0,
-      "train_avg": 0.981,
-      "test_trades": 3,
-      "test_win_rate": 100.0,
-      "test_avg": 0.609,
-      "combined_score": 85.0,
-      "origin": "crossover",
-      "born_date": "2026-04-17",
-      "weight": 1.0,
-      "parents": [
-        "is_friday+kw_dow_2plus",
-        "kw_energy+kw_interest_rate"
       ],
       "learn_stats": {
         "correct": 0,
