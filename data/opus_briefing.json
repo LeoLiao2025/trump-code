@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-03",
-  "prepared_at": "2026-05-03T14:53:52Z",
+  "date": "2026-05-04",
+  "prepared_at": "2026-05-04T16:04:47Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,13 +109,34 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-03",
+    "date": "2026-05-04",
     "crossover": 16,
-    "mutation": 10,
+    "mutation": 12,
     "distill": 17,
-    "total_new": 43,
+    "total_new": 45,
     "total_rules_after": 600,
     "top_3": [
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_thank_you_for_your_attention",
+          "kw_beautiful"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "kw_deal",
+          "kw_signed"
+        ],
+        "direction": "LONG",
+        "hold": 1,
+        "score": 87.5,
+        "origin": "crossover"
+      },
       {
         "features": [
           "kw_deal",
@@ -125,26 +146,6 @@
         "hold": 2,
         "score": 85.0,
         "origin": "mutation_remove"
-      },
-      {
-        "features": [
-          "is_friday",
-          "kw_deal"
-        ],
-        "direction": "LONG",
-        "hold": 1,
-        "score": 84.8,
-        "origin": "distilled"
-      },
-      {
-        "features": [
-          "is_friday",
-          "kw_dow_2plus"
-        ],
-        "direction": "LONG",
-        "hold": 1,
-        "score": 83.7,
-        "origin": "distilled"
       }
     ]
   },
