@@ -1,19 +1,19 @@
 {
-  "date": "2026-05-05",
-  "analyzed_at": "2026-05-05T15:57:02Z",
+  "date": "2026-05-06",
+  "analyzed_at": "2026-05-06T16:04:18Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_ACTION_COMBO",
-    "TARIFF_VOLATILITY_CLUSTERING"
+    "Signature_Consistency_Shift",
+    "Platform_Migration_Lag"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默不再被視為利空出盡，市場在缺乏指引時傾向於避險，導致預測方向與實際走勢相反。",
-    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致市場鈍化，口頭承諾的邊際效應顯著遞減。"
+    "C1_burst_silence": "市場對沉默期的解讀已從「醞釀利多」轉向「政策僵局或內部混亂」，導致多頭預期失效。",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效用遞減，市場對口頭協議的信任度顯著下降。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場對『沉默』的解讀從『蓄勢待發』轉向『政策真空恐慌』",
-    "實質性行動（ACTION/RELIEF）的權重已遠超口頭協議（DEAL）"
+    "市場反應重心從「協議預期 (DEAL)」轉移至「實質救濟 (RELIEF)」。",
+    "深夜推文 (C3) 的恐慌效應正在被市場自動對沖，影響力減弱。"
   ],
   "new_rules": [
     {
@@ -25,18 +25,7 @@
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.88
-    },
-    {
-      "id": "E2_silent_risk_off",
-      "name": "沉默避險規則",
-      "features": [
-        "SILENCE > 48H",
-        "VOLATILITY_HIGH"
-      ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.65
+      "confidence": 0.92
     }
   ],
   "model_adjustments": {
@@ -46,11 +35,11 @@
       "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.4,
+      "C1_burst_silence": 0.5,
       "A2_deal_bullish": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 且期望值為負)"
+      "C3_night_alert (勝率低於 40% 且期望值為負)"
     ]
   },
   "signal_confidence": {
@@ -64,23 +53,22 @@
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 沉默信號的邏輯偏誤",
-      "2. 整合 RELIEF 與 ACTION 的複合過濾器",
-      "3. 監控 DEAL 信號的進一步鈍化現象"
+      "1. 重新定義 C1 沉默期的時間閾值與背景過濾",
+      "2. 強化 D 系列結構化信號（發文量與簽名）的權重"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.88,
     "active_signals": [
-      "RELIEF",
-      "ACTION"
+      "A3_relief_rocket",
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "TARIFF"
+      "A1_tariff_bearish"
     ],
-    "note": "RELIEF 與 ACTION 的高信心度足以抵銷 TARIFF 帶來的短期壓力，建議短線做多。"
+    "note": "RELIEF 與 ACTION 的高信心度組合足以抵銷 TARIFF 帶來的短期波動。"
   }
 }

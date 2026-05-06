@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-05",
-  "prepared_at": "2026-05-05T15:56:50Z",
+  "date": "2026-05-06",
+  "prepared_at": "2026-05-06T16:04:05Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,44 +109,45 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-05",
+    "date": "2026-05-06",
     "crossover": 16,
-    "mutation": 16,
+    "mutation": 13,
     "distill": 17,
-    "total_new": 49,
+    "total_new": 46,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "volume_falling_3d",
-          "kw_beautiful",
-          "open_thank_you_for_your_attention"
-        ],
-        "direction": "LONG",
-        "hold": 2,
-        "score": 91.7,
-        "origin": "mutation_replace"
-      },
-      {
-        "features": [
-          "kw_dow_2plus",
-          "open_thank_you_for_your_attention",
-          "is_friday"
+          "kw_interest_rate",
+          "kw_thank_you_for_your_attention",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 85.7,
+        "score": 100.0,
         "origin": "crossover"
       },
       {
         "features": [
-          "is_friday",
-          "kw_deal"
+          "open_trade",
+          "volume_falling_3d",
+          "kw_beautiful"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 84.8,
-        "origin": "distilled"
+        "hold": 3,
+        "score": 100.0,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "volume_falling_3d",
+          "open_thank_you_for_your_attention",
+          "kw_beautiful"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 91.7,
+        "origin": "crossover"
       }
     ]
   },
@@ -162,9 +163,11 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-05-05",
+    "date": "2026-05-06",
     "signals": [
-      "IRAN"
+      "DEAL",
+      "IRAN",
+      "DEAL_ONLY"
     ],
     "opportunities": [],
     "total_scanned": 0
