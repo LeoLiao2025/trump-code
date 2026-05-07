@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-06",
-  "prepared_at": "2026-05-06T16:04:05Z",
+  "date": "2026-05-07",
+  "prepared_at": "2026-05-07T16:09:31Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,45 +109,43 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-06",
+    "date": "2026-05-07",
     "crossover": 16,
-    "mutation": 13,
-    "distill": 17,
-    "total_new": 46,
+    "mutation": 16,
+    "distill": 16,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_interest_rate",
-          "kw_thank_you_for_your_attention",
-          "kw_economy"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 100.0,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "open_trade",
-          "volume_falling_3d",
-          "kw_beautiful"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 100.0,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "volume_falling_3d",
           "open_thank_you_for_your_attention",
-          "kw_beautiful"
+          "kw_economy",
+          "open_tariff"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 91.7,
+        "score": 85.7,
         "origin": "crossover"
+      },
+      {
+        "features": [
+          "is_friday",
+          "questions_yes"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 85.7,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "is_friday",
+          "kw_deal"
+        ],
+        "direction": "LONG",
+        "hold": 1,
+        "score": 84.8,
+        "origin": "distilled"
       }
     ]
   },
@@ -163,10 +161,9 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-05-06",
+    "date": "2026-05-07",
     "signals": [
       "DEAL",
-      "IRAN",
       "DEAL_ONLY"
     ],
     "opportunities": [],
