@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-07",
-  "prepared_at": "2026-05-07T16:09:31Z",
+  "date": "2026-05-08",
+  "prepared_at": "2026-05-08T15:28:11Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,43 +109,44 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-07",
+    "date": "2026-05-08",
     "crossover": 16,
-    "mutation": 16,
+    "mutation": 12,
     "distill": 16,
-    "total_new": 48,
+    "total_new": 44,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "open_thank_you_for_your_attention",
-          "kw_economy",
-          "open_tariff"
+          "open_president_of_the_united_states",
+          "kw_dow_2plus"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 85.7,
+        "hold": 2,
+        "score": 95.5,
         "origin": "crossover"
       },
       {
         "features": [
-          "is_friday",
-          "questions_yes"
+          "open_inflation",
+          "open_thank_you_for_your_attention",
+          "kw_thank_you_for_your_attention"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 85.7,
-        "origin": "distilled"
+        "score": 91.7,
+        "origin": "crossover"
       },
       {
         "features": [
+          "kw_beautiful",
           "is_friday",
-          "kw_deal"
+          "kw_thank_you_for_your_attention"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 84.8,
-        "origin": "distilled"
+        "hold": 3,
+        "score": 88.9,
+        "origin": "crossover"
       }
     ]
   },
