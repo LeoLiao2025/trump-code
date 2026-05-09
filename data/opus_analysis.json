@@ -1,40 +1,40 @@
 {
-  "date": "2026-05-08",
-  "analyzed_at": "2026-05-08T15:28:21Z",
+  "date": "2026-05-09",
+  "analyzed_at": "2026-05-09T14:57:34Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "FED_PRESSURE (聯準會壓力)",
-    "ELECTION_COUNTDOWN (選舉倒數效應)",
-    "ENERGY_INDEPENDENCE (能源獨立關鍵字)"
+    "ACTION 與 RELIEF 的複合共振信號",
+    "D2 簽名切換與 D3 發文量暴增的同步性"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀從『冷靜期』轉向『不確定性風險』，導致長沉默後的做多信號失效。",
-    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場出現『狼來了』效應，缺乏具體細節的協議宣稱不再支撐漲幅。"
+    "C1_burst_silence": "長期沉默在當前高波動環境下被市場解讀為『政策真空的不確定性』而非『利空出盡』，導致做多失敗。",
+    "A2_deal_bullish": "DEAL 關鍵字已出現邊際效用遞減，市場對缺乏具體細節的口頭協議產生免疫，甚至引發『利多出盡』的拋售。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "從『協議驅動型』轉向『行動與救濟驅動型』(Action/Relief-driven)",
-    "盤前信號的權重顯著超越盤中隨機推文",
-    "發文量暴增 (Volume Spike) 成為更可靠的底部反轉指標"
+    "市場反應邏輯從『預期驅動』轉向『實質行動驅動』",
+    "深夜推文 (C3) 的恐慌效應正在鈍化，市場修復速度加快",
+    "行為模式模型 (D系列) 的勝率全面超越單純關鍵字模型 (A系列)"
   ],
   "new_rules": [
     {
-      "id": "E1_action_relief_combo",
-      "name": "行動救濟雙重奏",
+      "id": "E1_action_relief_sync",
+      "name": "行動救濟同步規則",
       "features": [
         "ACTION",
-        "RELIEF"
+        "RELIEF",
+        "D3_volume_spike"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
     },
     {
-      "id": "E2_spike_exhaustion",
-      "name": "暴增衰竭轉向",
+      "id": "E2_deal_fatigue_short",
+      "name": "協議疲勞反向規則",
       "features": [
-        "D3_volume_spike",
-        "TARIFF"
+        "DEAL",
+        "C2_brag_top"
       ],
       "direction": "SHORT",
       "hold": 1,
@@ -44,32 +44,30 @@
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.1
+      "D3_volume_spike": 1.25,
+      "D2_sig_change": 1.2
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
+      "A2_deal_bullish": 0.6,
       "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40%，且造成負期望值)"
+      "C3_night_alert (勝率低於 40% 且期望值為負，失去對沖價值)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "TARIFF": 0.7,
-    "CHINA": 0.6,
+    "TARIFF": 0.75,
     "DEAL": 0.45,
-    "VOLUME_SPIKE": 0.8
+    "CHINA": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 規則的沉默定義，加入波動率過濾器",
-      "2. 強化 A3 盤前救濟信號的自動執行權重",
-      "3. 監控 DEAL 關鍵字的衰減速度"
+      "1. 重新校準 DEAL 信號的權重，需配合 D2 簽名確認",
+      "2. 強化對 A3/D3 組合信號的自動化執行優先級"
     ]
   },
   "today_prediction": {
@@ -79,11 +77,11 @@
     "confidence": 0.82,
     "active_signals": [
       "A3_relief_rocket",
-      "B3_action_pre"
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_decay"
+      "A2_deal_bullish"
     ],
-    "note": "盤前出現 RELIEF 與 ACTION 高信心組合，抵銷了 DEAL 關鍵字的疲軟。"
+    "note": "當前市場由實質救濟行動主導，應無視口頭協議的疲軟表現，跟隨 A3 飆升動能。"
   }
 }
