@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-09T14:57:11Z",
-    "evolved_rules_added": 44
+    "last_evolution": "2026-05-10T14:58:31Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -13869,7 +13869,12 @@
       "parents": [
         "kw_signed+kw_tariff",
         "kw_tariff_2plus+open_trade"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
