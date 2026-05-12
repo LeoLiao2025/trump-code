@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-11T16:36:10Z",
-    "evolved_rules_added": 46
+    "last_evolution": "2026-05-12T16:24:13Z",
+    "evolved_rules_added": 44
   },
   "rules": [
     {
@@ -12483,7 +12483,12 @@
       "parents": [
         "excl_heavy+kw_dow_2plus",
         "kw_energy+kw_interest_rate"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -12508,7 +12513,12 @@
       "parents": [
         "kw_energy+kw_interest_rate",
         "kw_deal+kw_interest_rate"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -13949,6 +13959,36 @@
       "parents": [
         "kw_tariffs_2plus+open_thank_you_for_your_attention",
         "kw_economy+kw_interest_rate"
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
+    },
+    {
+      "features": [
+        "kw_beautiful",
+        "kw_signed",
+        "open_thank_you_for_your_attention"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "id": "14b300171fa2",
+      "n_cond": 3,
+      "train_trades": 5,
+      "train_win_rate": 80.0,
+      "train_avg": 0.945,
+      "test_trades": 3,
+      "test_win_rate": 100.0,
+      "test_avg": 1.072,
+      "combined_score": 90.0,
+      "origin": "crossover",
+      "born_date": "2026-05-12",
+      "weight": 1.0,
+      "parents": [
+        "kw_beautiful+kw_signed",
+        "kw_perfect+open_thank_you_for_your_attention"
       ]
     },
     {
@@ -14810,35 +14850,6 @@
       "parents": [
         "is_friday+kw_beautiful",
         "kw_interest_rate+kw_thank_you_for_your_attention"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_deal",
-        "kw_signed"
-      ],
-      "direction": "LONG",
-      "hold": 1,
-      "id": "b558e2d8af41",
-      "n_cond": 2,
-      "train_trades": 20,
-      "train_win_rate": 75.0,
-      "train_avg": 0.222,
-      "test_trades": 3,
-      "test_win_rate": 100.0,
-      "test_avg": 0.756,
-      "combined_score": 87.5,
-      "origin": "crossover",
-      "born_date": "2026-05-04",
-      "weight": 1.0,
-      "parents": [
-        "kw_deal+kw_perfect",
-        "kw_interest_rate+kw_signed"
       ],
       "learn_stats": {
         "correct": 0,

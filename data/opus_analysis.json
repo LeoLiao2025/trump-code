@@ -1,75 +1,74 @@
 {
-  "date": "2026-05-11",
-  "analyzed_at": "2026-05-11T16:36:40Z",
+  "date": "2026-05-12",
+  "analyzed_at": "2026-05-12T16:24:45Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "DEAL_FATIGUE (關鍵字邊際效用遞減)",
-    "SIGNATURE_METADATA_DEVIATION (簽名切換與內容矛盾)"
+    "Macro_Volatility_Decoupling",
+    "Sentiment_Saturation_Threshold"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對沉默期的解讀已從『利多醞釀』轉向『動能喪失』，且未考慮當時宏觀波動率背景。",
-    "A2_deal_bullish": "『狼來了』效應導致市場對單純 DEAL 字眼反應鈍化，缺乏具體政策細節支撐。"
+    "C1_burst_silence": "長沉默不再代表情緒冷卻，而是市場對不確定性的恐懼放大，導致沉默期後的負面跳空。",
+    "A2_deal_bullish": "DEAL 關鍵字邊際效用遞減，市場進入『買入傳聞，賣出事實』階段，缺乏具體細節的口頭承諾失效。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『政策承諾 (DEAL)』轉向『情緒緩解 (RELIEF)』",
-    "發文元數據（簽名切換、發文頻率暴增）的預測準確度已超越單純關鍵字模型"
+    "從內容驅動（DEAL/TARIFF）轉向行為驅動（發文量/簽名特徵）。",
+    "市場對『沉默』的解讀從『利空出盡』轉向『潛在利空醞釀』。"
   ],
   "new_rules": [
     {
-      "id": "E1_sig_relief_combo",
-      "name": "簽名切換與緩解共振",
+      "id": "E1_vol_sig_combo",
+      "name": "行為特徵共振",
       "features": [
         "D2_sig_change",
-        "RELIEF"
+        "D3_volume_spike"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.88
+      "confidence": 0.82
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
       "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "D2_sig_change": 1.15,
+      "A3_relief_rocket": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.7
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40% 且期望值為負)",
-      "C2_brag_top (信號與市場走勢相關性顯著下降)"
+      "C3_night_alert（勝率 37.5% 低於隨機水平且具備高負向偏誤）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
+    "DEAL": 0.55,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "75/100",
-    "grade": "B+",
+    "score": "74/100",
+    "grade": "B",
     "priorities": [
-      "1. 重新校準 C1 沉默期邏輯，引入外部市場波動率 (VIX) 作為過濾器",
-      "2. 強化 A3 與 D2 組合信號的自動化執行權重"
+      "1. 重新校準 C1 沉默期的時間閾值",
+      "2. 引入外部波動率指標（VIX）作為 A2 信號的過濾器"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.72,
     "active_signals": [
       "A3_relief_rocket",
-      "D2_sig_change"
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_fatigue"
+      "C1_burst_silence_decay"
     ],
-    "note": "高勝率的緩解信號與簽名切換共振，顯示短期情緒修復動能極強。"
+    "note": "行為模型（D2, D3）表現優於內容模型，盤前 RELIEF 信號觸發高勝率路徑。"
   }
 }
