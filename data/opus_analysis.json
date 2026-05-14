@@ -1,24 +1,24 @@
 {
-  "date": "2026-05-13",
-  "analyzed_at": "2026-05-13T16:24:39Z",
+  "date": "2026-05-14",
+  "analyzed_at": "2026-05-14T16:12:43Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_ACTION_SYNERGY",
-    "VOLUME_PANIC_REVERSAL"
+    "DEAL_FATIGUE (市場對協議關鍵字出現鈍化反應)",
+    "PRE_ACTION_LEAK (正式行動前的非正式洩漏信號)"
   ],
   "error_analysis": {
-    "C1_burst_silence": "沉默期不再代表情緒降溫，而是代表政策醞釀期的不確定性，導致市場在缺乏指引時選擇避險拋售。",
-    "A2_deal_bullish": "市場出現『協議疲勞』，口頭上的 DEAL 關鍵字若無具體細節，已被視為延遲戰術而非實質利多。"
+    "C1_burst_silence": "長沉默不再代表蓄勢待發，而是代表政策陷入僵局或市場注意力轉移至宏觀數據。",
+    "A2_deal_bullish": "DEAL 關鍵字被頻繁用於談判籌碼而非實質進展，導致市場產生『狼來了』效應。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應從『期待協議』轉向『尋求緩解(RELIEF)』",
-    "發文量暴增(D3)的恐慌捕捉能力已超越單純的關鍵字模型"
+    "市場對深夜推文 (C3) 的敏感度大幅下降，轉向關注盤前正式聲明 (A3/B3)",
+    "情緒飽和度 (Volume Spike) 的重要性超越單一關鍵字觸發"
   ],
   "new_rules": [
     {
       "id": "E1_relief_action_combo",
-      "name": "緩解行動組合拳",
+      "name": "緩解行動雙重確認",
       "features": [
         "RELIEF",
         "ACTION"
@@ -26,36 +26,25 @@
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
-    },
-    {
-      "id": "E2_panic_volume_buy",
-      "name": "恐慌放量反轉",
-      "features": [
-        "D3_volume_spike",
-        "TARIFF"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "confidence": 0.75
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.4,
-      "D3_volume_spike": 1.3
+      "A3_relief_rocket": 1.3,
+      "D3_volume_spike": 1.2
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.5,
-      "A2_deal_bullish": 0.6
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且造成負期望值)"
+      "C3_night_alert (勝率低於 40% 且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "TARIFF": 0.75,
+    "TARIFF": 0.7,
     "DEAL": 0.45,
     "CHINA": 0.6
   },
@@ -63,8 +52,8 @@
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新定義 C1 沉默期的時間閾值",
-      "2. 將 D3 的交易量特徵整合進 A 系列即時模型"
+      "1. 重新定義 DEAL 信號的過濾機制以排除談判噪音",
+      "2. 強化盤前 RELIEF 信號與成交量變化的關聯分析"
     ]
   },
   "today_prediction": {
@@ -73,12 +62,12 @@
     "hold_days": 1,
     "confidence": 0.85,
     "active_signals": [
-      "A3_relief_rocket",
+      "RELIEF",
       "ACTION"
     ],
     "suppressing_signals": [
       "DEAL_FATIGUE"
     ],
-    "note": "當前市場對 RELIEF 與 ACTION 的敏感度極高，抵銷了 DEAL 訊號的疲軟。"
+    "note": "高信心度信號 RELIEF 與 ACTION 盤前共振，預期當天動能強勁，無視 DEAL 的低信心度。"
   }
 }
