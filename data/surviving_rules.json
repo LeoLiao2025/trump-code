@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-15T16:06:21Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-05-16T15:01:56Z",
+    "evolved_rules_added": 46
   },
   "rules": [
     {
@@ -12543,7 +12543,12 @@
       "parents": [
         "is_friday+kw_economy",
         "is_friday+kw_dow_2plus"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -12567,7 +12572,12 @@
       "parents": [
         "is_friday+kw_beautiful",
         "kw_ban+open_ban"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -12936,7 +12946,12 @@
       "parents": [
         "is_friday+kw_corrupt",
         "is_friday+kw_tremendous"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -12961,7 +12976,12 @@
       "parents": [
         "kw_interest_rate+kw_tremendous",
         "kw_interest_rate+kw_signed"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14145,7 +14165,12 @@
       "origin": "mutation_replace",
       "born_date": "2026-05-15",
       "weight": 1.0,
-      "parent": "kw_deal+kw_perfect+kw_thank_you_for_your_attention"
+      "parent": "kw_deal+kw_perfect+kw_thank_you_for_your_attention",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [

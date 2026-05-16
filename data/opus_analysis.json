@@ -1,74 +1,89 @@
 {
-  "date": "2026-05-15",
-  "analyzed_at": "2026-05-15T16:06:44Z",
+  "date": "2026-05-16",
+  "analyzed_at": "2026-05-16T15:02:18Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_DEAL_SYNERGY",
-    "SIGNATURE_VOLUME_CONVERGENCE"
+    "RELIEF_VELOCITY",
+    "MACRO_NOISE_OVERRIDE",
+    "ACTION_EXECUTION_DELAY"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『利多醞釀』轉向『政策僵局』，導致預期落空。",
-    "A2_deal_bullish": "『DEAL』關鍵字出現頻率過高導致邊際效應遞減，市場對缺乏細節的聲明產生免疫。"
+    "C1_burst_silence": "市場對沉默的解讀從「蓄勢待發」轉向「政策真空的不確定性」，導致長沉默後的做多信號失效。",
+    "A2_deal_bullish": "DEAL 關鍵字邊際效用遞減，市場對口頭協議產生免疫，需配合具體 ACTION 才有反應。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應邏輯從『語義內容』轉向『行為特徵』（如發文頻率與設備簽名）",
-    "情緒信號（RELIEF/ACTION）的權威性遠高於具體政策關鍵字（DEAL/TARIFF）"
+    "市場反應重心從『預期（DEAL）』轉向『執行（ACTION）』",
+    "深夜推文（C3）的負面衝擊已被市場提前消化，轉為雜訊",
+    "沉默期（C1）現在伴隨更高的波動率而非單向反彈"
   ],
   "new_rules": [
     {
-      "id": "E1_behavioral_surge",
-      "name": "行為特徵共振規則",
+      "id": "E1_relief_action_sync",
+      "name": "緩解執行同步規則",
       "features": [
-        "D2_sig_change",
-        "D3_volume_spike"
+        "RELIEF",
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
+    },
+    {
+      "id": "E2_volume_panic_reversal",
+      "name": "恐慌放量反轉",
+      "features": [
+        "D3_volume_spike",
+        "THREAT"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.75
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.15,
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "C1_burst_silence": 0.5,
+      "A2_deal_bullish": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 且預期報酬為負，失去統計意義)"
+      "C3_night_alert（勝率 37.5% 低於隨機水平）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
+    "CHINA": 0.6,
     "DEAL": 0.5,
-    "CHINA": 0.6
+    "THREAT": 0.6
   },
   "system_health": {
-    "score": "72/100",
-    "grade": "B",
+    "score": "82/100",
+    "grade": "A-",
     "priorities": [
-      "1. 重新定義 DEAL 信號的觸發門檻",
-      "2. 增加對發文設備簽名切換的即時監控權重"
+      "1. 重新定義 C1 沉默期的過濾機制，加入外部波動率指標",
+      "2. 強化 A3 與 B3 的權重組合以捕捉當前最強動能",
+      "3. 移除低勝率的深夜預警模型"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.78,
+    "confidence": 0.85,
     "active_signals": [
       "A3_relief_rocket",
-      "D2_sig_change"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_decay"
+      "C1_burst_silence_decay"
     ],
-    "note": "行為特徵信號（簽名與發文量）展現強烈轉折跡象，優於傳統關鍵字預測。"
+    "note": "RELIEF 與 ACTION 的高信心度組合抵消了 DEAL 關鍵字的疲軟，短期看漲動能強勁。"
   }
 }
