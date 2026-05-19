@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-18",
-  "prepared_at": "2026-05-18T16:51:08Z",
+  "date": "2026-05-19",
+  "prepared_at": "2026-05-19T16:52:25Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,44 +109,42 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-18",
-    "crossover": 13,
-    "mutation": 15,
+    "date": "2026-05-19",
+    "crossover": 14,
+    "mutation": 13,
     "distill": 16,
-    "total_new": 44,
+    "total_new": 43,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_tremendous",
-          "open_dow",
-          "kw_interest_rate"
+          "open_russia",
+          "kw_economy"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 100.0,
+        "score": 86.7,
         "origin": "crossover"
       },
       {
         "features": [
-          "kw_ban",
-          "avg_len_long"
-        ],
-        "direction": "LONG",
-        "hold": 2,
-        "score": 88.9,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "open_china",
-          "kw_china",
-          "kw_inflation"
+          "is_friday",
+          "questions_yes"
         ],
         "direction": "LONG",
         "hold": 3,
-        "score": 87.5,
-        "origin": "crossover"
+        "score": 85.7,
+        "origin": "mutation_remove"
+      },
+      {
+        "features": [
+          "is_friday",
+          "questions_yes"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 85.7,
+        "origin": "distilled"
       }
     ]
   },
@@ -162,9 +160,8 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-05-18",
+    "date": "2026-05-19",
     "signals": [
-      "CHINA",
       "IRAN"
     ],
     "opportunities": [],

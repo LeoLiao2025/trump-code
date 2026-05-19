@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-18T16:50:56Z",
-    "evolved_rules_added": 44
+    "last_evolution": "2026-05-19T16:52:12Z",
+    "evolved_rules_added": 43
   },
   "rules": [
     {
@@ -12602,7 +12602,12 @@
       "parents": [
         "kw_economy+kw_interest_rate",
         "kw_beautiful+kw_interest_rate"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14394,7 +14399,12 @@
       "parents": [
         "kw_ban+kw_president_of_the_united_states",
         "avg_len_long+kw_energy_2plus"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
