@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-21",
-  "prepared_at": "2026-05-21T16:41:51Z",
+  "date": "2026-05-22",
+  "prepared_at": "2026-05-22T16:29:43Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,22 +109,22 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-21",
-    "crossover": 16,
-    "mutation": 12,
+    "date": "2026-05-22",
+    "crossover": 15,
+    "mutation": 13,
     "distill": 16,
     "total_new": 44,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "is_friday",
           "kw_thank_you_for_your_attention",
-          "questions_yes"
+          "is_friday",
+          "kw_energy"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 94.4,
+        "hold": 1,
+        "score": 92.3,
         "origin": "crossover"
       },
       {
@@ -139,13 +139,13 @@
       },
       {
         "features": [
-          "is_friday",
+          "kw_signed",
           "kw_deal"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 84.8,
-        "origin": "distilled"
+        "hold": 2,
+        "score": 85.0,
+        "origin": "crossover"
       }
     ]
   },

@@ -1,26 +1,25 @@
 {
-  "date": "2026-05-21",
-  "analyzed_at": "2026-05-21T16:42:19Z",
+  "date": "2026-05-22",
+  "analyzed_at": "2026-05-22T16:29:54Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "DEAL_FATIGUE",
-    "POLICY_PIVOT_SILENCE",
-    "ACTION_RELIEF_SYNERGY"
+    "Signature-specific emoji patterns in D2_sig_change",
+    "RELIEF-only sentiment without DEAL context",
+    "Intra-day volume acceleration prior to D3_volume_spike"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默不再代表情緒冷卻，而是政策轉向前的真空期，市場因不確定性而拋售。",
-    "A2_deal_bullish": "DEAL 關鍵字邊際效用遞減，市場對口頭承諾產生免疫，轉向要求實質 ACTION。"
+    "C1_burst_silence": "Market fatigue during silence periods; silence now correlates with macro uncertainty rather than accumulation, leading to failed LONG breakouts.",
+    "A2_deal_bullish": "Keyword inflation; the term DEAL has lost its psychological impact without accompanying ACTION signals, resulting in diminishing returns."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應從『言論驅動』轉向『行動驅動』",
-    "RELIEF 信號的權重顯著超越 DEAL",
-    "深夜推文的負面衝擊力正在減弱，轉為開盤後的震盪而非單向跳空"
+    "Shift from verbal promises (DEAL) to concrete relief/action (RELIEF/ACTION) as primary market drivers.",
+    "Structural metadata (Signature/Volume) is outperforming semantic content (Keywords)."
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "救贖行動組合拳",
+      "id": "E1_relief_action_synergy",
+      "name": "Relief-Action Synergy",
       "features": [
         "RELIEF",
         "ACTION"
@@ -31,10 +30,10 @@
     },
     {
       "id": "E2_deal_fatigue_short",
-      "name": "協議疲勞反轉",
+      "name": "Deal Fatigue Reversal",
       "features": [
         "DEAL",
-        "LOW_VOLATILITY"
+        "low_volume"
       ],
       "direction": "SHORT",
       "hold": 1,
@@ -43,46 +42,47 @@
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
+      "A3_relief_rocket": 1.25,
       "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.1
+      "D2_sig_change": 1.15
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
       "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40%，且樣本數過少，雜訊過高)"
+      "C3_night_alert (Win rate 37.5% is statistically detrimental)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
+    "DEAL": 0.5,
     "CHINA": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新定義 DEAL 信號的有效性閾值",
-      "2. 強化 RELIEF 與 ACTION 同時出現時的加乘邏輯",
-      "3. 調查 C1 失敗案例中的宏觀背景因子"
+      "1. Recalibrate C1 silence duration thresholds to account for market fatigue.",
+      "2. Integrate D2 signature-style analysis into A-series semantic models.",
+      "3. Deprecate low-performing night-alert models."
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.82,
     "active_signals": [
       "RELIEF",
-      "ACTION"
+      "ACTION",
+      "D2_sig_change"
     ],
     "suppressing_signals": [
-      "DEAL_FATIGUE"
+      "DEAL_inflation"
     ],
-    "note": "RELIEF 與 ACTION 的高信心度抵銷了 DEAL 的疲軟，短期看漲。"
+    "note": "Strong synergy between RELIEF and ACTION signals suggests a high-probability short-term rally, overriding DEAL keyword decay."
   }
 }
