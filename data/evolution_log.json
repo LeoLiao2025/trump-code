@@ -2246,5 +2246,45 @@
         "origin": "distilled"
       }
     ]
+  },
+  {
+    "date": "2026-05-24",
+    "crossover": 15,
+    "mutation": 11,
+    "distill": 16,
+    "total_new": 42,
+    "total_rules_after": 600,
+    "top_3": [
+      {
+        "features": [
+          "is_friday",
+          "questions_yes"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 85.7,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "is_friday",
+          "kw_deal"
+        ],
+        "direction": "LONG",
+        "hold": 1,
+        "score": 84.8,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "is_friday",
+          "kw_dow_2plus"
+        ],
+        "direction": "LONG",
+        "hold": 1,
+        "score": 83.7,
+        "origin": "distilled"
+      }
+    ]
   }
 ]
