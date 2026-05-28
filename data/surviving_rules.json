@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-27T17:23:45Z",
-    "evolved_rules_added": 38
+    "last_evolution": "2026-05-28T17:37:38Z",
+    "evolved_rules_added": 47
   },
   "rules": [
     {
@@ -12632,7 +12632,12 @@
       "parents": [
         "excl_heavy+kw_tariffs_2plus",
         "is_friday+kw_beautiful"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14600,7 +14605,12 @@
       "parents": [
         "kw_fake+mostly_open",
         "open_tariffs+open_trade"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
