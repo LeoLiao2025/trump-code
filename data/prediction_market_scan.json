@@ -1,7 +1,8 @@
 {
-  "date": "2026-05-25",
+  "date": "2026-05-29",
   "signals": [
     "DEAL",
+    "CHINA",
     "IRAN",
     "DEAL_ONLY"
   ],
