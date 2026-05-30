@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-29",
-  "prepared_at": "2026-05-29T17:37:08Z",
+  "date": "2026-05-30",
+  "prepared_at": "2026-05-30T15:14:05Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,42 +109,45 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-05-29",
-    "crossover": 15,
-    "mutation": 15,
+    "date": "2026-05-30",
+    "crossover": 16,
+    "mutation": 9,
     "distill": 16,
-    "total_new": 46,
+    "total_new": 41,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_tariffs_2plus",
-          "questions_yes"
+          "open_trade",
+          "open_thank_you_for_your_attention",
+          "kw_wonderful"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 86.4,
+        "hold": 1,
+        "score": 100.0,
         "origin": "crossover"
       },
       {
         "features": [
           "is_friday",
-          "questions_yes"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 85.7,
-        "origin": "distilled"
-      },
-      {
-        "features": [
-          "is_friday",
-          "kw_deal"
+          "kw_economy",
+          "kw_energy"
         ],
         "direction": "LONG",
         "hold": 1,
-        "score": 84.8,
-        "origin": "distilled"
+        "score": 90.9,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "open_tariffs",
+          "kw_thank_you_for_your_attention",
+          "kw_economy"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "crossover"
       }
     ]
   },

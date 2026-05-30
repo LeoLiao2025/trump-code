@@ -1,24 +1,26 @@
 {
-  "date": "2026-05-29",
-  "analyzed_at": "2026-05-29T17:37:18Z",
+  "date": "2026-05-30",
+  "analyzed_at": "2026-05-30T15:14:18Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_DEAL_SYNERGY",
-    "ACTION_POST_SILENCE"
+    "FED_PIVOT_HINT",
+    "ENERGY_COST_REDUCTION",
+    "ELECTION_YEAR_STIMULUS"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性』，導致長沉默後的反彈力道被避險情緒抵消。",
-    "A2_deal_bullish": "『DEAL』關鍵字出現邊際效用遞減現象，市場在缺乏具體協議細節下不再盲目追多。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性』，導致長沉默後的做多動能衰竭。",
+    "A2_deal_bullish": "『DEAL』一詞出現頻率過高導致邊際效應遞減，市場對口頭承諾的信任度下降，需配合實際簽署動作。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『口頭承諾(DEAL)』轉向『實質緩解(RELIEF)』與『具體行動(ACTION)』",
-    "深夜推文(C3)的負面衝擊力道減弱，顯示市場對非交易時段的干擾產生免疫"
+    "市場反應重心從『貿易條件』轉向『流動性救濟』(RELIEF)",
+    "發文頻率(Volume Spike)的預測準確度已超越單一關鍵字分析",
+    "簽名切換(D2)成為正式政策轉向的領先指標"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "緩解行動共振",
+      "id": "E1_relief_action_sync",
+      "name": "救濟行動同步規則",
       "features": [
         "RELIEF",
         "ACTION"
@@ -26,20 +28,31 @@
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
+    },
+    {
+      "id": "E2_volume_capitulation",
+      "name": "發文量極致恐慌",
+      "features": [
+        "D3_volume_spike",
+        "THREAT"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "confidence": 0.75
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.5,
-      "D3_volume_spike": 1.3,
-      "D2_sig_change": 1.2
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.2,
+      "D2_sig_change": 1.15
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.5,
-      "C1_burst_silence": 0.4
+      "C1_burst_silence": 0.5,
+      "A2_deal_bullish": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 且期望值為負，失去預測價值)"
+      "C3_night_alert (勝率低於40%且風險回報比極差)"
     ]
   },
   "signal_confidence": {
@@ -47,28 +60,29 @@
     "RELIEF": 0.95,
     "TARIFF": 0.7,
     "CHINA": 0.6,
-    "DEAL": 0.55
+    "DEAL": 0.5
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 模型，加入市場波動率(VIX)作為過濾器",
-      "2. 強化 A3 模型在盤前交易時段的自動化執行權重"
+      "1. 修正 C1 模型對『沉默期』的參數定義",
+      "2. 整合 D2 簽名特徵至 A 系列模型以過濾虛假信號",
+      "3. 監控 2026 選舉年特有的情緒波動模式"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.92,
     "active_signals": [
       "A3_relief_rocket",
-      "D3_volume_spike"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish"
+      "A1_tariff_bearish"
     ],
-    "note": "當前市場由實質利多(RELIEF)驅動，應忽略疲軟的口頭協議信號，專注於盤前飆升機會。"
+    "note": "盤前出現強烈 RELIEF 與 ACTION 信號，歷史勝率極高，無視短期關稅雜訊。"
   }
 }
