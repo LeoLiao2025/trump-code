@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-05-30T15:13:51Z",
-    "evolved_rules_added": 41
+    "last_evolution": "2026-05-31T15:20:27Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -12662,6 +12662,36 @@
       "parents": [
         "avg_len_long+kw_india",
         "is_friday+open_thank_you_for_your_attention"
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
+    },
+    {
+      "features": [
+        "kw_wonderful",
+        "kw_economy",
+        "kw_interest_rate"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "id": "993438232708",
+      "n_cond": 3,
+      "train_trades": 5,
+      "train_win_rate": 100.0,
+      "train_avg": 1.132,
+      "test_trades": 3,
+      "test_win_rate": 100.0,
+      "test_avg": 1.114,
+      "combined_score": 100.0,
+      "origin": "crossover",
+      "born_date": "2026-05-31",
+      "weight": 1.0,
+      "parents": [
+        "kw_wonderful+open_trade",
+        "kw_economy+kw_interest_rate"
       ]
     },
     {
@@ -13823,7 +13853,12 @@
       "parents": [
         "is_friday+kw_economy",
         "kw_energy+kw_interest_rate"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14817,36 +14852,6 @@
       "parents": [
         "kw_tariffs_2plus+kw_thank_you_for_your_attention",
         "is_friday+kw_beautiful"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_tremendous",
-        "kw_economy",
-        "is_friday"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "26f25a5bdf51",
-      "n_cond": 3,
-      "train_trades": 8,
-      "train_win_rate": 75.0,
-      "train_avg": 1.22,
-      "test_trades": 4,
-      "test_win_rate": 100.0,
-      "test_avg": 0.778,
-      "combined_score": 87.5,
-      "origin": "crossover",
-      "born_date": "2026-03-15",
-      "weight": 1.0,
-      "parents": [
-        "is_friday+kw_signed",
-        "kw_deal_2plus+kw_economy"
       ],
       "learn_stats": {
         "correct": 0,
