@@ -2779,5 +2779,46 @@
         "origin": "distilled"
       }
     ]
+  },
+  {
+    "date": "2026-06-06",
+    "crossover": 16,
+    "mutation": 16,
+    "distill": 17,
+    "total_new": 49,
+    "total_rules_after": 600,
+    "top_3": [
+      {
+        "features": [
+          "kw_beautiful",
+          "open_tariff",
+          "kw_tariffs_2plus"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 88.9,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "pre_great",
+          "kw_signed"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 87.5,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "volume_falling_3d",
+          "kw_beautiful"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
+      }
+    ]
   }
 ]

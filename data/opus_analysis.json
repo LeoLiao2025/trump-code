@@ -1,27 +1,28 @@
 {
-  "date": "2026-06-05",
-  "analyzed_at": "2026-06-05T16:33:01Z",
+  "date": "2026-06-06",
+  "analyzed_at": "2026-06-06T15:20:44Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "INFRASTRUCTURE_STIMULUS",
-    "FED_PRESSURE_HINT"
+    "FED_PRESSURE",
+    "ELECTION_RALLY_HINT"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『長沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性』，導致預期的做多反彈失效。",
-    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場對口頭協議的信任度下降，產生『狼來了』效應。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性恐慌』，導致預期反彈失效。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，市場在缺乏具體協議細節下表現出『狼來了』效應的鈍化。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『協議(DEAL)』轉向『具體行動(ACTION)』與『壓力釋放(RELIEF)』",
-    "深夜推文(C3)的恐慌殺傷力顯著下降，市場韌性增強"
+    "溝通重心從貿易談判（DEAL）轉向直接的經濟干預（RELIEF/ACTION）",
+    "深夜推文（C3）的恐慌殺傷力顯著下降，市場對非交易時段的負面消息出現免疫力"
   ],
   "new_rules": [
     {
-      "id": "E1_action_relief_sync",
-      "name": "行動緩解同步規則",
+      "id": "E1_relief_action_sync",
+      "name": "救濟行動同步觸發",
       "features": [
+        "RELIEF",
         "ACTION",
-        "RELIEF"
+        "PRE_MARKET"
       ],
       "direction": "LONG",
       "hold": 1,
@@ -34,11 +35,11 @@
       "D3_volume_spike": 1.15
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "A2_deal_bullish": 0.7,
+      "C1_burst_silence": 0.65
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 低於隨機水平且樣本不足)"
+      "C3_night_alert (勝率低於 40% 且期望值為負)"
     ]
   },
   "signal_confidence": {
@@ -49,11 +50,11 @@
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "75/100",
-    "grade": "B",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. 修正 DEAL 信號的過度觸發問題",
-      "2. 強化 A3 模型在盤前交易時段的自動化捕捉"
+      "1. 修正 C1 模式在熊市背景下的多頭陷阱過濾",
+      "2. 強化 A3 救濟信號與盤前交易量的關聯分析"
     ]
   },
   "today_prediction": {
@@ -68,6 +69,6 @@
     "suppressing_signals": [
       "TARIFF"
     ],
-    "note": "RELIEF 與 ACTION 的高信心度組合足以抵銷 TARIFF 的負面情緒，預期盤前動能延續至收盤。"
+    "note": "RELIEF 與 ACTION 雙高信心度信號共振，抵銷了 TARIFF 的潛在壓力，預計當天出現強勁反彈。"
   }
 }
