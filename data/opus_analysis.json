@@ -1,45 +1,57 @@
 {
-  "date": "2026-06-06",
-  "analyzed_at": "2026-06-06T15:20:44Z",
+  "date": "2026-06-07",
+  "analyzed_at": "2026-06-07T15:27:13Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "FED_PRESSURE",
-    "ELECTION_RALLY_HINT"
+    "REVERSAL_CONFIRM",
+    "STABILITY_ACT"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性恐慌』，導致預期反彈失效。",
-    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，市場在缺乏具體協議細節下表現出『狼來了』效應的鈍化。"
+    "C1_burst_silence": "市場進入結構性空頭環境，長沉默被解讀為政策真空而非蓄勢待發，導致做多信號失效。",
+    "A2_deal_bullish": "市場對協議內容產生審美疲勞，缺乏具體執行細節導致邊際效應遞減，無法支撐漲幅。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "溝通重心從貿易談判（DEAL）轉向直接的經濟干預（RELIEF/ACTION）",
-    "深夜推文（C3）的恐慌殺傷力顯著下降，市場對非交易時段的負面消息出現免疫力"
+    "市場反應從「協議預期」轉向「實質救濟行動」",
+    "深夜推文的恐慌邊際效應正在遞減",
+    "簽名切換與發文量暴增的關聯性顯著提升"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_sync",
-      "name": "救濟行動同步觸發",
+      "id": "E1_relief_action_combo",
+      "name": "救濟行動組合拳",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET"
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
+    },
+    {
+      "id": "E2_volume_sig_sync",
+      "name": "量能簽名同步轉折",
+      "features": [
+        "D3_volume_spike",
+        "D2_sig_change"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.82
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.15
+      "A3_relief_rocket": 1.3,
+      "D3_volume_spike": 1.25,
+      "D2_sig_change": 1.2
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.65
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.75
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40% 且期望值為負)"
+      "C3_night_alert (勝率 37.5% 低於隨機水平且期望值為負)"
     ]
   },
   "signal_confidence": {
@@ -53,22 +65,24 @@
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 模式在熊市背景下的多頭陷阱過濾",
-      "2. 強化 A3 救濟信號與盤前交易量的關聯分析"
+      "1. 修正 C1 模型在空頭趨勢下的過濾邏輯",
+      "2. 整合 D2 與 D3 信號以捕捉恐慌底部轉折",
+      "3. 降低對 DEAL 關鍵字的依賴權重"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.92,
     "active_signals": [
       "RELIEF",
-      "ACTION"
+      "ACTION",
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
       "TARIFF"
     ],
-    "note": "RELIEF 與 ACTION 雙高信心度信號共振，抵銷了 TARIFF 的潛在壓力，預計當天出現強勁反彈。"
+    "note": "高信心的 RELIEF 與 ACTION 信號重疊，配合發文量暴增觸發的底部信號，短期看漲動能強勁。"
   }
 }
