@@ -2942,5 +2942,45 @@
         "origin": "distilled"
       }
     ]
+  },
+  {
+    "date": "2026-06-10",
+    "crossover": 16,
+    "mutation": 15,
+    "distill": 16,
+    "total_new": 47,
+    "total_rules_after": 600,
+    "top_3": [
+      {
+        "features": [
+          "kw_never_let_you_down",
+          "kw_president_of_the_united_states"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
+      },
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_tremendous"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_beautiful"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "distilled"
+      }
+    ]
   }
 ]

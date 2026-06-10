@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-09",
-  "prepared_at": "2026-06-09T16:34:10Z",
+  "date": "2026-06-10",
+  "prepared_at": "2026-06-10T17:25:39Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,23 +109,22 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-06-09",
-    "crossover": 9,
-    "mutation": 11,
+    "date": "2026-06-10",
+    "crossover": 16,
+    "mutation": 15,
     "distill": 16,
-    "total_new": 36,
+    "total_new": 47,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_dow_2plus",
-          "kw_president_of_the_united_states",
-          "kw_never_let_you_down"
+          "kw_never_let_you_down",
+          "kw_president_of_the_united_states"
         ],
         "direction": "LONG",
-        "hold": 1,
-        "score": 93.8,
-        "origin": "crossover"
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
       },
       {
         "features": [
@@ -161,7 +160,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-06-08",
+    "date": "2026-06-10",
     "signals": [
       "DEAL",
       "IRAN",
