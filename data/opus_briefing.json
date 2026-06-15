@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-14",
-  "prepared_at": "2026-06-14T14:52:52Z",
+  "date": "2026-06-15",
+  "prepared_at": "2026-06-15T16:03:59Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,7 +109,7 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-06-14",
+    "date": "2026-06-15",
     "crossover": 16,
     "mutation": 16,
     "distill": 16,
@@ -118,9 +118,9 @@
     "top_3": [
       {
         "features": [
-          "is_friday",
-          "kw_tariff",
-          "open_jobs"
+          "open_tariff",
+          "volume_falling_3d",
+          "kw_thank_you_for_your_attention"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -129,8 +129,9 @@
       },
       {
         "features": [
-          "open_energy",
-          "avg_len_long"
+          "mostly_open",
+          "kw_thank_you_for_your_attention",
+          "kw_fake"
         ],
         "direction": "LONG",
         "hold": 1,
@@ -139,13 +140,14 @@
       },
       {
         "features": [
-          "kw_interest_rate",
-          "kw_tremendous"
+          "kw_economy",
+          "kw_president_of_the_united_states",
+          "kw_biden"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 87.5,
-        "origin": "distilled"
+        "hold": 2,
+        "score": 88.9,
+        "origin": "crossover"
       }
     ]
   },
@@ -161,7 +163,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-06-14",
+    "date": "2026-06-15",
     "signals": [
       "DEAL",
       "IRAN",
