@@ -171,5 +171,67 @@
     "status": "VERIFIED",
     "actual_return": 0.297,
     "correct": true
+  },
+  {
+    "signal_date": "2026-06-15",
+    "entry_date": "2026-06-16",
+    "exit_date": "2026-06-16",
+    "direction": "LONG",
+    "hold_days": 2,
+    "rule_id": "R0006",
+    "features": [
+      "kw_deal",
+      "kw_perfect",
+      "kw_thank_you_for_your_attention"
+    ],
+    "status": "VERIFIED",
+    "actual_return": -0.196,
+    "correct": false
+  },
+  {
+    "signal_date": "2026-06-15",
+    "entry_date": "2026-06-16",
+    "exit_date": "2026-06-16",
+    "direction": "LONG",
+    "hold_days": 2,
+    "rule_id": "R0011",
+    "features": [
+      "kw_deal",
+      "kw_perfect"
+    ],
+    "status": "VERIFIED",
+    "actual_return": -0.196,
+    "correct": false
+  },
+  {
+    "signal_date": "2026-06-15",
+    "entry_date": "2026-06-16",
+    "exit_date": "2026-06-16",
+    "direction": "LONG",
+    "hold_days": 3,
+    "rule_id": "R0079",
+    "features": [
+      "kw_deal",
+      "kw_perfect"
+    ],
+    "status": "VERIFIED",
+    "actual_return": -0.196,
+    "correct": false
+  },
+  {
+    "signal_date": "2026-06-15",
+    "entry_date": "2026-06-16",
+    "exit_date": "2026-06-16",
+    "direction": "LONG",
+    "hold_days": 3,
+    "rule_id": "R0085",
+    "features": [
+      "kw_deal",
+      "kw_perfect",
+      "kw_thank_you_for_your_attention"
+    ],
+    "status": "VERIFIED",
+    "actual_return": -0.196,
+    "correct": false
   }
 ]

@@ -1,24 +1,26 @@
 {
-  "date": "2026-06-14",
-  "analyzed_at": "2026-06-14T14:53:02Z",
+  "date": "2026-06-16",
+  "analyzed_at": "2026-06-16T15:45:58Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "FED_CRITICISM",
-    "MARKET_STABILITY_ASSURANCE"
+    "Macro_Volatility_Override",
+    "Geopolitical_Escalation_Silence",
+    "Market_Immunity_to_Verbal_Deals"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從利空出盡轉向對政策不確定性的恐懼，導致長沉默後的反彈力道消失。",
-    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，若無具體 ACTION 配合，市場傾向視為口頭護盤而非實質利多。"
+    "C1_burst_silence": "在極端波動環境下，長沉默被市場解讀為政策不確定性而非蓄勢待發，導致預測方向完全相反。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，市場對缺乏具體細節的口頭協議已產生免疫力，轉向實質行動確認。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『口頭協議』轉移至『盤前具體行動』",
-    "深夜推文的負面衝擊力正在減弱，盤前信號的權重顯著上升"
+    "市場反應邏輯從『情緒驅動』轉向『行動驅動(ACTION-based)』",
+    "沉默期的市場心理從『期待利多』轉向『恐懼未知』",
+    "深夜推文的負面衝擊力正在減弱，但盤前 RELIEF 信號的爆發力增強"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "救市行動雙重確認",
+      "id": "E1_relief_action_sync",
+      "name": "緩解行動同步規則",
       "features": [
         "RELIEF",
         "ACTION"
@@ -26,6 +28,17 @@
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
+    },
+    {
+      "id": "E2_silence_volatility_filter",
+      "name": "高波動沉默過濾",
+      "features": [
+        "C1_burst_silence",
+        "VIX > 25"
+      ],
+      "direction": "NEUTRAL",
+      "hold": 0,
+      "confidence": 0.9
     }
   ],
   "model_adjustments": {
@@ -34,8 +47,8 @@
       "D3_volume_spike": 1.15
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.65
+      "C1_burst_silence": 0.5,
+      "A2_deal_bullish": 0.6
     },
     "eliminate": [
       "C3_night_alert (勝率 37.5% 低於隨機水平且期望值為負)"
@@ -45,15 +58,17 @@
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.5,
-    "CHINA": 0.6
+    "DEAL": 0.45,
+    "CHINA": 0.6,
+    "THREAT": 0.5
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 模型的沉默期定義，加入波動率過濾器",
-      "2. 強化 A3 模型與盤前交易量的關聯分析"
+      "1. 修正 C1 模型在震盪市的邏輯偏差",
+      "2. 強化 A3 模型與盤前數據的聯動分析",
+      "3. 導入 VIX 指標作為情緒信號的過濾器"
     ]
   },
   "today_prediction": {
@@ -66,8 +81,8 @@
       "ACTION"
     ],
     "suppressing_signals": [
-      "TARIFF"
+      "DEAL_fatigue"
     ],
-    "note": "高勝率模型 A3 觸發，配合 ACTION 強力信號，預期今日盤勢受救市情緒主導。"
+    "note": "高勝率模型 A3 觸發，配合高信心 RELIEF 信號，預計盤中將有強勁拉升。"
   }
 }

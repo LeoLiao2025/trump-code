@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-06-15T16:03:46Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-06-16T15:45:32Z",
+    "evolved_rules_added": 43
   },
   "rules": [
     {
@@ -12782,6 +12782,35 @@
       "parents": [
         "kw_signed+open_tariff",
         "kw_executive_order+kw_thank_you_for_your_attention"
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
+    },
+    {
+      "features": [
+        "open_china",
+        "kw_wonderful"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "id": "3da1d5a0affe",
+      "n_cond": 2,
+      "train_trades": 8,
+      "train_win_rate": 100.0,
+      "train_avg": 2.423,
+      "test_trades": 3,
+      "test_win_rate": 100.0,
+      "test_avg": 0.566,
+      "combined_score": 100.0,
+      "origin": "crossover",
+      "born_date": "2026-06-16",
+      "weight": 1.0,
+      "parents": [
+        "kw_maga+kw_wonderful",
+        "kw_inflation+kw_thank_you_for_your_attention"
       ]
     },
     {
@@ -13329,7 +13358,12 @@
       "parents": [
         "kw_fake+mostly_open",
         "kw_corrupt+kw_thank_you_for_your_attention"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14831,36 +14865,6 @@
       "parents": [
         "kw_tariff+kw_thank_you_for_your_attention",
         "is_friday+kw_signed"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "open_tariffs",
-        "kw_tariffs",
-        "is_friday"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "eab972311c79",
-      "n_cond": 3,
-      "train_trades": 9,
-      "train_win_rate": 77.8,
-      "train_avg": 0.965,
-      "test_trades": 3,
-      "test_win_rate": 100.0,
-      "test_avg": 0.597,
-      "combined_score": 88.9,
-      "origin": "crossover",
-      "born_date": "2026-04-27",
-      "weight": 1.0,
-      "parents": [
-        "kw_biden_2plus+kw_tariffs",
-        "is_friday+kw_economy"
       ],
       "learn_stats": {
         "correct": 0,
