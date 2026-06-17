@@ -1,21 +1,21 @@
 {
-  "date": "2026-06-16",
-  "generated_at": "2026-06-16T15:45:27Z",
-  "posts_today": 21,
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T15:11:21Z",
+  "posts_today": 9,
   "latest_post": {
-    "time": "2026-06-15T23:17",
-    "content_preview": "Iran has agreed to never have a Nuclear Weapon! Also, the story that the U.S. is paying Iran 300 mil"
+    "time": "2026-06-17T14:01",
+    "content_preview": "I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for"
   },
   "signals_detected": [
     "DEAL",
     "IRAN",
     "DEAL_ONLY"
   ],
-  "models_triggered": 4,
+  "models_triggered": 0,
   "direction_summary": {
-    "LONG": 4,
+    "LONG": 0,
     "SHORT": 0,
-    "consensus": "BULLISH"
+    "consensus": "NEUTRAL"
   },
   "historical_hit_rate": {
     "verified": 15,
@@ -23,56 +23,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-06-16",
-    "close": 7534.0
+    "date": "2026-06-17",
+    "close": 7502.81
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-06-16\nPosts today: 21 | Models triggered: 4\nSignals: DEAL, IRAN, DEAL_ONLY\nConsensus: 4 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Iran has agreed to never have a Nuclear Weapon! Also, the story that the U.S. is paying Iran 300 mil",
-    "zh": "川普密碼每日報告 -- 2026-06-16\n今日推文: 21 篇 | 觸發模型: 4 組\n偵測信號: Deal, 伊朗, 只有Deal沒有關稅\n共識方向: 4 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Iran has agreed to never have a Nuclear Weapon! Also, the story that the U.S. is paying Iran 300 mil",
-    "ja": "トランプ・コード日次レポート -- 2026-06-16\n本日の投稿: 21件 | トリガーモデル: 4組\n検出シグナル: ディール, イラン, Dealのみ（関税無し）\nコンセンサス: 4組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Iran has agreed to never have a Nuclear Weapon! Also, the story that the U.S. is paying Iran 300 mil"
+    "en": "Trump Code Daily Report -- 2026-06-17\nPosts today: 9 | Models triggered: 0\nSignals: DEAL, IRAN, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for",
+    "zh": "川普密碼每日報告 -- 2026-06-17\n今日推文: 9 篇 | 觸發模型: 0 組\n偵測信號: Deal, 伊朗, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for",
+    "ja": "トランプ・コード日次レポート -- 2026-06-17\n本日の投稿: 9件 | トリガーモデル: 0組\n検出シグナル: ディール, イラン, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for"
   },
-  "triggered_rules_sample": [
-    {
-      "features": [
-        "kw_deal",
-        "kw_perfect",
-        "kw_thank_you_for_your_attention"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "train_wr": 100.0,
-      "test_wr": 100.0
-    },
-    {
-      "features": [
-        "kw_deal",
-        "kw_perfect"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "train_wr": 100.0,
-      "test_wr": 100.0
-    },
-    {
-      "features": [
-        "kw_deal",
-        "kw_perfect"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "train_wr": 100.0,
-      "test_wr": 100.0
-    },
-    {
-      "features": [
-        "kw_deal",
-        "kw_perfect",
-        "kw_thank_you_for_your_attention"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "train_wr": 100.0,
-      "test_wr": 100.0
-    }
-  ]
+  "triggered_rules_sample": []
 }
