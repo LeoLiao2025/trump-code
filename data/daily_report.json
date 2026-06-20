@@ -1,10 +1,10 @@
 {
-  "date": "2026-06-19",
-  "generated_at": "2026-06-19T15:08:03Z",
-  "posts_today": 7,
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T14:52:34Z",
+  "posts_today": 11,
   "latest_post": {
-    "time": "2026-06-19T12:37",
-    "content_preview": "We didn't meet out of desperation, Iran did. They are FINISHED! We'll play out the 60 days. They get"
+    "time": "2026-06-20T12:26",
+    "content_preview": "While claiming to fight corruption, Newsom solicited $340M from special interests for allies: https:"
   },
   "signals_detected": [
     "DEAL",
@@ -27,9 +27,9 @@
     "close": 7500.58
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-06-19\nPosts today: 7 | Models triggered: 0\nSignals: DEAL, IRAN, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: We didn't meet out of desperation, Iran did. They are FINISHED! We'll play out the 60 days. They get",
-    "zh": "川普密碼每日報告 -- 2026-06-19\n今日推文: 7 篇 | 觸發模型: 0 組\n偵測信號: Deal, 伊朗, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: We didn't meet out of desperation, Iran did. They are FINISHED! We'll play out the 60 days. They get",
-    "ja": "トランプ・コード日次レポート -- 2026-06-19\n本日の投稿: 7件 | トリガーモデル: 0組\n検出シグナル: ディール, イラン, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: We didn't meet out of desperation, Iran did. They are FINISHED! We'll play out the 60 days. They get"
+    "en": "Trump Code Daily Report -- 2026-06-20\nPosts today: 11 | Models triggered: 0\nSignals: DEAL, IRAN, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: While claiming to fight corruption, Newsom solicited $340M from special interests for allies: https:",
+    "zh": "川普密碼每日報告 -- 2026-06-20\n今日推文: 11 篇 | 觸發模型: 0 組\n偵測信號: Deal, 伊朗, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: While claiming to fight corruption, Newsom solicited $340M from special interests for allies: https:",
+    "ja": "トランプ・コード日次レポート -- 2026-06-20\n本日の投稿: 11件 | トリガーモデル: 0組\n検出シグナル: ディール, イラン, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: While claiming to fight corruption, Newsom solicited $340M from special interests for allies: https:"
   },
   "triggered_rules_sample": []
 }
