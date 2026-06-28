@@ -1,8 +1,9 @@
 {
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "signals": [
+    "TARIFF",
     "DEAL",
-    "DEAL_ONLY"
+    "IRAN"
   ],
   "opportunities": [],
   "total_scanned": 0
