@@ -1,74 +1,74 @@
 {
-  "date": "2026-07-04",
-  "analyzed_at": "2026-07-04T14:36:35Z",
+  "date": "2026-07-05",
+  "analyzed_at": "2026-07-05T14:37:11Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Signature_Consistency_Shift",
-    "Macro_Volatility_Overlay"
+    "EXECUTIVE_ORDER_HINT",
+    "MARKET_REASSURANCE_TONE"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對沉默期的解讀已產生抗藥性，且未排除外部宏觀經濟數據發布引發的負面波動。",
-    "A2_deal_bullish": "DEAL 關鍵字已從實質協議轉向談判修辭，導致其作為看漲信號的預測力大幅下降。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從利空出盡轉向對政策真空期的恐懼，導致預期落空。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，缺乏具體細節的口頭承諾不再支撐股價。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "預測重心從內容關鍵字（DEAL）轉向行為元數據（發文頻率與簽名特徵）",
-    "市場對正面情緒詞彙的反應時間縮短，對負面威脅的反應鈍化"
+    "市場反應重心從『言論威脅』轉向『行政行動(ACTION)』與『簽名變更(D2)』",
+    "深夜推文(C3)的恐慌效應大幅鈍化，市場已產生免疫力"
   ],
   "new_rules": [
     {
-      "id": "E1_sig_vol_combo",
-      "name": "簽名切換與量能共振",
+      "id": "E1_relief_action_sync",
+      "name": "緩解行動同步規則",
       "features": [
-        "D2_sig_change",
-        "D3_volume_spike"
+        "RELIEF",
+        "ACTION"
       ],
       "direction": "LONG",
-      "hold": 1,
-      "confidence": 0.82
+      "hold": 3,
+      "confidence": 0.88
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "D3_volume_spike": 1.15,
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C2_brag_top": 0.7
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.7
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40% 且樣本數過少，缺乏統計顯著性)"
+      "C3_night_alert (勝率低於40%且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
+    "DEAL": 0.5,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "72/100",
+    "score": "75/100",
     "grade": "B",
     "priorities": [
-      "1. 重新定義 C1 沉默期的時間閾值以過濾假信號",
-      "2. 整合 D 系列元數據模型作為 A 系列關鍵字模型的過濾器"
+      "1. 修正 C1 模型在波動率放大環境下的失效問題",
+      "2. 整合 D2 簽名特徵至 A 類交易模型"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
-    "hold_days": 1,
-    "confidence": 0.78,
+    "hold_days": 2,
+    "confidence": 0.85,
     "active_signals": [
-      "A3_relief_rocket",
-      "D2_sig_change"
+      "RELIEF",
+      "ACTION"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_decay"
+      "DEAL_FATIGUE"
     ],
-    "note": "高勝率的 A3 與 D2 信號共振，顯示當前市場對正式聲明與緩解情緒反應強烈。"
+    "note": "高信心度信號 RELIEF 與 ACTION 同步，且 A3 模型近期表現強勁，支持做多。"
   }
 }
