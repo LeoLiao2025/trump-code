@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-07-04T15:04:35Z",
-    "evolved_rules_added": 47
+    "last_evolution": "2026-07-05T15:12:02Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -14838,7 +14838,12 @@
       "parents": [
         "kw_china+kw_thank_you_for_your_attention",
         "kw_tariffs+kw_thank_you_for_your_attention"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14860,7 +14865,12 @@
       "origin": "mutation_replace",
       "born_date": "2026-07-04",
       "weight": 1.0,
-      "parent": "kw_tariffs_2plus+kw_thank_you_for_your_attention+volume_falling_3d"
+      "parent": "kw_tariffs_2plus+kw_thank_you_for_your_attention+volume_falling_3d",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     }
   ]
 }
