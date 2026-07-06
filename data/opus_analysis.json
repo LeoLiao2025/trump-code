@@ -1,45 +1,56 @@
 {
-  "date": "2026-07-05",
-  "analyzed_at": "2026-07-05T14:37:11Z",
+  "date": "2026-07-06",
+  "analyzed_at": "2026-07-06T15:10:22Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "EXECUTIVE_ORDER_HINT",
-    "MARKET_REASSURANCE_TONE"
+    "Signature consistency decay prior to official statements",
+    "Intra-day sentiment divergence between ACTION and DEAL keywords"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從利空出盡轉向對政策真空期的恐懼，導致預期落空。",
-    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，缺乏具體細節的口頭承諾不再支撐股價。"
+    "C1_burst_silence": "Market now interprets prolonged silence as policy paralysis or internal conflict rather than strategic preparation, leading to bearish drift.",
+    "A2_deal_bullish": "Diminishing marginal utility of 'DEAL' rhetoric; market participants are increasingly treating 'DEAL' mentions as 'sell the news' events."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『言論威脅』轉向『行政行動(ACTION)』與『簽名變更(D2)』",
-    "深夜推文(C3)的恐慌效應大幅鈍化，市場已產生免疫力"
+    "Transition from 'Deal-driven' growth to 'Relief-driven' volatility recovery",
+    "Increased predictive power of meta-data (volume, signature) over semantic content"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_sync",
-      "name": "緩解行動同步規則",
+      "id": "E1_relief_action_synergy",
+      "name": "Relief-Action Momentum",
       "features": [
         "RELIEF",
         "ACTION"
       ],
       "direction": "LONG",
-      "hold": 3,
-      "confidence": 0.88
+      "hold": 1,
+      "confidence": 0.92
+    },
+    {
+      "id": "E2_sig_vol_divergence",
+      "name": "Signature-Volume Divergence",
+      "features": [
+        "D2_sig_change",
+        "D3_volume_spike"
+      ],
+      "direction": "SHORT",
+      "hold": 1,
+      "confidence": 0.75
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.15,
-      "D2_sig_change": 1.1
+      "A3_relief_rocket": 1.3,
+      "D3_volume_spike": 1.2,
+      "D2_sig_change": 1.15
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.7
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率低於40%且期望值為負)"
+      "C3_night_alert (Accuracy 37.5% is below random noise threshold)"
     ]
   },
   "signal_confidence": {
@@ -50,25 +61,25 @@
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "75/100",
-    "grade": "B",
+    "score": "84/100",
+    "grade": "A-",
     "priorities": [
-      "1. 修正 C1 模型在波動率放大環境下的失效問題",
-      "2. 整合 D2 簽名特徵至 A 類交易模型"
+      "1. Recalibrate DEAL signal to account for market desensitization",
+      "2. Integrate real-time signature analysis into the primary trigger set"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
-    "hold_days": 2,
+    "hold_days": 1,
     "confidence": 0.85,
     "active_signals": [
       "RELIEF",
       "ACTION"
     ],
     "suppressing_signals": [
-      "DEAL_FATIGUE"
+      "DEAL_fatigue"
     ],
-    "note": "高信心度信號 RELIEF 與 ACTION 同步，且 A3 模型近期表現強勁，支持做多。"
+    "note": "Strong alignment between RELIEF and ACTION signals suggests a high-probability short-term rally."
   }
 }

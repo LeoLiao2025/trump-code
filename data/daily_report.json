@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-05",
-  "generated_at": "2026-07-05T14:36:46Z",
-  "posts_today": 4,
+  "date": "2026-07-06",
+  "generated_at": "2026-07-06T15:09:53Z",
+  "posts_today": 6,
   "latest_post": {
-    "time": "2026-07-05T04:36",
-    "content_preview": "Best fireworks show, EVER! President DJT"
+    "time": "2026-07-06T10:58",
+    "content_preview": "EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be"
   },
   "signals_detected": [],
   "models_triggered": 0,
@@ -19,13 +19,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-07-02",
-    "close": 7483.24
+    "date": "2026-07-06",
+    "close": 7529.0
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-07-05\nPosts today: 4 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Best fireworks show, EVER! President DJT",
-    "zh": "川普密碼每日報告 -- 2026-07-05\n今日推文: 4 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Best fireworks show, EVER! President DJT",
-    "ja": "トランプ・コード日次レポート -- 2026-07-05\n本日の投稿: 4件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Best fireworks show, EVER! President DJT"
+    "en": "Trump Code Daily Report -- 2026-07-06\nPosts today: 6 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be",
+    "zh": "川普密碼每日報告 -- 2026-07-06\n今日推文: 6 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be",
+    "ja": "トランプ・コード日次レポート -- 2026-07-06\n本日の投稿: 6件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be"
   },
   "triggered_rules_sample": []
 }
