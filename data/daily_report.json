@@ -1,12 +1,15 @@
 {
-  "date": "2026-07-06",
-  "generated_at": "2026-07-06T15:09:53Z",
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T15:05:27Z",
   "posts_today": 6,
   "latest_post": {
-    "time": "2026-07-06T10:58",
-    "content_preview": "EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be"
+    "time": "2026-07-07T12:21",
+    "content_preview": "Toyota is moving from Mexico to the United States (Texas!). A really big deal. Tariffs at work! Pres"
   },
-  "signals_detected": [],
+  "signals_detected": [
+    "TARIFF",
+    "DEAL"
+  ],
   "models_triggered": 0,
   "direction_summary": {
     "LONG": 0,
@@ -19,13 +22,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-07-06",
-    "close": 7529.0
+    "date": "2026-07-07",
+    "close": 7491.17
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-07-06\nPosts today: 6 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be",
-    "zh": "川普密碼每日報告 -- 2026-07-06\n今日推文: 6 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be",
-    "ja": "トランプ・コード日次レポート -- 2026-07-06\n本日の投稿: 6件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: EXCLUSIVE: Serbian President Vučić says support for US 'surged' under Trump, invites him to visit Be"
+    "en": "Trump Code Daily Report -- 2026-07-07\nPosts today: 6 | Models triggered: 0\nSignals: TARIFF, DEAL\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Toyota is moving from Mexico to the United States (Texas!). A really big deal. Tariffs at work! Pres",
+    "zh": "川普密碼每日報告 -- 2026-07-07\n今日推文: 6 篇 | 觸發模型: 0 組\n偵測信號: 關稅, Deal\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Toyota is moving from Mexico to the United States (Texas!). A really big deal. Tariffs at work! Pres",
+    "ja": "トランプ・コード日次レポート -- 2026-07-07\n本日の投稿: 6件 | トリガーモデル: 0組\n検出シグナル: 関税, ディール\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Toyota is moving from Mexico to the United States (Texas!). A really big deal. Tariffs at work! Pres"
   },
   "triggered_rules_sample": []
 }

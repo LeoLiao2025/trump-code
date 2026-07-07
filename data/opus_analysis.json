@@ -1,85 +1,88 @@
 {
-  "date": "2026-07-06",
-  "analyzed_at": "2026-07-06T15:10:22Z",
+  "date": "2026-07-07",
+  "analyzed_at": "2026-07-07T15:05:56Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Signature consistency decay prior to official statements",
-    "Intra-day sentiment divergence between ACTION and DEAL keywords"
+    "Sector-specific deregulation hints",
+    "Policy reversal confirmation lag",
+    "Metadata-driven sentiment shifts"
   ],
   "error_analysis": {
-    "C1_burst_silence": "Market now interprets prolonged silence as policy paralysis or internal conflict rather than strategic preparation, leading to bearish drift.",
-    "A2_deal_bullish": "Diminishing marginal utility of 'DEAL' rhetoric; market participants are increasingly treating 'DEAL' mentions as 'sell the news' events."
+    "C1_burst_silence": "Market desensitization to silence periods during high macro volatility; silence no longer guarantees a positive pivot in a high-interest rate environment.",
+    "A2_deal_bullish": "Deal fatigue; the market now requires concrete legislative progress rather than just the 'DEAL' keyword to sustain a rally."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Transition from 'Deal-driven' growth to 'Relief-driven' volatility recovery",
-    "Increased predictive power of meta-data (volume, signature) over semantic content"
+    "Transition from keyword-driven volatility to behavioral/metadata-driven signals (e.g., signature changes).",
+    "Increased alpha in 'Relief' sentiment over traditional 'Deal' announcements."
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_synergy",
-      "name": "Relief-Action Momentum",
+      "id": "E1_sig_relief_combo",
+      "name": "Signature Shift Relief",
       "features": [
-        "RELIEF",
-        "ACTION"
+        "D2_sig_change",
+        "RELIEF"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.92
+      "confidence": 0.85
     },
     {
-      "id": "E2_sig_vol_divergence",
-      "name": "Signature-Volume Divergence",
+      "id": "E1_action_momentum",
+      "name": "Pre-market Action Surge",
       "features": [
-        "D2_sig_change",
-        "D3_volume_spike"
+        "B3_action_pre",
+        "ACTION_0.95"
       ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.75
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.8
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.15
+      "D2_sig_change": 1.25,
+      "D3_volume_spike": 1.1
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
       "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (Accuracy 37.5% is below random noise threshold)"
+      "C3_night_alert (Win rate 37.5% indicates negative expectancy and high noise)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.5,
-    "CHINA": 0.6
+    "CHINA": 0.6,
+    "DEAL": 0.55,
+    "THREAT": 0.6
   },
   "system_health": {
-    "score": "84/100",
-    "grade": "A-",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. Recalibrate DEAL signal to account for market desensitization",
-      "2. Integrate real-time signature analysis into the primary trigger set"
+      "1. Recalibrate C1_burst_silence with macro-volatility filters to reduce false longs.",
+      "2. Formalize D2_sig_change as a primary confirmation signal for all trade entries."
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.88,
     "active_signals": [
       "RELIEF",
-      "ACTION"
+      "ACTION",
+      "D2_sig_change"
     ],
     "suppressing_signals": [
       "DEAL_fatigue"
     ],
-    "note": "Strong alignment between RELIEF and ACTION signals suggests a high-probability short-term rally."
+    "note": "Strong alignment between high-confidence ACTION/RELIEF signals and behavioral signature changes suggests immediate upside."
   }
 }

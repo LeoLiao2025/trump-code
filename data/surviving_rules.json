@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-07-06T15:09:57Z",
-    "evolved_rules_added": 45
+    "last_evolution": "2026-07-07T15:05:32Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -13393,7 +13393,12 @@
       "parents": [
         "kw_perfect+kw_thank_you_for_your_attention",
         "kw_thank_you_for_your_attention+open_energy"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
