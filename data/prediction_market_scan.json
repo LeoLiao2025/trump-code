@@ -1,8 +1,8 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "signals": [
-    "TARIFF",
-    "DEAL"
+    "DEAL",
+    "DEAL_ONLY"
   ],
   "opportunities": [],
   "total_scanned": 0
