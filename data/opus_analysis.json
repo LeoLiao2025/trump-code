@@ -1,88 +1,85 @@
 {
-  "date": "2026-07-07",
-  "analyzed_at": "2026-07-07T15:05:56Z",
+  "date": "2026-07-08",
+  "analyzed_at": "2026-07-08T14:53:48Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Sector-specific deregulation hints",
-    "Policy reversal confirmation lag",
-    "Metadata-driven sentiment shifts"
+    "DEAL_FATIGUE",
+    "SILENCE_ANXIETY",
+    "ACTION_RELIEF_SYNERGY"
   ],
   "error_analysis": {
-    "C1_burst_silence": "Market desensitization to silence periods during high macro volatility; silence no longer guarantees a positive pivot in a high-interest rate environment.",
-    "A2_deal_bullish": "Deal fatigue; the market now requires concrete legislative progress rather than just the 'DEAL' keyword to sustain a rally."
+    "C1_burst_silence": "市場對『沉默期』的解讀已從『利多蓄勢』轉向『政策真空期的不確定性焦慮』，導致預期落空後的補跌。",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場已對無實質內容的口頭協議產生免疫。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Transition from keyword-driven volatility to behavioral/metadata-driven signals (e.g., signature changes).",
-    "Increased alpha in 'Relief' sentiment over traditional 'Deal' announcements."
+    "市場反應重心從『協議達成(DEAL)』轉移至『壓力釋放(RELIEF)』",
+    "深夜推文的負面衝擊力正在減弱，盤前情緒的導向作用增強"
   ],
   "new_rules": [
     {
-      "id": "E1_sig_relief_combo",
-      "name": "Signature Shift Relief",
+      "id": "E1_relief_action_combo",
+      "name": "緩解行動共振規則",
       "features": [
-        "D2_sig_change",
-        "RELIEF"
+        "RELIEF",
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
     },
     {
-      "id": "E1_action_momentum",
-      "name": "Pre-market Action Surge",
+      "id": "E2_deal_volume_filter",
+      "name": "DEAL實質性過濾",
       "features": [
-        "B3_action_pre",
-        "ACTION_0.95"
+        "DEAL",
+        "VOLUME_SPIKE"
       ],
       "direction": "LONG",
       "hold": 2,
-      "confidence": 0.8
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D2_sig_change": 1.25,
-      "D3_volume_spike": 1.1
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.15
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
       "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (Win rate 37.5% indicates negative expectancy and high noise)"
+      "C3_night_alert (勝率過低且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "CHINA": 0.6,
-    "DEAL": 0.55,
-    "THREAT": 0.6
+    "DEAL": 0.5,
+    "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
+    "score": "75/100",
     "grade": "B+",
     "priorities": [
-      "1. Recalibrate C1_burst_silence with macro-volatility filters to reduce false longs.",
-      "2. Formalize D2_sig_change as a primary confirmation signal for all trade entries."
+      "1. 修正 C1 模型的沉默期定義，加入波動率過濾",
+      "2. 提高 A3 模型在交易系統中的執行優先級"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.88,
+    "confidence": 0.85,
     "active_signals": [
-      "RELIEF",
-      "ACTION",
-      "D2_sig_change"
+      "A3_relief_rocket",
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "DEAL_fatigue"
+      "A2_deal_bullish_fatigue"
     ],
-    "note": "Strong alignment between high-confidence ACTION/RELIEF signals and behavioral signature changes suggests immediate upside."
+    "note": "RELIEF 與 ACTION 的高信心度組合抵銷了 DEAL 效能下降的風險，盤前動能強勁。"
   }
 }
