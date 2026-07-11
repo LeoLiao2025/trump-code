@@ -1,29 +1,27 @@
 {
-  "date": "2026-07-10",
-  "analyzed_at": "2026-07-10T15:00:32Z",
+  "date": "2026-07-11",
+  "analyzed_at": "2026-07-11T14:32:20Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "ELECTION_RALLY",
-    "FED_CRITICISM",
-    "INFRASTRUCTURE_SPEND"
+    "CAPS_LOCK_RATIO (全大寫比例激增)",
+    "PLATFORM_MIGRATION_DELAY (跨平台發文時差)"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策僵局不確定性』，導致長沉默後的反彈邏輯在宏觀波動下失效。",
-    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場對缺乏具體細節的口頭協議產生審美疲勞，導致信號失效。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從冷靜期轉向對潛在政策黑天鵝的恐懼，導致避險性拋售而非買入。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效應遞減，市場在缺乏具體細節的情況下傾向於視為口頭干預而非實質利多。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "溝通重心從國際貿易關稅轉向國內行政行動（ACTION）與紓困（RELIEF）",
-    "市場對深夜推文的反應從恐慌轉向鈍化，盤前信號的預測力顯著高於盤中"
+    "市場反應重心從『協議達成(DEAL)』轉向『壓力釋放(RELIEF)』",
+    "發文頻率(Volume)對底部的預測準確度已超越單一關鍵字"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "紓困行政雙擊規則",
+      "id": "E1_relief_volume_surge",
+      "name": "緩解噴發規則",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET"
+        "D3_volume_spike"
       ],
       "direction": "LONG",
       "hold": 1,
@@ -32,13 +30,12 @@
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.1
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.15
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "C1_burst_silence": 0.5,
+      "A2_deal_bullish": 0.6
     },
     "eliminate": [
       "C3_night_alert (勝率低於40%且期望值為負)"
@@ -48,30 +45,29 @@
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
-    "CHINA": 0.6
+    "DEAL": 0.5,
+    "VOLUME_SPIKE": 0.85
   },
   "system_health": {
-    "score": "78/100",
+    "score": "76/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 模型，加入 VIX 指標作為過濾器",
-      "2. 強化 A3 模型在盤前交易時段的自動化執行權重",
-      "3. 調查 DEAL 關鍵字失效是否具備長期趨勢性"
+      "1. 修正 C1 沉默期邏輯，加入波動率過濾器",
+      "2. 強化 A3 RELIEF 信號的權重分配"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.92,
+    "confidence": 0.82,
     "active_signals": [
-      "RELIEF",
-      "ACTION"
+      "A3_relief_rocket",
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "DEAL_FATIGUE"
+      "C1_burst_silence"
     ],
-    "note": "高勝率模型 A3 與高信心信號 RELIEF 產生強共振，盤前動能極強。"
+    "note": "高勝率模型 A3 與 D3 同步觸發，抵銷了 C1 的不確定性，短期看漲情緒強烈。"
   }
 }
