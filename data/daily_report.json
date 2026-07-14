@@ -1,14 +1,15 @@
 {
-  "date": "2026-07-13",
-  "generated_at": "2026-07-13T15:04:45Z",
-  "posts_today": 19,
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T14:39:42Z",
+  "posts_today": 14,
   "latest_post": {
-    "time": "2026-07-13T14:43",
-    "content_preview": "I recommended, to Governor Henry McMaster, Lindsey Graham's wonderful sister, Darline, to serve as i"
+    "time": "2026-07-14T14:28",
+    "content_preview": "Man pleads guilty to false US citizenship claim on North Carolina voter form for 2024 election: http"
   },
   "signals_detected": [
-    "CHINA",
-    "IRAN"
+    "DEAL",
+    "IRAN",
+    "DEAL_ONLY"
   ],
   "models_triggered": 0,
   "direction_summary": {
@@ -22,13 +23,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-07-13",
-    "close": 7550.47
+    "date": "2026-07-14",
+    "close": 7545.2
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-07-13\nPosts today: 19 | Models triggered: 0\nSignals: CHINA, IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: I recommended, to Governor Henry McMaster, Lindsey Graham's wonderful sister, Darline, to serve as i",
-    "zh": "川普密碼每日報告 -- 2026-07-13\n今日推文: 19 篇 | 觸發模型: 0 組\n偵測信號: 中國, 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: I recommended, to Governor Henry McMaster, Lindsey Graham's wonderful sister, Darline, to serve as i",
-    "ja": "トランプ・コード日次レポート -- 2026-07-13\n本日の投稿: 19件 | トリガーモデル: 0組\n検出シグナル: 中国, イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: I recommended, to Governor Henry McMaster, Lindsey Graham's wonderful sister, Darline, to serve as i"
+    "en": "Trump Code Daily Report -- 2026-07-14\nPosts today: 14 | Models triggered: 0\nSignals: DEAL, IRAN, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Man pleads guilty to false US citizenship claim on North Carolina voter form for 2024 election: http",
+    "zh": "川普密碼每日報告 -- 2026-07-14\n今日推文: 14 篇 | 觸發模型: 0 組\n偵測信號: Deal, 伊朗, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Man pleads guilty to false US citizenship claim on North Carolina voter form for 2024 election: http",
+    "ja": "トランプ・コード日次レポート -- 2026-07-14\n本日の投稿: 14件 | トリガーモデル: 0組\n検出シグナル: ディール, イラン, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Man pleads guilty to false US citizenship claim on North Carolina voter form for 2024 election: http"
   },
   "triggered_rules_sample": []
 }
