@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-15",
-  "analyzed_at": "2026-07-15T14:39:53Z",
+  "date": "2026-07-16",
+  "analyzed_at": "2026-07-16T14:46:00Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "ELECTION_POLL_IMPACT",
-    "FED_PIVOT_PRESSURE"
+    "FED_PIVOT_PRESSURE",
+    "ENERGY_INDEPENDENCE_RHETORIC"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性』，導致長沉默後的做多動能衰竭。",
-    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高且缺乏實質進展，導致市場產生審美疲勞，邊際效應遞減。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從『利多醞釀期』轉變為『政策不確定性風險』，導致長沉默後的做多勝率大幅下降。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減現象，若無具體協議細節，市場傾向於視為口頭干預而非實質利多。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應邏輯從『口頭預期』轉向『實質行動確認』",
-    "RELIEF 信號的權重已顯著超越 DEAL 信號",
-    "深夜推文的負面衝擊力正在減弱，市場韌性增強"
+    "市場反應重心從『貿易協議 (DEAL)』轉移至『壓力釋放 (RELIEF)』",
+    "深夜推文 (C3) 的恐慌效應已鈍化，市場不再對非交易時段的威脅產生劇烈跳空反應"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "紓困行動共振",
+      "id": "E1_relief_surge",
+      "name": "極度壓抑後的釋放",
       "features": [
+        "THREAT",
         "RELIEF",
         "ACTION"
       ],
@@ -29,8 +29,8 @@
       "confidence": 0.88
     },
     {
-      "id": "E2_volume_reversal",
-      "name": "恐慌放量反轉",
+      "id": "E2_volume_capitulation",
+      "name": "發文量見頂反轉",
       "features": [
         "D3_volume_spike",
         "NEGATIVE_SENTIMENT"
@@ -47,27 +47,27 @@
       "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.65
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.7
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 低於隨機水平且期望值為負)"
+      "C3_night_alert (勝率低於 40% 且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
+    "CHINA": 0.6,
     "DEAL": 0.5,
-    "CHINA": 0.6
+    "THREAT": 0.6
   },
   "system_health": {
-    "score": "72/100",
-    "grade": "B",
+    "score": "75/100",
+    "grade": "B+",
     "priorities": [
-      "1. 重新校準 DEAL 信號的觸發閾值",
-      "2. 整合 D3 交易量指標至 A 類核心模型",
-      "3. 調查 C1 模型在 2026 年 Q1 失效的結構性原因"
+      "1. 修正 C1 模式的過濾條件，加入波動率指標",
+      "2. 強化 A3 模型在盤前交易時段的自動執行邏輯"
     ]
   },
   "today_prediction": {
@@ -80,8 +80,8 @@
       "ACTION"
     ],
     "suppressing_signals": [
-      "TARIFF"
+      "DEAL_LOW_CONFIDENCE"
     ],
-    "note": "RELIEF 與 ACTION 雙高信心度信號觸發，配合 A3 模型高勝率支持，預期當日有強勁向上動能。"
+    "note": "高勝率模型 A3 觸發，配合 RELIEF 高信心度信號，預期今日盤勢將延續強勁反彈。"
   }
 }
