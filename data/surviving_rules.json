@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-07-17T14:38:18Z",
-    "evolved_rules_added": 43
+    "last_evolution": "2026-07-18T14:30:11Z",
+    "evolved_rules_added": 44
   },
   "rules": [
     {
@@ -13074,7 +13074,12 @@
       "parents": [
         "kw_signed+kw_tariff",
         "kw_deal+kw_perfect"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -13098,7 +13103,12 @@
       "parents": [
         "kw_interest_rate+open_energy",
         "kw_deal_2plus+kw_dow_2plus"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14412,7 +14422,12 @@
       "parents": [
         "kw_interest_rate+kw_trade",
         "open_energy+open_jobs"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
