@@ -1,31 +1,31 @@
 {
-  "date": "2026-07-24",
-  "analyzed_at": "2026-07-24T14:40:14Z",
+  "date": "2026-07-25",
+  "analyzed_at": "2026-07-25T14:35:58Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "ELECTION_YEAR_STIMULUS",
-    "FED_PIVOT_PRESSURE"
+    "Market_Skepticism_Index",
+    "Macro_Trend_Conflict"
   ],
   "error_analysis": {
-    "C1_burst_silence": "沉默期不再代表蓄勢待發，而是政策不確定性導致的市場觀望，導致多頭陷阱。",
-    "A2_deal_bullish": "市場對口頭協議（Oral Deal）產生疲勞，缺乏實質簽署證據時，漲幅迅速回吐。"
+    "C1_burst_silence": "市場對長期沉默後的爆發產生免疫，且在宏觀下行趨勢中，沉默被解讀為缺乏應對手段而非蓄勢待發。",
+    "A2_deal_bullish": "DEAL 關鍵字因過度頻繁使用導致邊際效應遞減，市場在缺乏具體細節時不再買單。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應從期待協議轉向恐慌修復",
-    "深夜推文的負面衝擊力正在減弱，轉向盤前情緒主導"
+    "市場反應從『情緒驅動』轉向『具體救濟(RELIEF)驅動』",
+    "DEAL 關鍵字的影響力顯著下降，ACTION 成為新的核心動能"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_combo",
-      "name": "救濟行動組合拳",
+      "id": "E1_relief_action_sync",
+      "name": "救濟行動同步規則",
       "features": [
         "RELIEF",
         "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.88
+      "confidence": 0.92
     }
   ],
   "model_adjustments": {
@@ -34,26 +34,26 @@
       "D3_volume_spike": 1.2
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.6
+      "C1_burst_silence": 0.6,
+      "A2_deal_bullish": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且期望值為負)"
+      "C3_night_alert (勝率 37.5% 嚴重干擾系統判斷)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.5,
+    "DEAL": 0.55,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "82/100",
-    "grade": "A-",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. 重新校準 DEAL 信號的權重",
-      "2. 強化盤前情緒與開盤跳空的關聯分析"
+      "1. 立即調降 C1 與 A2 模型權重以防止連續虧損",
+      "2. 整合 RELIEF 與 ACTION 信號開發複合過濾器"
     ]
   },
   "today_prediction": {
@@ -66,8 +66,8 @@
       "ACTION"
     ],
     "suppressing_signals": [
-      "TARIFF"
+      "DEAL_FATIGUE"
     ],
-    "note": "高勝率模型 A3 與高信心信號 RELIEF 觸發，短期看漲情緒強烈。"
+    "note": "高勝率模型 A3 觸發，配合高信心度 RELIEF 信號，短期看漲動能強勁。"
   }
 }
