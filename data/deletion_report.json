@@ -1,55 +1,19 @@
 {
-  "timestamp": "2026-07-27T15:05:18Z",
+  "timestamp": "2026-07-28T14:54:32Z",
   "sources_used": [
     "cnn",
     "own"
   ],
-  "total_unique_posts": 20424,
+  "total_unique_posts": 20472,
   "in_all_sources": 9,
-  "partial_match": 20415,
+  "partial_match": 20463,
   "new_deletions": 0,
   "total_known_deletions": 0,
   "partial_details": [
     {
-      "content_preview": "Everyone is laughing at her.https://dcenquirer.com/liz-cheney-2024-presidential-run-poll-trump-biden/?utm_source=89381",
-      "created_at": "2022-09-01T17:02:00.000Z",
-      "url": "https://truthsocial.com/@DCEnquirer/108925167117387000",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Why Trump's Candid Honesty is the Biggest Threat to the Tyrants Running Our CountrySubscribe to The Charlie Kirk Show: h",
-      "created_at": "2023-06-14T17:28:00.000Z",
-      "url": "https://truthsocial.com/@Charliekirk/110544689295962007",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Senate GOP and McConnell are out of control and destroying support for the GOPhttps://pjmedia.com/columns/stephen-kruise",
-      "created_at": "2022-12-06T11:58:00.000Z",
-      "url": "https://truthsocial.com/@marklevinshow/109467789251117653",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Congressman Mark Alford is an America First Patriot, who is doing a fantastic job representing Missouri's 4th Congressio",
-      "created_at": "2025-11-03T19:30:04.491Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/115487421529452815",
+      "content_preview": "https://www.whitehouse.gov/articles/2025/06/the-one-big-beautiful-bill-will-supercharge-our-economy/",
+      "created_at": "2025-06-11T20:43:50.910Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/114666676606423907",
       "present_in": [
         "cnn"
       ],
@@ -59,57 +23,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "“TRUMP ON DESANTIS”https://nh.donaldjtrump.com/",
-      "created_at": "2024-01-22T16:55:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111801828583581917",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Big crowds in Fort Pierce, Florida, for the Biden induced Witch Hunt against his political opponent, ME! Thank you, a gr",
-      "created_at": "2024-03-14T15:48:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/112095769258866567",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "“THE DAM IS BREAKING”",
-      "created_at": "2023-07-31T22:54:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110812100442732784",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Congressman Mike Rogers is doing a fantastic job representing the people of Alabama’s 3rd Congressional District. As the",
-      "created_at": "2023-11-01T17:41:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111337464723401179",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "RT @joemccuiston",
-      "created_at": "2025-02-11T10:50:24.811Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/113984865882064042",
+      "content_preview": "https://justthenews.com/government/white-house/trump-urges-senate-gop-give-healthcare-subsidies-directly-people",
+      "created_at": "2025-11-09T15:08:58.902Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115520368732012609",
       "present_in": [
         "cnn"
       ],
@@ -119,9 +35,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "They are attempting to muzzle the most popular political figure in America!President Donald J. Trump!Stripping all Ameri",
-      "created_at": "2023-10-16T09:32:00.000Z",
-      "url": "https://truthsocial.com/@MTG/111244946694671821",
+      "content_preview": "Official Registration for Team Trump’s IOWA Caucus Team: https://ia.donaldjtrump.com/“IOWA VOTERS ARE COMMITTING TO VOTE",
+      "created_at": "2023-10-09T22:59:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111208480164104791",
       "present_in": [
         "own"
       ],
@@ -131,9 +47,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "Thank you Miami. Such a warm welcome on such a SAD DAY for our Country!",
-      "created_at": "2023-06-13T16:30:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110538799826255725",
+      "content_preview": "The Crooked Joe Biden Campaign has thrown so many Indictments and lawsuits against me that Republicans are already think",
+      "created_at": "2023-09-03T18:40:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111003619566452123",
       "present_in": [
         "own"
       ],
@@ -143,9 +59,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "I will be leaving Mar-a-Lago on Monday at 12 noon, heading to Trump Tower in New York. On Tuesday morning I will be goin",
-      "created_at": "2023-04-02T22:20:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110132489488603061",
+      "content_preview": "https://www.breitbart.com/politics/2024/01/27/15-facts-about-e-jean-carrolls-allegations-against-trump-media-dont-want-y",
+      "created_at": "2024-01-28T11:17:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111834475448793503",
       "present_in": [
         "own"
       ],
@@ -155,9 +71,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "A great group of supportive Florida Congressmen and Congresswomen, all who have Endorsed me, will be coming to Mar-a-Lag",
-      "created_at": "2023-04-20T08:02:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110231037251113461",
+      "content_preview": "https://dailycaller.com/2023/12/20/joe-biden-dhs-trump-removed-colorado-ballot/",
+      "created_at": "2023-12-29T09:41:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111664225825501580",
       "present_in": [
         "own"
       ],
@@ -167,45 +83,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "“FACT SHEET: PRESIDENT DONALD J. TRUMP REINS IN INDEPENDENT AGENCIES TO RESTORE A GOVERNMENT THAT ANSWERS TO THE AMERICA",
-      "created_at": "2025-02-19T14:04:15.657Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114030926604297056",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116818915365927435LOUISIANA: VOTE FOR JULIA TODAY!!! DJT",
-      "created_at": "2026-06-27T09:56:09.624Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116821470056250616",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "The decision that mattered most to me was TARIFFS! The Court knew where I stood, how badly I wanted this Victory for our",
-      "created_at": "2026-03-16T02:45:37.478Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116236559151421767",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Join me LIVE with the @NRA at 4:30PM Eastern. Will be on @RSBN, @NewsMax, @OAN, @realamericasvoice, and Donald J. Trump ",
-      "created_at": "2023-04-14T16:27:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110199050226252104",
+      "content_preview": "Dr. Ben Carson is a big fan of this movie, and I am a big fan of Ben. He asked me to post this, because he thought it wa",
+      "created_at": "2023-07-06T12:10:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110668010334411685",
       "present_in": [
         "own"
       ],
@@ -215,21 +95,9 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "https://www.rsbnetwork.com/news/border-crossings-drop-90-percent-under-trump-policies/",
-      "created_at": "2025-02-14T18:05:48.562Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114003564859420753",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ],
-      "truth_social_status": "blocked"
-    },
-    {
-      "content_preview": "Everything the President has said, for many years, has been wrong. He has terrible instincts, whether regarding the horr",
-      "created_at": "2023-10-23T07:22:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111284069932977712",
+      "content_preview": "BREAKING: Bernie Moreno wins Republican nomination for U.S. Senate in Ohio primary election. #APRaceCall at 8:35 p.m. ED",
+      "created_at": "2024-03-19T20:38:00.000Z",
+      "url": "https://truthsocial.com/@IAPolls2022/112125223607141065",
       "present_in": [
         "own"
       ],
@@ -239,9 +107,21 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "https://www.foxnews.com/politics/mtg-files-complaint-against-secret-boyfriend-georgia-da-prosecuting-trump",
-      "created_at": "2024-01-26T15:43:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111824194469459457",
+      "content_preview": "RT @Earl34Anything these traitors disagree with is what they consider an illegal order. They are all a disgrace to their",
+      "created_at": "2025-11-20T14:10:33.832Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115582424437984953",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ],
+      "truth_social_status": "blocked"
+    },
+    {
+      "content_preview": "Racist Joy Reid went AT IT with Rep. Byron Donalds and he handled her PERFECTLY. MSNBC is a joke",
+      "created_at": "2023-01-11T15:20:00.000Z",
+      "url": "https://truthsocial.com/@DaveRubin/109672427198542451",
       "present_in": [
         "own"
       ],
@@ -251,174 +131,129 @@
       "truth_social_status": "blocked"
     },
     {
-      "content_preview": "The RINO Governor of the Great State of Oklahoma, in which I won all 77 Counties, three times (The only person to do so!",
-      "created_at": "2026-02-11T21:21:11.564Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116054089500353661",
+      "content_preview": "After meeting with the President of Lebanon, Joseph Aoun, who has done a remarkable job working to transform his Country",
+      "created_at": "2026-07-21T19:23:49.479Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/116959597656685206",
       "present_in": [
         "cnn"
       ],
       "missing_from": [
         "own"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "“VICTORY FOR TRUMP”",
-      "created_at": "2024-03-26T01:04:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/112160242488500297",
+      "content_preview": "We must Make America Energy Independent Again! https://rumble.com/v28w5uc-agenda47-president-trump-on-making-america-ene",
+      "created_at": "2023-02-09T14:59:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109836549805826788",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "I know Ron. The way he handled his announcement, he will handle the Country!",
-      "created_at": "2023-05-25T00:40:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110427480061536455",
+      "content_preview": "The “Trump” Tax Cuts MUST BE EXTENDED, OR OUR ECONOMY WILL COME CRASHING DOWN - THE BIG ONE!!!",
+      "created_at": "2022-12-31T04:13:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109607519580684893",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
-    },
-    {
-      "content_preview": "“Nvidia to spend hundreds of billions in U.S. during Trump's term” https://www.axios.com/2025/03/20/nvidia-spend-hundred",
-      "created_at": "2025-03-20T12:59:41.720Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114194879718374915",
-      "present_in": [
-        "cnn"
       ],
-      "missing_from": [
-        "own"
-      ]
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "WOW!!! Such an! honor. Record \"stuff\" for a Republican. President DJT",
-      "created_at": "2025-10-03T02:28:12.308Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/115307871751959358",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "…Department of Injustice itself, which has unprecedentedly placed top DOJ prosecutors into the Manhattan District Attorn",
-      "created_at": "2023-03-09T20:57:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/109996504398319240",
+      "content_preview": "Thank you to very talented lawyer, Tim Parlatore! https://justthenews.com/politics-policy/all-things-trump/former-trump-",
+      "created_at": "2024-05-10T16:30:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/112418687914643848",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
-    },
-    {
-      "content_preview": "Jerome \"Too Late\" Powell, a stubborn MORON, must substantially lower interest rates, NOW. IF HE CONTINUES TO REFUSE, THE",
-      "created_at": "2025-08-01T10:32:15.158Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114953049546233760",
-      "present_in": [
-        "cnn"
       ],
-      "missing_from": [
-        "own"
-      ]
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "“GOP presidential primary cycle is over“ https://www.washingtontimes.com/news/2023/sep/28/gop-presidential-primary-cycle",
-      "created_at": "2023-10-15T11:25:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111239726147521636",
+      "content_preview": "WATCH: Democrat Rev. Rubén Díaz Sr. ENDORSES President Trump onstage at speech in the BronxWATCH LIVE:  https://www.rsbn",
+      "created_at": "2024-05-23T19:55:00.000Z",
+      "url": "https://truthsocial.com/@RSBN/112493104378646362",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "In Iowa last night I noticed that a little known, failed former Congressman, Will Hurd, is ridiculously running for Pres",
-      "created_at": "2023-07-29T13:06:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110798462879609652",
+      "content_preview": "https://www.breitbart.com/politics/2024/01/26/exclusive-defeat-maga-meet-the-radical-left-network-that-hijacked-democrat",
+      "created_at": "2024-01-28T11:16:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111834470340045017",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "People need to stop \"F'n Around &amp; Finding Out!\"https://rumble.com/v33kld0-messed-with-the-wrong-guy.html",
-      "created_at": "2023-07-31T17:04:00.000Z",
-      "url": "https://truthsocial.com/@steveinman/110810725758240860",
+      "content_preview": "https://www.rsbnetwork.com/news/enough-games-its-time-for-the-gop-to-unite-around-president-trump/",
+      "created_at": "2023-12-01T12:23:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111506318186130293",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "Page 1: The DOJ will not defend me in the E. Jean Carroll civil case, which is all part of the political Witch Hunt, law",
-      "created_at": "2023-07-12T06:33:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110700658213984237",
+      "content_preview": "Nice to see Nancy Pelosi not sitting in the background. Hopefully she’s spending more time with her husband!",
+      "created_at": "2023-02-07T21:11:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109826690210863604",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "https://www.breitbart.com/politics/2024/02/02/poll-trump-leads-biden-points-georgia/",
-      "created_at": "2024-02-08T17:13:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111898157606580452",
+      "content_preview": "“Joe Biden said the other day that he had nothing to do with any of this—when it comes to the investigation of Donald Tr",
+      "created_at": "2023-06-11T23:02:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110529015709794021",
       "present_in": [
         "own"
       ],
       "missing_from": [
         "cnn"
-      ]
+      ],
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116559368204816398",
-      "created_at": "2026-05-12T03:01:05.789Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116559371678109616",
+      "content_preview": "Mayra Flores is the BIG winner in the Texas Special Election. No Republican has ever won this district. We are all reall",
+      "created_at": "2022-06-14T22:57:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/108479241117994346",
       "present_in": [
-        "cnn"
+        "own"
       ],
       "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/115978030093232724",
-      "created_at": "2026-01-29T10:58:34.246Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/115978031218105674",
-      "present_in": [
         "cnn"
       ],
-      "missing_from": [
-        "own"
-      ]
+      "truth_social_status": "blocked"
     },
     {
-      "content_preview": "Tim Sheehy is GREAT. A Winner!!! President DJT",
-      "created_at": "2026-07-18T02:18:32.394Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116938579137506694",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "Mitt Romney is the Liz Cheney of Utah.Truly a lowlife.",
-      "created_at": "2023-07-26T00:29:00.000Z",
-      "url": "https://truthsocial.com/@CheeseBurglar/110778499842547103",
+      "content_preview": "2024 ELECTION INTERFERENCE!!!",
+      "created_at": "2023-07-26T09:19:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110780584913213891",
       "present_in": [
         "own"
       ],
@@ -427,20 +262,9 @@
       ]
     },
     {
-      "content_preview": "April 2nd, “LIBERATION DAY IN AMERICA!”",
-      "created_at": "2025-03-23T15:26:36.608Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114212444347354110",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "Page 2: The Chief Judge of New York State should remove this ridiculous case to the Commercial Division, where it belong",
-      "created_at": "2023-03-21T12:56:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/110062325435543177",
+      "content_preview": "Congressman Andy Ogles is a fantastic Representative for the incredible people of Tennessee’s 5th Congressional District",
+      "created_at": "2023-05-11T18:42:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110352464085605687",
       "present_in": [
         "own"
       ],
@@ -449,9 +273,9 @@
       ]
     },
     {
-      "content_preview": "https://dailycaller.com/2025/02/28/trump-takes-gloves-off-americas-counterterrorism-effort/",
-      "created_at": "2025-03-10T20:59:31.684Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114140143398759985",
+      "content_preview": "The United States of America has successfully carried out a large scale strike against Venezuela and its leader, Preside",
+      "created_at": "2026-01-03T09:21:19.627Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115830428767897167",
       "present_in": [
         "cnn"
       ],
@@ -460,42 +284,9 @@
       ]
     },
     {
-      "content_preview": "A beautiful day in the Great State of IOWA🏈",
-      "created_at": "2023-09-09T21:24:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111038239416168096",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ]
-    },
-    {
-      "content_preview": "https://thenationalpulse.com/2024/02/03/rapper-50-cent-suggests-trump-is-the-answer-in-reaction-to-nycs-migrant-madness/",
-      "created_at": "2024-02-06T20:05:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111887509853563662",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ]
-    },
-    {
-      "content_preview": "Democrats Don’t Care About Crime. Join us on LevinTVhttps://rumble.com/v2kh09q-democrats-dont-care-about-crime.html?mref",
-      "created_at": "2023-04-27T14:06:00.000Z",
-      "url": "https://truthsocial.com/@marklevinshow/110272105793022978",
-      "present_in": [
-        "own"
-      ],
-      "missing_from": [
-        "cnn"
-      ]
-    },
-    {
-      "content_preview": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/115646158393180525Welcome to Minnesota — Great job Governor W",
-      "created_at": "2025-12-01T20:19:20.569Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/115646159943244507",
+      "content_preview": "My Administration stands ready to use the full Economic Might of the United States to strengthen Hungary's Economy, as w",
+      "created_at": "2026-04-10T20:38:25.403Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/116382335330123013",
       "present_in": [
         "cnn"
       ],
@@ -504,20 +295,9 @@
       ]
     },
     {
-      "content_preview": "Trump opens US 250th birthday party with rally-style speech: https://www.breitbart.com/news/trump-opens-us-250th-birthda",
-      "created_at": "2026-07-13T13:06:14.712Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116912814470765683",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "https://thegreggjarrett.com/as-hunter-biden-pleads-to-gun-charges-what-about-his-other-crimes/",
-      "created_at": "2023-10-17T12:14:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/111251244200563559",
+      "content_preview": "There was no “misdemeanor” here either. There was no crime, period. All other of the many Democrat law enforcement offic",
+      "created_at": "2023-03-19T13:39:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110051167143996863",
       "present_in": [
         "own"
       ],
@@ -526,20 +306,9 @@
       ]
     },
     {
-      "content_preview": "MORNING GLORY: President Donald Trump's most important decision is coming: https://www.foxnews.com/opinion/morning-glory",
-      "created_at": "2026-03-01T19:17:27.370Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/116155524538246961",
-      "present_in": [
-        "cnn"
-      ],
-      "missing_from": [
-        "own"
-      ]
-    },
-    {
-      "content_preview": "\"Garland announced he’s essentially giving his special counsel whatever he needs to investigate the non-crimes of object",
-      "created_at": "2022-11-18T16:46:00.000Z",
-      "url": "https://truthsocial.com/@Article3Project/109366998817753782",
+      "content_preview": "#Trump2024",
+      "created_at": "2023-07-10T18:45:00.000Z",
+      "url": "https://truthsocial.com/@VondaHQK/110692213954238395",
       "present_in": [
         "own"
       ],
@@ -548,9 +317,9 @@
       ]
     },
     {
-      "content_preview": "Jamie: You do such a GREAT job! So tough, so insightful, and so incredible! I watch you all the time, and you just never",
-      "created_at": "2025-06-29T00:42:15.799Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114763873373477102",
+      "content_preview": "Peter Navarro, who is doing an incredible job as Senior Counselor for Trade and Manufacturing, has written a powerful ne",
+      "created_at": "2025-11-05T23:07:30.230Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115499601111135687",
       "present_in": [
         "cnn"
       ],
@@ -559,9 +328,9 @@
       ]
     },
     {
-      "content_preview": "He did nothing for the Veterans Administration, or the Veterans - It was all TRUMP!",
-      "created_at": "2024-03-07T21:52:00.000Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/112057802789244058",
+      "content_preview": "Our Nation desperately needs a Hero, but for much more than one day!!!#MAGA #AmericaFirst @realDonaldTrump @cameronrmoor",
+      "created_at": "2023-01-19T13:43:00.000Z",
+      "url": "https://truthsocial.com/@TrueGenFlynn/109717344169092680",
       "present_in": [
         "own"
       ],
@@ -570,9 +339,240 @@
       ]
     },
     {
-      "content_preview": "Very proud of Senate Majority Leader John Thune, who worked around the clock to get the “ONE BIG BEAUTIFUL BILL ACT” app",
-      "created_at": "2025-07-03T23:19:14.735Z",
-      "url": "https://truthsocial.com/@realDonaldTrump/114791858483483184",
+      "content_preview": "It's no coincidence that these fake charges against me came down the VERY SAME DAY evidence revealed Joe Biden—a VERY CR",
+      "created_at": "2023-06-16T13:28:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110555071495634772",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "https://www.foxnews.com/media/trump-attorney-former-doj-official-questions-department-appeal-special-master",
+      "created_at": "2022-09-12T11:14:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/108986083120401264",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "At the direction of Crooked Joe Biden and his Weaponized DOJ, Deranged Jack Smith is attempting to destroy the lives of ",
+      "created_at": "2023-07-28T11:25:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110792403432840924",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "A great honor to speak with four wonderful D-Day Heroes — Donald Cobb, Steve Melnikoff, George Cross, and Harold Radish,",
+      "created_at": "2024-06-06T14:05:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/112570997290957426",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "“WashPost Admits: Donald Trump’s Migration Cuts Are Raising Wages” https://www.breitbart.com/economy/2022/12/16/washpo-a",
+      "created_at": "2022-12-16T23:18:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109527087482610904",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "Flying over Ryder Cup, now! DJT",
+      "created_at": "2025-09-26T14:59:30.726Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115271189838263038",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ]
+    },
+    {
+      "content_preview": "Biden wants to pretend he has nothing to do with the Manhattan D.A.’s Assault on Democracy when, in fact, he has “stuffe",
+      "created_at": "2023-03-19T12:07:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110050805329251271",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "I am pleased to announce the nomination of Jason Manion to the United States Sentencing Commission. Jason is General Cou",
+      "created_at": "2026-06-30T01:26:01.298Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/116836451044750555",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ]
+    },
+    {
+      "content_preview": "“MELANIA TRUMP HEADLINES FUNDRAISER FOR LGBT GROUP”",
+      "created_at": "2024-04-23T17:18:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/112322616372910493",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "“The Justice Department has shown us that this has been a DOUBLE STANDARD, no doubt about it. Also, Election interferenc",
+      "created_at": "2023-01-23T07:11:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109738453250224144",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "If CNN were smart, they’d open up a Conservative network, only have me on, and it would be the most successful network i",
+      "created_at": "2022-11-10T17:39:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/109321910554973915",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "The First Amendment wins! https://www.breitbart.com/politics/2022/12/15/trump-unveils-free-speech-policy-plan-shatter-le",
+      "created_at": "2022-12-16T16:30:00.000Z",
+      "url": "https://truthsocial.com/@JimJordan/109525480901732876",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "The Biden White House cocaine scandal is so bad that even Democrats concede the \"investigation\" should be reopened. http",
+      "created_at": "2023-07-18T14:38:00.000Z",
+      "url": "https://truthsocial.com/@breitbartnews/110736541576511567",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "THE G2 WILL BE CONVENING SHORTLY!",
+      "created_at": "2025-10-30T01:08:06.812Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/115460439199531354",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ]
+    },
+    {
+      "content_preview": "https://www.newsweek.com/trump-gains-access-millions-cable-viewers-ahead-rally-1789613",
+      "created_at": "2023-03-22T17:03:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/110068959208859249",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "The real verdict will be on November 5th by THE PEOPLE—they know what happened here! https://www.DonaldJTrump.com",
+      "created_at": "2024-05-30T19:32:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/112532646980984225",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "This should be interesting... https://hannity.com/media-room/durham-to-report-special-counsel-will-testify-before-jim-jo",
+      "created_at": "2023-05-26T11:38:00.000Z",
+      "url": "https://truthsocial.com/@seanhannity/110435731183748692",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "Great job done by Raymond Arroyo on  Harris Faulkner interview!",
+      "created_at": "2023-09-08T12:19:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/111030432537133769",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "https://www.newsbusters.org/blogs/nb/alex-christy/2024/01/31/cnn-tries-get-nato-chief-denounce-trump-he-praises-him-inst",
+      "created_at": "2024-05-23T02:12:00.000Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/112488921847155658",
+      "present_in": [
+        "own"
+      ],
+      "missing_from": [
+        "cnn"
+      ]
+    },
+    {
+      "content_preview": "Congratulations to the Dumocrat Party! Al Green, one of the most mentally deficient Congressmen in the history of our Co",
+      "created_at": "2026-05-27T14:39:32.850Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/116647052759264072",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ]
+    },
+    {
+      "content_preview": "MIKE DAVIS: Why criminal referral of Jack Smith was 100% justified: https://www.foxnews.com/opinion/mike-davis-why-crimi",
+      "created_at": "2026-07-28T13:52:30.416Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/116997931035441050",
+      "present_in": [
+        "cnn"
+      ],
+      "missing_from": [
+        "own"
+      ]
+    },
+    {
+      "content_preview": "WHAT GREAT PEOPLE I MET AT NATO, INCLUDING SOME OF THE WORLD’S MOST INCREDIBLE LEADERS!",
+      "created_at": "2025-06-28T13:08:23.348Z",
+      "url": "https://truthsocial.com/@realDonaldTrump/114761144946167016",
       "present_in": [
         "cnn"
       ],
