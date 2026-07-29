@@ -1,90 +1,88 @@
 {
-  "date": "2026-07-28",
-  "analyzed_at": "2026-07-28T14:54:45Z",
+  "date": "2026-07-29",
+  "analyzed_at": "2026-07-29T14:51:16Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Signature-Volume Synergy (D2+D3)",
-    "Post-Relief Fatigue Signal",
-    "Metadata-driven volatility clusters"
+    "POLICY_PIVOT",
+    "MARKET_REASSURANCE",
+    "EMO_STABILITY"
   ],
   "error_analysis": {
-    "C1_burst_silence": "Silence no longer implies bullish resolution; in high-volatility regimes, it now signals strategic escalation or 'calm before the storm'.",
-    "A2_deal_bullish": "Market saturation of 'DEAL' rhetoric has led to a 'sell the news' reaction, rendering the keyword a lagging rather than leading indicator."
+    "C1_burst_silence": "沉默期在 3 月份的高波動環境下不再代表情緒冷卻，反而被市場解讀為政策醞釀的不確定性，導致 LONG 策略失效。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，市場對口頭協議的信任度下降，且未考慮當時宏觀利空的抵銷作用。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Transition from keyword-centric impact to metadata-centric (signature/frequency) impact",
-    "Diminishing marginal utility of 'DEAL' and 'CHINA' keywords",
-    "Increased reliability of 'RELIEF' and 'ACTION' as high-conviction triggers"
+    "市場反應重心從『協議預期』(DEAL) 轉移至『實質行動』(ACTION) 與『壓力緩解』(RELIEF)。",
+    "深夜推文的負面衝擊力 (C3) 正在減弱，市場對關稅威脅產生免疫力。"
   ],
   "new_rules": [
     {
-      "id": "E1_sig_vol_combo",
-      "name": "Signature Shift with Volume Spike",
+      "id": "E1_relief_action_combo",
+      "name": "緩解行動組合拳",
       "features": [
-        "D2_sig_change",
-        "D3_volume_spike"
+        "RELIEF",
+        "ACTION",
+        "PRE_MARKET_POSITIVE"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
     },
     {
-      "id": "E2_relief_action_sync",
-      "name": "Relief-Action Synchronicity",
+      "id": "E2_deal_decay_hedge",
+      "name": "協議失效對沖",
       "features": [
-        "A3_relief_rocket",
-        "B3_action_pre"
+        "DEAL",
+        "LOW_VOLATILITY"
       ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.88
+      "direction": "NEUTRAL",
+      "hold": 0,
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.25,
-      "D2_sig_change": 1.2
+      "D3_volume_spike": 1.2,
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5,
-      "C2_brag_top": 0.8
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (Win rate 37.5% with negative expectancy is statistically detrimental)"
+      "C3_night_alert (勝率 37.5% 低於隨機水平且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
-    "CHINA": 0.5,
-    "SIGNATURE_CHANGE": 0.85
+    "CHINA": 0.6,
+    "DEAL": 0.55
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. Recalibrate C1 silence duration thresholds to account for macro volatility",
-      "2. Formalize metadata-signature synergy rules",
-      "3. Deprecate low-performing keyword-only models"
+      "1. 重新定義 DEAL 訊號的有效性閾值",
+      "2. 強化 A3 模型與盤前 RELIEF 訊號的自動化聯動",
+      "3. 監控 48 條新規則在實戰中的收斂情況"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.78,
+    "confidence": 0.85,
     "active_signals": [
-      "A3_relief_rocket",
-      "D2_sig_change"
+      "RELIEF",
+      "ACTION"
     ],
     "suppressing_signals": [
-      "C2_brag_top"
+      "DEAL_DECAY"
     ],
-    "note": "Strong alignment between signature shifts and relief keywords suggests immediate upside, overriding historical deal-fatigue."
+    "note": "高勝率模型 A3 觸發，配合 RELIEF 與 ACTION 高信心度訊號，日內看漲動能強勁。"
   }
 }
