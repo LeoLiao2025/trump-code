@@ -1,14 +1,12 @@
 {
-  "date": "2026-07-29",
-  "generated_at": "2026-07-29T14:50:50Z",
-  "posts_today": 6,
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T14:52:16Z",
+  "posts_today": 1,
   "latest_post": {
-    "time": "2026-07-29T11:46",
-    "content_preview": "Many more people died of Covid under the Biden Administration than under the Trump Administration. \""
+    "time": "2026-07-30T01:18",
+    "content_preview": "Thank you Abe! President DJT"
   },
-  "signals_detected": [
-    "CHINA"
-  ],
+  "signals_detected": [],
   "models_triggered": 0,
   "direction_summary": {
     "LONG": 0,
@@ -21,13 +19,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-07-29",
-    "close": 7368.53
+    "date": "2026-07-30",
+    "close": 7393.04
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-07-29\nPosts today: 6 | Models triggered: 0\nSignals: CHINA\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Many more people died of Covid under the Biden Administration than under the Trump Administration. \"",
-    "zh": "川普密碼每日報告 -- 2026-07-29\n今日推文: 6 篇 | 觸發模型: 0 組\n偵測信號: 中國\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Many more people died of Covid under the Biden Administration than under the Trump Administration. \"",
-    "ja": "トランプ・コード日次レポート -- 2026-07-29\n本日の投稿: 6件 | トリガーモデル: 0組\n検出シグナル: 中国\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Many more people died of Covid under the Biden Administration than under the Trump Administration. \""
+    "en": "Trump Code Daily Report -- 2026-07-30\nPosts today: 1 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Thank you Abe! President DJT",
+    "zh": "川普密碼每日報告 -- 2026-07-30\n今日推文: 1 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Thank you Abe! President DJT",
+    "ja": "トランプ・コード日次レポート -- 2026-07-30\n本日の投稿: 1件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Thank you Abe! President DJT"
   },
   "triggered_rules_sample": []
 }

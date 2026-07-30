@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-29",
-  "prepared_at": "2026-07-29T14:51:06Z",
+  "date": "2026-07-30",
+  "prepared_at": "2026-07-30T14:52:33Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,11 +109,11 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-07-29",
+    "date": "2026-07-30",
     "crossover": 16,
-    "mutation": 16,
+    "mutation": 12,
     "distill": 16,
-    "total_new": 48,
+    "total_new": 44,
     "total_rules_after": 600,
     "top_3": [
       {
@@ -124,28 +124,27 @@
         "direction": "LONG",
         "hold": 3,
         "score": 87.5,
-        "origin": "crossover"
+        "origin": "distilled"
       },
       {
         "features": [
           "kw_interest_rate",
-          "kw_beautiful",
-          "kw_thank_you_for_your_attention"
+          "kw_beautiful"
         ],
         "direction": "LONG",
         "hold": 3,
         "score": 87.5,
-        "origin": "crossover"
+        "origin": "distilled"
       },
       {
         "features": [
-          "kw_president_of_the_united_states",
-          "kw_never_let_you_down"
+          "kw_interest_rate",
+          "excl_heavy"
         ],
         "direction": "LONG",
-        "hold": 2,
+        "hold": 3,
         "score": 87.5,
-        "origin": "mutation_remove"
+        "origin": "distilled"
       }
     ]
   },
