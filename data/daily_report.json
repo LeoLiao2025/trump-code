@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-30",
-  "generated_at": "2026-07-30T14:52:16Z",
-  "posts_today": 1,
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T14:53:31Z",
+  "posts_today": 2,
   "latest_post": {
-    "time": "2026-07-30T01:18",
-    "content_preview": "Thank you Abe! President DJT"
+    "time": "2026-07-31T11:03",
+    "content_preview": "John Cornyn never had a problem with the so called \"Fund,\" which will not benefit me, but rather the"
   },
   "signals_detected": [],
   "models_triggered": 0,
@@ -19,13 +19,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-07-30",
-    "close": 7393.04
+    "date": "2026-07-31",
+    "close": 7450.91
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-07-30\nPosts today: 1 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Thank you Abe! President DJT",
-    "zh": "川普密碼每日報告 -- 2026-07-30\n今日推文: 1 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Thank you Abe! President DJT",
-    "ja": "トランプ・コード日次レポート -- 2026-07-30\n本日の投稿: 1件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Thank you Abe! President DJT"
+    "en": "Trump Code Daily Report -- 2026-07-31\nPosts today: 2 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: John Cornyn never had a problem with the so called \"Fund,\" which will not benefit me, but rather the",
+    "zh": "川普密碼每日報告 -- 2026-07-31\n今日推文: 2 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: John Cornyn never had a problem with the so called \"Fund,\" which will not benefit me, but rather the",
+    "ja": "トランプ・コード日次レポート -- 2026-07-31\n本日の投稿: 2件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: John Cornyn never had a problem with the so called \"Fund,\" which will not benefit me, but rather the"
   },
   "triggered_rules_sample": []
 }

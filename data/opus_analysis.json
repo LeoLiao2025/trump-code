@@ -1,58 +1,60 @@
 {
-  "date": "2026-07-30",
-  "analyzed_at": "2026-07-30T14:53:07Z",
+  "date": "2026-07-31",
+  "analyzed_at": "2026-07-31T14:54:00Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "EXECUTIVE_ORDER_HINT",
-    "PLATFORM_MIGRATION_LAG",
-    "MARKET_REASSURANCE_PIVOT"
+    "RELIEF_ACTION_COMBO",
+    "SECTOR_SPECIFIC_DEAL",
+    "MACRO_VOLATILITY_OVERRIDE"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默不再代表利空出盡，而是代表政策轉向的不確定性增加，導致市場在沉默期選擇避險而非做多。",
-    "A2_deal_bullish": "DEAL 關鍵字已出現邊際效應遞減，市場對口頭協議的信任度下降，缺乏實質簽署證據時易誘多失敗。"
+    "C1_burst_silence": "Silence period interpreted as accumulation during macro-driven sell-off (March 2026), failing to account for external liquidity shocks.",
+    "A2_deal_bullish": "Market saturation of 'DEAL' rhetoric leading to 'sell the news' behavior rather than bullish continuation."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "從口頭談判 (DEAL) 轉向行政執行 (ACTION) 的實質影響力增加",
-    "盤前信號 (RELIEF) 的權重顯著超越盤中隨機推文",
-    "深夜推文 (C3) 的反向指標特性強化，顯示市場對非理性干擾的排斥"
+    "Shift from 'DEAL' as a primary driver to 'RELIEF' and 'ACTION' as high-conviction signals.",
+    "Increased sensitivity to pre-market timing (A3/B3 models) over mid-day tweets.",
+    "Diminishing returns on 'Burst Silence' patterns during high-volatility regimes."
   ],
   "new_rules": [
     {
-      "id": "E1_action_relief_synergy",
-      "name": "行動救濟協同規則",
+      "id": "E1_relief_action_pre",
+      "name": "Relief Action Synergy",
       "features": [
+        "RELIEF",
         "ACTION",
-        "RELIEF"
+        "PRE_MARKET"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
     },
     {
-      "id": "E2_volume_sig_pivot",
-      "name": "量能簽名轉折規則",
+      "id": "E2_tariff_exhaustion",
+      "name": "Tariff Fatigue Reversal",
       "features": [
-        "D3_volume_spike",
-        "D2_sig_change"
+        "TARIFF",
+        "COUNT > 3",
+        "24H_WINDOW"
       ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.82
+      "direction": "SHORT",
+      "hold": 1,
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.15,
+      "A3_relief_rocket": 1.3,
+      "D3_volume_spike": 1.2,
       "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.5,
-      "A2_deal_bullish": 0.6
+      "A2_deal_bullish": 0.7,
+      "C1_burst_silence": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率低於 40% 且期望值為負，視為隨機噪音)"
+      "C3_night_alert (Win rate 37.5% is statistically detrimental)"
     ]
   },
   "signal_confidence": {
@@ -60,15 +62,16 @@
     "RELIEF": 0.95,
     "TARIFF": 0.7,
     "CHINA": 0.6,
-    "DEAL": 0.55
+    "DEAL": 0.5,
+    "IRAN": 0.55
   },
   "system_health": {
-    "score": "78/100",
-    "grade": "B+",
+    "score": "72/100",
+    "grade": "B",
     "priorities": [
-      "1. 重新定義 C1 沉默期的時間閾值與背景環境因子",
-      "2. 強化 ACTION 信號與實際行政命令發布的關聯分析",
-      "3. 監控 DEAL 信號的疲勞度，考慮將其降級為次要過濾器"
+      "1. Prune C3 and recalibrate C1 for macro-volatility filters.",
+      "2. Integrate sector-specific sentiment analysis to refine DEAL signals.",
+      "3. Optimize A3/B3 execution for pre-market liquidity windows."
     ]
   },
   "today_prediction": {
@@ -77,12 +80,12 @@
     "hold_days": 1,
     "confidence": 0.85,
     "active_signals": [
-      "A3_relief_rocket",
-      "B3_action_pre"
+      "RELIEF",
+      "ACTION"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish"
+      "TARIFF_ONLY"
     ],
-    "note": "盤前 RELIEF 與 ACTION 信號共振，抵銷了 DEAL 關鍵字的疲軟，預期當天動能強勁。"
+    "note": "High performance of A3 and B3 models suggests strong bullish momentum when RELIEF and ACTION coincide pre-market."
   }
 }
