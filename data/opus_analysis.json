@@ -1,77 +1,71 @@
 {
-  "date": "2026-07-31",
-  "analyzed_at": "2026-07-31T14:54:00Z",
+  "date": "2026-08-01",
+  "analyzed_at": "2026-08-01T14:35:27Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_ACTION_COMBO",
-    "SECTOR_SPECIFIC_DEAL",
-    "MACRO_VOLATILITY_OVERRIDE"
+    "ELECTION_POLLS_MENTION",
+    "INFRASTRUCTURE_SPEND_HINT"
   ],
   "error_analysis": {
-    "C1_burst_silence": "Silence period interpreted as accumulation during macro-driven sell-off (March 2026), failing to account for external liquidity shocks.",
-    "A2_deal_bullish": "Market saturation of 'DEAL' rhetoric leading to 'sell the news' behavior rather than bullish continuation."
+    "C1_burst_silence": "市場對『沉默』的解讀已從『醞釀利多』轉向『政策不確定性恐慌』，導致多頭陷阱頻發。",
+    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場對口頭承諾產生免疫力，缺乏實質簽署證據時易出現回撤。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Shift from 'DEAL' as a primary driver to 'RELIEF' and 'ACTION' as high-conviction signals.",
-    "Increased sensitivity to pre-market timing (A3/B3 models) over mid-day tweets.",
-    "Diminishing returns on 'Burst Silence' patterns during high-volatility regimes."
+    "市場反應重心從『期待協議(DEAL)』轉向『尋求衝突緩解(RELIEF)』",
+    "發文量暴增(D3)與簽名切換(D2)的權重顯著超越單一關鍵字"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_pre",
-      "name": "Relief Action Synergy",
+      "id": "E1_relief_rebound",
+      "name": "緩解反彈規則",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET"
+        "PRE_MARKET_VOL"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
     },
     {
-      "id": "E2_tariff_exhaustion",
-      "name": "Tariff Fatigue Reversal",
+      "id": "E2_sig_action_combo",
+      "name": "簽名動作組合",
       "features": [
-        "TARIFF",
-        "COUNT > 3",
-        "24H_WINDOW"
+        "D2_sig_change",
+        "ACTION"
       ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.65
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.82
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
       "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.1
+      "D2_sig_change": 1.15
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.6
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (Win rate 37.5% is statistically detrimental)"
+      "C3_night_alert (勝率 37.5% 低於隨機水平且造成負期望值)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "TARIFF": 0.7,
-    "CHINA": 0.6,
-    "DEAL": 0.5,
-    "IRAN": 0.55
+    "TARIFF": 0.75,
+    "DEAL": 0.45,
+    "CHINA": 0.6
   },
   "system_health": {
-    "score": "72/100",
-    "grade": "B",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. Prune C3 and recalibrate C1 for macro-volatility filters.",
-      "2. Integrate sector-specific sentiment analysis to refine DEAL signals.",
-      "3. Optimize A3/B3 execution for pre-market liquidity windows."
+      "1. 重新定義 DEAL 信號的過濾機制，需結合具體政策細節",
+      "2. 強化對 2026 期中選舉相關關鍵字的特徵提取"
     ]
   },
   "today_prediction": {
@@ -81,11 +75,12 @@
     "confidence": 0.85,
     "active_signals": [
       "RELIEF",
-      "ACTION"
+      "ACTION",
+      "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "TARIFF_ONLY"
+      "DEAL_FATIGUE"
     ],
-    "note": "High performance of A3 and B3 models suggests strong bullish momentum when RELIEF and ACTION coincide pre-market."
+    "note": "高勝率模型 A3 與 RELIEF 信號強烈共振，配合發文量暴增，預期今日盤勢強勁。"
   }
 }
