@@ -1,86 +1,74 @@
 {
-  "date": "2026-08-01",
-  "analyzed_at": "2026-08-01T14:35:27Z",
+  "date": "2026-08-02",
+  "analyzed_at": "2026-08-02T14:35:55Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "ELECTION_POLLS_MENTION",
-    "INFRASTRUCTURE_SPEND_HINT"
+    "週末政策預告 (Weekend Policy Teasers)",
+    "特定產業針對性關鍵字 (Sector-Specific Targeting)"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從『醞釀利多』轉向『政策不確定性恐慌』，導致多頭陷阱頻發。",
-    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場對口頭承諾產生免疫力，缺乏實質簽署證據時易出現回撤。"
+    "C1_burst_silence": "市場對『沉默期』的解讀已從『冷靜期』轉向『政策醞釀期』，導致做多信號失效。",
+    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場在缺乏具體細節下表現出疲勞性回檔。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『期待協議(DEAL)』轉向『尋求衝突緩解(RELIEF)』",
-    "發文量暴增(D3)與簽名切換(D2)的權重顯著超越單一關鍵字"
+    "市場反應重心從單純關鍵字轉向元數據（發文頻率與簽名切換）",
+    "RELIEF 與 ACTION 信號的權重顯著超越傳統的 DEAL 信號"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_rebound",
-      "name": "緩解反彈規則",
+      "id": "E1_meta_synergy",
+      "name": "元數據協同規則",
       "features": [
-        "RELIEF",
-        "PRE_MARKET_VOL"
+        "D3_volume_spike",
+        "D2_sig_change"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.88
-    },
-    {
-      "id": "E2_sig_action_combo",
-      "name": "簽名動作組合",
-      "features": [
-        "D2_sig_change",
-        "ACTION"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.82
+      "confidence": 0.85
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
       "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.15
+      "D2_sig_change": 1.2
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "C2_brag_top": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 低於隨機水平且造成負期望值)"
+      "C3_night_alert (樣本數過低且勝率低於隨機水平)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.75,
-    "DEAL": 0.45,
+    "DEAL": 0.5,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
+    "score": "75/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新定義 DEAL 信號的過濾機制，需結合具體政策細節",
-      "2. 強化對 2026 期中選舉相關關鍵字的特徵提取"
+      "1. 重新校準 DEAL 信號的進入門檻",
+      "2. 整合發文設備切換的延遲分析"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.85,
+    "confidence": 0.82,
     "active_signals": [
-      "RELIEF",
-      "ACTION",
+      "A3_relief_rocket",
       "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "DEAL_FATIGUE"
+      "A2_deal_bullish_fatigue"
     ],
-    "note": "高勝率模型 A3 與 RELIEF 信號強烈共振，配合發文量暴增，預期今日盤勢強勁。"
+    "note": "高頻發文後的 RELIEF 信號通常伴隨強勁動能，應忽略疲軟的 DEAL 轉折。"
   }
 }
