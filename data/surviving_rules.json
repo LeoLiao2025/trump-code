@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-02T14:33:24Z",
+    "last_evolution": "2026-08-03T15:03:53Z",
     "evolved_rules_added": 48
   },
   "rules": [
@@ -14423,7 +14423,12 @@
       "parents": [
         "kw_america_first+kw_maga",
         "kw_agreement+open_china"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
