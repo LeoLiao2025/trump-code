@@ -1,60 +1,60 @@
 {
-  "date": "2026-08-02",
-  "analyzed_at": "2026-08-02T14:35:55Z",
+  "date": "2026-08-03",
+  "analyzed_at": "2026-08-03T15:08:11Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "週末政策預告 (Weekend Policy Teasers)",
-    "特定產業針對性關鍵字 (Sector-Specific Targeting)"
+    "PRE_MARKET_VOLATILITY_ABSORPTION",
+    "RELIEF_TO_ACTION_TRANSITION"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默期』的解讀已從『冷靜期』轉向『政策醞釀期』，導致做多信號失效。",
-    "A2_deal_bullish": "『DEAL』關鍵字邊際效用遞減，市場在缺乏具體細節下表現出疲勞性回檔。"
+    "C1_burst_silence": "市場對『沉默』的解讀已從『利空出盡』轉向『政策真空期的不確定性』，導致長沉默後的方向性失效。",
+    "A2_deal_bullish": "『DEAL』關鍵字出現邊際效用遞減，市場在缺乏具體細節的情況下表現出審美疲勞與獲利了結。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從單純關鍵字轉向元數據（發文頻率與簽名切換）",
-    "RELIEF 與 ACTION 信號的權重顯著超越傳統的 DEAL 信號"
+    "市場反應重心從『口頭承諾(DEAL)』轉向『實質緩解(RELIEF)』與『具體行動(ACTION)』",
+    "深夜推文(C3)的負面衝擊正在被盤前情緒(A3)快速吸收"
   ],
   "new_rules": [
     {
-      "id": "E1_meta_synergy",
-      "name": "元數據協同規則",
+      "id": "E1_relief_action_sync",
+      "name": "緩解行動同步規則",
       "features": [
-        "D3_volume_spike",
-        "D2_sig_change"
+        "RELIEF",
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "D3_volume_spike": 1.2
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C2_brag_top": 0.5
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (樣本數過低且勝率低於隨機水平)"
+      "C3_night_alert (勝率低於40%且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "TARIFF": 0.75,
-    "DEAL": 0.5,
+    "TARIFF": 0.7,
+    "DEAL": 0.45,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "75/100",
+    "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新校準 DEAL 信號的進入門檻",
-      "2. 整合發文設備切換的延遲分析"
+      "1. 移除負期望值模型 C3 以優化整體勝率",
+      "2. 重新定義 C1 模型中『沉默』的時間閾值與市場環境過濾器",
+      "3. 強化 A3 與 B3 盤前信號的聯動分析"
     ]
   },
   "today_prediction": {
@@ -64,11 +64,11 @@
     "confidence": 0.82,
     "active_signals": [
       "A3_relief_rocket",
-      "D3_volume_spike"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_fatigue"
+      "A2_deal_bullish"
     ],
-    "note": "高頻發文後的 RELIEF 信號通常伴隨強勁動能，應忽略疲軟的 DEAL 轉折。"
+    "note": "盤前 RELIEF 與 ACTION 強力共振，足以抵消 DEAL 關鍵字的疲軟反應，預期當天表現強勁。"
   }
 }
