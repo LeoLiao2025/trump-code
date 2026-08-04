@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-03",
-  "prepared_at": "2026-08-03T15:07:26Z",
+  "date": "2026-08-04",
+  "prepared_at": "2026-08-04T14:54:37Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,33 +109,33 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "crossover": 16,
-    "mutation": 13,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 45,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_trade",
-          "is_friday",
-          "kw_economy"
+          "kw_jobs",
+          "open_trade",
+          "kw_thank_you_for_your_attention"
         ],
         "direction": "LONG",
-        "hold": 2,
-        "score": 87.5,
+        "hold": 3,
+        "score": 95.5,
         "origin": "crossover"
       },
       {
         "features": [
-          "kw_interest_rate",
-          "kw_tremendous"
+          "kw_signed",
+          "is_friday"
         ],
         "direction": "LONG",
-        "hold": 3,
+        "hold": 2,
         "score": 87.5,
-        "origin": "crossover"
+        "origin": "mutation_remove"
       },
       {
         "features": [
@@ -161,8 +161,10 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "signals": [
+      "TARIFF",
+      "DEAL",
       "IRAN"
     ],
     "opportunities": [],
