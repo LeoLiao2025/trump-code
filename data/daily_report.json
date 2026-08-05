@@ -1,16 +1,12 @@
 {
-  "date": "2026-08-04",
-  "generated_at": "2026-08-04T14:52:24Z",
-  "posts_today": 21,
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T14:50:36Z",
+  "posts_today": 3,
   "latest_post": {
-    "time": "2026-08-04T14:43",
-    "content_preview": "Campus free speech hits 20-year high under Trump administration: https://www.washingtontimes.com/new"
+    "time": "2026-08-05T14:10",
+    "content_preview": "Great news for the Republican Party. El-Sayed, a Communist loser who hates Jews and Israel, is the p"
   },
-  "signals_detected": [
-    "TARIFF",
-    "DEAL",
-    "IRAN"
-  ],
+  "signals_detected": [],
   "models_triggered": 0,
   "direction_summary": {
     "LONG": 0,
@@ -23,13 +19,13 @@
     "rate": 73.3
   },
   "sp500_latest": {
-    "date": "2026-08-04",
-    "close": 7683.18
+    "date": "2026-08-05",
+    "close": 7768.96
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-08-04\nPosts today: 21 | Models triggered: 0\nSignals: TARIFF, DEAL, IRAN\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Campus free speech hits 20-year high under Trump administration: https://www.washingtontimes.com/new",
-    "zh": "川普密碼每日報告 -- 2026-08-04\n今日推文: 21 篇 | 觸發模型: 0 組\n偵測信號: 關稅, Deal, 伊朗\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Campus free speech hits 20-year high under Trump administration: https://www.washingtontimes.com/new",
-    "ja": "トランプ・コード日次レポート -- 2026-08-04\n本日の投稿: 21件 | トリガーモデル: 0組\n検出シグナル: 関税, ディール, イラン\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Campus free speech hits 20-year high under Trump administration: https://www.washingtontimes.com/new"
+    "en": "Trump Code Daily Report -- 2026-08-05\nPosts today: 3 | Models triggered: 0\nSignals: None\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 73.3% (11/15)\nLatest post: Great news for the Republican Party. El-Sayed, a Communist loser who hates Jews and Israel, is the p",
+    "zh": "川普密碼每日報告 -- 2026-08-05\n今日推文: 3 篇 | 觸發模型: 0 組\n偵測信號: 無\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 73.3% (11/15)\n最新推文: Great news for the Republican Party. El-Sayed, a Communist loser who hates Jews and Israel, is the p",
+    "ja": "トランプ・コード日次レポート -- 2026-08-05\n本日の投稿: 3件 | トリガーモデル: 0組\n検出シグナル: なし\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 73.3% (11/15)\n最新投稿: Great news for the Republican Party. El-Sayed, a Communist loser who hates Jews and Israel, is the p"
   },
   "triggered_rules_sample": []
 }
