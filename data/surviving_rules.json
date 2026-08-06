@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-05T14:50:39Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-08-06T16:11:19Z",
+    "evolved_rules_added": 46
   },
   "rules": [
     {
@@ -12816,7 +12816,12 @@
       "parents": [
         "kw_fake+mostly_open",
         "kw_economy+open_jobs"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14457,6 +14462,31 @@
     },
     {
       "features": [
+        "volume_falling_3d",
+        "kw_thank_you_for_your_attention",
+        "open_tariff"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "id": "4785f8103ed8",
+      "n_cond": 3,
+      "train_trades": 6,
+      "train_win_rate": 83.3,
+      "train_avg": 1.266,
+      "test_trades": 3,
+      "test_win_rate": 100.0,
+      "test_avg": 0.635,
+      "combined_score": 91.7,
+      "origin": "crossover",
+      "born_date": "2026-08-06",
+      "weight": 1.0,
+      "parents": [
+        "kw_interest_rate+kw_thank_you_for_your_attention",
+        "kw_beautiful+kw_tariffs_2plus"
+      ]
+    },
+    {
+      "features": [
         "is_friday",
         "kw_energy"
       ],
@@ -14835,36 +14865,6 @@
       "parents": [
         "kw_ban+kw_hereby",
         "avg_len_long+kw_energy_2plus"
-      ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "open_tariffs",
-        "kw_thank_you_for_your_attention",
-        "is_friday"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "b1266e8f30fa",
-      "n_cond": 3,
-      "train_trades": 5,
-      "train_win_rate": 80.0,
-      "train_avg": 1.134,
-      "test_trades": 3,
-      "test_win_rate": 100.0,
-      "test_avg": 0.597,
-      "combined_score": 90.0,
-      "origin": "crossover",
-      "born_date": "2026-05-10",
-      "weight": 1.0,
-      "parents": [
-        "kw_thank_you_for_your_attention+open_china",
-        "is_friday+kw_beautiful"
       ],
       "learn_stats": {
         "correct": 0,
