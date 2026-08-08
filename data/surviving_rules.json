@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-07T14:51:53Z",
-    "evolved_rules_added": 45
+    "last_evolution": "2026-08-08T14:30:28Z",
+    "evolved_rules_added": 46
   },
   "rules": [
     {
@@ -13923,7 +13923,12 @@
       "parents": [
         "is_friday+kw_tariff_2plus",
         "kw_corrupt+kw_tariffs"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14538,7 +14543,12 @@
       "parents": [
         "kw_executive_order+kw_jobs",
         "kw_india+kw_never_let_you_down"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14563,7 +14573,12 @@
       "parents": [
         "excl_heavy+kw_dow_2plus",
         "is_friday+kw_beautiful"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
