@@ -5362,5 +5362,46 @@
         "origin": "distilled"
       }
     ]
+  },
+  {
+    "date": "2026-08-09",
+    "crossover": 16,
+    "mutation": 7,
+    "distill": 16,
+    "total_new": 39,
+    "total_rules_after": 600,
+    "top_3": [
+      {
+        "features": [
+          "kw_thank_you_for_your_attention",
+          "excl_heavy",
+          "open_dow"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "open_china",
+          "kw_energy"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "kw_interest_rate",
+          "excl_heavy"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "mutation_remove"
+      }
+    ]
   }
 ]
