@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-13",
-  "analyzed_at": "2026-08-13T15:02:38Z",
+  "date": "2026-08-14",
+  "analyzed_at": "2026-08-14T14:56:21Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
     "ACTION_RELIEF_COMBO",
@@ -12,28 +12,28 @@
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Shift from keyword-driven volatility to structural sentiment shifts",
-    "Increased correlation between 'RELIEF' signals and pre-market liquidity"
+    "Shift from keyword-driven volatility to sentiment-duration clusters",
+    "Increased correlation between pre-market 'RELIEF' signals and intraday momentum"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_surge",
-      "name": "Pre-market Relief Momentum",
+      "id": "E1_relief_momentum",
+      "name": "Relief Rocket Extension",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET_POSITIVE"
+        "PRE_MARKET",
+        "LOW_VOLATILITY_PREV_DAY"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.85
     },
     {
-      "id": "E2_tariff_fatigue",
-      "name": "Tariff Sentiment Reversal",
+      "id": "E1_deal_skepticism",
+      "name": "Deal Fatigue Counter",
       "features": [
-        "TARIFF",
-        "LOW_VOL_SPIKE"
+        "DEAL",
+        "TARIFF_MENTION_24H"
       ],
       "direction": "SHORT",
       "hold": 1,
@@ -43,7 +43,7 @@
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2
+      "D3_volume_spike": 1.1
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.7,
@@ -64,8 +64,8 @@
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. Recalibrate C1 and A2 models to account for market desensitization",
-      "2. Integrate pre-market volume data into the A3_relief_rocket logic"
+      "1. Recalibrate C1_burst_silence to account for macro-regime shifts",
+      "2. Integrate sentiment decay analysis for the DEAL keyword"
     ]
   },
   "today_prediction": {
@@ -78,8 +78,8 @@
       "B3_action_pre"
     ],
     "suppressing_signals": [
-      "C2_brag_top"
+      "A2_deal_bullish_fatigue"
     ],
-    "note": "Strong alignment between ACTION and RELIEF signals suggests high-conviction long entry."
+    "note": "Strong pre-market relief signals outweigh the diminishing impact of recent deal-related noise."
   }
 }
