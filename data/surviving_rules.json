@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-14T14:49:09Z",
+    "last_evolution": "2026-08-15T14:20:37Z",
     "evolved_rules_added": 45
   },
   "rules": [
@@ -12940,6 +12940,31 @@
     },
     {
       "features": [
+        "kw_thank_you_for_your_attention",
+        "kw_agreement",
+        "kw_tariffs"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "id": "f285ecf2a271",
+      "n_cond": 3,
+      "train_trades": 10,
+      "train_win_rate": 90.0,
+      "train_avg": 1.449,
+      "test_trades": 3,
+      "test_win_rate": 100.0,
+      "test_avg": 0.567,
+      "combined_score": 95.0,
+      "origin": "crossover",
+      "born_date": "2026-08-15",
+      "weight": 1.0,
+      "parents": [
+        "kw_disaster+kw_india",
+        "kw_agreement+kw_thank_you_for_your_attention"
+      ]
+    },
+    {
+      "features": [
         "kw_deal",
         "volume_falling_3d",
         "kw_thank_you_for_your_attention"
@@ -13572,7 +13597,12 @@
       "parents": [
         "open_energy+open_jobs",
         "kw_tariffs_2plus+kw_thank_you_for_your_attention"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14067,7 +14097,12 @@
       "parents": [
         "kw_india+kw_never_let_you_down",
         "is_friday+kw_economy"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14850,36 +14885,6 @@
       "born_date": "2026-07-09",
       "weight": 1.0,
       "parent": "kw_agreement+kw_jobs+kw_thank_you_for_your_attention",
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_thank_you_for_your_attention",
-        "kw_china",
-        "open_china"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "id": "b6c9890c8a5c",
-      "n_cond": 3,
-      "train_trades": 11,
-      "train_win_rate": 81.8,
-      "train_avg": 1.619,
-      "test_trades": 3,
-      "test_win_rate": 100.0,
-      "test_avg": 0.505,
-      "combined_score": 90.9,
-      "origin": "crossover",
-      "born_date": "2026-07-23",
-      "weight": 1.0,
-      "parents": [
-        "kw_tariff+kw_thank_you_for_your_attention",
-        "kw_agreement+kw_china"
-      ],
       "learn_stats": {
         "correct": 0,
         "wrong": 0,
