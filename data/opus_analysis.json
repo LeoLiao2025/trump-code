@@ -1,24 +1,24 @@
 {
-  "date": "2026-08-15",
-  "analyzed_at": "2026-08-15T14:27:45Z",
+  "date": "2026-08-16",
+  "analyzed_at": "2026-08-16T14:29:42Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "深夜關稅與開盤跳空的關聯性減弱",
-    "DEAL 出現後的市場鈍化反應"
+    "ACTION_RELIEF_COMBO",
+    "SILENCE_DECAY_RATE"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默後的市場情緒未能有效反轉，受宏觀經濟下行壓力抵銷",
-    "A2_deal_bullish": "DEAL 關鍵字被過度頻繁使用導致邊際效應遞減，市場出現利多出盡反應"
+    "C1_burst_silence": "Market sensitivity to silence has diminished; prolonged silence now triggers uncertainty rather than relief.",
+    "A2_deal_bullish": "The 'DEAL' keyword is suffering from semantic exhaustion, leading to diminishing returns and false breakouts."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場對正面關鍵字的敏感度下降，對負面情緒的反應時間縮短",
-    "盤前信號的預測準確度顯著高於盤中或深夜信號"
+    "Shift from keyword-driven volatility to structural sentiment decay during periods of inactivity.",
+    "Increased correlation between pre-market 'RELIEF' signals and intraday momentum."
   ],
   "new_rules": [
     {
-      "id": "E1_pre_relief_combo",
-      "name": "盤前 RELIEF 強化規則",
+      "id": "E1_relief_momentum",
+      "name": "Relief Rocket Extension",
       "features": [
         "RELIEF",
         "ACTION",
@@ -29,16 +29,15 @@
       "confidence": 0.85
     },
     {
-      "id": "E2_tariff_fatigue",
-      "name": "關稅疲勞反轉規則",
+      "id": "E2_deal_fatigue",
+      "name": "Deal Exhaustion Short",
       "features": [
-        "TARIFF",
-        "NEGATIVE_SENTIMENT",
-        "3_DAY_CONTINUOUS"
+        "DEAL",
+        "LOW_VOL"
       ],
       "direction": "SHORT",
       "hold": 1,
-      "confidence": 0.65
+      "confidence": 0.6
     }
   ],
   "model_adjustments": {
@@ -47,11 +46,11 @@
       "D3_volume_spike": 1.2
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.7,
-      "C1_burst_silence": 0.8
+      "C1_burst_silence": 0.7,
+      "A2_deal_bullish": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且樣本數不足，雜訊過大)"
+      "C3_night_alert (Low accuracy and high slippage risk)"
     ]
   },
   "signal_confidence": {
@@ -59,14 +58,14 @@
     "RELIEF": 0.95,
     "TARIFF": 0.7,
     "CHINA": 0.6,
-    "DEAL": 0.5
+    "DEAL": 0.45
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新校準 DEAL 相關模型的權重以應對市場鈍化",
-      "2. 強化盤前信號與當天走勢的關聯分析"
+      "1. Recalibrate C1_burst_silence to account for macro-environment volatility.",
+      "2. Integrate volume-weighted sentiment analysis to filter 'DEAL' noise."
     ]
   },
   "today_prediction": {
@@ -81,6 +80,6 @@
     "suppressing_signals": [
       "C2_brag_top"
     ],
-    "note": "盤前 RELIEF 與 ACTION 信號強烈，抵銷了長期沉默帶來的潛在負面風險。"
+    "note": "Strong pre-market relief and action signals suggest immediate bullish momentum despite historical deal fatigue."
   }
 }
