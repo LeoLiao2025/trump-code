@@ -1579,5 +1579,17 @@
       "IRAN"
     ],
     "consensus": "NEUTRAL"
+  },
+  {
+    "date": "2026-08-19",
+    "posts": 5,
+    "triggered": 5,
+    "long": 5,
+    "short": 0,
+    "signals": [
+      "TARIFF",
+      "DEAL"
+    ],
+    "consensus": "BULLISH"
   }
 ]
