@@ -1,19 +1,19 @@
 {
-  "date": "2026-08-20",
-  "analyzed_at": "2026-08-20T14:40:40Z",
+  "date": "2026-08-21",
+  "analyzed_at": "2026-08-21T14:39:46Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
     "ACTION_RELIEF_COMBO",
-    "SILENCE_DECAY_RATE"
+    "MARKET_BRAG_DIVERGENCE"
   ],
   "error_analysis": {
     "C1_burst_silence": "Market sensitivity to silence has diminished; prolonged silence now triggers uncertainty rather than relief.",
-    "A2_deal_bullish": "The 'DEAL' keyword is suffering from semantic exhaustion, leading to diminishing returns and 'sell the news' reactions."
+    "A2_deal_bullish": "The 'DEAL' keyword is suffering from semantic inflation, losing its impact as a reliable bullish catalyst."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Shift from keyword-driven volatility to structural sentiment decay during periods of inactivity.",
-    "Increased correlation between 'RELIEF' signals and immediate pre-market price action."
+    "Shift from single-keyword impact to complex sentiment clusters",
+    "Increased market resilience to 'TARIFF' threats"
   ],
   "new_rules": [
     {
@@ -21,23 +21,11 @@
       "name": "Relief-Action Synchronization",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET_POSITIVE"
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.85
-    },
-    {
-      "id": "E2_silence_rebound_fail",
-      "name": "Silence Exhaustion Short",
-      "features": [
-        "SILENCE > 48H",
-        "NO_DEAL_MENTION"
-      ],
-      "direction": "SHORT",
-      "hold": 1,
-      "confidence": 0.65
     }
   ],
   "model_adjustments": {
@@ -50,22 +38,21 @@
       "A2_deal_bullish": 0.8
     },
     "eliminate": [
-      "C3_night_alert (Low accuracy and high slippage risk)"
+      "C3_night_alert (Low accuracy and high volatility risk)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.5,
-    "CHINA": 0.6
+    "DEAL": 0.5
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. Recalibrate C1_burst_silence to account for market fatigue.",
-      "2. Integrate real-time pre-market volume data into A3_relief_rocket."
+      "1. Recalibrate C1 and A2 models to account for keyword fatigue",
+      "2. Integrate multi-signal cluster analysis for higher precision"
     ]
   },
   "today_prediction": {
@@ -78,8 +65,8 @@
       "B3_action_pre"
     ],
     "suppressing_signals": [
-      "C1_burst_silence_decay"
+      "C2_brag_top"
     ],
-    "note": "Strong alignment between RELIEF keywords and ACTION sentiment suggests a high-probability long entry."
+    "note": "Strong alignment between RELIEF and ACTION signals suggests immediate upward momentum."
   }
 }

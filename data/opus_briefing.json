@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-20",
-  "prepared_at": "2026-08-20T14:40:34Z",
+  "date": "2026-08-21",
+  "prepared_at": "2026-08-21T14:39:42Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,43 +109,44 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-08-20",
-    "crossover": 13,
+    "date": "2026-08-21",
+    "crossover": 16,
     "mutation": 15,
     "distill": 16,
-    "total_new": 44,
+    "total_new": 47,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_tariff",
-          "kw_wonderful",
-          "is_friday"
+          "kw_economy",
+          "kw_tariffs",
+          "open_thank_you_for_your_attention",
+          "open_trade"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 95.5,
+        "hold": 2,
+        "score": 90.0,
         "origin": "crossover"
       },
       {
         "features": [
-          "kw_tremendous",
-          "kw_interest_rate"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 87.5,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "open_tariff",
-          "kw_signed"
+          "kw_signed",
+          "open_tariff"
         ],
         "direction": "LONG",
         "hold": 2,
         "score": 87.5,
-        "origin": "crossover"
+        "origin": "mutation_remove"
+      },
+      {
+        "features": [
+          "kw_beautiful",
+          "volume_falling_3d"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
       }
     ]
   },
@@ -161,7 +162,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-08-19",
+    "date": "2026-08-21",
     "signals": [
       "TARIFF",
       "DEAL"
