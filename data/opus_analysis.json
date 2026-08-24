@@ -1,42 +1,42 @@
 {
-  "date": "2026-08-23",
-  "analyzed_at": "2026-08-23T14:28:00Z",
+  "date": "2026-08-24",
+  "analyzed_at": "2026-08-24T14:47:33Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "深夜情緒轉折 (Night Sentiment Pivot)",
-    "特定地緣政治關鍵字組合 (Geopolitical Keyword Clusters)"
+    "深夜關稅與開盤跳空的關聯性減弱",
+    "DEAL 關鍵字在特定地緣政治背景下的失效"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對沉默期的解讀從『利空出盡』轉向『不確定性增加』，導致長沉默後的反彈力道失效。",
-    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場已提前反應或產生免疫。"
+    "C1_burst_silence": "長沉默後的市場反應已鈍化，沉默可能代表政策醞釀而非情緒冷卻",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場對口頭協議產生免疫"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "從單一關鍵字驅動轉向情緒密度驅動",
-    "盤前信號 (A3, B3) 的勝率顯著超越盤中或深夜信號"
+    "市場對正面情緒詞彙（DEAL）的敏感度下降",
+    "盤前 RELIEF 信號的領先指標作用顯著增強",
+    "發文量暴增（D3）作為底部信號的準確度提升"
   ],
   "new_rules": [
     {
-      "id": "E1_pre_relief_combo",
-      "name": "盤前救贖組合",
+      "id": "E1_relief_action_combo",
+      "name": "緩解行動組合拳",
       "features": [
         "RELIEF",
-        "ACTION",
-        "PRE_MARKET"
+        "ACTION"
       ],
       "direction": "LONG",
-      "hold": 1,
+      "hold": 3,
       "confidence": 0.85
     },
     {
-      "id": "E2_silent_trap",
-      "name": "沉默陷阱規避",
+      "id": "E2_tariff_fatigue",
+      "name": "關稅疲勞反轉",
       "features": [
-        "SILENCE > 48H",
-        "VOLATILITY_HIGH"
+        "TARIFF",
+        "LOW_VOLATILITY"
       ],
-      "direction": "FLAT",
-      "hold": 0,
+      "direction": "SHORT",
+      "hold": 1,
       "confidence": 0.65
     }
   ],
@@ -50,35 +50,36 @@
       "C1_burst_silence": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且樣本數不足)"
+      "C3_night_alert（勝率過低且樣本數不足，雜訊過大）"
     ]
   },
   "signal_confidence": {
-    "RELIEF": 0.98,
     "ACTION": 0.95,
-    "TARIFF": 0.65,
-    "DEAL": 0.45
+    "RELIEF": 0.95,
+    "TARIFF": 0.7,
+    "CHINA": 0.6,
+    "DEAL": 0.5
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新校準 C1 沉默信號的觸發閾值",
-      "2. 強化盤前 (Pre-market) 數據的即時權重分配"
+      "1. 重新校準 C1 與 A2 模型的觸發閾值",
+      "2. 強化 A3 與 D3 高勝率模型的權重分配"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
-    "hold_days": 1,
-    "confidence": 0.82,
+    "hold_days": 2,
+    "confidence": 0.8,
     "active_signals": [
       "A3_relief_rocket",
       "B3_action_pre"
     ],
     "suppressing_signals": [
-      "C1_burst_silence_decay"
+      "C1_burst_silence"
     ],
-    "note": "盤前 RELIEF 與 ACTION 信號共振，抵銷了長期沉默帶來的不確定性。"
+    "note": "盤前 RELIEF 與 ACTION 信號共振，抵消了長沉默模型的失效風險。"
   }
 }
