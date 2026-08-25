@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-24T14:39:01Z",
+    "last_evolution": "2026-08-25T14:42:11Z",
     "evolved_rules_added": 48
   },
   "rules": [
@@ -14163,7 +14163,12 @@
       "parents": [
         "kw_dow_2plus+kw_thank_you_for_your_attention",
         "kw_ban+kw_biden"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
