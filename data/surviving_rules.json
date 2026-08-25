@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-24T14:47:14Z",
-    "evolved_rules_added": 41
+    "last_evolution": "2026-08-25T14:51:23Z",
+    "evolved_rules_added": 47
   },
   "rules": [
     {
@@ -14610,7 +14610,38 @@
       "origin": "mutation_replace",
       "born_date": "2026-08-24",
       "weight": 1.0,
-      "parent": "kw_economy+open_trade+open_tremendous"
+      "parent": "kw_economy+open_trade+open_tremendous",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
+    },
+    {
+      "features": [
+        "kw_tariffs",
+        "kw_thank_you_for_your_attention",
+        "kw_trade",
+        "kw_dow_2plus"
+      ],
+      "direction": "LONG",
+      "hold": 3,
+      "id": "3ff92e8b31c6",
+      "n_cond": 4,
+      "train_trades": 6,
+      "train_win_rate": 83.3,
+      "train_avg": 1.335,
+      "test_trades": 8,
+      "test_win_rate": 100.0,
+      "test_avg": 0.72,
+      "combined_score": 91.7,
+      "origin": "crossover",
+      "born_date": "2026-08-25",
+      "weight": 1.0,
+      "parents": [
+        "kw_dow_2plus+kw_interest_rate",
+        "kw_corrupt+kw_tariffs"
+      ]
     },
     {
       "features": [
@@ -14855,32 +14886,6 @@
         "both_tariff_and_deal+kw_disaster",
         "kw_tariffs_2plus+kw_thank_you_for_your_attention"
       ],
-      "learn_stats": {
-        "correct": 0,
-        "wrong": 0,
-        "streak": 0
-      }
-    },
-    {
-      "features": [
-        "kw_president_of_the_united_states",
-        "kw_india"
-      ],
-      "direction": "LONG",
-      "hold": 3,
-      "id": "3e2e46fd6d3d",
-      "n_cond": 2,
-      "train_trades": 5,
-      "train_win_rate": 100.0,
-      "train_avg": 1.934,
-      "test_trades": 5,
-      "test_win_rate": 80.0,
-      "test_avg": 0.71,
-      "combined_score": 90.0,
-      "origin": "mutation_remove",
-      "born_date": "2026-03-17",
-      "weight": 1.0,
-      "parent": "kw_india+kw_never_let_you_down+kw_president_of_the_united_states",
       "learn_stats": {
         "correct": 0,
         "wrong": 0,
