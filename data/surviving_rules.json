@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-28T23:29:43Z",
+    "last_evolution": "2026-08-29T17:36:19Z",
     "evolved_rules_added": 47
   },
   "rules": [
@@ -12963,7 +12963,12 @@
       "parents": [
         "kw_deal+kw_inflation",
         "kw_president_of_the_united_states+open_ban"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -14696,7 +14701,12 @@
       "parents": [
         "kw_interest_rate+kw_trade",
         "is_friday+kw_economy"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
