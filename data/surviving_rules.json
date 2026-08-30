@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-08-29T17:31:00Z",
-    "evolved_rules_added": 45
+    "last_evolution": "2026-08-30T17:54:38Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -12962,7 +12962,12 @@
       "parents": [
         "kw_agreement+kw_thank_you_for_your_attention",
         "kw_interest_rate+kw_thank_you_for_your_attention"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
@@ -13219,7 +13224,12 @@
       "parents": [
         "kw_energy+kw_interest_rate",
         "kw_energy+kw_perfect"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
