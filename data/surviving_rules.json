@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-01T17:35:53Z",
+    "last_evolution": "2026-09-02T17:36:03Z",
     "evolved_rules_added": 43
   },
   "rules": [
@@ -14396,7 +14396,12 @@
       "parents": [
         "kw_tremendous+open_thank_you_for_your_attention",
         "is_friday+kw_china"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
