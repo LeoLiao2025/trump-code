@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-05T16:40:50Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-09-06T16:48:08Z",
+    "evolved_rules_added": 43
   },
   "rules": [
     {
@@ -14849,7 +14849,12 @@
       "parents": [
         "is_friday+open_tariffs",
         "kw_biden+kw_deal"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
