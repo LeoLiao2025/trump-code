@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-07T18:40:12Z",
-    "evolved_rules_added": 42
+    "last_evolution": "2026-09-08T17:51:03Z",
+    "evolved_rules_added": 40
   },
   "rules": [
     {
@@ -14051,7 +14051,12 @@
       "parents": [
         "kw_biden_2plus+kw_tariffs",
         "kw_inflation+open_china"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
