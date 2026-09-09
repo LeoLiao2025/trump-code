@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-08T17:46:02Z",
-    "evolved_rules_added": 46
+    "last_evolution": "2026-09-09T17:33:15Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -12907,7 +12907,12 @@
       "parents": [
         "is_friday+kw_tremendous",
         "kw_deal_2plus+kw_europe"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
