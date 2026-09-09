@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-08",
-  "analyzed_at": "2026-09-08T17:51:21Z",
+  "date": "2026-09-09",
+  "analyzed_at": "2026-09-09T17:43:28Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
     "ACTION_RELIEF_COMBO",
-    "SILENCE_DEAL_PIVOT"
+    "SILENCE_DECAY"
   ],
   "error_analysis": {
     "C1_burst_silence": "Market sensitivity to silence has diminished; prolonged silence now triggers uncertainty rather than relief.",
-    "A2_deal_bullish": "The 'DEAL' keyword is suffering from semantic fatigue, leading to diminishing returns and false breakouts."
+    "A2_deal_bullish": "The 'DEAL' keyword is suffering from semantic inflation, losing its predictive power as a bullish catalyst."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "Shift from single-keyword impact to multi-signal synergy requirements.",
-    "Increased market volatility during 'RELIEF' phases compared to historical norms."
+    "Shift from keyword-driven volatility to sentiment-duration dependency.",
+    "Increased market skepticism toward 'DEAL' rhetoric."
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_synergy",
-      "name": "RELIEF+ACTION 雙重共振",
+      "id": "E1_relief_action",
+      "name": "Relief Action Synergy",
       "features": [
         "RELIEF",
         "ACTION"
@@ -28,11 +28,11 @@
       "confidence": 0.85
     },
     {
-      "id": "E2_tariff_fatigue_reversal",
-      "name": "關稅疲勞反轉",
+      "id": "E1_tariff_fatigue",
+      "name": "Tariff Fatigue Reversal",
       "features": [
         "TARIFF",
-        "LOW_VOL"
+        "3_DAY_STREAK"
       ],
       "direction": "SHORT",
       "hold": 1,
@@ -42,14 +42,14 @@
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.1
+      "D3_volume_spike": 1.2
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.7,
       "C1_burst_silence": 0.6
     },
     "eliminate": [
-      "C3_night_alert (Low sample size and high failure rate)"
+      "C3_night_alert (Low accuracy and insufficient sample size)"
     ]
   },
   "signal_confidence": {
@@ -60,18 +60,18 @@
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
-    "grade": "B+",
+    "score": "68/100",
+    "grade": "C+",
     "priorities": [
-      "1. Recalibrate C1_burst_silence decay parameters.",
-      "2. Implement multi-keyword synergy weighting."
+      "1. Recalibrate C1 and A2 models to account for recent high-frequency failures.",
+      "2. Integrate volume-based confirmation for all sentiment signals."
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.88,
+    "confidence": 0.8,
     "active_signals": [
       "A3_relief_rocket",
       "B3_action_pre"
@@ -79,6 +79,6 @@
     "suppressing_signals": [
       "A2_deal_bullish"
     ],
-    "note": "High confidence in RELIEF and ACTION synergy despite DEAL signal weakness."
+    "note": "Strong synergy between RELIEF and ACTION signals suggests immediate bullish momentum despite DEAL fatigue."
   }
 }
