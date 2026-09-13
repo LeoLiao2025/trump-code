@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-12",
-  "analyzed_at": "2026-09-12T16:52:49Z",
+  "date": "2026-09-13",
+  "analyzed_at": "2026-09-13T17:22:48Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "DEAL_ONLY 與 TARIFF_ONLY 的背離信號",
-    "深夜推文頻率與市場波動率的非線性關聯"
+    "DEAL_ONLY 與 TARIFF_ONLY 的複合對沖信號",
+    "深夜推文頻率異常波動"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對長期沉默的解讀從『利空出盡』轉向『政策不確定性恐慌』，導致多頭陷阱。",
-    "A2_deal_bullish": "DEAL 關鍵字邊際效用遞減，市場需要具體細節而非僅是口頭承諾。"
+    "C1_burst_silence": "市場對長期沉默的解讀從『利空出盡』轉向『政策不確定性恐慌』，導致預期反彈失效。",
+    "A2_deal_bullish": "DEAL 關鍵字邊際效用遞減，若無具體金額或時間表，市場傾向視為口頭干預而非實質利多。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "情緒反應鈍化：傳統正面關鍵字（DEAL）引發的漲幅縮減。",
-    "負面信號滯後：TARIFF 的殺傷力從即時反應轉向隔日發酵。"
+    "情緒極端化：市場對正面詞彙反應鈍化，對負面詞彙（如 TARIFF）反應敏感度提升。",
+    "時間效應：盤前信號（A3, B3）的預測力顯著優於盤中或深夜信號。"
   ],
   "new_rules": [
     {
-      "id": "E1_hybrid_relief",
-      "name": "RELIEF 疊加 ACTION 修正",
+      "id": "E1_relief_action_combo",
+      "name": "緩解行動組合拳",
       "features": [
         "RELIEF",
         "ACTION"
@@ -28,57 +28,57 @@
       "confidence": 0.85
     },
     {
-      "id": "E2_late_night_vol",
-      "name": "深夜 TARIFF 避險",
+      "id": "E2_tariff_silence_trap",
+      "name": "關稅沉默陷阱",
       "features": [
         "TARIFF",
-        "NIGHT_ALERT"
+        "SILENCE > 24h"
       ],
       "direction": "SHORT",
       "hold": 1,
-      "confidence": 0.75
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.1
+      "D3_volume_spike": 1.2
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.7,
       "C1_burst_silence": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率過低且樣本數不足)"
+      "C3_night_alert（勝率過低且造成負期望值）"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.75,
-    "CHINA": 0.6,
-    "DEAL": 0.45
+    "DEAL": 0.45,
+    "CHINA": 0.6
   },
   "system_health": {
-    "score": "68/100",
-    "grade": "C+",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. 重新校準 C1 模式的沉默定義時間軸",
-      "2. 引入總體經濟波動率作為信號過濾器"
+      "1. 重新校準 C1 模式的觸發閾值以應對市場情緒轉向",
+      "2. 強化盤前信號與成交量暴增信號的權重整合"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.72,
+    "confidence": 0.8,
     "active_signals": [
       "A3_relief_rocket",
       "B3_action_pre"
     ],
     "suppressing_signals": [
-      "C2_brag_top"
+      "A2_deal_bullish_decay"
     ],
-    "note": "高勝率模型 A3 觸發，抵銷了市場對 DEAL 疲軟的疑慮。"
+    "note": "盤前高信心度信號齊發，抵銷了長期沉默帶來的負面慣性。"
   }
 }
