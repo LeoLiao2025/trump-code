@@ -1,8 +1,9 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-21",
   "signals": [
-    "TARIFF",
-    "TARIFF_ONLY"
+    "DEAL",
+    "CHINA",
+    "DEAL_ONLY"
   ],
   "opportunities": [],
   "total_scanned": 0
