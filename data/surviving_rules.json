@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-22T17:56:13Z",
-    "evolved_rules_added": 45
+    "last_evolution": "2026-09-23T18:16:05Z",
+    "evolved_rules_added": 48
   },
   "rules": [
     {
@@ -13866,7 +13866,12 @@
       "parents": [
         "open_energy+open_jobs",
         "kw_biden+open_ban"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
