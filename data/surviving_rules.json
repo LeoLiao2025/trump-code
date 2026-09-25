@@ -1,7 +1,7 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-24T18:11:03Z",
+    "last_evolution": "2026-09-25T18:13:55Z",
     "evolved_rules_added": 48
   },
   "rules": [
@@ -13896,7 +13896,12 @@
       "parents": [
         "is_friday+kw_beautiful",
         "kw_fake+mostly_open"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
