@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-25",
-  "prepared_at": "2026-09-25T18:22:36Z",
+  "date": "2026-09-26",
+  "prepared_at": "2026-09-26T17:41:41Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,35 +109,13 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-09-25",
-    "crossover": 16,
-    "mutation": 16,
+    "date": "2026-09-26",
+    "crossover": 13,
+    "mutation": 11,
     "distill": 16,
-    "total_new": 48,
+    "total_new": 40,
     "total_rules_after": 600,
     "top_3": [
-      {
-        "features": [
-          "open_china",
-          "kw_thank_you_for_your_attention"
-        ],
-        "direction": "LONG",
-        "hold": 2,
-        "score": 90.9,
-        "origin": "crossover"
-      },
-      {
-        "features": [
-          "open_tariff",
-          "open_tariffs",
-          "kw_thank_you_for_your_attention",
-          "is_friday"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 90.0,
-        "origin": "crossover"
-      },
       {
         "features": [
           "kw_interest_rate",
@@ -146,6 +124,26 @@
         "direction": "LONG",
         "hold": 3,
         "score": 90.0,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "kw_signed",
+          "is_friday"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 87.5,
+        "origin": "mutation_remove"
+      },
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_tremendous"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
         "origin": "distilled"
       }
     ]
@@ -162,9 +160,12 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-09-25",
+    "date": "2026-09-26",
     "signals": [
-      "CHINA"
+      "DEAL",
+      "CHINA",
+      "IRAN",
+      "DEAL_ONLY"
     ],
     "opportunities": [],
     "total_scanned": 0
