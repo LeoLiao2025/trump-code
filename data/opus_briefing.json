@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-26",
-  "prepared_at": "2026-09-26T17:41:41Z",
+  "date": "2026-09-27",
+  "prepared_at": "2026-09-27T18:10:09Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,11 +109,11 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-09-26",
-    "crossover": 13,
-    "mutation": 11,
+    "date": "2026-09-27",
+    "crossover": 16,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 40,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
@@ -128,8 +128,8 @@
       },
       {
         "features": [
-          "kw_signed",
-          "is_friday"
+          "open_tariff",
+          "kw_signed"
         ],
         "direction": "LONG",
         "hold": 2,
