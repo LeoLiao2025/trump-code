@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-27",
-  "prepared_at": "2026-09-27T18:10:09Z",
+  "date": "2026-09-28",
+  "prepared_at": "2026-09-28T20:27:32Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,7 +109,7 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-09-27",
+    "date": "2026-09-28",
     "crossover": 16,
     "mutation": 16,
     "distill": 16,
@@ -128,23 +128,23 @@
       },
       {
         "features": [
-          "open_tariff",
-          "kw_signed"
+          "kw_inflation",
+          "open_china"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 87.5,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "kw_signed",
+          "is_friday"
         ],
         "direction": "LONG",
         "hold": 2,
         "score": 87.5,
         "origin": "mutation_remove"
-      },
-      {
-        "features": [
-          "kw_interest_rate",
-          "kw_tremendous"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 87.5,
-        "origin": "distilled"
       }
     ]
   },
