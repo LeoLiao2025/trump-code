@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-09-29T19:14:26Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-09-30T18:57:45Z",
+    "evolved_rules_added": 45
   },
   "rules": [
     {
@@ -13139,7 +13139,12 @@
       "parents": [
         "open_energy+open_jobs",
         "kw_beautiful+kw_economy"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
