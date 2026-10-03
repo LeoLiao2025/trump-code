@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-02",
-  "prepared_at": "2026-10-02T19:05:04Z",
+  "date": "2026-10-03",
+  "prepared_at": "2026-10-03T17:52:28Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,7 +109,7 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-10-02",
+    "date": "2026-10-03",
     "crossover": 16,
     "mutation": 16,
     "distill": 16,
@@ -118,14 +118,25 @@
     "top_3": [
       {
         "features": [
-          "kw_trillion",
-          "kw_inflation",
-          "kw_tariff"
+          "kw_economy",
+          "open_tariff",
+          "is_friday"
         ],
         "direction": "LONG",
-        "hold": 2,
-        "score": 100.0,
+        "hold": 3,
+        "score": 91.7,
         "origin": "crossover"
+      },
+      {
+        "features": [
+          "questions_yes",
+          "kw_biden",
+          "kw_signed"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 90.9,
+        "origin": "mutation_replace"
       },
       {
         "features": [
@@ -136,16 +147,6 @@
         "hold": 3,
         "score": 90.0,
         "origin": "distilled"
-      },
-      {
-        "features": [
-          "volume_spike",
-          "kw_amazing"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 88.9,
-        "origin": "mutation_remove"
       }
     ]
   },
@@ -161,7 +162,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-10-02",
+    "date": "2026-10-03",
     "signals": [
       "DEAL",
       "DEAL_ONLY"
