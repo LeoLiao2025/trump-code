@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-05",
-  "generated_at": "2026-10-05T21:26:15Z",
-  "posts_today": 9,
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T19:22:31Z",
+  "posts_today": 12,
   "latest_post": {
-    "time": "2026-10-05T21:23",
-    "content_preview": "Annie \"Trannie\" Andrews is running against our wonderful Darline Graham for the Senate in South Caro"
+    "time": "2026-10-06T15:25",
+    "content_preview": "What's happening in France is nothing less than out of control mass migration. This isn't about scho"
   },
   "signals_detected": [
-    "DEAL",
-    "DEAL_ONLY"
+    "TARIFF",
+    "TARIFF_ONLY"
   ],
   "models_triggered": 0,
   "direction_summary": {
@@ -22,13 +22,13 @@
     "rate": 68.8
   },
   "sp500_latest": {
-    "date": "2026-10-05",
-    "close": 7773.95
+    "date": "2026-10-06",
+    "close": 7825.08
   },
   "summary": {
-    "en": "Trump Code Daily Report -- 2026-10-05\nPosts today: 9 | Models triggered: 0\nSignals: DEAL, DEAL_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 68.8% (11/16)\nLatest post: Annie \"Trannie\" Andrews is running against our wonderful Darline Graham for the Senate in South Caro",
-    "zh": "川普密碼每日報告 -- 2026-10-05\n今日推文: 9 篇 | 觸發模型: 0 組\n偵測信號: Deal, 只有Deal沒有關稅\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 68.8% (11/16)\n最新推文: Annie \"Trannie\" Andrews is running against our wonderful Darline Graham for the Senate in South Caro",
-    "ja": "トランプ・コード日次レポート -- 2026-10-05\n本日の投稿: 9件 | トリガーモデル: 0組\n検出シグナル: ディール, Dealのみ（関税無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 68.8% (11/16)\n最新投稿: Annie \"Trannie\" Andrews is running against our wonderful Darline Graham for the Senate in South Caro"
+    "en": "Trump Code Daily Report -- 2026-10-06\nPosts today: 12 | Models triggered: 0\nSignals: TARIFF, TARIFF_ONLY\nConsensus: 0 LONG vs 0 SHORT\nHistorical hit rate: 68.8% (11/16)\nLatest post: What's happening in France is nothing less than out of control mass migration. This isn't about scho",
+    "zh": "川普密碼每日報告 -- 2026-10-06\n今日推文: 12 篇 | 觸發模型: 0 組\n偵測信號: 關稅, 只有關稅沒有Deal\n共識方向: 0 組看多 vs 0 組看空\n歷史命中率: 68.8% (11/16)\n最新推文: What's happening in France is nothing less than out of control mass migration. This isn't about scho",
+    "ja": "トランプ・コード日次レポート -- 2026-10-06\n本日の投稿: 12件 | トリガーモデル: 0組\n検出シグナル: 関税, 関税のみ（Deal無し）\nコンセンサス: 0組ロング vs 0組ショート\n過去の的中率: 68.8% (11/16)\n最新投稿: What's happening in France is nothing less than out of control mass migration. This isn't about scho"
   },
   "triggered_rules_sample": []
 }
