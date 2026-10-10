@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-09",
-  "prepared_at": "2026-10-09T19:22:14Z",
+  "date": "2026-10-10",
+  "prepared_at": "2026-10-10T18:20:39Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,11 +109,11 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-10-09",
-    "crossover": 15,
-    "mutation": 11,
+    "date": "2026-10-10",
+    "crossover": 16,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 42,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
@@ -128,18 +128,18 @@
       },
       {
         "features": [
-          "volume_spike",
-          "kw_amazing"
+          "kw_beautiful",
+          "volume_falling_3d"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 88.9,
-        "origin": "mutation_remove"
+        "hold": 2,
+        "score": 87.5,
+        "origin": "crossover"
       },
       {
         "features": [
           "kw_interest_rate",
-          "kw_beautiful"
+          "kw_tremendous"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -160,8 +160,9 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "signals": [
+      "CHINA",
       "IRAN"
     ],
     "opportunities": [],
