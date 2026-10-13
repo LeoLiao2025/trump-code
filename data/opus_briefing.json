@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-12",
-  "prepared_at": "2026-10-12T22:01:56Z",
+  "date": "2026-10-13",
+  "prepared_at": "2026-10-13T20:09:03Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,23 +109,22 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-10-12",
-    "crossover": 16,
-    "mutation": 12,
+    "date": "2026-10-13",
+    "crossover": 12,
+    "mutation": 16,
     "distill": 16,
     "total_new": 44,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_trade",
-          "kw_energy",
-          "kw_thank_you_for_your_attention"
+          "kw_tariff",
+          "kw_signed"
         ],
         "direction": "LONG",
-        "hold": 1,
+        "hold": 2,
         "score": 90.6,
-        "origin": "crossover"
+        "origin": "mutation_remove"
       },
       {
         "features": [
@@ -139,13 +138,14 @@
       },
       {
         "features": [
-          "is_friday",
-          "kw_signed"
+          "volume_falling_3d",
+          "kw_deal",
+          "excl_heavy"
         ],
         "direction": "LONG",
-        "hold": 2,
+        "hold": 3,
         "score": 87.5,
-        "origin": "mutation_remove"
+        "origin": "crossover"
       }
     ]
   },
@@ -161,7 +161,7 @@
     "DEAL_ONLY": 0.65
   },
   "prediction_market": {
-    "date": "2026-10-10",
+    "date": "2026-10-13",
     "signals": [
       "CHINA",
       "IRAN"
