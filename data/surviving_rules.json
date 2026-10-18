@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-10-17T16:56:24Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-10-18T17:10:38Z",
+    "evolved_rules_added": 40
   },
   "rules": [
     {
@@ -13196,7 +13196,12 @@
       "origin": "mutation_replace",
       "born_date": "2026-10-17",
       "weight": 1.0,
-      "parent": "avg_len_long+kw_economy_2plus+kw_india"
+      "parent": "avg_len_long+kw_economy_2plus+kw_india",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
