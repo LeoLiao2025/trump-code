@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-10-18T17:04:47Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-10-19T19:39:35Z",
+    "evolved_rules_added": 47
   },
   "rules": [
     {
@@ -14571,7 +14571,12 @@
       "origin": "mutation_replace",
       "born_date": "2026-10-18",
       "weight": 1.0,
-      "parent": "both_tariff_and_deal+excl_heavy+volume_falling_3d"
+      "parent": "both_tariff_and_deal+excl_heavy+volume_falling_3d",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
