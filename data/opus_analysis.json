@@ -1,87 +1,89 @@
 {
-  "date": "2026-10-20",
-  "analyzed_at": "2026-10-20T18:25:27Z",
+  "date": "2026-10-24",
+  "analyzed_at": "2026-10-24T17:18:42Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Signature_Consistency_Check",
-    "Cross_Platform_Sync_Delay",
-    "Sentiment_Decay_Rate"
+    "Sector-specific policy hints (Tech/Energy)",
+    "Macro-volatility correlation during silence periods",
+    "Pre-market sentiment momentum"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀從『利空出盡』轉向『不確定性恐慌』，導致長沉默後的做多信號失效。",
-    "A2_deal_bullish": "協議邊際效應遞減，市場出現『利多出盡』的提前反應，導致隔天不漲反跌。"
+    "C1_burst_silence": "Silence in March 2026 coincided with systemic macro shocks where 'no news' was interpreted by the market as 'policy paralysis' rather than a bullish reset.",
+    "A2_deal_bullish": "The 'DEAL' keyword has suffered from inflation; it is increasingly used as a sentiment stabilizer during downtrends, leading to 'bull traps' rather than actual reversals."
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『協議內容(DEAL)』轉向『具體行動(ACTION)』與『情緒緩解(RELIEF)』。",
-    "發文頻率與簽名特徵(D系列)的預測準確度已全面超越傳統關鍵字模型(A系列)。"
+    "Transition from 'Deal-making' rhetoric to 'Direct Action/Relief' signaling",
+    "Pre-market signals (A3, B3) now significantly outperform mid-day or overnight tweets",
+    "Volume spikes (D3) have become more reliable than specific keyword content"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_volume",
-      "name": "緩解飆升組合",
+      "id": "E1_relief_action_synergy",
+      "name": "救濟行動協同規則",
       "features": [
         "RELIEF",
-        "D3_volume_spike"
+        "ACTION",
+        "PRE_MARKET"
       ],
       "direction": "LONG",
       "hold": 1,
-      "confidence": 0.85
+      "confidence": 0.88
     },
     {
-      "id": "E2_sig_action",
-      "name": "簽名行動共振",
+      "id": "E2_volatility_silence_filter",
+      "name": "波動沉默過濾器",
       "features": [
-        "D2_sig_change",
-        "ACTION"
+        "SILENCE",
+        "VIX_HIGH"
       ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.82
+      "direction": "FLAT",
+      "hold": 0,
+      "confidence": 0.65
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "A3_relief_rocket": 1.25,
+      "D3_volume_spike": 1.15,
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.7
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert（勝率 37.5% 低於隨機水平，且造成負期望值）"
+      "C3_night_alert (Win rate 37.5% is statistically indistinguishable from noise)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
+    "DEAL": 0.55,
     "CHINA": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 修正 C1 模型在波動市況下的過濾機制",
-      "2. 強化 D 系列（行為特徵）模型的權重分配",
-      "3. 監控 DEAL 信號的邊際效應衰減"
+      "1. 重新校準 C1 沉默信號的市場背景過濾器",
+      "2. 強化 A3/B3 盤前信號的權重分配",
+      "3. 移除低勝率的深夜關稅模型"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.88,
+    "confidence": 0.82,
     "active_signals": [
       "A3_relief_rocket",
-      "D3_volume_spike"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
       "A2_deal_bullish"
     ],
-    "note": "高勝率模型 A3 與 D3 同步觸發，抵銷了 DEAL 信號的疲軟，短期看漲情緒強烈。"
+    "note": "盤前 RELIEF 與 ACTION 的高信心度組合抵消了 DEAL 信號的疲軟，建議短期做多。"
   }
 }
