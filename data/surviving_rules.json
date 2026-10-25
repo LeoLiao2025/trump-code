@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-10-24T17:12:51Z",
-    "evolved_rules_added": 48
+    "last_evolution": "2026-10-25T17:24:31Z",
+    "evolved_rules_added": 47
   },
   "rules": [
     {
@@ -14598,7 +14598,12 @@
       "origin": "mutation_replace",
       "born_date": "2026-10-24",
       "weight": 1.0,
-      "parent": "kw_deal+kw_inflation+volume_falling_3d"
+      "parent": "kw_deal+kw_inflation+volume_falling_3d",
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
