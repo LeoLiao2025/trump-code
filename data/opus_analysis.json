@@ -1,86 +1,74 @@
 {
-  "date": "2026-10-30",
-  "analyzed_at": "2026-10-30T19:05:23Z",
+  "date": "2026-10-31",
+  "analyzed_at": "2026-10-31T18:24:07Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "MAGA_SENTIMENT",
-    "JOBS_REPORT_REACTION",
-    "SPECIFIC_TICKER_MENTION"
+    "ELECTION_COUNTDOWN",
+    "POLL_REACTION",
+    "MARKET_RECOVERY_CLAIM"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對長期沉默的解讀已從『利空出盡』轉向『宏觀不確定性增加』，導致預期失效。",
-    "A2_deal_bullish": "DEAL 關鍵字的邊際效用遞減，市場在缺乏具體協議細節的情況下不再盲目追多。"
+    "C1_burst_silence": "沉默期在宏觀波動劇烈時被市場解讀為政策真空與不確定性，而非蓄勢待發，導致多頭陷阱。",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場對缺乏細節的口頭協議已產生免疫。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『推文內容』轉移至『發文行為元數據』（如發文頻率與簽名切換）。",
-    "情緒修復型信號（RELIEF）的權重顯著超越實質政策型信號（TARIFF）。"
+    "溝通重心從貿易談判（DEAL）轉向國內經濟救濟（RELIEF）",
+    "發文頻率與市場波動的相關性（D3）顯著超越單一關鍵字影響力"
   ],
   "new_rules": [
     {
-      "id": "E1_sig_relief_combo",
-      "name": "簽名切換與緩解組合規則",
+      "id": "E1_election_relief",
+      "name": "選前救市共振",
       "features": [
-        "D2_sig_change",
-        "A3_relief_rocket"
+        "RELIEF",
+        "ACTION",
+        "LOW_VOL"
       ],
       "direction": "LONG",
-      "hold": 1,
-      "confidence": 0.88
-    },
-    {
-      "id": "E2_vol_spike_reversal",
-      "name": "恐慌量能反轉規則",
-      "features": [
-        "D3_volume_spike",
-        "THREAT"
-      ],
-      "direction": "LONG",
-      "hold": 2,
-      "confidence": 0.75
+      "hold": 3,
+      "confidence": 0.85
     }
   ],
   "model_adjustments": {
     "increase_weight": {
-      "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.15
+      "A3_relief_rocket": 1.3,
+      "D3_volume_spike": 1.2
     },
     "decrease_weight": {
-      "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "A2_deal_bullish": 0.7,
+      "C1_burst_silence": 0.6
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 且期望值為負，失去預測價值)"
+      "C3_night_alert (勝率 37.5% 且期望值為負，干擾決策)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "CHINA": 0.6,
-    "DEAL": 0.55
+    "DEAL": 0.5
   },
   "system_health": {
-    "score": "75/100",
-    "grade": "B",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. 重新校準 C1 模型的沉默期定義，引入宏觀波動率過濾器",
-      "2. 強化 D 系列行為模型與 A 系列內容模型的交叉驗證機制"
+      "1. 重新定義 C1 沉默期的時間閾值以過濾雜訊",
+      "2. 引入選舉週期因子作為權重修正項"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.82,
+    "confidence": 0.88,
     "active_signals": [
       "A3_relief_rocket",
-      "D2_sig_change"
+      "B3_action_pre"
     ],
     "suppressing_signals": [
-      "A1_tariff_bearish"
+      "C2_brag_top"
     ],
-    "note": "高勝率模型 A3 與 D2 同步觸發，顯示市場情緒正處於由行為模式驅動的強勁修復期。"
+    "note": "RELIEF 與 ACTION 信號高度共振，足以抵銷 C2 炫耀性推文帶來的短期見頂壓力。"
   }
 }

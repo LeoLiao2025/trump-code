@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-30",
-  "prepared_at": "2026-10-30T19:05:10Z",
+  "date": "2026-10-31",
+  "prepared_at": "2026-10-31T18:23:57Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,13 +109,23 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "crossover": 16,
-    "mutation": 9,
+    "mutation": 14,
     "distill": 16,
-    "total_new": 41,
+    "total_new": 46,
     "total_rules_after": 600,
     "top_3": [
+      {
+        "features": [
+          "kw_thank_you_for_your_attention",
+          "open_china"
+        ],
+        "direction": "LONG",
+        "hold": 2,
+        "score": 90.9,
+        "origin": "crossover"
+      },
       {
         "features": [
           "kw_thank_you_for_your_attention",
@@ -128,23 +138,13 @@
       },
       {
         "features": [
-          "kw_interest_rate",
-          "kw_economy"
+          "kw_tariff",
+          "kw_signed"
         ],
         "direction": "LONG",
-        "hold": 3,
-        "score": 90.0,
-        "origin": "distilled"
-      },
-      {
-        "features": [
-          "kw_beautiful",
-          "kw_interest_rate"
-        ],
-        "direction": "LONG",
-        "hold": 3,
-        "score": 87.5,
-        "origin": "crossover"
+        "hold": 2,
+        "score": 90.6,
+        "origin": "mutation_remove"
       }
     ]
   },
