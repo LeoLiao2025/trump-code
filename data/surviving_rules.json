@@ -1,8 +1,8 @@
 {
   "meta": {
     "total_surviving": 600,
-    "last_evolution": "2026-11-03T20:28:16Z",
-    "evolved_rules_added": 44
+    "last_evolution": "2026-11-04T20:43:31Z",
+    "evolved_rules_added": 45
   },
   "rules": [
     {
@@ -13226,7 +13226,12 @@
       "parents": [
         "open_tariffs+open_trade",
         "kw_thank_you_for_your_attention+open_tariffs"
-      ]
+      ],
+      "learn_stats": {
+        "correct": 0,
+        "wrong": 0,
+        "streak": 0
+      }
     },
     {
       "features": [
