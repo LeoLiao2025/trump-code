@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-06",
-  "prepared_at": "2026-11-06T20:19:05Z",
+  "date": "2026-11-07",
+  "prepared_at": "2026-11-07T18:33:01Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,11 +109,11 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "crossover": 16,
-    "mutation": 14,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 46,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
@@ -128,14 +128,13 @@
       },
       {
         "features": [
-          "kw_thank_you_for_your_attention",
-          "volume_falling_3d",
-          "open_trade"
+          "open_china",
+          "kw_economy"
         ],
         "direction": "LONG",
-        "hold": 2,
+        "hold": 3,
         "score": 90.0,
-        "origin": "crossover"
+        "origin": "mutation_remove"
       },
       {
         "features": [
