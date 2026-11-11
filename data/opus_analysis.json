@@ -1,87 +1,86 @@
 {
-  "date": "2026-11-10",
-  "analyzed_at": "2026-11-10T20:45:55Z",
+  "date": "2026-11-11",
+  "analyzed_at": "2026-11-11T21:08:44Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "Metadata-Signature synergy",
-    "Volume-Sentiment divergence",
-    "Pre-market relief momentum"
+    "RELIEF_ACTION_SYNERGY",
+    "VOLATILITY_ABSORPTION"
   ],
   "error_analysis": {
-    "C1_burst_silence": "沉默期不再代表利空出盡，市場在高度不確定性下將沉默解讀為『醞釀更大風暴』，導致避險情緒升溫。",
-    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，市場傾向於『利多出盡』的操作邏輯，缺乏實質內容支撐時易回檔。"
+    "C1_burst_silence": "市場對『沉默期』的解讀已從冷靜期轉變為政策不確定性醞釀期，導致多頭陷阱。",
+    "A2_deal_bullish": "DEAL 關鍵字出現邊際效用遞減，若無具體執行細節，市場傾向於獲利了結而非追價。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "從單純關鍵字驅動轉向行為模式驅動（如發文頻率與簽名切換）",
-    "市場對正面詞彙（DEAL）的反應鈍化，對行為異常（VOLUME_SPIKE）的反應增強"
+    "市場反應邏輯從『關鍵字驅動』轉向『情緒極值修復』（如 A3, D3 表現優異）",
+    "深夜負面推文（C3）的衝擊力正在減弱，市場展現出更強的抗跌韌性"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_vol",
-      "name": "紓困情緒與交易量共振",
+      "id": "E1_relief_action_combo",
+      "name": "救贖行動共振",
       "features": [
         "RELIEF",
-        "D3_volume_spike"
-      ],
-      "direction": "LONG",
-      "hold": 1,
-      "confidence": 0.85
-    },
-    {
-      "id": "E2_sig_action",
-      "name": "正式聲明與行動指令組合",
-      "features": [
-        "D2_sig_change",
         "ACTION"
       ],
       "direction": "LONG",
+      "hold": 1,
+      "confidence": 0.92
+    },
+    {
+      "id": "E2_volume_reversal",
+      "name": "放量恐慌反轉",
+      "features": [
+        "D3_volume_spike",
+        "NEGATIVE_SENTIMENT"
+      ],
+      "direction": "LONG",
       "hold": 2,
-      "confidence": 0.82
+      "confidence": 0.85
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
       "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.2
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.7
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 嚴重拖累績效，且樣本數過低)"
+      "C3_night_alert (勝率低於 40% 且期望值為負)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
     "TARIFF": 0.7,
-    "DEAL": 0.45,
-    "VOLUME_SPIKE": 0.88
+    "DEAL": 0.55,
+    "CHINA": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新校準 C1 沉默期模型之觸發閾值",
-      "2. 強化 D 系列行為特徵權重以應對關鍵字鈍化",
-      "3. 整合 A3 與 D3 建立複合型飆股預測模組"
+      "1. 重新定義 DEAL 信號的有效性過濾器",
+      "2. 整合 A3 與 D3 模型以捕捉極端情緒反轉"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
     "hold_days": 1,
-    "confidence": 0.75,
+    "confidence": 0.88,
     "active_signals": [
-      "A3_relief_rocket",
+      "RELIEF",
+      "ACTION",
       "D3_volume_spike"
     ],
     "suppressing_signals": [
-      "A2_deal_decay"
+      "DEAL_FATIGUE"
     ],
-    "note": "高勝率模型 A3 與 D3 導向強烈看多，雖有 A2 效力減弱風險，但整體動能足以支撐短線漲幅。"
+    "note": "高信心度信號 RELIEF 與 ACTION 疊加放量特徵，預示強勁的日內反彈。"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-10",
-  "prepared_at": "2026-11-10T20:45:28Z",
+  "date": "2026-11-11",
+  "prepared_at": "2026-11-11T21:08:35Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,7 +109,7 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "crossover": 16,
     "mutation": 16,
     "distill": 16,
@@ -128,8 +128,7 @@
       },
       {
         "features": [
-          "open_tariff",
-          "kw_tariffs",
+          "open_tariffs",
           "is_friday"
         ],
         "direction": "LONG",
@@ -140,7 +139,7 @@
       {
         "features": [
           "kw_interest_rate",
-          "kw_tremendous"
+          "excl_heavy"
         ],
         "direction": "LONG",
         "hold": 3,
