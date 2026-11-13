@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-12",
-  "prepared_at": "2026-11-12T21:23:22Z",
+  "date": "2026-11-13",
+  "prepared_at": "2026-11-13T20:49:30Z",
   "status": "PENDING",
   "model_performance": {
     "A1_tariff_bearish": {
@@ -109,17 +109,17 @@
     "signal_adjusted": 0
   },
   "evolution_latest": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "crossover": 16,
-    "mutation": 14,
+    "mutation": 16,
     "distill": 16,
-    "total_new": 46,
+    "total_new": 48,
     "total_rules_after": 600,
     "top_3": [
       {
         "features": [
-          "kw_interest_rate",
-          "kw_economy"
+          "kw_president_of_the_united_states",
+          "kw_india"
         ],
         "direction": "LONG",
         "hold": 3,
@@ -138,8 +138,8 @@
       },
       {
         "features": [
-          "kw_interest_rate",
-          "kw_wonderful"
+          "volume_falling_3d",
+          "kw_beautiful"
         ],
         "direction": "LONG",
         "hold": 2,
