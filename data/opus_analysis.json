@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-18",
-  "analyzed_at": "2026-11-18T21:46:12Z",
+  "date": "2026-11-20",
+  "analyzed_at": "2026-11-20T21:45:00Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_VOLUME_CONFLUENCE",
-    "ACTION_PRE_MOMENTUM"
+    "RELIEF_ACTION_COMBO",
+    "MARKET_DESENSITIZATION_DEAL"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場對『沉默』的解讀已從情緒修復轉向對政策真空期的恐慌，導致長沉默後的做多信號失效。",
-    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場在未見實質協議前拒絕追高。"
+    "C1_burst_silence": "長沉默期在當前高波動環境下被市場解讀為政策不確定性而非蓄勢待發，導致做多信號失效。",
+    "A2_deal_bullish": "DEAL 關鍵字已出現邊際效應遞減，市場傾向於在利多證實後獲利了結（Sell the news）。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從『協議承諾(DEAL)』轉移至『壓力釋放(RELIEF)』",
-    "深夜推文(C3)的負面衝擊力正在減弱，轉為低勝率的隨機噪音"
+    "市場對 DEAL 的反應從積極轉向中性，對 RELIEF 與 ACTION 的反應顯著增強。",
+    "深夜推文（C3）的負面衝擊力正在減弱，市場對關稅威脅產生免疫力。"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_volume",
-      "name": "緩解放量共振",
+      "id": "E1_relief_action_surge",
+      "name": "緩解行動噴發",
       "features": [
         "RELIEF",
-        "VOLUME_SPIKE"
+        "ACTION"
       ],
       "direction": "LONG",
       "hold": 1,
@@ -34,26 +34,26 @@
       "D3_volume_spike": 1.2
     },
     "decrease_weight": {
-      "C1_burst_silence": 0.6,
-      "A2_deal_bullish": 0.7
+      "A2_deal_bullish": 0.6,
+      "C1_burst_silence": 0.5
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 嚴重拖累績效且無統計顯著性)"
+      "C3_night_alert（勝率低於 40% 且樣本數過少，缺乏統計顯著性）"
     ]
   },
   "signal_confidence": {
-    "RELIEF": 0.95,
     "ACTION": 0.95,
+    "RELIEF": 0.95,
+    "DEAL": 0.45,
     "TARIFF": 0.7,
-    "CHINA": 0.6,
-    "DEAL": 0.55
+    "CHINA": 0.6
   },
   "system_health": {
-    "score": "72/100",
-    "grade": "B",
+    "score": "78/100",
+    "grade": "B+",
     "priorities": [
-      "1. 重新定義 C1 模型的沉默期閾值以過濾假信號",
-      "2. 針對 A3 模型開發自動化止盈邏輯以鎖定 1.2% 級別報酬"
+      "1. 重新定義 C1 模型的沉默期閾值以適應當前波動率",
+      "2. 引入外部波動率指標（VIX）作為 A2 信號的過濾器"
     ]
   },
   "today_prediction": {
@@ -62,12 +62,12 @@
     "hold_days": 1,
     "confidence": 0.85,
     "active_signals": [
-      "A3_relief_rocket",
-      "B3_action_pre"
+      "RELIEF",
+      "ACTION"
     ],
     "suppressing_signals": [
-      "C1_burst_silence_decay"
+      "DEAL_FATIGUE"
     ],
-    "note": "RELIEF 與 ACTION 雙高信心度信號共振，盤前動能強勁，建議日內短多。"
+    "note": "高勝率模型 A3 與 B3 顯示 RELIEF 與 ACTION 組合具備極強的盤後動能。"
   }
 }
