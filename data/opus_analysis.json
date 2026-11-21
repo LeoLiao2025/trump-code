@@ -1,59 +1,76 @@
 {
-  "date": "2026-11-20",
-  "analyzed_at": "2026-11-20T21:45:00Z",
+  "date": "2026-11-21",
+  "analyzed_at": "2026-11-21T20:26:21Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "RELIEF_ACTION_COMBO",
-    "MARKET_DESENSITIZATION_DEAL"
+    "MAGA_ECONOMY_STRENGTH",
+    "FED_PRESSURE_INDEX",
+    "SPECIFIC_INDUSTRY_TAGGING"
   ],
   "error_analysis": {
-    "C1_burst_silence": "長沉默期在當前高波動環境下被市場解讀為政策不確定性而非蓄勢待發，導致做多信號失效。",
-    "A2_deal_bullish": "DEAL 關鍵字已出現邊際效應遞減，市場傾向於在利多證實後獲利了結（Sell the news）。"
+    "C1_burst_silence": "市場對長期沉默的解讀已從『利空出盡』轉向『政策不確定性憂慮』，宏觀利率環境抵消了情緒反彈。",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場目前更看重實質行動而非口頭協議。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場對 DEAL 的反應從積極轉向中性，對 RELIEF 與 ACTION 的反應顯著增強。",
-    "深夜推文（C3）的負面衝擊力正在減弱，市場對關稅威脅產生免疫力。"
+    "市場反應重心從『關稅恐嚇』轉向『實質救濟與行動確認』",
+    "盤前情緒（PRE_MARKET）的預測效力顯著超越盤中突發推文",
+    "深夜推文（C3）的負面衝擊力因市場疲勞而大幅衰減"
   ],
   "new_rules": [
     {
-      "id": "E1_relief_action_surge",
-      "name": "緩解行動噴發",
+      "id": "E1_relief_action_sync",
+      "name": "救濟行動同步規則",
       "features": [
         "RELIEF",
-        "ACTION"
+        "ACTION",
+        "PRE_MARKET"
       ],
       "direction": "LONG",
       "hold": 1,
       "confidence": 0.88
+    },
+    {
+      "id": "E1_volume_capitulation",
+      "name": "放量恐慌築底規則",
+      "features": [
+        "D3_volume_spike",
+        "NEGATIVE_SENTIMENT"
+      ],
+      "direction": "LONG",
+      "hold": 2,
+      "confidence": 0.75
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.3,
-      "D3_volume_spike": 1.2
+      "D3_volume_spike": 1.2,
+      "D2_sig_change": 1.1
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C1_burst_silence": 0.5
+      "C1_burst_silence": 0.7
     },
     "eliminate": [
-      "C3_night_alert（勝率低於 40% 且樣本數過少，缺乏統計顯著性）"
+      "C3_night_alert (勝率低於 40% 且樣本數過少，失去統計意義)"
     ]
   },
   "signal_confidence": {
     "ACTION": 0.95,
     "RELIEF": 0.95,
-    "DEAL": 0.45,
     "TARIFF": 0.7,
-    "CHINA": 0.6
+    "CHINA": 0.6,
+    "DEAL": 0.55,
+    "THREAT": 0.6
   },
   "system_health": {
     "score": "78/100",
     "grade": "B+",
     "priorities": [
-      "1. 重新定義 C1 模型的沉默期閾值以適應當前波動率",
-      "2. 引入外部波動率指標（VIX）作為 A2 信號的過濾器"
+      "1. 重新校準 C1 模型的沉默期定義，引入宏觀波動率過濾器",
+      "2. 強化 A3 模型在盤前交易時段的自動化執行權重",
+      "3. 監控 48 條新規則的初期樣本表現"
     ]
   },
   "today_prediction": {
@@ -66,8 +83,8 @@
       "ACTION"
     ],
     "suppressing_signals": [
-      "DEAL_FATIGUE"
+      "TARIFF_ONLY"
     ],
-    "note": "高勝率模型 A3 與 B3 顯示 RELIEF 與 ACTION 組合具備極強的盤後動能。"
+    "note": "高勝率模型 A3 與 B3 產生共振，盤前 RELIEF 信號配合 ACTION 情緒，看好今日開盤動能。"
   }
 }
