@@ -1,75 +1,73 @@
 {
-  "date": "2026-11-24",
-  "analyzed_at": "2026-11-24T23:27:01Z",
+  "date": "2026-11-25",
+  "analyzed_at": "2026-11-25T23:00:57Z",
   "analyzed_by": "gemini-3-flash-preview",
   "missed_signals": [
-    "DEAL_DECOY (虛假協議信號)",
-    "TARIFF_FATIGUE (關稅疲勞鈍化)"
+    "MARKET_FATIGUE",
+    "POLICY_PIVOT_DELAY"
   ],
   "error_analysis": {
-    "C1_burst_silence": "市場將長沉默解讀為政策真空期的不確定性，而非情緒出清，導致多頭踩踏",
-    "A2_deal_bullish": "DEAL 關鍵字因頻繁使用且缺乏實質進展，已轉變為邊際效用遞減的噪音"
+    "C1_burst_silence": "長沉默不再被市場視為利空出盡，而是被解讀為政策不確定性的累積，導致預期的反彈轉為續跌。",
+    "A2_deal_bullish": "DEAL 關鍵字出現頻率過高導致邊際效應遞減，市場在未見實質簽署前傾向於獲利了結。"
   },
   "pattern_shift_detected": true,
   "pattern_changes": [
-    "市場反應重心從「推文內容」轉移至「發文元數據」（如發文頻率與簽名切換）",
-    "RELIEF 信號的權威性顯著超越 DEAL 信號"
+    "市場反應從『情緒驅動』轉向『實質行動驅動』",
+    "深夜推文的負面衝擊力顯著下降，但盤前信號的影響力上升"
   ],
   "new_rules": [
     {
-      "id": "E1_meta_vol_sig",
-      "name": "元數據共振規則",
+      "id": "E1_action_relief_sync",
+      "name": "行動緩解同步共振",
       "features": [
-        "D2_sig_change",
-        "D3_volume_spike",
+        "ACTION",
         "RELIEF"
       ],
       "direction": "LONG",
-      "hold": 1,
+      "hold": 3,
       "confidence": 0.88
     }
   ],
   "model_adjustments": {
     "increase_weight": {
       "A3_relief_rocket": 1.25,
-      "D3_volume_spike": 1.2,
-      "D2_sig_change": 1.15
+      "D3_volume_spike": 1.15
     },
     "decrease_weight": {
       "A2_deal_bullish": 0.6,
-      "C2_brag_top": 0.7
+      "C1_burst_silence": 0.75
     },
     "eliminate": [
-      "C3_night_alert (勝率 37.5% 低於隨機水平且樣本數過少)"
+      "C3_night_alert (勝率低於 40% 且樣本數不足以支撐統計顯著性)"
     ]
   },
   "signal_confidence": {
-    "RELIEF": 0.98,
     "ACTION": 0.95,
+    "RELIEF": 0.95,
     "TARIFF": 0.7,
     "DEAL": 0.45,
     "CHINA": 0.6
   },
   "system_health": {
-    "score": "78/100",
-    "grade": "B+",
+    "score": "72/100",
+    "grade": "B",
     "priorities": [
-      "1. 重新校準 DEAL 信號的權重與過濾機制",
-      "2. 強化 D 系列元數據模型在決策引擎中的佔比"
+      "1. 修正 DEAL 信號的權重分配，引入實質進展驗證",
+      "2. 針對 C1 模式引入成交量過濾器以降低偽信號"
     ]
   },
   "today_prediction": {
     "bias": "BULLISH",
     "direction": "LONG",
-    "hold_days": 1,
-    "confidence": 0.82,
+    "hold_days": 2,
+    "confidence": 0.75,
     "active_signals": [
-      "A3_relief_rocket",
-      "D2_sig_change"
+      "RELIEF",
+      "ACTION"
     ],
     "suppressing_signals": [
-      "A2_deal_bullish_fatigue"
+      "TARIFF_ONLY"
     ],
-    "note": "高勝率模型 A3 與元數據模型 D2 產生強共振，抵消了 DEAL 信號的疲軟。"
+    "note": "高勝率模型 A3 與 B3 處於活躍期，抵銷了 DEAL 信號的疲軟。"
   }
 }
